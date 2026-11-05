@@ -1,0 +1,62 @@
+{
+  "$comment": "OpenAI gpt-live-transcribe over a Realtime transcription session (WebSocket), checked against the Realtime transcription guide on 2026-10-19. Default settings: 24 kHz PCM16 sent as base64 input_audio_buffer.append, no server turn detection (the model supports none), expected languages in transcription.languages, and a single input_audio_buffer.commit when the audio ends; the matching conversation.item.input_audio_transcription.completed ends the clip.",
+  "id": "openai-live-transcribe",
+  "label": "OpenAI GPT-Live-Transcribe",
+  "kind": "websocket",
+  "model": "gpt-live-transcribe",
+  "modelEnv": "OPENAI_LIVE_TRANSCRIBE_MODEL",
+  "env": [
+    "OPENAI_API_KEY"
+  ],
+  "sampleRate": 24000,
+  "url": "wss://api.openai.com/v1/realtime?intent=transcription",
+  "headers": {
+    "Authorization": "Bearer ${env:OPENAI_API_KEY}"
+  },
+  "setup": {
+    "type": "session.update",
+    "session": {
+      "type": "transcription",
+      "audio": {
+        "input": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "transcription": {
+            "model": "${model}",
+            "languages": "${languages_json}"
+          },
+          "turn_detection": null
+        }
+      }
+    }
+  },
+  "readyOn": {
+    "type": "session.updated"
+  },
+  "audio": {
+    "type": "input_audio_buffer.append",
+    "audio": "${audio_base64}"
+  },
+  "end": {
+    "type": "input_audio_buffer.commit"
+  },
+  "final": {
+    "match": {
+      "type": "conversation.item.input_audio_transcription.completed"
+    },
+    "textPath": "transcript"
+  },
+  "done": {
+    "match": {
+      "type": "conversation.item.input_audio_transcription.completed"
+    }
+  },
+  "error": {
+    "match": {
+      "type": "error"
+    },
+    "messagePath": "error.message"
+  }
+}

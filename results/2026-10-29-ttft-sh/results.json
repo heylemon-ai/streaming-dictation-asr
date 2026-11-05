@@ -1,0 +1,82 @@
+{
+  "date": "2026-10-29",
+  "runDates": [
+    "2026-10-29"
+  ],
+  "label": "ttft-sh",
+  "options": {
+    "language": "clip",
+    "speed": 1,
+    "gate": true,
+    "runs": 1,
+    "clientProfile": "published"
+  },
+  "sets": [
+    {
+      "id": "en-dictation",
+      "language": "en",
+      "condition": "clean",
+      "source": "Team recordings of app-style dictation scripts"
+    },
+    {
+      "id": "en-dictation-noise",
+      "language": "en",
+      "condition": "noise",
+      "source": "Same scripts, background fan noise"
+    },
+    {
+      "id": "en-dictation-whisper",
+      "language": "en",
+      "condition": "whisper",
+      "source": "Same scripts, whispered"
+    }
+  ],
+  "models": {
+    "whisper-self-hosted": "self-hosted (Baseten)"
+  },
+  "labels": {
+    "whisper-self-hosted": "Whisper Self-Hosted"
+  },
+  "aggregates": {
+    "en-dictation/whisper-self-hosted": {
+      "headline": {
+        "value": 0.08331355328744362,
+        "lo": 0.06867845993756504,
+        "hi": 0.09833309987393192,
+        "speakers": 73
+      },
+      "formatted": 0.1599871753767233
+    },
+    "en-dictation-noise/whisper-self-hosted": {
+      "headline": {
+        "value": 0.06509433962264151,
+        "lo": 0.0412573673870334,
+        "hi": 0.09962756052141528,
+        "speakers": 17
+      },
+      "formatted": 0.14261603375527426
+    },
+    "en-dictation-whisper/whisper-self-hosted": {
+      "headline": {
+        "value": 0.10077519379844961,
+        "lo": 0.07100591715976332,
+        "hi": 0.1303680981595092,
+        "speakers": 16
+      },
+      "formatted": 0.20816044260027664
+    },
+    "latency/whisper-self-hosted": {
+      "waitP50": 400,
+      "waitP90": 798,
+      "connectP50": 1085,
+      "connectP90": 2651,
+      "n": 106
+    },
+    "failures/whisper-self-hosted": {
+      "clips": 106,
+      "dropped": 0,
+      "failed": 0,
+      "droppedSets": []
+    }
+  }
+}

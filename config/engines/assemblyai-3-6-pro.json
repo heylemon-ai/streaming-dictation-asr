@@ -1,0 +1,53 @@
+{
+  "$comment": "Streaming engine via the generic WebSocket adapter. Parameters from AssemblyAI's streaming API reference (checked 2026-10-12). Universal-3.6 Pro Realtime supports 32 languages including Urdu, with native code-switching. Languages are sent as language_codes; with none set the model auto-detects.",
+  "id": "assemblyai-3-6-pro",
+  "label": "AssemblyAI Universal-3.6 Pro",
+  "kind": "websocket",
+  "model": "universal-3-6-pro",
+  "env": [
+    "ASSEMBLY_AI_API_KEY"
+  ],
+  "sampleRate": 16000,
+  "languages": {
+    "en": "en",
+    "ar": "ar",
+    "de": "de",
+    "es": "es",
+    "fr": "fr",
+    "hi": "hi",
+    "zh": "zh",
+    "ur": "ur"
+  },
+  "url": "wss://streaming.assemblyai.com/v3/ws?speech_model=${model}&sample_rate=${sample_rate}&encoding=pcm_s16le&format_turns=true&language_codes=${languages_json}",
+  "headers": {
+    "Authorization": "${env:ASSEMBLY_AI_API_KEY}"
+  },
+  "readyOn": {
+    "type": "Begin"
+  },
+  "audio": "binary",
+  "end": {
+    "type": "Terminate"
+  },
+  "final": {
+    "match": {
+      "type": "Turn",
+      "end_of_turn": true,
+      "turn_is_formatted": true
+    },
+    "textPath": "transcript",
+    "languagePath": "language_code"
+  },
+  "done": {
+    "match": {
+      "type": "Termination"
+    },
+    "onClose": true
+  },
+  "error": {
+    "match": {
+      "type": "Error"
+    },
+    "messagePath": "error"
+  }
+}

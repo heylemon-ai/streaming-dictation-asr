@@ -1,0 +1,256 @@
+{
+  "date": "2026-10-13",
+  "runDates": [
+    "2026-10-13"
+  ],
+  "label": "qwen-no-vad",
+  "options": {
+    "language": "clip",
+    "speed": 1,
+    "gate": false,
+    "runs": 1,
+    "clientProfile": "published"
+  },
+  "sets": [
+    {
+      "id": "en-dictation",
+      "language": "en",
+      "condition": "clean",
+      "source": "Team recordings of app-style dictation scripts"
+    },
+    {
+      "id": "en-dictation-noise",
+      "language": "en",
+      "condition": "noise",
+      "source": "Same scripts, background fan noise"
+    },
+    {
+      "id": "en-dictation-whisper",
+      "language": "en",
+      "condition": "whisper",
+      "source": "Same scripts, whispered"
+    },
+    {
+      "id": "nonspeech",
+      "language": "en",
+      "condition": "nonspeech",
+      "source": "Generated silence and noise (scripts/make-nonspeech.ts)"
+    },
+    {
+      "id": "ar-eg",
+      "language": "ar",
+      "condition": "clean",
+      "source": "FLEURS ar_eg"
+    },
+    {
+      "id": "ar-sa",
+      "language": "ar",
+      "condition": "clean",
+      "source": "SADA22 (Najdi)"
+    },
+    {
+      "id": "ar-ae",
+      "language": "ar",
+      "condition": "clean",
+      "source": "Casablanca (Emirati)"
+    },
+    {
+      "id": "de-de",
+      "language": "de",
+      "condition": "clean",
+      "source": "FLEURS de_de"
+    },
+    {
+      "id": "es-419",
+      "language": "es",
+      "condition": "clean",
+      "source": "FLEURS es_419"
+    },
+    {
+      "id": "es-es",
+      "language": "es",
+      "condition": "clean",
+      "source": "VoxPopuli"
+    },
+    {
+      "id": "es-pr",
+      "language": "es",
+      "condition": "clean",
+      "source": "OpenSLR SLR74"
+    },
+    {
+      "id": "fr-fr",
+      "language": "fr",
+      "condition": "clean",
+      "source": "FLEURS fr_fr"
+    },
+    {
+      "id": "hi-in",
+      "language": "hi",
+      "condition": "clean",
+      "source": "FLEURS hi_in"
+    },
+    {
+      "id": "ur-pk",
+      "language": "ur",
+      "condition": "clean",
+      "source": "FLEURS ur_pk"
+    },
+    {
+      "id": "zh-cn",
+      "language": "zh",
+      "condition": "clean",
+      "source": "FLEURS cmn_hans_cn"
+    }
+  ],
+  "models": {
+    "qwen": "self-hosted (Baseten)"
+  },
+  "labels": {
+    "qwen": "Qwen3-ASR"
+  },
+  "aggregates": {
+    "en-dictation/qwen": {
+      "headline": {
+        "value": 0.13624495608829812,
+        "lo": 0.10851397231653173,
+        "hi": 0.16988462444078173,
+        "speakers": 73
+      },
+      "formatted": 0.21588115849096934
+    },
+    "en-dictation-noise/qwen": {
+      "headline": {
+        "value": 0.06981132075471698,
+        "lo": 0.05273833671399594,
+        "hi": 0.09099804305283757,
+        "speakers": 17
+      },
+      "formatted": 0.15527426160337554
+    },
+    "en-dictation-whisper/qwen": {
+      "headline": {
+        "value": 0.465891472868217,
+        "lo": 0.329160530191458,
+        "hi": 0.6754237288135593,
+        "speakers": 16
+      },
+      "formatted": 0.5650069156293223
+    },
+    "ar-eg/qwen": {
+      "headline": {
+        "value": 0.07653061224489796,
+        "lo": 0.026881720430107527,
+        "hi": 0.13186813186813187,
+        "speakers": 20
+      },
+      "formatted": 0.17446808510638298
+    },
+    "ar-sa/qwen": {
+      "headline": {
+        "value": 0.390625,
+        "lo": 0.2696629213483146,
+        "hi": 0.5187713310580204,
+        "speakers": 20
+      },
+      "formatted": 0.5
+    },
+    "ar-ae/qwen": {
+      "headline": {
+        "value": 0.611764705882353,
+        "lo": 0.5141242937853108,
+        "hi": 0.7065868263473054,
+        "speakers": 20
+      },
+      "formatted": 0.7446808510638298
+    },
+    "de-de/qwen": {
+      "headline": {
+        "value": 0.04435483870967742,
+        "lo": 0.012987012987012988,
+        "hi": 0.08015267175572519,
+        "speakers": 20
+      },
+      "formatted": 0.07216494845360824
+    },
+    "es-419/qwen": {
+      "headline": {
+        "value": 0.07391304347826087,
+        "lo": 0.036585365853658534,
+        "hi": 0.12556053811659193,
+        "speakers": 20
+      },
+      "formatted": 0.16
+    },
+    "es-es/qwen": {
+      "headline": {
+        "value": 0.08947368421052632,
+        "lo": 0.01092896174863388,
+        "hi": 0.21578947368421053,
+        "speakers": 20
+      },
+      "formatted": 0.12962962962962962
+    },
+    "es-pr/qwen": {
+      "headline": {
+        "value": 0.08376963350785341,
+        "lo": 0.03225806451612903,
+        "hi": 0.1507537688442211,
+        "speakers": 20
+      },
+      "formatted": 0.25380710659898476
+    },
+    "fr-fr/qwen": {
+      "headline": {
+        "value": 0.07246376811594203,
+        "lo": 0.02681992337164751,
+        "hi": 0.1289198606271777,
+        "speakers": 20
+      },
+      "formatted": 0.10932475884244373
+    },
+    "hi-in/qwen": {
+      "headline": {
+        "value": 0.18421052631578946,
+        "lo": 0.1038961038961039,
+        "hi": 0.2838983050847458,
+        "speakers": 20
+      },
+      "formatted": 0.1643835616438356
+    },
+    "ur-pk/qwen": {
+      "headline": {
+        "value": 0.9471830985915493,
+        "lo": 0.8694029850746269,
+        "hi": 1.0036764705882353,
+        "speakers": 20
+      },
+      "formatted": 1.5487012987012987
+    },
+    "zh-cn/qwen": {
+      "headline": {
+        "value": 0.035422343324250684,
+        "lo": 0.01928374655647383,
+        "hi": 0.05,
+        "speakers": 20
+      },
+      "formatted": 0.0525
+    },
+    "nonspeech/qwen": {
+      "nonSpeechOutputRate": 0
+    },
+    "latency/qwen": {
+      "waitP50": 388,
+      "waitP90": 542,
+      "connectP50": 1592,
+      "connectP90": 4428,
+      "n": 336
+    },
+    "failures/qwen": {
+      "clips": 336,
+      "dropped": 0,
+      "failed": 0,
+      "droppedSets": []
+    }
+  }
+}

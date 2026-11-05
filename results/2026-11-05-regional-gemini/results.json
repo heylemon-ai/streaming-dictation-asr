@@ -1,0 +1,76 @@
+{
+  "date": "2026-11-05",
+  "runDates": [
+    "2026-11-05"
+  ],
+  "label": "regional-gemini",
+  "options": {
+    "language": "regional",
+    "speed": 1,
+    "gate": true,
+    "runs": 1,
+    "clientProfile": "published"
+  },
+  "sets": [
+    {
+      "id": "es-419",
+      "language": "es",
+      "condition": "clean",
+      "source": "FLEURS es_419"
+    }
+  ],
+  "models": {
+    "gemini": "gemini-3.5-transcribe-live",
+    "gemini-smart": "gemini-3.5-transcribe-live"
+  },
+  "labels": {
+    "gemini": "Gemini 3.5 Transcribe",
+    "gemini-smart": "Gemini 3.5 Transcribe (Smart)"
+  },
+  "aggregates": {
+    "es-419/gemini": {
+      "headline": {
+        "value": 0.06521739130434782,
+        "lo": 0.03137254901960784,
+        "hi": 0.11165048543689321,
+        "speakers": 20
+      },
+      "formatted": 0.13818181818181818
+    },
+    "es-419/gemini-smart": {
+      "headline": {
+        "value": 0.05652173913043478,
+        "lo": 0.02459016393442623,
+        "hi": 0.09852216748768473,
+        "speakers": 20
+      },
+      "formatted": 0.12727272727272726
+    },
+    "latency/gemini": {
+      "waitP50": 431,
+      "waitP90": 562,
+      "connectP50": 717,
+      "connectP90": 990,
+      "n": 20
+    },
+    "latency/gemini-smart": {
+      "waitP50": 425,
+      "waitP90": 504,
+      "connectP50": 694,
+      "connectP90": 764,
+      "n": 20
+    },
+    "failures/gemini": {
+      "clips": 20,
+      "dropped": 0,
+      "failed": 0,
+      "droppedSets": []
+    },
+    "failures/gemini-smart": {
+      "clips": 20,
+      "dropped": 0,
+      "failed": 0,
+      "droppedSets": []
+    }
+  }
+}

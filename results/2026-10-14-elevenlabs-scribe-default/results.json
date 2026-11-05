@@ -1,0 +1,256 @@
+{
+  "date": "2026-10-14",
+  "runDates": [
+    "2026-10-14"
+  ],
+  "label": "elevenlabs-scribe",
+  "options": {
+    "language": "clip",
+    "speed": 1,
+    "gate": true,
+    "runs": 1,
+    "clientProfile": "published"
+  },
+  "sets": [
+    {
+      "id": "en-dictation",
+      "language": "en",
+      "condition": "clean",
+      "source": "Team recordings of app-style dictation scripts"
+    },
+    {
+      "id": "en-dictation-noise",
+      "language": "en",
+      "condition": "noise",
+      "source": "Same scripts, background fan noise"
+    },
+    {
+      "id": "en-dictation-whisper",
+      "language": "en",
+      "condition": "whisper",
+      "source": "Same scripts, whispered"
+    },
+    {
+      "id": "nonspeech",
+      "language": "en",
+      "condition": "nonspeech",
+      "source": "Generated silence and noise (scripts/make-nonspeech.ts)"
+    },
+    {
+      "id": "ar-eg",
+      "language": "ar",
+      "condition": "clean",
+      "source": "FLEURS ar_eg"
+    },
+    {
+      "id": "ar-sa",
+      "language": "ar",
+      "condition": "clean",
+      "source": "SADA22 (Najdi)"
+    },
+    {
+      "id": "ar-ae",
+      "language": "ar",
+      "condition": "clean",
+      "source": "Casablanca (Emirati)"
+    },
+    {
+      "id": "de-de",
+      "language": "de",
+      "condition": "clean",
+      "source": "FLEURS de_de"
+    },
+    {
+      "id": "es-419",
+      "language": "es",
+      "condition": "clean",
+      "source": "FLEURS es_419"
+    },
+    {
+      "id": "es-es",
+      "language": "es",
+      "condition": "clean",
+      "source": "VoxPopuli"
+    },
+    {
+      "id": "es-pr",
+      "language": "es",
+      "condition": "clean",
+      "source": "OpenSLR SLR74"
+    },
+    {
+      "id": "fr-fr",
+      "language": "fr",
+      "condition": "clean",
+      "source": "FLEURS fr_fr"
+    },
+    {
+      "id": "hi-in",
+      "language": "hi",
+      "condition": "clean",
+      "source": "FLEURS hi_in"
+    },
+    {
+      "id": "ur-pk",
+      "language": "ur",
+      "condition": "clean",
+      "source": "FLEURS ur_pk"
+    },
+    {
+      "id": "zh-cn",
+      "language": "zh",
+      "condition": "clean",
+      "source": "FLEURS cmn_hans_cn"
+    }
+  ],
+  "models": {
+    "elevenlabs-scribe": "scribe_v2_realtime"
+  },
+  "labels": {
+    "elevenlabs-scribe": "ElevenLabs Scribe v2 Realtime"
+  },
+  "aggregates": {
+    "en-dictation/elevenlabs-scribe": {
+      "headline": {
+        "value": 0.12805601708995965,
+        "lo": 0.10900050994390617,
+        "hi": 0.149060195098739,
+        "speakers": 73
+      },
+      "formatted": 0.21919418617078124
+    },
+    "en-dictation-noise/elevenlabs-scribe": {
+      "headline": {
+        "value": 0.05849056603773585,
+        "lo": 0.0374468085106383,
+        "hi": 0.08227848101265822,
+        "speakers": 17
+      },
+      "formatted": 0.11561181434599156
+    },
+    "en-dictation-whisper/elevenlabs-scribe": {
+      "headline": {
+        "value": 0.09069767441860466,
+        "lo": 0.05388272583201268,
+        "hi": 0.12886597938144329,
+        "speakers": 16
+      },
+      "formatted": 0.16044260027662519
+    },
+    "ar-eg/elevenlabs-scribe": {
+      "headline": {
+        "value": 0.10204081632653061,
+        "lo": 0.05181347150259067,
+        "hi": 0.15763546798029557,
+        "speakers": 20
+      },
+      "formatted": 0.20425531914893616
+    },
+    "ar-sa/elevenlabs-scribe": {
+      "headline": {
+        "value": 0.34765625,
+        "lo": 0.23272727272727273,
+        "hi": 0.4744525547445255,
+        "speakers": 20
+      },
+      "formatted": 0.532608695652174
+    },
+    "ar-ae/elevenlabs-scribe": {
+      "headline": {
+        "value": 0.6176470588235294,
+        "lo": 0.5144508670520231,
+        "hi": 0.7231638418079096,
+        "speakers": 20
+      },
+      "formatted": 0.7606382978723404
+    },
+    "de-de/elevenlabs-scribe": {
+      "headline": {
+        "value": 0.04032258064516129,
+        "lo": 0.016129032258064516,
+        "hi": 0.06716417910447761,
+        "speakers": 20
+      },
+      "formatted": 0.07903780068728522
+    },
+    "es-419/elevenlabs-scribe": {
+      "headline": {
+        "value": 0.02608695652173913,
+        "lo": 0.008032128514056224,
+        "hi": 0.05069124423963134,
+        "speakers": 20
+      },
+      "formatted": 0.09090909090909091
+    },
+    "es-es/elevenlabs-scribe": {
+      "headline": {
+        "value": 0.08947368421052632,
+        "lo": 0.0106951871657754,
+        "hi": 0.2131979695431472,
+        "speakers": 20
+      },
+      "formatted": 0.12962962962962962
+    },
+    "es-pr/elevenlabs-scribe": {
+      "headline": {
+        "value": 0.08900523560209424,
+        "lo": 0.031413612565445025,
+        "hi": 0.15714285714285714,
+        "speakers": 20
+      },
+      "formatted": 0.22842639593908629
+    },
+    "fr-fr/elevenlabs-scribe": {
+      "headline": {
+        "value": 0.09057971014492754,
+        "lo": 0.047619047619047616,
+        "hi": 0.13937282229965156,
+        "speakers": 20
+      },
+      "formatted": 0.13504823151125403
+    },
+    "hi-in/elevenlabs-scribe": {
+      "headline": {
+        "value": 0.11842105263157894,
+        "lo": 0.047619047619047616,
+        "hi": 0.21296296296296297,
+        "speakers": 20
+      },
+      "formatted": 0.1643835616438356
+    },
+    "ur-pk/elevenlabs-scribe": {
+      "headline": {
+        "value": 0.22183098591549297,
+        "lo": 0.15725806451612903,
+        "hi": 0.28619528619528617,
+        "speakers": 20
+      },
+      "formatted": 0.23376623376623376
+    },
+    "zh-cn/elevenlabs-scribe": {
+      "headline": {
+        "value": 0.051771117166212535,
+        "lo": 0.024324324324324326,
+        "hi": 0.08163265306122448,
+        "speakers": 20
+      },
+      "formatted": 0.0725
+    },
+    "nonspeech/elevenlabs-scribe": {
+      "nonSpeechOutputRate": 0
+    },
+    "latency/elevenlabs-scribe": {
+      "waitP50": 398,
+      "waitP90": 493,
+      "connectP50": 685,
+      "connectP90": 765,
+      "n": 336
+    },
+    "failures/elevenlabs-scribe": {
+      "clips": 336,
+      "dropped": 0,
+      "failed": 0,
+      "droppedSets": []
+    }
+  }
+}

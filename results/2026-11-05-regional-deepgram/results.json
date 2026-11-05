@@ -1,0 +1,97 @@
+{
+  "date": "2026-11-05",
+  "runDates": [
+    "2026-11-05"
+  ],
+  "label": "regional-deepgram",
+  "options": {
+    "language": "regional",
+    "speed": 1,
+    "gate": true,
+    "runs": 1,
+    "clientProfile": "published"
+  },
+  "sets": [
+    {
+      "id": "ar-eg",
+      "language": "ar",
+      "condition": "clean",
+      "source": "FLEURS ar_eg"
+    },
+    {
+      "id": "ar-sa",
+      "language": "ar",
+      "condition": "clean",
+      "source": "SADA22 (Najdi)"
+    },
+    {
+      "id": "ar-ae",
+      "language": "ar",
+      "condition": "clean",
+      "source": "Casablanca (Emirati)"
+    },
+    {
+      "id": "es-419",
+      "language": "es",
+      "condition": "clean",
+      "source": "FLEURS es_419"
+    }
+  ],
+  "models": {
+    "deepgram": "nova-3"
+  },
+  "labels": {
+    "deepgram": "Deepgram Nova-3"
+  },
+  "aggregates": {
+    "ar-eg/deepgram": {
+      "headline": {
+        "value": 0.11224489795918367,
+        "lo": 0.0625,
+        "hi": 0.16161616161616163,
+        "speakers": 20
+      },
+      "formatted": 0.3659574468085106
+    },
+    "ar-sa/deepgram": {
+      "headline": {
+        "value": 0.3828125,
+        "lo": 0.28378378378378377,
+        "hi": 0.49523809523809526,
+        "speakers": 20
+      },
+      "formatted": 0.572463768115942
+    },
+    "ar-ae/deepgram": {
+      "headline": {
+        "value": 0.5705882352941176,
+        "lo": 0.47368421052631576,
+        "hi": 0.6666666666666666,
+        "speakers": 20
+      },
+      "formatted": 0.6382978723404256
+    },
+    "es-419/deepgram": {
+      "headline": {
+        "value": 0.0782608695652174,
+        "lo": 0.030837004405286344,
+        "hi": 0.14227642276422764,
+        "speakers": 20
+      },
+      "formatted": 0.16363636363636364
+    },
+    "latency/deepgram": {
+      "waitP50": 436,
+      "waitP90": 1368,
+      "connectP50": 776,
+      "connectP90": 1034,
+      "n": 80
+    },
+    "failures/deepgram": {
+      "clips": 80,
+      "dropped": 0,
+      "failed": 0,
+      "droppedSets": []
+    }
+  }
+}

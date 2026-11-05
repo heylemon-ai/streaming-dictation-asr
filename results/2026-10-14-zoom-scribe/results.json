@@ -1,0 +1,257 @@
+{
+  "date": "2026-10-14",
+  "runDates": [
+    "2026-10-14"
+  ],
+  "label": "zoom-scribe",
+  "options": {
+    "language": "clip",
+    "speed": 1,
+    "gate": true,
+    "runs": 1,
+    "clientProfile": "published"
+  },
+  "sets": [
+    {
+      "id": "en-dictation",
+      "language": "en",
+      "condition": "clean",
+      "source": "Team recordings of app-style dictation scripts"
+    },
+    {
+      "id": "en-dictation-noise",
+      "language": "en",
+      "condition": "noise",
+      "source": "Same scripts, background fan noise"
+    },
+    {
+      "id": "en-dictation-whisper",
+      "language": "en",
+      "condition": "whisper",
+      "source": "Same scripts, whispered"
+    },
+    {
+      "id": "nonspeech",
+      "language": "en",
+      "condition": "nonspeech",
+      "source": "Generated silence and noise (scripts/make-nonspeech.ts)"
+    },
+    {
+      "id": "ar-eg",
+      "language": "ar",
+      "condition": "clean",
+      "source": "FLEURS ar_eg"
+    },
+    {
+      "id": "ar-sa",
+      "language": "ar",
+      "condition": "clean",
+      "source": "SADA22 (Najdi)"
+    },
+    {
+      "id": "ar-ae",
+      "language": "ar",
+      "condition": "clean",
+      "source": "Casablanca (Emirati)"
+    },
+    {
+      "id": "de-de",
+      "language": "de",
+      "condition": "clean",
+      "source": "FLEURS de_de"
+    },
+    {
+      "id": "es-419",
+      "language": "es",
+      "condition": "clean",
+      "source": "FLEURS es_419"
+    },
+    {
+      "id": "es-es",
+      "language": "es",
+      "condition": "clean",
+      "source": "VoxPopuli"
+    },
+    {
+      "id": "es-pr",
+      "language": "es",
+      "condition": "clean",
+      "source": "OpenSLR SLR74"
+    },
+    {
+      "id": "fr-fr",
+      "language": "fr",
+      "condition": "clean",
+      "source": "FLEURS fr_fr"
+    },
+    {
+      "id": "hi-in",
+      "language": "hi",
+      "condition": "clean",
+      "source": "FLEURS hi_in"
+    },
+    {
+      "id": "ur-pk",
+      "language": "ur",
+      "condition": "clean",
+      "source": "FLEURS ur_pk"
+    },
+    {
+      "id": "zh-cn",
+      "language": "zh",
+      "condition": "clean",
+      "source": "FLEURS cmn_hans_cn"
+    }
+  ],
+  "models": {
+    "zoom-scribe": "zoom-scribe"
+  },
+  "labels": {
+    "zoom-scribe": "Zoom Scribe"
+  },
+  "aggregates": {
+    "en-dictation/zoom-scribe": {
+      "headline": {
+        "value": 0.074056491811061,
+        "lo": 0.06480774127832951,
+        "hi": 0.083435733595478,
+        "speakers": 73
+      },
+      "formatted": 0.13668910975740087
+    },
+    "en-dictation-noise/zoom-scribe": {
+      "headline": {
+        "value": 0.035849056603773584,
+        "lo": 0.021611001964636542,
+        "hi": 0.05201793721973094,
+        "speakers": 17
+      },
+      "formatted": 0.1021097046413502
+    },
+    "en-dictation-whisper/zoom-scribe": {
+      "headline": {
+        "value": 0.34651162790697676,
+        "lo": 0.19244823386114496,
+        "hi": 0.6016949152542372,
+        "speakers": 16
+      },
+      "formatted": 0.41562932226832644
+    },
+    "ar-eg/zoom-scribe": {
+      "headline": {
+        "value": 0.05102040816326531,
+        "lo": 0.016304347826086956,
+        "hi": 0.08717948717948718,
+        "speakers": 20
+      },
+      "formatted": 0.15319148936170213
+    },
+    "ar-sa/zoom-scribe": {
+      "headline": {
+        "value": 0.296875,
+        "lo": 0.19291338582677164,
+        "hi": 0.4132231404958678,
+        "speakers": 20
+      },
+      "formatted": 0.427536231884058
+    },
+    "ar-ae/zoom-scribe": {
+      "headline": {
+        "value": 0.5176470588235295,
+        "lo": 0.4146341463414634,
+        "hi": 0.625,
+        "speakers": 20
+      },
+      "formatted": 0.6702127659574468
+    },
+    "de-de/zoom-scribe": {
+      "headline": {
+        "value": 0.04838709677419355,
+        "lo": 0.01532567049808429,
+        "hi": 0.09056603773584905,
+        "speakers": 20
+      },
+      "formatted": 0.07560137457044673
+    },
+    "es-419/zoom-scribe": {
+      "headline": {
+        "value": 0.06086956521739131,
+        "lo": 0.022026431718061675,
+        "hi": 0.11206896551724138,
+        "speakers": 20
+      },
+      "formatted": 0.16363636363636364
+    },
+    "es-es/zoom-scribe": {
+      "headline": {
+        "value": 0.1,
+        "lo": 0.0213903743315508,
+        "hi": 0.2233502538071066,
+        "speakers": 20
+      },
+      "formatted": 0.19444444444444445
+    },
+    "es-pr/zoom-scribe": {
+      "headline": {
+        "value": 0.041884816753926704,
+        "lo": 0.010526315789473684,
+        "hi": 0.08133971291866028,
+        "speakers": 20
+      },
+      "formatted": 0.17258883248730963
+    },
+    "fr-fr/zoom-scribe": {
+      "headline": {
+        "value": 0.050724637681159424,
+        "lo": 0.02127659574468085,
+        "hi": 0.08487084870848709,
+        "speakers": 20
+      },
+      "formatted": 0.08681672025723473
+    },
+    "hi-in/zoom-scribe": {
+      "headline": {
+        "value": 0.34649122807017546,
+        "lo": 0.23555555555555555,
+        "hi": 0.4657534246575342,
+        "speakers": 20
+      },
+      "formatted": 0.2762557077625571
+    },
+    "ur-pk/zoom-scribe": {
+      "headline": {
+        "value": 1.0246478873239437,
+        "lo": 1.007462686567164,
+        "hi": 1.0451388888888888,
+        "speakers": 20
+      },
+      "languageNotSupported": true,
+      "formatted": 1.0357142857142858
+    },
+    "zh-cn/zoom-scribe": {
+      "headline": {
+        "value": 0.0326975476839237,
+        "lo": 0.01488095238095238,
+        "hi": 0.05154639175257732,
+        "speakers": 20
+      },
+      "formatted": 0.0525
+    },
+    "nonspeech/zoom-scribe": {
+      "nonSpeechOutputRate": 0
+    },
+    "latency/zoom-scribe": {
+      "waitP50": 407,
+      "waitP90": 616,
+      "connectP50": 1406,
+      "connectP90": 1655,
+      "n": 336
+    },
+    "failures/zoom-scribe": {
+      "clips": 336,
+      "dropped": 0,
+      "failed": 0,
+      "droppedSets": []
+    }
+  }
+}

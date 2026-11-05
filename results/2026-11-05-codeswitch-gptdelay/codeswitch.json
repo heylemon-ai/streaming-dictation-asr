@@ -1,0 +1,95 @@
+{
+  "date": "2026-11-05",
+  "engines": [
+    {
+      "id": "openai-live-transcribe-low",
+      "label": "OpenAI GPT-Live-Transcribe (Low delay)"
+    },
+    {
+      "id": "openai-live-transcribe-minimal",
+      "label": "OpenAI GPT-Live-Transcribe (Minimal delay)"
+    }
+  ],
+  "aggregates": {
+    "english/both/openai-live-transcribe-low": {
+      "fair": 85,
+      "languageLost": 1,
+      "englishLost": 0,
+      "otherLost": 1,
+      "firstLost": 0,
+      "secondLost": 1
+    },
+    "english/both/openai-live-transcribe-minimal": {
+      "fair": 85,
+      "languageLost": 1,
+      "englishLost": 0,
+      "otherLost": 1,
+      "firstLost": 0,
+      "secondLost": 1
+    },
+    "english/en/openai-live-transcribe-low": {
+      "fair": 85,
+      "languageLost": 1,
+      "englishLost": 0,
+      "otherLost": 1,
+      "firstLost": 0,
+      "secondLost": 1
+    },
+    "english/en/openai-live-transcribe-minimal": {
+      "fair": 85,
+      "languageLost": 2,
+      "englishLost": 0,
+      "otherLost": 2,
+      "firstLost": 1,
+      "secondLost": 1
+    },
+    "english/auto/openai-live-transcribe-low": {
+      "fair": 85,
+      "languageLost": 1,
+      "englishLost": 0,
+      "otherLost": 1,
+      "firstLost": 0,
+      "secondLost": 1
+    },
+    "english/auto/openai-live-transcribe-minimal": {
+      "fair": 85,
+      "languageLost": 1,
+      "englishLost": 0,
+      "otherLost": 1,
+      "firstLost": 0,
+      "secondLost": 1
+    },
+    "pair/both/openai-live-transcribe-low": {
+      "fair": 232,
+      "languageLost": 1,
+      "englishLost": 0,
+      "otherLost": 1,
+      "firstLost": 0,
+      "secondLost": 1
+    },
+    "pair/both/openai-live-transcribe-minimal": {
+      "fair": 232,
+      "languageLost": 2,
+      "englishLost": 0,
+      "otherLost": 2,
+      "firstLost": 1,
+      "secondLost": 1
+    },
+    "pair/auto/openai-live-transcribe-low": {
+      "fair": 232,
+      "languageLost": 1,
+      "englishLost": 0,
+      "otherLost": 1,
+      "firstLost": 0,
+      "secondLost": 1
+    },
+    "pair/auto/openai-live-transcribe-minimal": {
+      "fair": 232,
+      "languageLost": 2,
+      "englishLost": 0,
+      "otherLost": 2,
+      "firstLost": 1,
+      "secondLost": 2
+    }
+  }
+}

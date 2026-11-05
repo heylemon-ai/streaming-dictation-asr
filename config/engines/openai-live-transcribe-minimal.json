@@ -1,0 +1,63 @@
+{
+  "$comment": "Same as openai-live-transcribe, with transcription.delay set to \"minimal\" (OpenAI: lower delay gives earlier text; higher can be more accurate). The default config sends no delay.",
+  "id": "openai-live-transcribe-minimal",
+  "label": "OpenAI GPT-Live-Transcribe (Minimal delay)",
+  "kind": "websocket",
+  "model": "gpt-live-transcribe",
+  "modelEnv": "OPENAI_LIVE_TRANSCRIBE_MODEL",
+  "env": [
+    "OPENAI_API_KEY"
+  ],
+  "sampleRate": 24000,
+  "url": "wss://api.openai.com/v1/realtime?intent=transcription",
+  "headers": {
+    "Authorization": "Bearer ${env:OPENAI_API_KEY}"
+  },
+  "setup": {
+    "type": "session.update",
+    "session": {
+      "type": "transcription",
+      "audio": {
+        "input": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "transcription": {
+            "model": "${model}",
+            "languages": "${languages_json}",
+            "delay": "minimal"
+          },
+          "turn_detection": null
+        }
+      }
+    }
+  },
+  "readyOn": {
+    "type": "session.updated"
+  },
+  "audio": {
+    "type": "input_audio_buffer.append",
+    "audio": "${audio_base64}"
+  },
+  "end": {
+    "type": "input_audio_buffer.commit"
+  },
+  "final": {
+    "match": {
+      "type": "conversation.item.input_audio_transcription.completed"
+    },
+    "textPath": "transcript"
+  },
+  "done": {
+    "match": {
+      "type": "conversation.item.input_audio_transcription.completed"
+    }
+  },
+  "error": {
+    "match": {
+      "type": "error"
+    },
+    "messagePath": "error.message"
+  }
+}

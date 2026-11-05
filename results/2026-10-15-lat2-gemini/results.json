@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-15",
+  "runDates": [
+    "2026-10-15"
+  ],
+  "label": "lat2-gemini",
+  "options": {
+    "language": "clip",
+    "speed": 1,
+    "gate": true,
+    "runs": 1,
+    "clientProfile": "published"
+  },
+  "sets": [
+    {
+      "id": "en-dictation",
+      "language": "en",
+      "condition": "clean",
+      "source": "Team recordings of app-style dictation scripts"
+    }
+  ],
+  "models": {
+    "gemini": "gemini-3.5-transcribe-live"
+  },
+  "labels": {
+    "gemini": "Gemini 3.5 Transcribe"
+  },
+  "aggregates": {
+    "en-dictation/gemini": {
+      "headline": {
+        "value": 0.07258938244853738,
+        "lo": 0.05953729170037211,
+        "hi": 0.08654708520179372,
+        "speakers": 50
+      },
+      "formatted": 0.09649979082415283
+    },
+    "latency/gemini": {
+      "waitP50": 756,
+      "waitP90": 1121,
+      "connectP50": 780,
+      "connectP90": 1303,
+      "n": 50
+    },
+    "failures/gemini": {
+      "clips": 50,
+      "dropped": 0,
+      "failed": 0,
+      "droppedSets": []
+    }
+  }
+}

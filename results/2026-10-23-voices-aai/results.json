@@ -1,0 +1,148 @@
+{
+  "date": "2026-10-23",
+  "runDates": [
+    "2026-10-23"
+  ],
+  "label": "voices-aai",
+  "options": {
+    "language": "clip",
+    "speed": 1,
+    "gate": true,
+    "runs": 1,
+    "clientProfile": "published"
+  },
+  "sets": [
+    {
+      "id": "voices-clean",
+      "language": "en",
+      "condition": "clean",
+      "source": "VOiCES devkit (CC BY 4.0), room 4, original recording"
+    },
+    {
+      "id": "voices-far",
+      "language": "en",
+      "condition": "far",
+      "source": "VOiCES devkit (CC BY 4.0), room 4, far microphone, no distractor"
+    },
+    {
+      "id": "voices-far-babble",
+      "language": "en",
+      "condition": "far+babble",
+      "source": "VOiCES devkit (CC BY 4.0), room 4, far microphone, babble"
+    },
+    {
+      "id": "voices-far-tv",
+      "language": "en",
+      "condition": "far+tv",
+      "source": "VOiCES devkit (CC BY 4.0), room 4, far microphone, television"
+    }
+  ],
+  "models": {
+    "assemblyai-3-5-pro": "universal-3-5-pro",
+    "assemblyai-3-6-pro": "universal-3-6-pro"
+  },
+  "labels": {
+    "assemblyai-3-5-pro": "AssemblyAI Universal-3.5 Pro",
+    "assemblyai-3-6-pro": "AssemblyAI Universal-3.6 Pro"
+  },
+  "aggregates": {
+    "voices-clean/assemblyai-3-5-pro": {
+      "headline": {
+        "value": 0.03698501872659176,
+        "lo": 0.026897214217098942,
+        "hi": 0.04909133821099835,
+        "speakers": 100
+      },
+      "formatted": 0.26919475655430714
+    },
+    "voices-clean/assemblyai-3-6-pro": {
+      "headline": {
+        "value": 0.038623595505617975,
+        "lo": 0.02850930176371104,
+        "hi": 0.05102040816326531,
+        "speakers": 100
+      },
+      "formatted": 0.26591760299625467
+    },
+    "voices-far/assemblyai-3-5-pro": {
+      "headline": {
+        "value": 0.0650749063670412,
+        "lo": 0.04626758883854042,
+        "hi": 0.08809963099630996,
+        "speakers": 100
+      },
+      "formatted": 0.2816011235955056
+    },
+    "voices-far/assemblyai-3-6-pro": {
+      "headline": {
+        "value": 0.06367041198501873,
+        "lo": 0.04497175141242938,
+        "hi": 0.08646953405017921,
+        "speakers": 100
+      },
+      "formatted": 0.27972846441947563
+    },
+    "voices-far-babble/assemblyai-3-5-pro": {
+      "headline": {
+        "value": 0.5334737827715356,
+        "lo": 0.4667766258246937,
+        "hi": 0.5963559915907498,
+        "speakers": 100
+      },
+      "formatted": 0.6624531835205992
+    },
+    "voices-far-babble/assemblyai-3-6-pro": {
+      "headline": {
+        "value": 0.6044007490636704,
+        "lo": 0.5326765977895243,
+        "hi": 0.6734787600459242,
+        "speakers": 100
+      },
+      "formatted": 0.6985018726591761
+    },
+    "voices-far-tv/assemblyai-3-5-pro": {
+      "headline": {
+        "value": 0.1374063670411985,
+        "lo": 0.10696458283812693,
+        "hi": 0.17027348394768133,
+        "speakers": 100
+      },
+      "formatted": 0.3508895131086142
+    },
+    "voices-far-tv/assemblyai-3-6-pro": {
+      "headline": {
+        "value": 0.14442883895131087,
+        "lo": 0.11279097672186225,
+        "hi": 0.18181818181818182,
+        "speakers": 100
+      },
+      "formatted": 0.3541666666666667
+    },
+    "latency/assemblyai-3-5-pro": {
+      "waitP50": 821,
+      "waitP90": 1288,
+      "connectP50": 1209,
+      "connectP90": 1296,
+      "n": 400
+    },
+    "latency/assemblyai-3-6-pro": {
+      "waitP50": 891,
+      "waitP90": 1306,
+      "connectP50": 1223,
+      "connectP90": 1390,
+      "n": 400
+    },
+    "failures/assemblyai-3-5-pro": {
+      "clips": 400,
+      "dropped": 0,
+      "failed": 0,
+      "droppedSets": []
+    },
+    "failures/assemblyai-3-6-pro": {
+      "clips": 400,
+      "dropped": 0,
+      "failed": 0,
+      "droppedSets": []
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "date": "2026-10-20",
+  "runDates": [
+    "2026-10-20"
+  ],
+  "label": "oaw-rtw",
+  "options": {
+    "language": "clip",
+    "speed": 1,
+    "gate": true,
+    "runs": 1,
+    "clientProfile": "published"
+  },
+  "sets": [
+    {
+      "id": "en-dictation",
+      "language": "en",
+      "condition": "clean",
+      "source": "Team recordings of app-style dictation scripts"
+    },
+    {
+      "id": "en-dictation-whisper",
+      "language": "en",
+      "condition": "whisper",
+      "source": "Same scripts, whispered"
+    }
+  ],
+  "models": {
+    "openai-realtime-whisper": "gpt-realtime-whisper"
+  },
+  "labels": {
+    "openai-realtime-whisper": "OpenAI GPT-Realtime-Whisper"
+  },
+  "aggregates": {
+    "en-dictation/openai-realtime-whisper": {
+      "headline": {
+        "value": 0.08574524067481815,
+        "lo": 0.07299148154334391,
+        "hi": 0.09826074030028244,
+        "speakers": 50
+      },
+      "formatted": 0.12745781620415564
+    },
+    "en-dictation-whisper/openai-realtime-whisper": {
+      "headline": {
+        "value": 0.08682170542635659,
+        "lo": 0.06403162055335969,
+        "hi": 0.1072463768115942,
+        "speakers": 16
+      },
+      "formatted": 0.1396957123098202
+    },
+    "latency/openai-realtime-whisper": {
+      "waitP50": 775,
+      "waitP90": 881,
+      "connectP50": 1461,
+      "connectP90": 1734,
+      "n": 66
+    },
+    "failures/openai-realtime-whisper": {
+      "clips": 66,
+      "dropped": 0,
+      "failed": 0,
+      "droppedSets": []
+    }
+  }
+}

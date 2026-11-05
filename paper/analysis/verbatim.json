@@ -1,0 +1,1397 @@
+{
+ "reviewed": 106,
+ "ofClips": 106,
+ "moved": {
+  "clips": 85,
+  "scriptWords": 10776,
+  "edits": 453,
+  "ins": 242,
+  "del": 88,
+  "sub": 123,
+  "overrides": 6
+ },
+ "rankAgreement": {
+  "en-dictation": 0.746,
+  "en-dictation-noise": 0.902,
+  "en-dictation-whisper": 0.993,
+  "all": 0.963
+ },
+ "wer": {
+  "en-dictation": {
+   "qwen": {
+    "clips": 73,
+    "script": 13.6,
+    "said": 9.8,
+    "saidCI": [
+     7.2,
+     12.9
+    ],
+    "diff": -3.9,
+    "diffCI": [
+     -4.7,
+     -3.2
+    ],
+    "saidSub": 4,
+    "saidDel": 2.1,
+    "saidIns": 3.7,
+    "scriptIns": 6
+   },
+   "meta": {
+    "clips": 73,
+    "script": 9.5,
+    "said": 5.5,
+    "saidCI": [
+     4.7,
+     6.4
+    ],
+    "diff": -3.9,
+    "diffCI": [
+     -4.7,
+     -3.1
+    ],
+    "saidSub": 2.5,
+    "saidDel": 0.5,
+    "saidIns": 2.5,
+    "scriptIns": 4.9
+   },
+   "gemini": {
+    "clips": 73,
+    "script": 6.9,
+    "said": 3.7,
+    "saidCI": [
+     3,
+     4.4
+    ],
+    "diff": -3.1,
+    "diffCI": [
+     -4,
+     -2.4
+    ],
+    "saidSub": 1.3,
+    "saidDel": 0.8,
+    "saidIns": 1.6,
+    "scriptIns": 3.7
+   },
+   "gemini-smart": {
+    "clips": 73,
+    "script": 3.9,
+    "said": 4.6,
+    "saidCI": [
+     3.8,
+     5.5
+    ],
+    "diff": 0.8,
+    "diffCI": [
+     0,
+     1.6
+    ],
+    "saidSub": 1.5,
+    "saidDel": 2.8,
+    "saidIns": 0.4,
+    "scriptIns": 0.7
+   },
+   "whisper-self-hosted": {
+    "clips": 73,
+    "script": 8.3,
+    "said": 6.1,
+    "saidCI": [
+     4.9,
+     7.7
+    ],
+    "diff": -2.2,
+    "diffCI": [
+     -3,
+     -1.4
+    ],
+    "saidSub": 2.1,
+    "saidDel": 2.5,
+    "saidIns": 1.5,
+    "scriptIns": 2.9
+   },
+   "assemblyai-3-5-pro": {
+    "clips": 73,
+    "script": 9,
+    "said": 5.6,
+    "saidCI": [
+     4.8,
+     6.4
+    ],
+    "diff": -3.4,
+    "diffCI": [
+     -4.1,
+     -2.6
+    ],
+    "saidSub": 2.2,
+    "saidDel": 0.9,
+    "saidIns": 2.5,
+    "scriptIns": 4.7
+   },
+   "assemblyai-3-6-pro": {
+    "clips": 73,
+    "script": 8.2,
+    "said": 4.8,
+    "saidCI": [
+     4,
+     5.6
+    ],
+    "diff": -3.4,
+    "diffCI": [
+     -4.2,
+     -2.7
+    ],
+    "saidSub": 1.9,
+    "saidDel": 0.9,
+    "saidIns": 1.9,
+    "scriptIns": 4
+   },
+   "deepgram": {
+    "clips": 73,
+    "script": 13.6,
+    "said": 9.6,
+    "saidCI": [
+     8.3,
+     10.8
+    ],
+    "diff": -4,
+    "diffCI": [
+     -4.7,
+     -3.3
+    ],
+    "saidSub": 4.7,
+    "saidDel": 1.9,
+    "saidIns": 3,
+    "scriptIns": 5.3
+   },
+   "elevenlabs-scribe-clean": {
+    "clips": 73,
+    "script": 5.1,
+    "said": 4.5,
+    "saidCI": [
+     3.8,
+     5.4
+    ],
+    "diff": -0.5,
+    "diffCI": [
+     -1.4,
+     0.2
+    ],
+    "saidSub": 1.6,
+    "saidDel": 2.2,
+    "saidIns": 0.7,
+    "scriptIns": 1.4
+   },
+   "elevenlabs-scribe": {
+    "clips": 73,
+    "script": 12.8,
+    "said": 8.8,
+    "saidCI": [
+     7.1,
+     10.8
+    ],
+    "diff": -4,
+    "diffCI": [
+     -4.8,
+     -3.3
+    ],
+    "saidSub": 1.8,
+    "saidDel": 1.3,
+    "saidIns": 5.7,
+    "scriptIns": 8.1
+   },
+   "openai-live-transcribe-low": {
+    "clips": 73,
+    "script": 7.3,
+    "said": 5,
+    "saidCI": [
+     4.2,
+     5.9
+    ],
+    "diff": -2.3,
+    "diffCI": [
+     -2.9,
+     -1.7
+    ],
+    "saidSub": 2.4,
+    "saidDel": 1.2,
+    "saidIns": 1.4,
+    "scriptIns": 3.2
+   },
+   "openai-realtime-whisper": {
+    "clips": 73,
+    "script": 8.2,
+    "said": 5,
+    "saidCI": [
+     4.1,
+     5.9
+    ],
+    "diff": -3.2,
+    "diffCI": [
+     -4,
+     -2.4
+    ],
+    "saidSub": 2.3,
+    "saidDel": 0.8,
+    "saidIns": 1.9,
+    "scriptIns": 4.1
+   },
+   "zoom-scribe": {
+    "clips": 73,
+    "script": 7.4,
+    "said": 4.8,
+    "saidCI": [
+     4.1,
+     5.6
+    ],
+    "diff": -2.6,
+    "diffCI": [
+     -3.2,
+     -2
+    ],
+    "saidSub": 1.6,
+    "saidDel": 1.5,
+    "saidIns": 1.8,
+    "scriptIns": 3.4
+   },
+   "whisper": {
+    "clips": 73,
+    "script": 8.7,
+    "said": 6.9,
+    "saidCI": [
+     5.6,
+     8.5
+    ],
+    "diff": -1.8,
+    "diffCI": [
+     -2.7,
+     -1
+    ],
+    "saidSub": 2.2,
+    "saidDel": 3.5,
+    "saidIns": 1.2,
+    "scriptIns": 2.4
+   },
+   "openai-whisper-1-split": {
+    "clips": 73,
+    "script": 6.5,
+    "said": 5.4,
+    "saidCI": [
+     4.6,
+     6.3
+    ],
+    "diff": -1.1,
+    "diffCI": [
+     -1.7,
+     -0.5
+    ],
+    "saidSub": 2.2,
+    "saidDel": 2.1,
+    "saidIns": 1.1,
+    "scriptIns": 2
+   },
+   "whisper-self-hosted-vad": {
+    "clips": 73,
+    "script": 8,
+    "said": 6.1,
+    "saidCI": [
+     5.1,
+     7.3
+    ],
+    "diff": -2,
+    "diffCI": [
+     -2.8,
+     -1.2
+    ],
+    "saidSub": 2.3,
+    "saidDel": 2.4,
+    "saidIns": 1.4,
+    "scriptIns": 2.7
+   },
+   "whisper-self-hosted-ten": {
+    "clips": 73,
+    "script": 7.8,
+    "said": 5.9,
+    "saidCI": [
+     4.7,
+     7.3
+    ],
+    "diff": -1.9,
+    "diffCI": [
+     -2.8,
+     -1.1
+    ],
+    "saidSub": 2.1,
+    "saidDel": 2.6,
+    "saidIns": 1.2,
+    "scriptIns": 2.5
+   },
+   "whisper-self-hosted-ten-vad": {
+    "clips": 73,
+    "script": 7.2,
+    "said": 5.6,
+    "saidCI": [
+     4.7,
+     6.4
+    ],
+    "diff": -1.6,
+    "diffCI": [
+     -2.4,
+     -0.8
+    ],
+    "saidSub": 2.1,
+    "saidDel": 2,
+    "saidIns": 1.5,
+    "scriptIns": 2.7
+   },
+   "openai-whisper-1": {
+    "clips": 73,
+    "script": 5.5,
+    "said": 5.2,
+    "saidCI": [
+     4.3,
+     6.1
+    ],
+    "diff": -0.2,
+    "diffCI": [
+     -1.1,
+     0.6
+    ],
+    "saidSub": 2.1,
+    "saidDel": 2.4,
+    "saidIns": 0.6,
+    "scriptIns": 1.2
+   }
+  },
+  "en-dictation-noise": {
+   "qwen": {
+    "clips": 17,
+    "script": 7,
+    "said": 5.1,
+    "saidCI": [
+     3.7,
+     6.6
+    ],
+    "diff": -1.9,
+    "diffCI": [
+     -3.1,
+     -0.8
+    ],
+    "saidSub": 3,
+    "saidDel": 0.6,
+    "saidIns": 1.5,
+    "scriptIns": 2
+   },
+   "meta": {
+    "clips": 17,
+    "script": 7.4,
+    "said": 4.8,
+    "saidCI": [
+     3.1,
+     6.8
+    ],
+    "diff": -2.6,
+    "diffCI": [
+     -4.1,
+     -1.4
+    ],
+    "saidSub": 2.9,
+    "saidDel": 0.5,
+    "saidIns": 1.4,
+    "scriptIns": 2.2
+   },
+   "gemini": {
+    "clips": 17,
+    "script": 2.5,
+    "said": 1.9,
+    "saidCI": [
+     0.8,
+     3.1
+    ],
+    "diff": -0.7,
+    "diffCI": [
+     -1.7,
+     0.5
+    ],
+    "saidSub": 1.2,
+    "saidDel": 0.7,
+    "saidIns": 0,
+    "scriptIns": 0.5
+   },
+   "gemini-smart": {
+    "clips": 17,
+    "script": 3.2,
+    "said": 3.3,
+    "saidCI": [
+     1.7,
+     5.3
+    ],
+    "diff": 0.1,
+    "diffCI": [
+     -1.2,
+     1.4
+    ],
+    "saidSub": 1.8,
+    "saidDel": 1.5,
+    "saidIns": 0,
+    "scriptIns": 0.3
+   },
+   "whisper-self-hosted": {
+    "clips": 17,
+    "script": 6.5,
+    "said": 4.6,
+    "saidCI": [
+     2.8,
+     6.8
+    ],
+    "diff": -1.9,
+    "diffCI": [
+     -3.5,
+     -0.5
+    ],
+    "saidSub": 2.5,
+    "saidDel": 1,
+    "saidIns": 1,
+    "scriptIns": 1.5
+   },
+   "assemblyai-3-5-pro": {
+    "clips": 17,
+    "script": 4.3,
+    "said": 2,
+    "saidCI": [
+     1.3,
+     2.5
+    ],
+    "diff": -2.4,
+    "diffCI": [
+     -4.1,
+     -1
+    ],
+    "saidSub": 0.7,
+    "saidDel": 0.7,
+    "saidIns": 0.5,
+    "scriptIns": 1.1
+   },
+   "assemblyai-3-6-pro": {
+    "clips": 17,
+    "script": 4.1,
+    "said": 1.7,
+    "saidCI": [
+     1.1,
+     2.2
+    ],
+    "diff": -2.4,
+    "diffCI": [
+     -4.1,
+     -1.1
+    ],
+    "saidSub": 0.7,
+    "saidDel": 0.6,
+    "saidIns": 0.4,
+    "scriptIns": 1
+   },
+   "deepgram": {
+    "clips": 17,
+    "script": 11.4,
+    "said": 9.3,
+    "saidCI": [
+     6.8,
+     11.6
+    ],
+    "diff": -2.1,
+    "diffCI": [
+     -3.5,
+     -1.1
+    ],
+    "saidSub": 5.2,
+    "saidDel": 2,
+    "saidIns": 2.2,
+    "scriptIns": 2.6
+   },
+   "elevenlabs-scribe-clean": {
+    "clips": 17,
+    "script": 4.5,
+    "said": 2.5,
+    "saidCI": [
+     1.4,
+     3.8
+    ],
+    "diff": -2,
+    "diffCI": [
+     -3.8,
+     -0.5
+    ],
+    "saidSub": 1.3,
+    "saidDel": 0.7,
+    "saidIns": 0.6,
+    "scriptIns": 1
+   },
+   "elevenlabs-scribe": {
+    "clips": 17,
+    "script": 5.8,
+    "said": 3.3,
+    "saidCI": [
+     2,
+     4.8
+    ],
+    "diff": -2.6,
+    "diffCI": [
+     -4.2,
+     -1.4
+    ],
+    "saidSub": 1.8,
+    "saidDel": 0.4,
+    "saidIns": 1.1,
+    "scriptIns": 1.9
+   },
+   "openai-live-transcribe-low": {
+    "clips": 17,
+    "script": 3.6,
+    "said": 3.6,
+    "saidCI": [
+     2.1,
+     5.4
+    ],
+    "diff": 0,
+    "diffCI": [
+     -1.3,
+     1.3
+    ],
+    "saidSub": 2.6,
+    "saidDel": 0.7,
+    "saidIns": 0.2,
+    "scriptIns": 0.6
+   },
+   "openai-realtime-whisper": {
+    "clips": 17,
+    "script": 4.6,
+    "said": 3.7,
+    "saidCI": [
+     1.9,
+     5.8
+    ],
+    "diff": -0.9,
+    "diffCI": [
+     -1.9,
+     0.3
+    ],
+    "saidSub": 2.4,
+    "saidDel": 0.9,
+    "saidIns": 0.4,
+    "scriptIns": 0.8
+   },
+   "zoom-scribe": {
+    "clips": 17,
+    "script": 3.6,
+    "said": 2.3,
+    "saidCI": [
+     1.1,
+     3.8
+    ],
+    "diff": -1.2,
+    "diffCI": [
+     -3.2,
+     0.7
+    ],
+    "saidSub": 1.1,
+    "saidDel": 0.8,
+    "saidIns": 0.4,
+    "scriptIns": 0.7
+   },
+   "whisper": {
+    "clips": 17,
+    "script": 7,
+    "said": 5,
+    "saidCI": [
+     3.3,
+     6.6
+    ],
+    "diff": -2,
+    "diffCI": [
+     -3.2,
+     -1
+    ],
+    "saidSub": 3,
+    "saidDel": 0.9,
+    "saidIns": 1,
+    "scriptIns": 1.5
+   },
+   "openai-whisper-1-split": {
+    "clips": 17,
+    "script": 6.3,
+    "said": 4.4,
+    "saidCI": [
+     2.5,
+     6.5
+    ],
+    "diff": -1.9,
+    "diffCI": [
+     -3.6,
+     -0.5
+    ],
+    "saidSub": 2.2,
+    "saidDel": 0.7,
+    "saidIns": 1.5,
+    "scriptIns": 2.1
+   },
+   "whisper-self-hosted-vad": {
+    "clips": 17,
+    "script": 5.3,
+    "said": 3.4,
+    "saidCI": [
+     2.1,
+     4.7
+    ],
+    "diff": -1.9,
+    "diffCI": [
+     -3.5,
+     -0.5
+    ],
+    "saidSub": 1.9,
+    "saidDel": 1.2,
+    "saidIns": 0.3,
+    "scriptIns": 0.8
+   },
+   "whisper-self-hosted-ten": {
+    "clips": 17,
+    "script": 5.9,
+    "said": 4,
+    "saidCI": [
+     2.1,
+     6.2
+    ],
+    "diff": -1.9,
+    "diffCI": [
+     -3.5,
+     -0.6
+    ],
+    "saidSub": 2.1,
+    "saidDel": 1,
+    "saidIns": 0.9,
+    "scriptIns": 1.4
+   },
+   "whisper-self-hosted-ten-vad": {
+    "clips": 17,
+    "script": 5.9,
+    "said": 4.1,
+    "saidCI": [
+     2.6,
+     5.8
+    ],
+    "diff": -1.8,
+    "diffCI": [
+     -3.2,
+     -0.5
+    ],
+    "saidSub": 2.2,
+    "saidDel": 1.1,
+    "saidIns": 0.7,
+    "scriptIns": 1.1
+   },
+   "openai-whisper-1": {
+    "clips": 17,
+    "script": 5.3,
+    "said": 3.7,
+    "saidCI": [
+     2.5,
+     5
+    ],
+    "diff": -1.5,
+    "diffCI": [
+     -3,
+     0.1
+    ],
+    "saidSub": 2.4,
+    "saidDel": 0.7,
+    "saidIns": 0.7,
+    "scriptIns": 1.1
+   }
+  },
+  "en-dictation-whisper": {
+   "qwen": {
+    "clips": 16,
+    "script": 46.6,
+    "said": 45.5,
+    "saidCI": [
+     31.6,
+     66.5
+    ],
+    "diff": -1,
+    "diffCI": [
+     -1.7,
+     -0.5
+    ],
+    "saidSub": 10.7,
+    "saidDel": 31.9,
+    "saidIns": 2.9,
+    "scriptIns": 3.3
+   },
+   "meta": {
+    "clips": 16,
+    "script": 11.3,
+    "said": 9.9,
+    "saidCI": [
+     7.7,
+     12
+    ],
+    "diff": -1.4,
+    "diffCI": [
+     -2.2,
+     -0.8
+    ],
+    "saidSub": 6.4,
+    "saidDel": 0.8,
+    "saidIns": 2.7,
+    "scriptIns": 3.1
+   },
+   "gemini": {
+    "clips": 16,
+    "script": 5,
+    "said": 4.6,
+    "saidCI": [
+     2.4,
+     6.1
+    ],
+    "diff": -0.4,
+    "diffCI": [
+     -1.1,
+     0.3
+    ],
+    "saidSub": 2.6,
+    "saidDel": 1,
+    "saidIns": 1,
+    "scriptIns": 1.1
+   },
+   "gemini-smart": {
+    "clips": 16,
+    "script": 4.2,
+    "said": 4.4,
+    "saidCI": [
+     2.9,
+     6.4
+    ],
+    "diff": 0.2,
+    "diffCI": [
+     -0.4,
+     1.1
+    ],
+    "saidSub": 1.5,
+    "saidDel": 2.1,
+    "saidIns": 0.8,
+    "scriptIns": 0.7
+   },
+   "whisper-self-hosted": {
+    "clips": 16,
+    "script": 10.1,
+    "said": 9.3,
+    "saidCI": [
+     6.2,
+     12.5
+    ],
+    "diff": -0.8,
+    "diffCI": [
+     -1.3,
+     -0.3
+    ],
+    "saidSub": 5.3,
+    "saidDel": 1.8,
+    "saidIns": 2.2,
+    "scriptIns": 2.3
+   },
+   "assemblyai-3-5-pro": {
+    "clips": 16,
+    "script": 30.9,
+    "said": 29.9,
+    "saidCI": [
+     13.6,
+     55.7
+    ],
+    "diff": -1,
+    "diffCI": [
+     -1.6,
+     -0.5
+    ],
+    "saidSub": 2.6,
+    "saidDel": 25.4,
+    "saidIns": 1.9,
+    "scriptIns": 2.2
+   },
+   "assemblyai-3-6-pro": {
+    "clips": 16,
+    "script": 30.5,
+    "said": 29.5,
+    "saidCI": [
+     13.1,
+     54.4
+    ],
+    "diff": -1,
+    "diffCI": [
+     -1.6,
+     -0.5
+    ],
+    "saidSub": 2.6,
+    "saidDel": 25.5,
+    "saidIns": 1.5,
+    "scriptIns": 1.8
+   },
+   "deepgram": {
+    "clips": 16,
+    "script": 19.8,
+    "said": 18.3,
+    "saidCI": [
+     14.3,
+     22
+    ],
+    "diff": -1.5,
+    "diffCI": [
+     -2.2,
+     -0.9
+    ],
+    "saidSub": 11,
+    "saidDel": 2.4,
+    "saidIns": 4.9,
+    "scriptIns": 5.3
+   },
+   "elevenlabs-scribe-clean": {
+    "clips": 16,
+    "script": 7.1,
+    "said": 6.6,
+    "saidCI": [
+     2.6,
+     10.8
+    ],
+    "diff": -0.5,
+    "diffCI": [
+     -1.3,
+     0
+    ],
+    "saidSub": 3.3,
+    "saidDel": 1.9,
+    "saidIns": 1.5,
+    "scriptIns": 1.4
+   },
+   "elevenlabs-scribe": {
+    "clips": 16,
+    "script": 9.1,
+    "said": 7.6,
+    "saidCI": [
+     4.1,
+     10.7
+    ],
+    "diff": -1.5,
+    "diffCI": [
+     -2.4,
+     -0.8
+    ],
+    "saidSub": 3.7,
+    "saidDel": 0.5,
+    "saidIns": 3.4,
+    "scriptIns": 3.8
+   },
+   "openai-live-transcribe-low": {
+    "clips": 16,
+    "script": 8.8,
+    "said": 8.1,
+    "saidCI": [
+     6.3,
+     9.5
+    ],
+    "diff": -0.8,
+    "diffCI": [
+     -1.4,
+     -0.3
+    ],
+    "saidSub": 5.3,
+    "saidDel": 1.2,
+    "saidIns": 1.6,
+    "scriptIns": 1.7
+   },
+   "openai-realtime-whisper": {
+    "clips": 16,
+    "script": 8.9,
+    "said": 8.4,
+    "saidCI": [
+     6.7,
+     10.4
+    ],
+    "diff": -0.5,
+    "diffCI": [
+     -1.2,
+     0.2
+    ],
+    "saidSub": 5.1,
+    "saidDel": 1.9,
+    "saidIns": 1.3,
+    "scriptIns": 1.3
+   },
+   "zoom-scribe": {
+    "clips": 16,
+    "script": 34.7,
+    "said": 33.5,
+    "saidCI": [
+     17,
+     59.6
+    ],
+    "diff": -1.1,
+    "diffCI": [
+     -1.8,
+     -0.4
+    ],
+    "saidSub": 4.7,
+    "saidDel": 27.3,
+    "saidIns": 1.5,
+    "scriptIns": 1.9
+   },
+   "whisper": {
+    "clips": 16,
+    "script": 80.7,
+    "said": 80.7,
+    "saidCI": [
+     68.2,
+     89.1
+    ],
+    "diff": 0,
+    "diffCI": [
+     -0.3,
+     0.4
+    ],
+    "saidSub": 6.9,
+    "saidDel": 71.6,
+    "saidIns": 2.2,
+    "scriptIns": 2.1
+   },
+   "openai-whisper-1-split": {
+    "clips": 16,
+    "script": 23.4,
+    "said": 22.3,
+    "saidCI": [
+     8.7,
+     42.9
+    ],
+    "diff": -1.1,
+    "diffCI": [
+     -1.9,
+     -0.2
+    ],
+    "saidSub": 4.6,
+    "saidDel": 15.6,
+    "saidIns": 2.1,
+    "scriptIns": 2.3
+   },
+   "whisper-self-hosted-vad": {
+    "clips": 16,
+    "script": 51.4,
+    "said": 50.3,
+    "saidCI": [
+     34.7,
+     74.6
+    ],
+    "diff": -1,
+    "diffCI": [
+     -1.9,
+     -0.2
+    ],
+    "saidSub": 5.5,
+    "saidDel": 44.2,
+    "saidIns": 0.7,
+    "scriptIns": 1.2
+   },
+   "whisper-self-hosted-ten": {
+    "clips": 16,
+    "script": 10.2,
+    "said": 9.2,
+    "saidCI": [
+     6.6,
+     11.3
+    ],
+    "diff": -0.9,
+    "diffCI": [
+     -1.6,
+     -0.4
+    ],
+    "saidSub": 4.1,
+    "saidDel": 3.8,
+    "saidIns": 1.3,
+    "scriptIns": 1.4
+   },
+   "whisper-self-hosted-ten-vad": {
+    "clips": 16,
+    "script": 10.7,
+    "said": 9.4,
+    "saidCI": [
+     7,
+     11.3
+    ],
+    "diff": -1.3,
+    "diffCI": [
+     -2,
+     -0.6
+    ],
+    "saidSub": 4.5,
+    "saidDel": 3.9,
+    "saidIns": 1,
+    "scriptIns": 1.4
+   },
+   "openai-whisper-1": {
+    "clips": 16,
+    "script": 7.7,
+    "said": 6.7,
+    "saidCI": [
+     4.7,
+     8.8
+    ],
+    "diff": -0.9,
+    "diffCI": [
+     -1.8,
+     -0.2
+    ],
+    "saidSub": 4.1,
+    "saidDel": 1.6,
+    "saidIns": 1,
+    "scriptIns": 1.2
+   }
+  },
+  "all": {
+   "qwen": {
+    "clips": 106,
+    "script": 16.9,
+    "said": 13.5,
+    "saidCI": [
+     10.2,
+     17.4
+    ],
+    "diff": -3.4,
+    "diffCI": [
+     -4.1,
+     -2.7
+    ],
+    "saidSub": 4.7,
+    "saidDel": 5.5,
+    "saidIns": 3.4,
+    "scriptIns": 5.3
+   },
+   "meta": {
+    "clips": 106,
+    "script": 9.5,
+    "said": 6,
+    "saidCI": [
+     5.2,
+     6.8
+    ],
+    "diff": -3.5,
+    "diffCI": [
+     -4.2,
+     -2.8
+    ],
+    "saidSub": 3,
+    "saidDel": 0.5,
+    "saidIns": 2.4,
+    "scriptIns": 4.4
+   },
+   "gemini": {
+    "clips": 106,
+    "script": 6.2,
+    "said": 3.6,
+    "saidCI": [
+     3,
+     4.3
+    ],
+    "diff": -2.6,
+    "diffCI": [
+     -3.3,
+     -1.9
+    ],
+    "saidSub": 1.4,
+    "saidDel": 0.8,
+    "saidIns": 1.4,
+    "scriptIns": 3.1
+   },
+   "gemini-smart": {
+    "clips": 106,
+    "script": 3.8,
+    "said": 4.5,
+    "saidCI": [
+     3.8,
+     5.2
+    ],
+    "diff": 0.6,
+    "diffCI": [
+     0,
+     1.3
+    ],
+    "saidSub": 1.5,
+    "saidDel": 2.6,
+    "saidIns": 0.4,
+    "scriptIns": 0.6
+   },
+   "whisper-self-hosted": {
+    "clips": 106,
+    "script": 8.3,
+    "said": 6.4,
+    "saidCI": [
+     5.3,
+     7.6
+    ],
+    "diff": -2,
+    "diffCI": [
+     -2.7,
+     -1.3
+    ],
+    "saidSub": 2.5,
+    "saidDel": 2.3,
+    "saidIns": 1.5,
+    "scriptIns": 2.7
+   },
+   "assemblyai-3-5-pro": {
+    "clips": 106,
+    "script": 11.1,
+    "said": 8.1,
+    "saidCI": [
+     5.9,
+     11.1
+    ],
+    "diff": -3,
+    "diffCI": [
+     -3.7,
+     -2.4
+    ],
+    "saidSub": 2.1,
+    "saidDel": 3.8,
+    "saidIns": 2.2,
+    "scriptIns": 4.1
+   },
+   "assemblyai-3-6-pro": {
+    "clips": 106,
+    "script": 10.4,
+    "said": 7.4,
+    "saidCI": [
+     5,
+     10.3
+    ],
+    "diff": -3.1,
+    "diffCI": [
+     -3.8,
+     -2.4
+    ],
+    "saidSub": 1.9,
+    "saidDel": 3.8,
+    "saidIns": 1.7,
+    "scriptIns": 3.5
+   },
+   "deepgram": {
+    "clips": 106,
+    "script": 14.1,
+    "said": 10.6,
+    "saidCI": [
+     9.3,
+     11.9
+    ],
+    "diff": -3.5,
+    "diffCI": [
+     -4.2,
+     -2.9
+    ],
+    "saidSub": 5.5,
+    "saidDel": 2,
+    "saidIns": 3.1,
+    "scriptIns": 5
+   },
+   "elevenlabs-scribe-clean": {
+    "clips": 106,
+    "script": 5.3,
+    "said": 4.6,
+    "saidCI": [
+     3.7,
+     5.5
+    ],
+    "diff": -0.7,
+    "diffCI": [
+     -1.4,
+     0
+    ],
+    "saidSub": 1.8,
+    "saidDel": 2,
+    "saidIns": 0.8,
+    "scriptIns": 1.4
+   },
+   "elevenlabs-scribe": {
+    "clips": 106,
+    "script": 11.7,
+    "said": 8.1,
+    "saidCI": [
+     6.6,
+     9.8
+    ],
+    "diff": -3.6,
+    "diffCI": [
+     -4.2,
+     -2.9
+    ],
+    "saidSub": 2,
+    "saidDel": 1.1,
+    "saidIns": 4.9,
+    "scriptIns": 7
+   },
+   "openai-live-transcribe-low": {
+    "clips": 106,
+    "script": 7.1,
+    "said": 5.2,
+    "saidCI": [
+     4.5,
+     6
+    ],
+    "diff": -1.9,
+    "diffCI": [
+     -2.4,
+     -1.4
+    ],
+    "saidSub": 2.8,
+    "saidDel": 1.1,
+    "saidIns": 1.3,
+    "scriptIns": 2.8
+   },
+   "openai-realtime-whisper": {
+    "clips": 106,
+    "script": 7.9,
+    "said": 5.3,
+    "saidCI": [
+     4.5,
+     6.1
+    ],
+    "diff": -2.7,
+    "diffCI": [
+     -3.3,
+     -2
+    ],
+    "saidSub": 2.7,
+    "saidDel": 0.9,
+    "saidIns": 1.7,
+    "scriptIns": 3.4
+   },
+   "zoom-scribe": {
+    "clips": 106,
+    "script": 10.3,
+    "said": 8,
+    "saidCI": [
+     5.8,
+     10.9
+    ],
+    "diff": -2.3,
+    "diffCI": [
+     -2.9,
+     -1.8
+    ],
+    "saidSub": 1.9,
+    "saidDel": 4.5,
+    "saidIns": 1.6,
+    "scriptIns": 3
+   },
+   "whisper": {
+    "clips": 106,
+    "script": 17.1,
+    "said": 15.4,
+    "saidCI": [
+     10.5,
+     21.1
+    ],
+    "diff": -1.7,
+    "diffCI": [
+     -2.4,
+     -1
+    ],
+    "saidSub": 2.8,
+    "saidDel": 11.3,
+    "saidIns": 1.3,
+    "scriptIns": 2.3
+   },
+   "openai-whisper-1-split": {
+    "clips": 106,
+    "script": 8.5,
+    "said": 7.3,
+    "saidCI": [
+     5.4,
+     10.1
+    ],
+    "diff": -1.2,
+    "diffCI": [
+     -1.7,
+     -0.7
+    ],
+    "saidSub": 2.5,
+    "saidDel": 3.6,
+    "saidIns": 1.2,
+    "scriptIns": 2.1
+   },
+   "whisper-self-hosted-vad": {
+    "clips": 106,
+    "script": 13,
+    "said": 11,
+    "saidCI": [
+     7.9,
+     14.7
+    ],
+    "diff": -1.9,
+    "diffCI": [
+     -2.6,
+     -1.3
+    ],
+    "saidSub": 2.6,
+    "saidDel": 7.2,
+    "saidIns": 1.2,
+    "scriptIns": 2.3
+   },
+   "whisper-self-hosted-ten": {
+    "clips": 106,
+    "script": 7.9,
+    "said": 6.1,
+    "saidCI": [
+     5.1,
+     7.3
+    ],
+    "diff": -1.8,
+    "diffCI": [
+     -2.5,
+     -1.1
+    ],
+    "saidSub": 2.3,
+    "saidDel": 2.6,
+    "saidIns": 1.2,
+    "scriptIns": 2.3
+   },
+   "whisper-self-hosted-ten-vad": {
+    "clips": 106,
+    "script": 7.5,
+    "said": 5.9,
+    "saidCI": [
+     5.1,
+     6.8
+    ],
+    "diff": -1.6,
+    "diffCI": [
+     -2.2,
+     -1
+    ],
+    "saidSub": 2.4,
+    "saidDel": 2.1,
+    "saidIns": 1.4,
+    "scriptIns": 2.4
+   },
+   "openai-whisper-1": {
+    "clips": 106,
+    "script": 5.7,
+    "said": 5.3,
+    "saidCI": [
+     4.4,
+     6
+    ],
+    "diff": -0.5,
+    "diffCI": [
+     -1.2,
+     0.3
+    ],
+    "saidSub": 2.4,
+    "saidDel": 2.2,
+    "saidIns": 0.7,
+    "scriptIns": 1.2
+   }
+  }
+ }
+}

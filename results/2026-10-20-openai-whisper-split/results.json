@@ -1,0 +1,256 @@
+{
+  "date": "2026-10-20",
+  "runDates": [
+    "2026-10-20"
+  ],
+  "label": "openai-whisper-split",
+  "options": {
+    "language": "clip",
+    "speed": 1,
+    "gate": true,
+    "runs": 1,
+    "clientProfile": "published"
+  },
+  "sets": [
+    {
+      "id": "en-dictation",
+      "language": "en",
+      "condition": "clean",
+      "source": "Team recordings of app-style dictation scripts"
+    },
+    {
+      "id": "en-dictation-noise",
+      "language": "en",
+      "condition": "noise",
+      "source": "Same scripts, background fan noise"
+    },
+    {
+      "id": "en-dictation-whisper",
+      "language": "en",
+      "condition": "whisper",
+      "source": "Same scripts, whispered"
+    },
+    {
+      "id": "nonspeech",
+      "language": "en",
+      "condition": "nonspeech",
+      "source": "Generated silence and noise (scripts/make-nonspeech.ts)"
+    },
+    {
+      "id": "ar-eg",
+      "language": "ar",
+      "condition": "clean",
+      "source": "FLEURS ar_eg"
+    },
+    {
+      "id": "ar-sa",
+      "language": "ar",
+      "condition": "clean",
+      "source": "SADA22 (Najdi)"
+    },
+    {
+      "id": "ar-ae",
+      "language": "ar",
+      "condition": "clean",
+      "source": "Casablanca (Emirati)"
+    },
+    {
+      "id": "de-de",
+      "language": "de",
+      "condition": "clean",
+      "source": "FLEURS de_de"
+    },
+    {
+      "id": "es-419",
+      "language": "es",
+      "condition": "clean",
+      "source": "FLEURS es_419"
+    },
+    {
+      "id": "es-es",
+      "language": "es",
+      "condition": "clean",
+      "source": "VoxPopuli"
+    },
+    {
+      "id": "es-pr",
+      "language": "es",
+      "condition": "clean",
+      "source": "OpenSLR SLR74"
+    },
+    {
+      "id": "fr-fr",
+      "language": "fr",
+      "condition": "clean",
+      "source": "FLEURS fr_fr"
+    },
+    {
+      "id": "hi-in",
+      "language": "hi",
+      "condition": "clean",
+      "source": "FLEURS hi_in"
+    },
+    {
+      "id": "ur-pk",
+      "language": "ur",
+      "condition": "clean",
+      "source": "FLEURS ur_pk"
+    },
+    {
+      "id": "zh-cn",
+      "language": "zh",
+      "condition": "clean",
+      "source": "FLEURS cmn_hans_cn"
+    }
+  ],
+  "models": {
+    "openai-whisper-1-split": "whisper-1"
+  },
+  "labels": {
+    "openai-whisper-1-split": "OpenAI Whisper-1 (split at pauses)"
+  },
+  "aggregates": {
+    "en-dictation/openai-whisper-1-split": {
+      "headline": {
+        "value": 0.06527415143603134,
+        "lo": 0.056218448829738414,
+        "hi": 0.07502903600464576,
+        "speakers": 73
+      },
+      "formatted": 0.13401731324142355
+    },
+    "en-dictation-noise/openai-whisper-1-split": {
+      "headline": {
+        "value": 0.06320754716981132,
+        "lo": 0.038560411311053984,
+        "hi": 0.0947265625,
+        "speakers": 17
+      },
+      "formatted": 0.14767932489451477
+    },
+    "en-dictation-whisper/openai-whisper-1-split": {
+      "headline": {
+        "value": 0.23410852713178296,
+        "lo": 0.10036363636363636,
+        "hi": 0.44507575757575757,
+        "speakers": 16
+      },
+      "formatted": 0.3284923928077455
+    },
+    "ar-eg/openai-whisper-1-split": {
+      "headline": {
+        "value": 0.12244897959183673,
+        "lo": 0.07920792079207921,
+        "hi": 0.171875,
+        "speakers": 20
+      },
+      "formatted": 0.26382978723404255
+    },
+    "ar-sa/openai-whisper-1-split": {
+      "headline": {
+        "value": 0.375,
+        "lo": 0.2698412698412698,
+        "hi": 0.4942084942084942,
+        "speakers": 20
+      },
+      "formatted": 0.4601449275362319
+    },
+    "ar-ae/openai-whisper-1-split": {
+      "headline": {
+        "value": 0.6176470588235294,
+        "lo": 0.510752688172043,
+        "hi": 0.7309941520467836,
+        "speakers": 20
+      },
+      "formatted": 0.6968085106382979
+    },
+    "de-de/openai-whisper-1-split": {
+      "headline": {
+        "value": 0.06451612903225806,
+        "lo": 0.03088803088803089,
+        "hi": 0.100418410041841,
+        "speakers": 20
+      },
+      "formatted": 0.09965635738831616
+    },
+    "es-419/openai-whisper-1-split": {
+      "headline": {
+        "value": 0.06521739130434782,
+        "lo": 0.02857142857142857,
+        "hi": 0.11428571428571428,
+        "speakers": 20
+      },
+      "formatted": 0.14181818181818182
+    },
+    "es-es/openai-whisper-1-split": {
+      "headline": {
+        "value": 0.08421052631578947,
+        "lo": 0.00546448087431694,
+        "hi": 0.2087912087912088,
+        "speakers": 20
+      },
+      "formatted": 0.16203703703703703
+    },
+    "es-pr/openai-whisper-1-split": {
+      "headline": {
+        "value": 0.07853403141361257,
+        "lo": 0.01764705882352941,
+        "hi": 0.15577889447236182,
+        "speakers": 20
+      },
+      "formatted": 0.233502538071066
+    },
+    "fr-fr/openai-whisper-1-split": {
+      "headline": {
+        "value": 0.06521739130434782,
+        "lo": 0.023809523809523808,
+        "hi": 0.12096774193548387,
+        "speakers": 20
+      },
+      "formatted": 0.11254019292604502
+    },
+    "hi-in/openai-whisper-1-split": {
+      "headline": {
+        "value": 0.35964912280701755,
+        "lo": 0.26180257510729615,
+        "hi": 0.46543778801843316,
+        "speakers": 20
+      },
+      "formatted": 0.2785388127853881
+    },
+    "ur-pk/openai-whisper-1-split": {
+      "headline": {
+        "value": 0.20774647887323944,
+        "lo": 0.1453900709219858,
+        "hi": 0.26621160409556316,
+        "speakers": 20
+      },
+      "formatted": 0.262987012987013
+    },
+    "zh-cn/openai-whisper-1-split": {
+      "headline": {
+        "value": 0.05449591280653951,
+        "lo": 0.029891304347826088,
+        "hi": 0.07631578947368421,
+        "speakers": 20
+      },
+      "formatted": 0.115
+    },
+    "nonspeech/openai-whisper-1-split": {
+      "nonSpeechOutputRate": 0
+    },
+    "latency/openai-whisper-1-split": {
+      "waitP50": 1550,
+      "waitP90": 2314,
+      "connectP50": 0,
+      "connectP90": 0,
+      "n": 336
+    },
+    "failures/openai-whisper-1-split": {
+      "clips": 336,
+      "dropped": 0,
+      "failed": 0,
+      "droppedSets": []
+    }
+  }
+}

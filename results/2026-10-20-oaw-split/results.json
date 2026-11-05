@@ -1,0 +1,67 @@
+{
+  "date": "2026-10-20",
+  "runDates": [
+    "2026-10-20"
+  ],
+  "label": "oaw-split",
+  "options": {
+    "language": "clip",
+    "speed": 1,
+    "gate": true,
+    "runs": 1,
+    "clientProfile": "published"
+  },
+  "sets": [
+    {
+      "id": "en-dictation",
+      "language": "en",
+      "condition": "clean",
+      "source": "Team recordings of app-style dictation scripts"
+    },
+    {
+      "id": "en-dictation-whisper",
+      "language": "en",
+      "condition": "whisper",
+      "source": "Same scripts, whispered"
+    }
+  ],
+  "models": {
+    "openai-whisper-1-split": "whisper-1"
+  },
+  "labels": {
+    "openai-whisper-1-split": "OpenAI Whisper-1 (split at pauses)"
+  },
+  "aggregates": {
+    "en-dictation/openai-whisper-1-split": {
+      "headline": {
+        "value": 0.07475622968580715,
+        "lo": 0.06346531873069362,
+        "hi": 0.08712613784135241,
+        "speakers": 50
+      },
+      "formatted": 0.1486543020499233
+    },
+    "en-dictation-whisper/openai-whisper-1-split": {
+      "headline": {
+        "value": 0.10232558139534884,
+        "lo": 0.07711651299245599,
+        "hi": 0.12550403225806453,
+        "speakers": 16
+      },
+      "formatted": 0.21715076071922546
+    },
+    "latency/openai-whisper-1-split": {
+      "waitP50": 1725,
+      "waitP90": 3120,
+      "connectP50": 0,
+      "connectP90": 0,
+      "n": 66
+    },
+    "failures/openai-whisper-1-split": {
+      "clips": 66,
+      "dropped": 0,
+      "failed": 0,
+      "droppedSets": []
+    }
+  }
+}

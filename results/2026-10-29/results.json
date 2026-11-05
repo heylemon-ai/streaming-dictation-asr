@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-29",
+  "runDates": [],
+  "options": {
+    "language": "clip",
+    "speed": 1,
+    "gate": true,
+    "runs": 1,
+    "clientProfile": "published"
+  },
+  "sets": [],
+  "models": {},
+  "labels": {},
+  "aggregates": {}
+}

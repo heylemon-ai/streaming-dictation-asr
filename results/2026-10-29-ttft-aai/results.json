@@ -1,0 +1,124 @@
+{
+  "date": "2026-10-29",
+  "runDates": [
+    "2026-10-29"
+  ],
+  "label": "ttft-aai",
+  "options": {
+    "language": "clip",
+    "speed": 1,
+    "gate": true,
+    "runs": 1,
+    "clientProfile": "published"
+  },
+  "sets": [
+    {
+      "id": "en-dictation",
+      "language": "en",
+      "condition": "clean",
+      "source": "Team recordings of app-style dictation scripts"
+    },
+    {
+      "id": "en-dictation-noise",
+      "language": "en",
+      "condition": "noise",
+      "source": "Same scripts, background fan noise"
+    },
+    {
+      "id": "en-dictation-whisper",
+      "language": "en",
+      "condition": "whisper",
+      "source": "Same scripts, whispered"
+    }
+  ],
+  "models": {
+    "assemblyai-3-5-pro": "universal-3-5-pro",
+    "assemblyai-3-6-pro": "universal-3-6-pro"
+  },
+  "labels": {
+    "assemblyai-3-5-pro": "AssemblyAI Universal-3.5 Pro",
+    "assemblyai-3-6-pro": "AssemblyAI Universal-3.6 Pro"
+  },
+  "aggregates": {
+    "en-dictation/assemblyai-3-5-pro": {
+      "headline": {
+        "value": 0.08984096843104676,
+        "lo": 0.0793074560178721,
+        "hi": 0.10018844221105527,
+        "speakers": 73
+      },
+      "formatted": 0.14919311745217484
+    },
+    "en-dictation/assemblyai-3-6-pro": {
+      "headline": {
+        "value": 0.08165202943270829,
+        "lo": 0.07117117117117117,
+        "hi": 0.09145174006081766,
+        "speakers": 73
+      },
+      "formatted": 0.13049054184033343
+    },
+    "en-dictation-noise/assemblyai-3-5-pro": {
+      "headline": {
+        "value": 0.048113207547169815,
+        "lo": 0.03225806451612903,
+        "hi": 0.06572769953051644,
+        "speakers": 17
+      },
+      "formatted": 0.09620253164556962
+    },
+    "en-dictation-noise/assemblyai-3-6-pro": {
+      "headline": {
+        "value": 0.04150943396226415,
+        "lo": 0.028629856850715747,
+        "hi": 0.057441253263707574,
+        "speakers": 17
+      },
+      "formatted": 0.08607594936708861
+    },
+    "en-dictation-whisper/assemblyai-3-5-pro": {
+      "headline": {
+        "value": 0.3116279069767442,
+        "lo": 0.1551590380139643,
+        "hi": 0.559533721898418,
+        "speakers": 16
+      },
+      "formatted": 0.36583679114799444
+    },
+    "en-dictation-whisper/assemblyai-3-6-pro": {
+      "headline": {
+        "value": 0.30465116279069765,
+        "lo": 0.14531138153185397,
+        "hi": 0.5593726661687827,
+        "speakers": 16
+      },
+      "formatted": 0.35131396957123096
+    },
+    "latency/assemblyai-3-5-pro": {
+      "waitP50": 792,
+      "waitP90": 1480,
+      "connectP50": 1542,
+      "connectP90": 2318,
+      "n": 106
+    },
+    "latency/assemblyai-3-6-pro": {
+      "waitP50": 833,
+      "waitP90": 1448,
+      "connectP50": 1485,
+      "connectP90": 2560,
+      "n": 106
+    },
+    "failures/assemblyai-3-5-pro": {
+      "clips": 106,
+      "dropped": 0,
+      "failed": 0,
+      "droppedSets": []
+    },
+    "failures/assemblyai-3-6-pro": {
+      "clips": 106,
+      "dropped": 0,
+      "failed": 0,
+      "droppedSets": []
+    }
+  }
+}

@@ -1,0 +1,706 @@
+{
+ "ears": {
+  "whisper-self-hosted": {
+   "regular": 1.5,
+   "regularCI": [
+    0.9,
+    2.2
+   ],
+   "whisper": 11.5,
+   "whisperCI": [
+    8.2,
+    15.4
+   ],
+   "diff": [
+    10.0,
+    6.5,
+    14.0
+   ],
+   "whisperSub": 0.8,
+   "whisperDel": 10.4,
+   "whisperIns": 0.3,
+   "speakersOver20": 20,
+   "speakers": 107,
+   "noText": 0,
+   "clips": 428
+  },
+  "whisper": {
+   "regular": 1.0,
+   "regularCI": [
+    0.8,
+    1.3
+   ],
+   "whisper": 42.9,
+   "whisperCI": [
+    36.7,
+    49.4
+   ],
+   "diff": [
+    41.9,
+    35.1,
+    48.4
+   ],
+   "whisperSub": 3.1,
+   "whisperDel": 39.1,
+   "whisperIns": 0.7,
+   "speakersOver20": 67,
+   "speakers": 107,
+   "noText": 38,
+   "clips": 428
+  },
+  "qwen": {
+   "regular": 1.1,
+   "regularCI": [
+    0.8,
+    1.4
+   ],
+   "whisper": 32.0,
+   "whisperCI": [
+    26.3,
+    38.1
+   ],
+   "diff": [
+    30.9,
+    25.0,
+    37.0
+   ],
+   "whisperSub": 1.0,
+   "whisperDel": 30.6,
+   "whisperIns": 0.4,
+   "speakersOver20": 56,
+   "speakers": 107,
+   "noText": 0,
+   "clips": 428
+  },
+  "meta": {
+   "regular": 1.4,
+   "regularCI": [
+    1.1,
+    1.7
+   ],
+   "whisper": 1.7,
+   "whisperCI": [
+    1.3,
+    2.1
+   ],
+   "diff": [
+    0.3,
+    -0.0,
+    0.6
+   ],
+   "whisperSub": 0.8,
+   "whisperDel": 0.3,
+   "whisperIns": 0.5,
+   "speakersOver20": 0,
+   "speakers": 107,
+   "noText": 0,
+   "clips": 428
+  },
+  "gemini": {
+   "regular": 0.9,
+   "regularCI": [
+    0.7,
+    1.1
+   ],
+   "whisper": 1.1,
+   "whisperCI": [
+    0.9,
+    1.4
+   ],
+   "diff": [
+    0.2,
+    0.0,
+    0.5
+   ],
+   "whisperSub": 0.5,
+   "whisperDel": 0.2,
+   "whisperIns": 0.3,
+   "speakersOver20": 0,
+   "speakers": 107,
+   "noText": 0,
+   "clips": 428
+  },
+  "gemini-smart": {
+   "regular": 0.8,
+   "regularCI": [
+    0.6,
+    1.0
+   ],
+   "whisper": 1.0,
+   "whisperCI": [
+    0.8,
+    1.3
+   ],
+   "diff": [
+    0.2,
+    -0.0,
+    0.5
+   ],
+   "whisperSub": 0.6,
+   "whisperDel": 0.2,
+   "whisperIns": 0.2,
+   "speakersOver20": 0,
+   "speakers": 107,
+   "noText": 0,
+   "clips": 428
+  },
+  "deepgram": {
+   "regular": 2.5,
+   "regularCI": [
+    2.1,
+    3.0
+   ],
+   "whisper": 4.0,
+   "whisperCI": [
+    3.2,
+    4.8
+   ],
+   "diff": [
+    1.5,
+    0.8,
+    2.4
+   ],
+   "whisperSub": 1.8,
+   "whisperDel": 1.5,
+   "whisperIns": 0.6,
+   "speakersOver20": 1,
+   "speakers": 107,
+   "noText": 0,
+   "clips": 428
+  },
+  "assemblyai-3-6-pro": {
+   "regular": 1.2,
+   "regularCI": [
+    0.9,
+    1.6
+   ],
+   "whisper": 8.1,
+   "whisperCI": [
+    5.2,
+    11.3
+   ],
+   "diff": [
+    6.9,
+    4.1,
+    10.2
+   ],
+   "whisperSub": 0.5,
+   "whisperDel": 7.3,
+   "whisperIns": 0.3,
+   "speakersOver20": 17,
+   "speakers": 107,
+   "noText": 0,
+   "clips": 428
+  },
+  "assemblyai-3-5-pro": {
+   "regular": 1.2,
+   "regularCI": [
+    0.9,
+    1.4
+   ],
+   "whisper": 8.3,
+   "whisperCI": [
+    5.6,
+    11.6
+   ],
+   "diff": [
+    7.1,
+    4.3,
+    10.4
+   ],
+   "whisperSub": 0.6,
+   "whisperDel": 7.3,
+   "whisperIns": 0.4,
+   "speakersOver20": 16,
+   "speakers": 107,
+   "noText": 0,
+   "clips": 428
+  },
+  "zoom-scribe": {
+   "regular": 0.9,
+   "regularCI": [
+    0.7,
+    1.1
+   ],
+   "whisper": 25.0,
+   "whisperCI": [
+    20.1,
+    30.6
+   ],
+   "diff": [
+    24.1,
+    19.0,
+    29.9
+   ],
+   "whisperSub": 1.3,
+   "whisperDel": 23.3,
+   "whisperIns": 0.4,
+   "speakersOver20": 45,
+   "speakers": 107,
+   "noText": 0,
+   "clips": 428
+  },
+  "elevenlabs-scribe": {
+   "regular": 1.3,
+   "regularCI": [
+    1.0,
+    1.6
+   ],
+   "whisper": 1.5,
+   "whisperCI": [
+    1.1,
+    1.8
+   ],
+   "diff": [
+    0.1,
+    -0.2,
+    0.5
+   ],
+   "whisperSub": 0.7,
+   "whisperDel": 0.2,
+   "whisperIns": 0.5,
+   "speakersOver20": 0,
+   "speakers": 107,
+   "noText": 0,
+   "clips": 428
+  },
+  "elevenlabs-scribe-clean": {
+   "regular": 1.1,
+   "regularCI": [
+    0.8,
+    1.3
+   ],
+   "whisper": 1.2,
+   "whisperCI": [
+    0.9,
+    1.6
+   ],
+   "diff": [
+    0.2,
+    -0.2,
+    0.5
+   ],
+   "whisperSub": 0.7,
+   "whisperDel": 0.2,
+   "whisperIns": 0.3,
+   "speakersOver20": 0,
+   "speakers": 107,
+   "noText": 0,
+   "clips": 428
+  },
+  "openai-live-transcribe-low": {
+   "regular": 1.3,
+   "regularCI": [
+    1.0,
+    1.7
+   ],
+   "whisper": 2.1,
+   "whisperCI": [
+    1.7,
+    2.5
+   ],
+   "diff": [
+    0.8,
+    0.4,
+    1.2
+   ],
+   "whisperSub": 1.2,
+   "whisperDel": 0.4,
+   "whisperIns": 0.4,
+   "speakersOver20": 0,
+   "speakers": 107,
+   "noText": 0,
+   "clips": 428
+  },
+  "openai-realtime-whisper": {
+   "regular": 1.2,
+   "regularCI": [
+    0.9,
+    1.5
+   ],
+   "whisper": 2.1,
+   "whisperCI": [
+    1.7,
+    2.5
+   ],
+   "diff": [
+    0.9,
+    0.5,
+    1.3
+   ],
+   "whisperSub": 1.2,
+   "whisperDel": 0.4,
+   "whisperIns": 0.4,
+   "speakersOver20": 0,
+   "speakers": 107,
+   "noText": 0,
+   "clips": 428
+  }
+ },
+ "voices": {
+  "whisper-self-hosted": {
+   "clean": 2.1,
+   "far": 4.2,
+   "far-babble": 62.5,
+   "far-tv": 17.7,
+   "farMinusClean": [
+    2.1,
+    1.4,
+    2.9
+   ],
+   "babbleMinusFar": [
+    58.4,
+    51.8,
+    65.2
+   ],
+   "tvMinusFar": [
+    13.5,
+    9.9,
+    17.7
+   ],
+   "babbleIns": 3.3,
+   "babbleDel": 41.6,
+   "babbleSub": 17.7,
+   "babbleNoText": 0,
+   "tvNoText": 0
+  },
+  "whisper": {
+   "clean": 2.1,
+   "far": 11.9,
+   "far-babble": 63.4,
+   "far-tv": 23.4,
+   "farMinusClean": [
+    9.7,
+    5.7,
+    14.3
+   ],
+   "babbleMinusFar": [
+    51.5,
+    44.3,
+    58.7
+   ],
+   "tvMinusFar": [
+    11.5,
+    6.7,
+    16.4
+   ],
+   "babbleIns": 4.5,
+   "babbleDel": 34.2,
+   "babbleSub": 24.7,
+   "babbleNoText": 1,
+   "tvNoText": 0
+  },
+  "qwen": {
+   "clean": 2.3,
+   "far": 10.5,
+   "far-babble": 50.9,
+   "far-tv": 16.3,
+   "farMinusClean": [
+    8.3,
+    4.4,
+    12.8
+   ],
+   "babbleMinusFar": [
+    40.4,
+    33.4,
+    47.7
+   ],
+   "tvMinusFar": [
+    5.8,
+    1.2,
+    10.2
+   ],
+   "babbleIns": 1.3,
+   "babbleDel": 21.9,
+   "babbleSub": 27.7,
+   "babbleNoText": 0,
+   "tvNoText": 0
+  },
+  "meta": {
+   "clean": 2.4,
+   "far": 6.5,
+   "far-babble": 77.5,
+   "far-tv": 25.6,
+   "farMinusClean": [
+    4.1,
+    3.1,
+    5.1
+   ],
+   "babbleMinusFar": [
+    71.0,
+    65.7,
+    76.1
+   ],
+   "tvMinusFar": [
+    19.1,
+    14.9,
+    23.8
+   ],
+   "babbleIns": 0.3,
+   "babbleDel": 70.4,
+   "babbleSub": 6.7,
+   "babbleNoText": 0,
+   "tvNoText": 0
+  },
+  "gemini": {
+   "clean": 2.5,
+   "far": 5.1,
+   "far-babble": 81.7,
+   "far-tv": 24.8,
+   "farMinusClean": [
+    2.6,
+    1.7,
+    3.6
+   ],
+   "babbleMinusFar": [
+    76.6,
+    70.3,
+    82.2
+   ],
+   "tvMinusFar": [
+    19.7,
+    14.6,
+    25.6
+   ],
+   "babbleIns": 1.0,
+   "babbleDel": 76.3,
+   "babbleSub": 4.4,
+   "babbleNoText": 67,
+   "tvNoText": 7
+  },
+  "gemini-smart": {
+   "clean": 4.6,
+   "far": 5.3,
+   "far-babble": 71.2,
+   "far-tv": 23.0,
+   "farMinusClean": [
+    0.7,
+    -2.2,
+    2.8
+   ],
+   "babbleMinusFar": [
+    65.8,
+    59.9,
+    71.3
+   ],
+   "tvMinusFar": [
+    17.7,
+    13.3,
+    22.6
+   ],
+   "babbleIns": 3.4,
+   "babbleDel": 45.4,
+   "babbleSub": 22.4,
+   "babbleNoText": 12,
+   "tvNoText": 0
+  },
+  "deepgram": {
+   "clean": 4.3,
+   "far": 10.1,
+   "far-babble": 94.9,
+   "far-tv": 50.4,
+   "farMinusClean": [
+    5.8,
+    4.7,
+    7.0
+   ],
+   "babbleMinusFar": [
+    84.8,
+    82.0,
+    87.4
+   ],
+   "tvMinusFar": [
+    40.3,
+    33.9,
+    46.6
+   ],
+   "babbleIns": 0.1,
+   "babbleDel": 93.5,
+   "babbleSub": 1.3,
+   "babbleNoText": 0,
+   "tvNoText": 0
+  },
+  "assemblyai-3-6-pro": {
+   "clean": 2.3,
+   "far": 4.8,
+   "far-babble": 59.6,
+   "far-tv": 13.2,
+   "farMinusClean": [
+    2.5,
+    1.0,
+    4.5
+   ],
+   "babbleMinusFar": [
+    54.7,
+    47.3,
+    61.8
+   ],
+   "tvMinusFar": [
+    8.3,
+    5.1,
+    12.0
+   ],
+   "babbleIns": 2.0,
+   "babbleDel": 45.5,
+   "babbleSub": 12.1,
+   "babbleNoText": 0,
+   "tvNoText": 0
+  },
+  "assemblyai-3-5-pro": {
+   "clean": 2.2,
+   "far": 5.0,
+   "far-babble": 52.5,
+   "far-tv": 12.4,
+   "farMinusClean": [
+    2.8,
+    1.3,
+    4.8
+   ],
+   "babbleMinusFar": [
+    47.5,
+    40.3,
+    54.2
+   ],
+   "tvMinusFar": [
+    7.4,
+    4.3,
+    10.8
+   ],
+   "babbleIns": 4.3,
+   "babbleDel": 27.2,
+   "babbleSub": 20.9,
+   "babbleNoText": 0,
+   "tvNoText": 0
+  },
+  "zoom-scribe": {
+   "clean": 2.3,
+   "far": 7.7,
+   "far-babble": 38.7,
+   "far-tv": 10.3,
+   "farMinusClean": [
+    5.4,
+    2.0,
+    9.3
+   ],
+   "babbleMinusFar": [
+    31.0,
+    23.2,
+    38.6
+   ],
+   "tvMinusFar": [
+    2.6,
+    -0.4,
+    5.8
+   ],
+   "babbleIns": 1.5,
+   "babbleDel": 24.3,
+   "babbleSub": 12.8,
+   "babbleNoText": 0,
+   "tvNoText": 0
+  },
+  "elevenlabs-scribe": {
+   "clean": 2.8,
+   "far": 4.6,
+   "far-babble": 66.6,
+   "far-tv": 19.4,
+   "farMinusClean": [
+    1.8,
+    1.2,
+    2.5
+   ],
+   "babbleMinusFar": [
+    62.0,
+    56.2,
+    67.7
+   ],
+   "tvMinusFar": [
+    14.8,
+    11.3,
+    18.8
+   ],
+   "babbleIns": 7.0,
+   "babbleDel": 25.7,
+   "babbleSub": 33.9,
+   "babbleNoText": 0,
+   "tvNoText": 0
+  },
+  "elevenlabs-scribe-clean": {
+   "clean": 2.7,
+   "far": 4.6,
+   "far-babble": 66.9,
+   "far-tv": 18.8,
+   "farMinusClean": [
+    1.9,
+    1.3,
+    2.5
+   ],
+   "babbleMinusFar": [
+    62.3,
+    56.1,
+    68.4
+   ],
+   "tvMinusFar": [
+    14.2,
+    10.6,
+    18.1
+   ],
+   "babbleIns": 7.3,
+   "babbleDel": 27.2,
+   "babbleSub": 32.4,
+   "babbleNoText": 0,
+   "tvNoText": 0
+  },
+  "openai-live-transcribe-low": {
+   "clean": 3.2,
+   "far": 8.0,
+   "far-babble": 85.1,
+   "far-tv": 29.0,
+   "farMinusClean": [
+    4.8,
+    3.6,
+    6.0
+   ],
+   "babbleMinusFar": [
+    77.1,
+    72.6,
+    81.5
+   ],
+   "tvMinusFar": [
+    21.0,
+    16.3,
+    26.0
+   ],
+   "babbleIns": 0.5,
+   "babbleDel": 78.0,
+   "babbleSub": 6.6,
+   "babbleNoText": 0,
+   "tvNoText": 0
+  },
+  "openai-realtime-whisper": {
+   "clean": 3.0,
+   "far": 8.8,
+   "far-babble": 93.6,
+   "far-tv": 41.2,
+   "farMinusClean": [
+    5.9,
+    4.1,
+    8.0
+   ],
+   "babbleMinusFar": [
+    84.8,
+    80.5,
+    88.7
+   ],
+   "tvMinusFar": [
+    32.4,
+    25.7,
+    39.3
+   ],
+   "babbleIns": 0.0,
+   "babbleDel": 91.6,
+   "babbleSub": 2.0,
+   "babbleNoText": 0,
+   "tvNoText": 0
+  }
+ }
+}

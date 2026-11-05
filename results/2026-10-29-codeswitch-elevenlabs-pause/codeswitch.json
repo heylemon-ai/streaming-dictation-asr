@@ -1,0 +1,183 @@
+{
+  "date": "2026-10-29",
+  "engines": [
+    {
+      "id": "elevenlabs-scribe-clean-vad",
+      "label": "ElevenLabs Scribe v2 Realtime (no verbatim, commit at pauses)"
+    },
+    {
+      "id": "elevenlabs-scribe-clean",
+      "label": "ElevenLabs Scribe v2 Realtime (no verbatim)"
+    },
+    {
+      "id": "elevenlabs-scribe-vad",
+      "label": "ElevenLabs Scribe v2 Realtime (commit at pauses)"
+    },
+    {
+      "id": "elevenlabs-scribe",
+      "label": "ElevenLabs Scribe v2 Realtime"
+    }
+  ],
+  "aggregates": {
+    "english/both/elevenlabs-scribe-clean-vad": {
+      "fair": 85,
+      "languageLost": 2,
+      "englishLost": 0,
+      "otherLost": 2,
+      "firstLost": 0,
+      "secondLost": 2
+    },
+    "english/both/elevenlabs-scribe-clean": {
+      "fair": 85,
+      "languageLost": 68,
+      "englishLost": 3,
+      "otherLost": 65,
+      "firstLost": 31,
+      "secondLost": 37
+    },
+    "english/both/elevenlabs-scribe-vad": {
+      "fair": 85,
+      "languageLost": 1,
+      "englishLost": 0,
+      "otherLost": 1,
+      "firstLost": 0,
+      "secondLost": 1
+    },
+    "english/both/elevenlabs-scribe": {
+      "fair": 85,
+      "languageLost": 52,
+      "englishLost": 2,
+      "otherLost": 50,
+      "firstLost": 24,
+      "secondLost": 28
+    },
+    "english/en/elevenlabs-scribe-clean-vad": {
+      "fair": 85,
+      "languageLost": 39,
+      "englishLost": 0,
+      "otherLost": 39,
+      "firstLost": 24,
+      "secondLost": 15
+    },
+    "english/en/elevenlabs-scribe-clean": {
+      "fair": 85,
+      "languageLost": 79,
+      "englishLost": 0,
+      "otherLost": 79,
+      "firstLost": 45,
+      "secondLost": 34
+    },
+    "english/en/elevenlabs-scribe-vad": {
+      "fair": 85,
+      "languageLost": 31,
+      "englishLost": 0,
+      "otherLost": 31,
+      "firstLost": 23,
+      "secondLost": 8
+    },
+    "english/en/elevenlabs-scribe": {
+      "fair": 85,
+      "languageLost": 71,
+      "englishLost": 0,
+      "otherLost": 71,
+      "firstLost": 45,
+      "secondLost": 26
+    },
+    "english/auto/elevenlabs-scribe-clean-vad": {
+      "fair": 85,
+      "languageLost": 2,
+      "englishLost": 0,
+      "otherLost": 2,
+      "firstLost": 0,
+      "secondLost": 2
+    },
+    "english/auto/elevenlabs-scribe-clean": {
+      "fair": 85,
+      "languageLost": 68,
+      "englishLost": 3,
+      "otherLost": 65,
+      "firstLost": 31,
+      "secondLost": 37
+    },
+    "english/auto/elevenlabs-scribe-vad": {
+      "fair": 85,
+      "languageLost": 1,
+      "englishLost": 0,
+      "otherLost": 1,
+      "firstLost": 0,
+      "secondLost": 1
+    },
+    "english/auto/elevenlabs-scribe": {
+      "fair": 85,
+      "languageLost": 52,
+      "englishLost": 2,
+      "otherLost": 50,
+      "firstLost": 24,
+      "secondLost": 28
+    },
+    "pair/both/elevenlabs-scribe-clean-vad": {
+      "fair": 232,
+      "languageLost": 144,
+      "englishLost": 0,
+      "otherLost": 144,
+      "firstLost": 4,
+      "secondLost": 141
+    },
+    "pair/both/elevenlabs-scribe-clean": {
+      "fair": 232,
+      "languageLost": 223,
+      "englishLost": 0,
+      "otherLost": 223,
+      "firstLost": 163,
+      "secondLost": 140
+    },
+    "pair/both/elevenlabs-scribe-vad": {
+      "fair": 232,
+      "languageLost": 83,
+      "englishLost": 0,
+      "otherLost": 83,
+      "firstLost": 4,
+      "secondLost": 80
+    },
+    "pair/both/elevenlabs-scribe": {
+      "fair": 232,
+      "languageLost": 213,
+      "englishLost": 0,
+      "otherLost": 213,
+      "firstLost": 146,
+      "secondLost": 122
+    },
+    "pair/auto/elevenlabs-scribe-clean-vad": {
+      "fair": 232,
+      "languageLost": 145,
+      "englishLost": 0,
+      "otherLost": 145,
+      "firstLost": 4,
+      "secondLost": 142
+    },
+    "pair/auto/elevenlabs-scribe-clean": {
+      "fair": 232,
+      "languageLost": 223,
+      "englishLost": 0,
+      "otherLost": 223,
+      "firstLost": 162,
+      "secondLost": 140
+    },
+    "pair/auto/elevenlabs-scribe-vad": {
+      "fair": 232,
+      "languageLost": 84,
+      "englishLost": 0,
+      "otherLost": 84,
+      "firstLost": 4,
+      "secondLost": 81
+    },
+    "pair/auto/elevenlabs-scribe": {
+      "fair": 232,
+      "languageLost": 212,
+      "englishLost": 0,
+      "otherLost": 212,
+      "firstLost": 144,
+      "secondLost": 117
+    }
+  }
+}

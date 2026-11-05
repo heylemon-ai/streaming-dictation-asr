@@ -1,0 +1,133 @@
+{
+  "date": "2026-10-29",
+  "runDates": [
+    "2026-10-29"
+  ],
+  "label": "ears-vad-sh",
+  "options": {
+    "language": "clip",
+    "speed": 1,
+    "gate": true,
+    "runs": 1,
+    "clientProfile": "published"
+  },
+  "sets": [
+    {
+      "id": "ears-whisper",
+      "language": "en",
+      "condition": "whisper",
+      "source": "EARS (CC BY-NC 4.0): 20 speakers, Rainbow Passage parts 1-4, whispered"
+    },
+    {
+      "id": "ears-regular",
+      "language": "en",
+      "condition": "clean",
+      "source": "EARS (CC BY-NC 4.0): the same 20 speakers and passages, read normally"
+    }
+  ],
+  "models": {
+    "whisper-self-hosted-vad": "self-hosted (Baseten)",
+    "whisper-self-hosted-ten": "self-hosted (Baseten)",
+    "whisper-self-hosted-ten-vad": "self-hosted (Baseten)"
+  },
+  "labels": {
+    "whisper-self-hosted-vad": "Whisper Self-Hosted (VAD drops audio)",
+    "whisper-self-hosted-ten": "Whisper Self-Hosted (TEN VAD)",
+    "whisper-self-hosted-ten-vad": "Whisper Self-Hosted (TEN VAD drops audio)"
+  },
+  "aggregates": {
+    "ears-whisper/whisper-self-hosted-vad": {
+      "headline": {
+        "value": 0.3844603261865494,
+        "lo": 0.3189786818154053,
+        "hi": 0.4539734897074094,
+        "speakers": 107
+      },
+      "formatted": 0.4096756459593183
+    },
+    "ears-whisper/whisper-self-hosted-ten": {
+      "headline": {
+        "value": 0.09736729582798852,
+        "lo": 0.06572597886506627,
+        "hi": 0.13548347687984852,
+        "speakers": 107
+      },
+      "formatted": 0.13358988455195162
+    },
+    "ears-whisper/whisper-self-hosted-ten-vad": {
+      "headline": {
+        "value": 0.14672286360026876,
+        "lo": 0.1035978254230041,
+        "hi": 0.1982163581943681,
+        "speakers": 107
+      },
+      "formatted": 0.17075316107751512
+    },
+    "ears-regular/whisper-self-hosted-vad": {
+      "headline": {
+        "value": 0.016492578339747113,
+        "lo": 0.010872884979536986,
+        "hi": 0.023883696780893044,
+        "speakers": 107
+      },
+      "formatted": 0.045849367784496976
+    },
+    "ears-regular/whisper-self-hosted-ten": {
+      "headline": {
+        "value": 0.014476818764889134,
+        "lo": 0.00904037627512064,
+        "hi": 0.02119601734774907,
+        "speakers": 107
+      },
+      "formatted": 0.07130291368884002
+    },
+    "ears-regular/whisper-self-hosted-ten-vad": {
+      "headline": {
+        "value": 0.019424592266813267,
+        "lo": 0.011361553967381345,
+        "hi": 0.02962555738806426,
+        "speakers": 107
+      },
+      "formatted": 0.052391423859263334
+    },
+    "latency/whisper-self-hosted-vad": {
+      "waitP50": 432,
+      "waitP90": 729,
+      "connectP50": 994,
+      "connectP90": 1844,
+      "n": 856
+    },
+    "latency/whisper-self-hosted-ten": {
+      "waitP50": 470,
+      "waitP90": 700,
+      "connectP50": 889,
+      "connectP90": 1626,
+      "n": 856
+    },
+    "latency/whisper-self-hosted-ten-vad": {
+      "waitP50": 516,
+      "waitP90": 746,
+      "connectP50": 1038,
+      "connectP90": 1748,
+      "n": 856
+    },
+    "failures/whisper-self-hosted-vad": {
+      "clips": 856,
+      "dropped": 0,
+      "failed": 0,
+      "droppedSets": []
+    },
+    "failures/whisper-self-hosted-ten": {
+      "clips": 856,
+      "dropped": 0,
+      "failed": 0,
+      "droppedSets": []
+    },
+    "failures/whisper-self-hosted-ten-vad": {
+      "clips": 856,
+      "dropped": 0,
+      "failed": 0,
+      "droppedSets": []
+    }
+  }
+}

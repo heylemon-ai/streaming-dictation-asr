@@ -1,0 +1,256 @@
+{
+  "date": "2026-10-22",
+  "runDates": [
+    "2026-10-22"
+  ],
+  "label": "vad-sweep",
+  "options": {
+    "language": "clip",
+    "speed": 1,
+    "gate": true,
+    "runs": 1,
+    "clientProfile": "published"
+  },
+  "sets": [
+    {
+      "id": "en-dictation-noise",
+      "language": "en",
+      "condition": "noise",
+      "source": "Same scripts, background fan noise"
+    },
+    {
+      "id": "en-dictation-whisper",
+      "language": "en",
+      "condition": "whisper",
+      "source": "Same scripts, whispered"
+    },
+    {
+      "id": "nonspeech",
+      "language": "en",
+      "condition": "nonspeech",
+      "source": "Generated silence and noise (scripts/make-nonspeech.ts)"
+    }
+  ],
+  "models": {
+    "whisper-self-hosted-vad-t02": "self-hosted (Baseten)",
+    "whisper-self-hosted-vad-t03": "self-hosted (Baseten)",
+    "whisper-self-hosted-vad-t04": "self-hosted (Baseten)",
+    "whisper-self-hosted-ten-vad-t02": "self-hosted (Baseten)",
+    "whisper-self-hosted-ten-vad-t03": "self-hosted (Baseten)",
+    "whisper-self-hosted-ten-vad-t04": "self-hosted (Baseten)"
+  },
+  "labels": {
+    "whisper-self-hosted-vad-t02": "Whisper Self-Hosted (Silero drops audio, threshold 0.2)",
+    "whisper-self-hosted-vad-t03": "Whisper Self-Hosted (Silero drops audio, threshold 0.3)",
+    "whisper-self-hosted-vad-t04": "Whisper Self-Hosted (Silero drops audio, threshold 0.4)",
+    "whisper-self-hosted-ten-vad-t02": "Whisper Self-Hosted (TEN drops audio, threshold 0.2)",
+    "whisper-self-hosted-ten-vad-t03": "Whisper Self-Hosted (TEN drops audio, threshold 0.3)",
+    "whisper-self-hosted-ten-vad-t04": "Whisper Self-Hosted (TEN drops audio, threshold 0.4)"
+  },
+  "aggregates": {
+    "en-dictation-noise/whisper-self-hosted-vad-t02": {
+      "headline": {
+        "value": 0.07358490566037736,
+        "lo": 0.05086285195277021,
+        "hi": 0.09930486593843098,
+        "speakers": 17
+      },
+      "formatted": 0.15358649789029535
+    },
+    "en-dictation-noise/whisper-self-hosted-vad-t03": {
+      "headline": {
+        "value": 0.059433962264150944,
+        "lo": 0.03942307692307692,
+        "hi": 0.0821917808219178,
+        "speakers": 17
+      },
+      "formatted": 0.13839662447257384
+    },
+    "en-dictation-noise/whisper-self-hosted-vad-t04": {
+      "headline": {
+        "value": 0.05849056603773585,
+        "lo": 0.037154989384288746,
+        "hi": 0.08428446005267778,
+        "speakers": 17
+      },
+      "formatted": 0.12995780590717299
+    },
+    "en-dictation-noise/whisper-self-hosted-ten-vad-t02": {
+      "headline": {
+        "value": 0.062264150943396226,
+        "lo": 0.0370722433460076,
+        "hi": 0.09519572953736655,
+        "speakers": 17
+      },
+      "formatted": 0.14936708860759493
+    },
+    "en-dictation-noise/whisper-self-hosted-ten-vad-t03": {
+      "headline": {
+        "value": 0.052830188679245285,
+        "lo": 0.035023041474654376,
+        "hi": 0.07332155477031801,
+        "speakers": 17
+      },
+      "formatted": 0.140084388185654
+    },
+    "en-dictation-noise/whisper-self-hosted-ten-vad-t04": {
+      "headline": {
+        "value": 0.059433962264150944,
+        "lo": 0.040293040293040296,
+        "hi": 0.08211818879508825,
+        "speakers": 17
+      },
+      "formatted": 0.14852320675105485
+    },
+    "en-dictation-whisper/whisper-self-hosted-vad-t02": {
+      "headline": {
+        "value": 0.4108527131782946,
+        "lo": 0.25061830173124483,
+        "hi": 0.6706008583690987,
+        "speakers": 16
+      },
+      "formatted": 0.47441217150760717
+    },
+    "en-dictation-whisper/whisper-self-hosted-vad-t03": {
+      "headline": {
+        "value": 0.44651162790697674,
+        "lo": 0.2835426305353602,
+        "hi": 0.7219251336898396,
+        "speakers": 16
+      },
+      "formatted": 0.5124481327800829
+    },
+    "en-dictation-whisper/whisper-self-hosted-vad-t04": {
+      "headline": {
+        "value": 0.4627906976744186,
+        "lo": 0.2962757087270706,
+        "hi": 0.7353244078269825,
+        "speakers": 16
+      },
+      "formatted": 0.5221300138312587
+    },
+    "en-dictation-whisper/whisper-self-hosted-ten-vad-t02": {
+      "headline": {
+        "value": 0.1,
+        "lo": 0.07642626480086114,
+        "hi": 0.12203166226912929,
+        "speakers": 16
+      },
+      "formatted": 0.1825726141078838
+    },
+    "en-dictation-whisper/whisper-self-hosted-ten-vad-t03": {
+      "headline": {
+        "value": 0.10232558139534884,
+        "lo": 0.07455621301775148,
+        "hi": 0.12401055408970976,
+        "speakers": 16
+      },
+      "formatted": 0.18464730290456433
+    },
+    "en-dictation-whisper/whisper-self-hosted-ten-vad-t04": {
+      "headline": {
+        "value": 0.10465116279069768,
+        "lo": 0.07400379506641366,
+        "hi": 0.12622950819672132,
+        "speakers": 16
+      },
+      "formatted": 0.18464730290456433
+    },
+    "nonspeech/whisper-self-hosted-vad-t02": {
+      "nonSpeechOutputRate": 0
+    },
+    "nonspeech/whisper-self-hosted-vad-t03": {
+      "nonSpeechOutputRate": 0
+    },
+    "nonspeech/whisper-self-hosted-vad-t04": {
+      "nonSpeechOutputRate": 0
+    },
+    "nonspeech/whisper-self-hosted-ten-vad-t02": {
+      "nonSpeechOutputRate": 0.2
+    },
+    "nonspeech/whisper-self-hosted-ten-vad-t03": {
+      "nonSpeechOutputRate": 0.2
+    },
+    "nonspeech/whisper-self-hosted-ten-vad-t04": {
+      "nonSpeechOutputRate": 0.2
+    },
+    "latency/whisper-self-hosted-vad-t02": {
+      "waitP50": 384,
+      "waitP90": 1340,
+      "connectP50": 1130,
+      "connectP90": 2708,
+      "n": 43
+    },
+    "latency/whisper-self-hosted-vad-t03": {
+      "waitP50": 311,
+      "waitP90": 427,
+      "connectP50": 877,
+      "connectP90": 1108,
+      "n": 43
+    },
+    "latency/whisper-self-hosted-vad-t04": {
+      "waitP50": 308,
+      "waitP90": 383,
+      "connectP50": 816,
+      "connectP90": 888,
+      "n": 43
+    },
+    "latency/whisper-self-hosted-ten-vad-t02": {
+      "waitP50": 315,
+      "waitP90": 422,
+      "connectP50": 830,
+      "connectP90": 941,
+      "n": 43
+    },
+    "latency/whisper-self-hosted-ten-vad-t03": {
+      "waitP50": 302,
+      "waitP90": 407,
+      "connectP50": 826,
+      "connectP90": 947,
+      "n": 43
+    },
+    "latency/whisper-self-hosted-ten-vad-t04": {
+      "waitP50": 331,
+      "waitP90": 500,
+      "connectP50": 849,
+      "connectP90": 1238,
+      "n": 43
+    },
+    "failures/whisper-self-hosted-vad-t02": {
+      "clips": 43,
+      "dropped": 0,
+      "failed": 0,
+      "droppedSets": []
+    },
+    "failures/whisper-self-hosted-vad-t03": {
+      "clips": 43,
+      "dropped": 0,
+      "failed": 0,
+      "droppedSets": []
+    },
+    "failures/whisper-self-hosted-vad-t04": {
+      "clips": 43,
+      "dropped": 0,
+      "failed": 0,
+      "droppedSets": []
+    },
+    "failures/whisper-self-hosted-ten-vad-t02": {
+      "clips": 43,
+      "dropped": 0,
+      "failed": 0,
+      "droppedSets": []
+    },
+    "failures/whisper-self-hosted-ten-vad-t03": {
+      "clips": 43,
+      "dropped": 0,
+      "failed": 0,
+      "droppedSets": []
+    },
+    "failures/whisper-self-hosted-ten-vad-t04": {
+      "clips": 43,
+      "dropped": 0,
+      "failed": 0,
+      "droppedSets": []
+    }
+  }
+}

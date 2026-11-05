@@ -1,0 +1,76 @@
+{
+  "date": "2026-11-05",
+  "runDates": [
+    "2026-11-05"
+  ],
+  "label": "qwenvad-en",
+  "options": {
+    "language": "clip",
+    "speed": 1,
+    "gate": true,
+    "runs": 1,
+    "clientProfile": "published"
+  },
+  "sets": [
+    {
+      "id": "en-dictation",
+      "language": "en",
+      "condition": "clean",
+      "source": "Team recordings of app-style dictation scripts"
+    },
+    {
+      "id": "en-dictation-noise",
+      "language": "en",
+      "condition": "noise",
+      "source": "Same scripts, background fan noise"
+    },
+    {
+      "id": "nonspeech",
+      "language": "en",
+      "condition": "nonspeech",
+      "source": "Generated silence and noise (scripts/make-nonspeech.ts)"
+    }
+  ],
+  "models": {
+    "qwen-lowvad": "self-hosted (Baseten)"
+  },
+  "labels": {
+    "qwen-lowvad": "Qwen3-ASR (relaxed server VAD)"
+  },
+  "aggregates": {
+    "en-dictation/qwen-lowvad": {
+      "headline": {
+        "value": 0.10315533980582524,
+        "lo": 0.08445873526259379,
+        "hi": 0.1248626071664102,
+        "speakers": 46
+      },
+      "formatted": 0.15907844212835984
+    },
+    "en-dictation-noise/qwen-lowvad": {
+      "headline": {
+        "value": 0.05580357142857143,
+        "lo": 0.04132231404958678,
+        "hi": 0.07095343680709534,
+        "speakers": 14
+      },
+      "formatted": 0.1157684630738523
+    },
+    "nonspeech/qwen-lowvad": {
+      "nonSpeechOutputRate": 0
+    },
+    "latency/qwen-lowvad": {
+      "waitP50": 439,
+      "waitP90": 608,
+      "connectP50": 20541,
+      "connectP90": 27779,
+      "n": 70
+    },
+    "failures/qwen-lowvad": {
+      "clips": 100,
+      "dropped": 0,
+      "failed": 30,
+      "droppedSets": []
+    }
+  }
+}

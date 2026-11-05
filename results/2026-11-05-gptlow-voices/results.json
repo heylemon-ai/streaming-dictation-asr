@@ -1,0 +1,97 @@
+{
+  "date": "2026-11-05",
+  "runDates": [
+    "2026-11-05"
+  ],
+  "label": "gptlow-voices",
+  "options": {
+    "language": "clip",
+    "speed": 1,
+    "gate": true,
+    "runs": 1,
+    "clientProfile": "published"
+  },
+  "sets": [
+    {
+      "id": "voices-clean",
+      "language": "en",
+      "condition": "clean",
+      "source": "VOiCES devkit (CC BY 4.0), room 4, original recording"
+    },
+    {
+      "id": "voices-far",
+      "language": "en",
+      "condition": "far",
+      "source": "VOiCES devkit (CC BY 4.0), room 4, far microphone, no distractor"
+    },
+    {
+      "id": "voices-far-babble",
+      "language": "en",
+      "condition": "far+babble",
+      "source": "VOiCES devkit (CC BY 4.0), room 4, far microphone, babble"
+    },
+    {
+      "id": "voices-far-tv",
+      "language": "en",
+      "condition": "far+tv",
+      "source": "VOiCES devkit (CC BY 4.0), room 4, far microphone, television"
+    }
+  ],
+  "models": {
+    "openai-live-transcribe-low": "gpt-live-transcribe"
+  },
+  "labels": {
+    "openai-live-transcribe-low": "OpenAI GPT-Live-Transcribe (Low delay)"
+  },
+  "aggregates": {
+    "voices-clean/openai-live-transcribe-low": {
+      "headline": {
+        "value": 0.04119850187265917,
+        "lo": 0.031787762906309754,
+        "hi": 0.05117924528301887,
+        "speakers": 100
+      },
+      "formatted": 0.24765917602996254
+    },
+    "voices-far/openai-live-transcribe-low": {
+      "headline": {
+        "value": 0.08824906367041198,
+        "lo": 0.07242403472698195,
+        "hi": 0.10532434317600559,
+        "speakers": 100
+      },
+      "formatted": 0.27926029962546817
+    },
+    "voices-far-babble/openai-live-transcribe-low": {
+      "headline": {
+        "value": 0.8450374531835206,
+        "lo": 0.7974743864665237,
+        "hi": 0.889776357827476,
+        "speakers": 100
+      },
+      "formatted": 0.8691479400749064
+    },
+    "voices-far-tv/openai-live-transcribe-low": {
+      "headline": {
+        "value": 0.2993913857677903,
+        "lo": 0.24785305343511452,
+        "hi": 0.35184743742550656,
+        "speakers": 100
+      },
+      "formatted": 0.42813670411985016
+    },
+    "latency/openai-live-transcribe-low": {
+      "waitP50": 794,
+      "waitP90": 913,
+      "connectP50": 1207,
+      "connectP90": 1352,
+      "n": 400
+    },
+    "failures/openai-live-transcribe-low": {
+      "clips": 400,
+      "dropped": 0,
+      "failed": 0,
+      "droppedSets": []
+    }
+  }
+}

@@ -1,0 +1,365 @@
+{
+  "date": "2026-10-23",
+  "runDates": [
+    "2026-10-22",
+    "2026-10-23"
+  ],
+  "label": "ears",
+  "options": {
+    "language": "clip",
+    "speed": 1,
+    "gate": true,
+    "runs": 1,
+    "clientProfile": "published"
+  },
+  "sets": [
+    {
+      "id": "ears-whisper",
+      "language": "en",
+      "condition": "whisper",
+      "source": "EARS (CC BY-NC 4.0): 20 speakers, Rainbow Passage parts 1-4, whispered"
+    },
+    {
+      "id": "ears-regular",
+      "language": "en",
+      "condition": "clean",
+      "source": "EARS (CC BY-NC 4.0): the same 20 speakers and passages, read normally"
+    }
+  ],
+  "models": {
+    "meta": "muse-voice-transcribe-1.0",
+    "gemini": "gemini-3.5-transcribe-live",
+    "gemini-smart": "gemini-3.5-transcribe-live",
+    "whisper-self-hosted": "self-hosted (Baseten)",
+    "deepgram": "nova-3",
+    "elevenlabs-scribe-clean": "scribe_v2_realtime",
+    "elevenlabs-scribe": "scribe_v2_realtime",
+    "openai-live-transcribe-low": "gpt-live-transcribe",
+    "openai-realtime-whisper": "gpt-realtime-whisper",
+    "zoom-scribe": "zoom-scribe"
+  },
+  "labels": {
+    "meta": "Meta Muse",
+    "gemini": "Gemini 3.5 Transcribe",
+    "gemini-smart": "Gemini 3.5 Transcribe (Smart)",
+    "whisper-self-hosted": "Whisper Self-Hosted",
+    "deepgram": "Deepgram Nova-3",
+    "elevenlabs-scribe-clean": "ElevenLabs Scribe v2 Realtime (no verbatim)",
+    "elevenlabs-scribe": "ElevenLabs Scribe v2 Realtime",
+    "openai-live-transcribe-low": "OpenAI GPT-Live-Transcribe (Low delay)",
+    "openai-realtime-whisper": "OpenAI GPT-Realtime-Whisper",
+    "zoom-scribe": "Zoom Scribe"
+  },
+  "aggregates": {
+    "ears-whisper/meta": {
+      "headline": {
+        "value": 0.021012766477307435,
+        "lo": 0.016859080080630383,
+        "hi": 0.02571620548530939,
+        "speakers": 107
+      },
+      "formatted": 0.10577240241891149
+    },
+    "ears-whisper/gemini": {
+      "headline": {
+        "value": 0.01356056441268096,
+        "lo": 0.010567466862134263,
+        "hi": 0.016920163704110928,
+        "speakers": 107
+      },
+      "formatted": 0.03903243540406817
+    },
+    "ears-whisper/gemini-smart": {
+      "headline": {
+        "value": 0.012583226436992242,
+        "lo": 0.009834463380367723,
+        "hi": 0.01569849123450003,
+        "speakers": 107
+      },
+      "formatted": 0.03479934029686641
+    },
+    "ears-whisper/whisper-self-hosted": {
+      "headline": {
+        "value": 0.11691405534176287,
+        "lo": 0.0833180624274632,
+        "hi": 0.15515240364058397,
+        "speakers": 107
+      },
+      "formatted": 0.15299615173172074
+    },
+    "ears-whisper/deepgram": {
+      "headline": {
+        "value": 0.04349153991814794,
+        "lo": 0.035917170606560384,
+        "hi": 0.05271516706371022,
+        "speakers": 107
+      },
+      "formatted": 0.09791094007696537
+    },
+    "ears-whisper/elevenlabs-scribe-clean": {
+      "headline": {
+        "value": 0.017059455361091803,
+        "lo": 0.013540269528006642,
+        "hi": 0.021273925321619078,
+        "speakers": 107
+      },
+      "formatted": 0.03964056190638685
+    },
+    "ears-whisper/elevenlabs-scribe": {
+      "headline": {
+        "value": 0.020230117587558476,
+        "lo": 0.01625142278993297,
+        "hi": 0.024777756761868736,
+        "speakers": 107
+      },
+      "formatted": 0.04329521533822609
+    },
+    "ears-whisper/openai-live-transcribe-low": {
+      "headline": {
+        "value": 0.02449453301569849,
+        "lo": 0.02021867937206035,
+        "hi": 0.029259055647180992,
+        "speakers": 107
+      },
+      "formatted": 0.058823529411764705
+    },
+    "ears-whisper/openai-realtime-whisper": {
+      "headline": {
+        "value": 0.022784191558243235,
+        "lo": 0.018569421538085638,
+        "hi": 0.02760979781320628,
+        "speakers": 107
+      },
+      "formatted": 0.04502473886750962
+    },
+    "ears-whisper/zoom-scribe": {
+      "headline": {
+        "value": 0.251236943375481,
+        "lo": 0.19882719442917354,
+        "hi": 0.3105491417750901,
+        "speakers": 107
+      },
+      "formatted": 0.28389224848818034
+    },
+    "ears-regular/meta": {
+      "headline": {
+        "value": 0.01569849123450003,
+        "lo": 0.012277808319589517,
+        "hi": 0.01973001038421599,
+        "speakers": 107
+      },
+      "formatted": 0.09433754810335349
+    },
+    "ears-regular/gemini": {
+      "headline": {
+        "value": 0.010628550485614806,
+        "lo": 0.008185205546393012,
+        "hi": 0.013438397165719871,
+        "speakers": 107
+      },
+      "formatted": 0.03479934029686641
+    },
+    "ears-regular/gemini-smart": {
+      "headline": {
+        "value": 0.009651212509926088,
+        "lo": 0.007330034817665384,
+        "hi": 0.012216724696108973,
+        "speakers": 107
+      },
+      "formatted": 0.03221550302363936
+    },
+    "ears-regular/whisper-self-hosted": {
+      "headline": {
+        "value": 0.016370411092786023,
+        "lo": 0.010017714250809358,
+        "hi": 0.023761529533931954,
+        "speakers": 107
+      },
+      "formatted": 0.06443100604727872
+    },
+    "ears-regular/deepgram": {
+      "headline": {
+        "value": 0.027670881436686823,
+        "lo": 0.022906358805204325,
+        "hi": 0.033107323926455316,
+        "speakers": 107
+      },
+      "formatted": 0.0634414513468939
+    },
+    "ears-regular/elevenlabs-scribe-clean": {
+      "headline": {
+        "value": 0.013575513795487399,
+        "lo": 0.01030862635972679,
+        "hi": 0.017325800376647833,
+        "speakers": 107
+      },
+      "formatted": 0.036488091870792556
+    },
+    "ears-regular/elevenlabs-scribe": {
+      "headline": {
+        "value": 0.01674267507965265,
+        "lo": 0.012988650693568726,
+        "hi": 0.021016648730771664,
+        "speakers": 107
+      },
+      "formatted": 0.04176268900005621
+    },
+    "ears-regular/openai-live-transcribe-low": {
+      "headline": {
+        "value": 0.015209822246655671,
+        "lo": 0.011483721214342435,
+        "hi": 0.0196078431372549,
+        "speakers": 107
+      },
+      "formatted": 0.04051676745464541
+    },
+    "ears-regular/openai-realtime-whisper": {
+      "headline": {
+        "value": 0.01368273165964205,
+        "lo": 0.010506383238653718,
+        "hi": 0.017347749068474742,
+        "speakers": 107
+      },
+      "formatted": 0.03435953820780649
+    },
+    "ears-regular/zoom-scribe": {
+      "headline": {
+        "value": 0.010384215991692628,
+        "lo": 0.007879787428990287,
+        "hi": 0.013132979048317147,
+        "speakers": 107
+      },
+      "formatted": 0.03446948873007147
+    },
+    "latency/meta": {
+      "waitP50": 393,
+      "waitP90": 620,
+      "connectP50": 1594,
+      "connectP90": 2156,
+      "n": 856
+    },
+    "latency/gemini": {
+      "waitP50": 512,
+      "waitP90": 705,
+      "connectP50": 687,
+      "connectP90": 989,
+      "n": 856
+    },
+    "latency/gemini-smart": {
+      "waitP50": 515,
+      "waitP90": 718,
+      "connectP50": 671,
+      "connectP90": 911,
+      "n": 856
+    },
+    "latency/whisper-self-hosted": {
+      "waitP50": 408,
+      "waitP90": 537,
+      "connectP50": 922,
+      "connectP90": 1147,
+      "n": 856
+    },
+    "latency/deepgram": {
+      "waitP50": 357,
+      "waitP90": 422,
+      "connectP50": 887,
+      "connectP90": 1041,
+      "n": 856
+    },
+    "latency/elevenlabs-scribe-clean": {
+      "waitP50": 455,
+      "waitP90": 544,
+      "connectP50": 791,
+      "connectP90": 889,
+      "n": 830
+    },
+    "latency/elevenlabs-scribe": {
+      "waitP50": 450,
+      "waitP90": 594,
+      "connectP50": 817,
+      "connectP90": 992,
+      "n": 833
+    },
+    "latency/openai-live-transcribe-low": {
+      "waitP50": 719,
+      "waitP90": 850,
+      "connectP50": 1194,
+      "connectP90": 1276,
+      "n": 856
+    },
+    "latency/openai-realtime-whisper": {
+      "waitP50": 723,
+      "waitP90": 842,
+      "connectP50": 1181,
+      "connectP90": 1258,
+      "n": 856
+    },
+    "latency/zoom-scribe": {
+      "waitP50": 457,
+      "waitP90": 547,
+      "connectP50": 1326,
+      "connectP90": 1418,
+      "n": 856
+    },
+    "failures/meta": {
+      "clips": 856,
+      "dropped": 0,
+      "failed": 0,
+      "droppedSets": []
+    },
+    "failures/gemini": {
+      "clips": 856,
+      "dropped": 0,
+      "failed": 0,
+      "droppedSets": []
+    },
+    "failures/gemini-smart": {
+      "clips": 856,
+      "dropped": 0,
+      "failed": 0,
+      "droppedSets": []
+    },
+    "failures/whisper-self-hosted": {
+      "clips": 856,
+      "dropped": 0,
+      "failed": 0,
+      "droppedSets": []
+    },
+    "failures/deepgram": {
+      "clips": 856,
+      "dropped": 0,
+      "failed": 0,
+      "droppedSets": []
+    },
+    "failures/elevenlabs-scribe-clean": {
+      "clips": 856,
+      "dropped": 0,
+      "failed": 26,
+      "droppedSets": []
+    },
+    "failures/elevenlabs-scribe": {
+      "clips": 856,
+      "dropped": 0,
+      "failed": 23,
+      "droppedSets": []
+    },
+    "failures/openai-live-transcribe-low": {
+      "clips": 856,
+      "dropped": 0,
+      "failed": 0,
+      "droppedSets": []
+    },
+    "failures/openai-realtime-whisper": {
+      "clips": 856,
+      "dropped": 0,
+      "failed": 0,
+      "droppedSets": []
+    },
+    "failures/zoom-scribe": {
+      "clips": 856,
+      "dropped": 0,
+      "failed": 0,
+      "droppedSets": []
+    }
+  }
+}

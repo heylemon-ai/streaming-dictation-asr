@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-15",
+  "runDates": [
+    "2026-10-15"
+  ],
+  "label": "lat-smart",
+  "options": {
+    "language": "clip",
+    "speed": 1,
+    "gate": true,
+    "runs": 1,
+    "clientProfile": "published"
+  },
+  "sets": [
+    {
+      "id": "en-dictation",
+      "language": "en",
+      "condition": "clean",
+      "source": "Team recordings of app-style dictation scripts"
+    }
+  ],
+  "models": {
+    "gemini-smart": "gemini-3.5-transcribe-live"
+  },
+  "labels": {
+    "gemini-smart": "Gemini 3.5 Transcribe (Smart)"
+  },
+  "aggregates": {
+    "en-dictation/gemini-smart": {
+      "headline": {
+        "value": 0.04333694474539545,
+        "lo": 0.03554576910978295,
+        "hi": 0.05320453848512726,
+        "speakers": 50
+      },
+      "formatted": 0.09998605494352251
+    },
+    "latency/gemini-smart": {
+      "waitP50": 739,
+      "waitP90": 1094,
+      "connectP50": 713,
+      "connectP90": 969,
+      "n": 50
+    },
+    "failures/gemini-smart": {
+      "clips": 50,
+      "dropped": 0,
+      "failed": 0,
+      "droppedSets": []
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "$comment": "Every test set. The whole dataset is private: audio, references and per-clip transcripts never leave data/ and cache/. Only aggregate results are written to results/. Audio lives in data/<id>/ with a transcripts.tsv.",
+  "sets": [
+    {"id": "en-dictation", "language": "en", "condition": "clean", "source": "Team recordings of app-style dictation scripts"},
+    {"id": "en-dictation-noise", "language": "en", "condition": "noise", "source": "Same scripts, background fan noise"},
+    {"id": "en-dictation-whisper", "language": "en", "condition": "whisper", "source": "Same scripts, whispered"},
+    {"id": "nonspeech", "language": "en", "condition": "nonspeech", "source": "Generated silence and noise (scripts/make-nonspeech.ts)"},
+    {"id": "ar-eg", "language": "ar", "condition": "clean", "source": "FLEURS ar_eg"},
+    {"id": "ar-sa", "language": "ar", "condition": "clean", "source": "SADA22 (Najdi)"},
+    {"id": "ar-ae", "language": "ar", "condition": "clean", "source": "Casablanca (Emirati)"},
+    {"id": "de-de", "language": "de", "condition": "clean", "source": "FLEURS de_de"},
+    {"id": "es-419", "language": "es", "condition": "clean", "source": "FLEURS es_419"},
+    {"id": "es-es", "language": "es", "condition": "clean", "source": "VoxPopuli"},
+    {"id": "es-pr", "language": "es", "condition": "clean", "source": "OpenSLR SLR74"},
+    {"id": "fr-fr", "language": "fr", "condition": "clean", "source": "FLEURS fr_fr"},
+    {"id": "hi-in", "language": "hi", "condition": "clean", "source": "FLEURS hi_in"},
+    {"id": "ur-pk", "language": "ur", "condition": "clean", "source": "FLEURS ur_pk"},
+    {"id": "zh-cn", "language": "zh", "condition": "clean", "source": "FLEURS cmn_hans_cn"}
+  ]
+}

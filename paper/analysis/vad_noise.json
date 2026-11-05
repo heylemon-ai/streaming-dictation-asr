@@ -1,0 +1,99 @@
+{
+ "threshold": 0.5,
+ "shareOfWindowsAtOrAbove": {
+  "en-dictation": {
+   "clips": 73,
+   "silero": 81,
+   "ten": 84.9
+  },
+  "en-dictation-noise": {
+   "clips": 17,
+   "silero": 78.2,
+   "ten": 78.4
+  },
+  "en-dictation-whisper": {
+   "clips": 16,
+   "silero": 37.3,
+   "ten": 79
+  },
+  "nonspeech": {
+   "clips": 10,
+   "silero": 0,
+   "ten": 0.4
+  },
+  "ears-whisper": {
+   "clips": 428,
+   "silero": 48.7,
+   "ten": 77.8
+  },
+  "ears-regular": {
+   "clips": 428,
+   "silero": 81.8,
+   "ten": 87.1
+  },
+  "voices-clean": {
+   "clips": 100,
+   "silero": 82.1,
+   "ten": 84.4
+  },
+  "voices-far": {
+   "clips": 100,
+   "silero": 72,
+   "ten": 81.9
+  },
+  "voices-far-babble": {
+   "clips": 100,
+   "silero": 79.5,
+   "ten": 97.1
+  },
+  "voices-far-tv": {
+   "clips": 100,
+   "silero": 76.9,
+   "ten": 86.5
+  }
+ },
+ "nonspeechByClip": {
+  "silence-3s": {
+   "silero": 0,
+   "ten": 0
+  },
+  "silence-10s": {
+   "silero": 0,
+   "ten": 0
+  },
+  "silence-30s": {
+   "silero": 0,
+   "ten": 0
+  },
+  "room-noise-60dbfs": {
+   "silero": 0,
+   "ten": 0
+  },
+  "room-noise-45dbfs": {
+   "silero": 0,
+   "ten": 0.3
+  },
+  "room-noise-35dbfs": {
+   "silero": 0,
+   "ten": 1
+  },
+  "hum-50hz": {
+   "silero": 0,
+   "ten": 0
+  },
+  "hum-60hz": {
+   "silero": 0,
+   "ten": 0.3
+  },
+  "hum-120hz": {
+   "silero": 0,
+   "ten": 2.2
+  },
+  "noise-burst": {
+   "silero": 0,
+   "ten": 1.1
+  }
+ },
+ "missing": [],
+ "missingCount": 0
+}

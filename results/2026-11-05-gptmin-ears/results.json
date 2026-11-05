@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-05",
+  "runDates": [
+    "2026-11-05"
+  ],
+  "label": "gptmin-ears",
+  "options": {
+    "language": "clip",
+    "speed": 1,
+    "gate": true,
+    "runs": 1,
+    "clientProfile": "published"
+  },
+  "sets": [
+    {
+      "id": "ears-whisper",
+      "language": "en",
+      "condition": "whisper",
+      "source": "EARS (CC BY-NC 4.0): 20 speakers, Rainbow Passage parts 1-4, whispered"
+    },
+    {
+      "id": "ears-regular",
+      "language": "en",
+      "condition": "clean",
+      "source": "EARS (CC BY-NC 4.0): the same 20 speakers and passages, read normally"
+    }
+  ],
+  "models": {
+    "openai-live-transcribe-minimal": "gpt-live-transcribe"
+  },
+  "labels": {
+    "openai-live-transcribe-minimal": "OpenAI GPT-Live-Transcribe (Minimal delay)"
+  },
+  "aggregates": {
+    "ears-whisper/openai-live-transcribe-minimal": {
+      "headline": {
+        "value": 0.04477429601123939,
+        "lo": 0.03805509742837945,
+        "hi": 0.0517378290880215,
+        "speakers": 107
+      },
+      "formatted": 0.08301264431006047
+    },
+    "ears-regular/openai-live-transcribe-minimal": {
+      "headline": {
+        "value": 0.022173355323437786,
+        "lo": 0.017897501679799647,
+        "hi": 0.027182212448842464,
+        "speakers": 107
+      },
+      "formatted": 0.05211654755360088
+    },
+    "latency/openai-live-transcribe-minimal": {
+      "waitP50": 742,
+      "waitP90": 863,
+      "connectP50": 1209,
+      "connectP90": 1337,
+      "n": 856
+    },
+    "failures/openai-live-transcribe-minimal": {
+      "clips": 856,
+      "dropped": 0,
+      "failed": 0,
+      "droppedSets": []
+    }
+  }
+}

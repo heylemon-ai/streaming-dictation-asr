@@ -1,0 +1,152 @@
+{
+  "date": "2026-10-23",
+  "runDates": [
+    "2026-10-23"
+  ],
+  "label": "voices-baseten",
+  "options": {
+    "language": "clip",
+    "speed": 1,
+    "gate": true,
+    "runs": 1,
+    "clientProfile": "published"
+  },
+  "sets": [
+    {
+      "id": "voices-clean",
+      "language": "en",
+      "condition": "clean",
+      "source": "VOiCES devkit (CC BY 4.0), room 4, original recording"
+    },
+    {
+      "id": "voices-far",
+      "language": "en",
+      "condition": "far",
+      "source": "VOiCES devkit (CC BY 4.0), room 4, far microphone, no distractor"
+    },
+    {
+      "id": "voices-far-babble",
+      "language": "en",
+      "condition": "far+babble",
+      "source": "VOiCES devkit (CC BY 4.0), room 4, far microphone, babble"
+    },
+    {
+      "id": "voices-far-tv",
+      "language": "en",
+      "condition": "far+tv",
+      "source": "VOiCES devkit (CC BY 4.0), room 4, far microphone, television"
+    }
+  ],
+  "models": {
+    "whisper": "self-hosted (Baseten)",
+    "qwen": "self-hosted (Baseten)"
+  },
+  "labels": {
+    "whisper": "Whisper Large V3",
+    "qwen": "Qwen3-ASR"
+  },
+  "aggregates": {
+    "voices-clean/whisper": {
+      "headline": {
+        "value": 0.027387640449438203,
+        "lo": 0.021348859776807377,
+        "hi": 0.03353376503237743,
+        "speakers": 100
+      },
+      "formatted": 0.16853932584269662
+    },
+    "voices-clean/qwen": {
+      "headline": {
+        "value": 0.03640256959314775,
+        "lo": 0.017738359201773836,
+        "hi": 0.05533596837944664,
+        "speakers": 11
+      },
+      "formatted": 0.26124197002141325
+    },
+    "voices-far/whisper": {
+      "headline": {
+        "value": 0.1271067415730337,
+        "lo": 0.08651579443658651,
+        "hi": 0.17434823091247673,
+        "speakers": 100
+      },
+      "formatted": 0.2991573033707865
+    },
+    "voices-far/qwen": {
+      "headline": {
+        "value": 0.19310344827586207,
+        "lo": 0.04128440366972477,
+        "hi": 0.3979848866498741,
+        "speakers": 10
+      },
+      "formatted": 0.3793103448275862
+    },
+    "voices-far-babble/whisper": {
+      "headline": {
+        "value": 0.6367041198501873,
+        "lo": 0.569583931133429,
+        "hi": 0.7001145475372279,
+        "speakers": 100
+      },
+      "formatted": 0.7525749063670412
+    },
+    "voices-far-babble/qwen": {
+      "headline": {
+        "value": 0.6114942528735632,
+        "lo": 0.4399092970521542,
+        "hi": 0.7827050997782705,
+        "speakers": 10
+      },
+      "formatted": 0.7080459770114943
+    },
+    "voices-far-tv/whisper": {
+      "headline": {
+        "value": 0.23993445692883894,
+        "lo": 0.1905515370705244,
+        "hi": 0.2973925299506695,
+        "speakers": 100
+      },
+      "formatted": 0.43000936329588013
+    },
+    "voices-far-tv/qwen": {
+      "headline": {
+        "value": 0.19770114942528735,
+        "lo": 0.09685230024213075,
+        "hi": 0.35989717223650386,
+        "speakers": 10
+      },
+      "formatted": 0.38620689655172413
+    },
+    "latency/whisper": {
+      "waitP50": 422,
+      "waitP90": 531,
+      "connectP50": 749,
+      "connectP90": 835,
+      "n": 397
+    },
+    "latency/qwen": {
+      "waitP50": 338,
+      "waitP90": 477,
+      "connectP50": 4077,
+      "connectP90": 4853,
+      "n": 41
+    },
+    "failures/whisper": {
+      "clips": 400,
+      "dropped": 3,
+      "failed": 0,
+      "droppedSets": [
+        "voices-far",
+        "voices-far",
+        "voices-far-babble"
+      ]
+    },
+    "failures/qwen": {
+      "clips": 400,
+      "dropped": 0,
+      "failed": 359,
+      "droppedSets": []
+    }
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "date": "2026-10-23",
+  "runDates": [
+    "2026-10-23"
+  ],
+  "label": "voices-qwen",
+  "options": {
+    "language": "clip",
+    "speed": 1,
+    "gate": true,
+    "runs": 1,
+    "clientProfile": "published"
+  },
+  "sets": [
+    {
+      "id": "voices-clean",
+      "language": "en",
+      "condition": "clean",
+      "source": "VOiCES devkit (CC BY 4.0), room 4, original recording"
+    },
+    {
+      "id": "voices-far",
+      "language": "en",
+      "condition": "far",
+      "source": "VOiCES devkit (CC BY 4.0), room 4, far microphone, no distractor"
+    },
+    {
+      "id": "voices-far-babble",
+      "language": "en",
+      "condition": "far+babble",
+      "source": "VOiCES devkit (CC BY 4.0), room 4, far microphone, babble"
+    },
+    {
+      "id": "voices-far-tv",
+      "language": "en",
+      "condition": "far+tv",
+      "source": "VOiCES devkit (CC BY 4.0), room 4, far microphone, television"
+    }
+  ],
+  "models": {
+    "qwen": "self-hosted (Baseten)"
+  },
+  "labels": {
+    "qwen": "Qwen3-ASR"
+  },
+  "aggregates": {
+    "voices-clean/qwen": {
+      "headline": {
+        "value": 0.025046816479400748,
+        "lo": 0.01890909090909091,
+        "hi": 0.03165735567970205,
+        "speakers": 100
+      },
+      "formatted": 0.27036516853932585
+    },
+    "voices-far/qwen": {
+      "headline": {
+        "value": 0.10884831460674158,
+        "lo": 0.06690647482014389,
+        "hi": 0.15306122448979592,
+        "speakers": 100
+      },
+      "formatted": 0.3321629213483146
+    },
+    "voices-far-babble/qwen": {
+      "headline": {
+        "value": 0.514747191011236,
+        "lo": 0.4533239038189533,
+        "hi": 0.5719880211932734,
+        "speakers": 100
+      },
+      "formatted": 0.6364700374531835
+    },
+    "voices-far-tv/qwen": {
+      "headline": {
+        "value": 0.17224409448818898,
+        "lo": 0.13186813186813187,
+        "hi": 0.2161115414407436,
+        "speakers": 95
+      },
+      "formatted": 0.38016732283464566
+    },
+    "latency/qwen": {
+      "waitP50": 386,
+      "waitP90": 501,
+      "connectP50": 873,
+      "connectP90": 2729,
+      "n": 395
+    },
+    "failures/qwen": {
+      "clips": 400,
+      "dropped": 0,
+      "failed": 5,
+      "droppedSets": []
+    }
+  }
+}

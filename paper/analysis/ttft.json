@@ -1,0 +1,119 @@
+{
+ "assemblyai-3-5-pro": {
+  "messages": 105,
+  "firstTextS": 10.3,
+  "livePct": 85,
+  "liveFirstTextS": 8.6,
+  "waitP50": 794,
+  "rttP50": 200,
+  "waitMinusRtt": 594
+ },
+ "assemblyai-3-6-pro": {
+  "messages": 105,
+  "firstTextS": 10.6,
+  "livePct": 83,
+  "liveFirstTextS": 8.7,
+  "waitP50": 841,
+  "rttP50": 200,
+  "waitMinusRtt": 641
+ },
+ "deepgram": {
+  "messages": 106,
+  "firstTextS": 5.4,
+  "livePct": 99,
+  "liveFirstTextS": 5.3,
+  "waitP50": 522,
+  "rttP50": 309,
+  "waitMinusRtt": 213
+ },
+ "elevenlabs-scribe": {
+  "messages": 106,
+  "firstTextS": 35.8,
+  "livePct": 53,
+  "liveFirstTextS": 35.9,
+  "waitP50": 392,
+  "rttP50": 145,
+  "waitMinusRtt": 246
+ },
+ "elevenlabs-scribe-clean": {
+  "messages": 106,
+  "firstTextS": 35.8,
+  "livePct": 52,
+  "liveFirstTextS": 35.9,
+  "waitP50": 376,
+  "rttP50": 145,
+  "waitMinusRtt": 230
+ },
+ "gemini": {
+  "messages": 106,
+  "firstTextS": 37.7,
+  "livePct": 0,
+  "liveFirstTextS": null,
+  "waitP50": 739,
+  "rttP50": 58,
+  "waitMinusRtt": 681
+ },
+ "gemini-smart": {
+  "messages": 106,
+  "firstTextS": 37.7,
+  "livePct": 0,
+  "liveFirstTextS": null,
+  "waitP50": 754,
+  "rttP50": 58,
+  "waitMinusRtt": 696
+ },
+ "meta": {
+  "messages": 106,
+  "firstTextS": 37.4,
+  "livePct": 0,
+  "liveFirstTextS": null,
+  "waitP50": 433,
+  "rttP50": 56,
+  "waitMinusRtt": 377
+ },
+ "openai-live-transcribe-low": {
+  "messages": 106,
+  "firstTextS": 38.2,
+  "livePct": 0,
+  "liveFirstTextS": null,
+  "waitP50": 728,
+  "rttP50": 28,
+  "waitMinusRtt": 700
+ },
+ "openai-realtime-whisper": {
+  "messages": 106,
+  "firstTextS": 37.7,
+  "livePct": 0,
+  "liveFirstTextS": null,
+  "waitP50": 744,
+  "rttP50": 28,
+  "waitMinusRtt": 716
+ },
+ "qwen": {
+  "messages": 104,
+  "firstTextS": 7.2,
+  "livePct": 96,
+  "liveFirstTextS": 7.0,
+  "waitP50": 360,
+  "rttP50": 276,
+  "waitMinusRtt": 84
+ },
+ "whisper-self-hosted": {
+  "messages": 106,
+  "firstTextS": 8.9,
+  "livePct": 95,
+  "liveFirstTextS": 8.5,
+  "waitP50": 400,
+  "rttP50": 276,
+  "waitMinusRtt": 124
+ },
+ "zoom-scribe": {
+  "messages": 104,
+  "firstTextS": 10.8,
+  "livePct": 84,
+  "liveFirstTextS": 8.8,
+  "waitP50": 429,
+  "rttP50": 28,
+  "waitMinusRtt": 401
+ }
+}

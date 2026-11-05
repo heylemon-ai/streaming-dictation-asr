@@ -1,0 +1,64 @@
+{
+  "$comment": "How the simulated client shapes audio before it reaches an engine: batch size and pacing, the minimum audio a client submits, the voice-activity gate in front of Whisper, and each engine's audio format. A client-profile.local.json (gitignored) overrides this file for experiments; every result records which profile was used.",
+  "feed": {
+    "samples": 512,
+    "intervalMs": 32
+  },
+  "minStreamMs": 100,
+  "vadGate": {
+    "enabledFor": [
+      "whisper"
+    ],
+    "threshold": 0.5,
+    "silenceDetectionMs": 544,
+    "maxPauseSentMs": 512,
+    "leadInWindows": 3,
+    "boundaryFlushAfterMs": 5000
+  },
+  "engineAudio": {
+    "gemini": {
+      "sampleRate": 16000,
+      "chunkSamples": 512
+    },
+    "meta": {
+      "sampleRate": 24000,
+      "chunkSamples": 768
+    },
+    "whisper": {
+      "sampleRate": 16000,
+      "chunkSamples": 512
+    },
+    "qwen": {
+      "sampleRate": 16000,
+      "chunkSamples": 512
+    },
+    "assemblyai-3-5-pro": {
+      "sampleRate": 16000,
+      "chunkSamples": 1600
+    },
+    "assemblyai-3-6-pro": {
+      "sampleRate": 16000,
+      "chunkSamples": 1600
+    },
+    "zoom-scribe": {
+      "sampleRate": 16000,
+      "chunkSamples": 1600
+    },
+    "openai-live-transcribe": {
+      "sampleRate": 24000,
+      "chunkSamples": 768
+    },
+    "openai-live-transcribe-minimal": {
+      "sampleRate": 24000,
+      "chunkSamples": 768
+    },
+    "openai-live-transcribe-low": {
+      "sampleRate": 24000,
+      "chunkSamples": 768
+    },
+    "openai-realtime-whisper": {
+      "sampleRate": 24000,
+      "chunkSamples": 768
+    }
+  }
+}

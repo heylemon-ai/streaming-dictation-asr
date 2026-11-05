@@ -1,0 +1,67 @@
+{
+  "date": "2026-10-20",
+  "runDates": [
+    "2026-10-20"
+  ],
+  "label": "wsh-whisper-self-hosted",
+  "options": {
+    "language": "clip",
+    "speed": 1,
+    "gate": true,
+    "runs": 1,
+    "clientProfile": "published"
+  },
+  "sets": [
+    {
+      "id": "en-dictation",
+      "language": "en",
+      "condition": "clean",
+      "source": "Team recordings of app-style dictation scripts"
+    },
+    {
+      "id": "en-dictation-whisper",
+      "language": "en",
+      "condition": "whisper",
+      "source": "Same scripts, whispered"
+    }
+  ],
+  "models": {
+    "whisper-self-hosted": "self-hosted (Baseten)"
+  },
+  "labels": {
+    "whisper-self-hosted": "Whisper Self-Hosted"
+  },
+  "aggregates": {
+    "en-dictation/whisper-self-hosted": {
+      "headline": {
+        "value": 0.09274525968672712,
+        "lo": 0.05814490078449469,
+        "hi": 0.13487881981032665,
+        "speakers": 20
+      },
+      "formatted": 0.16679160419790104
+    },
+    "en-dictation-whisper/whisper-self-hosted": {
+      "headline": {
+        "value": 0.10077519379844961,
+        "lo": 0.07100591715976332,
+        "hi": 0.1303680981595092,
+        "speakers": 16
+      },
+      "formatted": 0.20816044260027664
+    },
+    "latency/whisper-self-hosted": {
+      "waitP50": 334,
+      "waitP90": 449,
+      "connectP50": 838,
+      "connectP90": 941,
+      "n": 36
+    },
+    "failures/whisper-self-hosted": {
+      "clips": 36,
+      "dropped": 0,
+      "failed": 0,
+      "droppedSets": []
+    }
+  }
+}

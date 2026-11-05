@@ -1,0 +1,359 @@
+{
+  "date": "2026-10-14",
+  "engines": [
+    {
+      "id": "whisper",
+      "label": "Whisper Large V3"
+    },
+    {
+      "id": "meta",
+      "label": "Meta Muse"
+    },
+    {
+      "id": "gemini",
+      "label": "Gemini 3.5 Transcribe"
+    },
+    {
+      "id": "assemblyai-3-5-pro",
+      "label": "AssemblyAI Universal-3.5 Pro"
+    },
+    {
+      "id": "assemblyai-3-6-pro",
+      "label": "AssemblyAI Universal-3.6 Pro"
+    },
+    {
+      "id": "deepgram",
+      "label": "Deepgram Nova-3"
+    },
+    {
+      "id": "elevenlabs-scribe",
+      "label": "ElevenLabs Scribe v2 Realtime"
+    },
+    {
+      "id": "zoom-scribe",
+      "label": "Zoom Scribe"
+    }
+  ],
+  "aggregates": {
+    "english/both/whisper": {
+      "fair": 86,
+      "languageLost": 26,
+      "englishLost": 14,
+      "otherLost": 12,
+      "firstLost": 16,
+      "secondLost": 10
+    },
+    "english/both/meta": {
+      "fair": 86,
+      "languageLost": 12,
+      "englishLost": 4,
+      "otherLost": 8,
+      "firstLost": 0,
+      "secondLost": 12
+    },
+    "english/both/gemini": {
+      "fair": 86,
+      "languageLost": 37,
+      "englishLost": 9,
+      "otherLost": 29,
+      "firstLost": 28,
+      "secondLost": 10
+    },
+    "english/both/assemblyai-3-5-pro": {
+      "fair": 86,
+      "languageLost": 5,
+      "englishLost": 1,
+      "otherLost": 4,
+      "firstLost": 2,
+      "secondLost": 3
+    },
+    "english/both/assemblyai-3-6-pro": {
+      "fair": 86,
+      "languageLost": 3,
+      "englishLost": 1,
+      "otherLost": 2,
+      "firstLost": 1,
+      "secondLost": 2
+    },
+    "english/both/deepgram": {
+      "fair": 86,
+      "languageLost": 27,
+      "englishLost": 0,
+      "otherLost": 27,
+      "firstLost": 13,
+      "secondLost": 14
+    },
+    "english/both/elevenlabs-scribe": {
+      "fair": 86,
+      "languageLost": 52,
+      "englishLost": 2,
+      "otherLost": 50,
+      "firstLost": 24,
+      "secondLost": 28
+    },
+    "english/both/zoom-scribe": {
+      "fair": 86,
+      "languageLost": 48,
+      "englishLost": 0,
+      "otherLost": 48,
+      "firstLost": 25,
+      "secondLost": 23
+    },
+    "english/en/whisper": {
+      "fair": 86,
+      "languageLost": 68,
+      "englishLost": 2,
+      "otherLost": 67,
+      "firstLost": 38,
+      "secondLost": 31
+    },
+    "english/en/meta": {
+      "fair": 86,
+      "languageLost": 15,
+      "englishLost": 3,
+      "otherLost": 12,
+      "firstLost": 0,
+      "secondLost": 15
+    },
+    "english/en/gemini": {
+      "fair": 86,
+      "languageLost": 79,
+      "englishLost": 3,
+      "otherLost": 76,
+      "firstLost": 45,
+      "secondLost": 34
+    },
+    "english/en/assemblyai-3-5-pro": {
+      "fair": 86,
+      "languageLost": 25,
+      "englishLost": 0,
+      "otherLost": 25,
+      "firstLost": 9,
+      "secondLost": 16
+    },
+    "english/en/assemblyai-3-6-pro": {
+      "fair": 86,
+      "languageLost": 16,
+      "englishLost": 0,
+      "otherLost": 16,
+      "firstLost": 7,
+      "secondLost": 9
+    },
+    "english/en/deepgram": {
+      "fair": 86,
+      "languageLost": 85,
+      "englishLost": 0,
+      "otherLost": 85,
+      "firstLost": 45,
+      "secondLost": 40
+    },
+    "english/en/elevenlabs-scribe": {
+      "fair": 86,
+      "languageLost": 71,
+      "englishLost": 0,
+      "otherLost": 71,
+      "firstLost": 45,
+      "secondLost": 26
+    },
+    "english/en/zoom-scribe": {
+      "fair": 86,
+      "languageLost": 48,
+      "englishLost": 0,
+      "otherLost": 48,
+      "firstLost": 25,
+      "secondLost": 23
+    },
+    "english/auto/whisper": {
+      "fair": 86,
+      "languageLost": 28,
+      "englishLost": 14,
+      "otherLost": 14,
+      "firstLost": 18,
+      "secondLost": 10
+    },
+    "english/auto/meta": {
+      "fair": 86,
+      "languageLost": 14,
+      "englishLost": 4,
+      "otherLost": 10,
+      "firstLost": 0,
+      "secondLost": 14
+    },
+    "english/auto/gemini": {
+      "fair": 86,
+      "languageLost": 57,
+      "englishLost": 34,
+      "otherLost": 25,
+      "firstLost": 48,
+      "secondLost": 11
+    },
+    "english/auto/assemblyai-3-5-pro": {
+      "fair": 86,
+      "languageLost": 9,
+      "englishLost": 2,
+      "otherLost": 7,
+      "firstLost": 4,
+      "secondLost": 5
+    },
+    "english/auto/assemblyai-3-6-pro": {
+      "fair": 86,
+      "languageLost": 7,
+      "englishLost": 1,
+      "otherLost": 6,
+      "firstLost": 2,
+      "secondLost": 5
+    },
+    "english/auto/deepgram": {
+      "fair": 86,
+      "languageLost": 27,
+      "englishLost": 0,
+      "otherLost": 27,
+      "firstLost": 13,
+      "secondLost": 14
+    },
+    "english/auto/elevenlabs-scribe": {
+      "fair": 86,
+      "languageLost": 52,
+      "englishLost": 2,
+      "otherLost": 50,
+      "firstLost": 24,
+      "secondLost": 28
+    },
+    "english/auto/zoom-scribe": {
+      "fair": 86,
+      "languageLost": 48,
+      "englishLost": 0,
+      "otherLost": 48,
+      "firstLost": 25,
+      "secondLost": 23
+    },
+    "pair/both/whisper": {
+      "fair": 236,
+      "languageLost": 130,
+      "englishLost": 0,
+      "otherLost": 130,
+      "firstLost": 65,
+      "secondLost": 65
+    },
+    "pair/both/meta": {
+      "fair": 236,
+      "languageLost": 54,
+      "englishLost": 0,
+      "otherLost": 54,
+      "firstLost": 0,
+      "secondLost": 54
+    },
+    "pair/both/gemini": {
+      "fair": 236,
+      "languageLost": 62,
+      "englishLost": 0,
+      "otherLost": 62,
+      "firstLost": 42,
+      "secondLost": 26
+    },
+    "pair/both/assemblyai-3-5-pro": {
+      "fair": 236,
+      "languageLost": 44,
+      "englishLost": 0,
+      "otherLost": 44,
+      "firstLost": 24,
+      "secondLost": 21
+    },
+    "pair/both/assemblyai-3-6-pro": {
+      "fair": 236,
+      "languageLost": 56,
+      "englishLost": 0,
+      "otherLost": 56,
+      "firstLost": 33,
+      "secondLost": 24
+    },
+    "pair/both/deepgram": {
+      "fair": 236,
+      "languageLost": 125,
+      "englishLost": 0,
+      "otherLost": 125,
+      "firstLost": 52,
+      "secondLost": 89
+    },
+    "pair/both/elevenlabs-scribe": {
+      "fair": 236,
+      "languageLost": 217,
+      "englishLost": 0,
+      "otherLost": 217,
+      "firstLost": 147,
+      "secondLost": 125
+    },
+    "pair/both/zoom-scribe": {
+      "fair": 236,
+      "languageLost": 190,
+      "englishLost": 0,
+      "otherLost": 190,
+      "firstLost": 125,
+      "secondLost": 136
+    },
+    "pair/auto/whisper": {
+      "fair": 236,
+      "languageLost": 135,
+      "englishLost": 0,
+      "otherLost": 135,
+      "firstLost": 71,
+      "secondLost": 69
+    },
+    "pair/auto/meta": {
+      "fair": 236,
+      "languageLost": 63,
+      "englishLost": 0,
+      "otherLost": 63,
+      "firstLost": 0,
+      "secondLost": 63
+    },
+    "pair/auto/gemini": {
+      "fair": 236,
+      "languageLost": 165,
+      "englishLost": 0,
+      "otherLost": 165,
+      "firstLost": 127,
+      "secondLost": 48
+    },
+    "pair/auto/assemblyai-3-5-pro": {
+      "fair": 236,
+      "languageLost": 60,
+      "englishLost": 0,
+      "otherLost": 60,
+      "firstLost": 24,
+      "secondLost": 40
+    },
+    "pair/auto/assemblyai-3-6-pro": {
+      "fair": 236,
+      "languageLost": 48,
+      "englishLost": 0,
+      "otherLost": 48,
+      "firstLost": 23,
+      "secondLost": 27
+    },
+    "pair/auto/deepgram": {
+      "fair": 236,
+      "languageLost": 125,
+      "englishLost": 0,
+      "otherLost": 125,
+      "firstLost": 52,
+      "secondLost": 89
+    },
+    "pair/auto/elevenlabs-scribe": {
+      "fair": 236,
+      "languageLost": 216,
+      "englishLost": 0,
+      "otherLost": 216,
+      "firstLost": 145,
+      "secondLost": 120
+    },
+    "pair/auto/zoom-scribe": {
+      "fair": 236,
+      "languageLost": 190,
+      "englishLost": 0,
+      "otherLost": 190,
+      "firstLost": 125,
+      "secondLost": 136
+    }
+  }
+}

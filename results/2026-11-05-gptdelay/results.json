@@ -1,0 +1,400 @@
+{
+  "date": "2026-11-05",
+  "runDates": [
+    "2026-11-05"
+  ],
+  "label": "gptdelay",
+  "options": {
+    "language": "clip",
+    "speed": 1,
+    "gate": true,
+    "runs": 1,
+    "clientProfile": "published"
+  },
+  "sets": [
+    {
+      "id": "en-dictation",
+      "language": "en",
+      "condition": "clean",
+      "source": "Team recordings of app-style dictation scripts"
+    },
+    {
+      "id": "en-dictation-noise",
+      "language": "en",
+      "condition": "noise",
+      "source": "Same scripts, background fan noise"
+    },
+    {
+      "id": "en-dictation-whisper",
+      "language": "en",
+      "condition": "whisper",
+      "source": "Same scripts, whispered"
+    },
+    {
+      "id": "nonspeech",
+      "language": "en",
+      "condition": "nonspeech",
+      "source": "Generated silence and noise (scripts/make-nonspeech.ts)"
+    },
+    {
+      "id": "ar-eg",
+      "language": "ar",
+      "condition": "clean",
+      "source": "FLEURS ar_eg"
+    },
+    {
+      "id": "ar-sa",
+      "language": "ar",
+      "condition": "clean",
+      "source": "SADA22 (Najdi)"
+    },
+    {
+      "id": "ar-ae",
+      "language": "ar",
+      "condition": "clean",
+      "source": "Casablanca (Emirati)"
+    },
+    {
+      "id": "de-de",
+      "language": "de",
+      "condition": "clean",
+      "source": "FLEURS de_de"
+    },
+    {
+      "id": "es-419",
+      "language": "es",
+      "condition": "clean",
+      "source": "FLEURS es_419"
+    },
+    {
+      "id": "es-es",
+      "language": "es",
+      "condition": "clean",
+      "source": "VoxPopuli"
+    },
+    {
+      "id": "es-pr",
+      "language": "es",
+      "condition": "clean",
+      "source": "OpenSLR SLR74"
+    },
+    {
+      "id": "fr-fr",
+      "language": "fr",
+      "condition": "clean",
+      "source": "FLEURS fr_fr"
+    },
+    {
+      "id": "hi-in",
+      "language": "hi",
+      "condition": "clean",
+      "source": "FLEURS hi_in"
+    },
+    {
+      "id": "ur-pk",
+      "language": "ur",
+      "condition": "clean",
+      "source": "FLEURS ur_pk"
+    },
+    {
+      "id": "zh-cn",
+      "language": "zh",
+      "condition": "clean",
+      "source": "FLEURS cmn_hans_cn"
+    }
+  ],
+  "models": {
+    "openai-live-transcribe-low": "gpt-live-transcribe",
+    "openai-live-transcribe-minimal": "gpt-live-transcribe"
+  },
+  "labels": {
+    "openai-live-transcribe-low": "OpenAI GPT-Live-Transcribe (Low delay)",
+    "openai-live-transcribe-minimal": "OpenAI GPT-Live-Transcribe (Minimal delay)"
+  },
+  "aggregates": {
+    "en-dictation/openai-live-transcribe-low": {
+      "headline": {
+        "value": 0.07441253263707572,
+        "lo": 0.06420780389070055,
+        "hi": 0.08428665351742275,
+        "speakers": 73
+      },
+      "formatted": 0.11445976274446938
+    },
+    "en-dictation/openai-live-transcribe-minimal": {
+      "headline": {
+        "value": 0.09257061476382625,
+        "lo": 0.08204382594246547,
+        "hi": 0.1032258064516129,
+        "speakers": 73
+      },
+      "formatted": 0.13230736347119804
+    },
+    "en-dictation-noise/openai-live-transcribe-low": {
+      "headline": {
+        "value": 0.03773584905660377,
+        "lo": 0.02357207615593835,
+        "hi": 0.05193661971830986,
+        "speakers": 17
+      },
+      "formatted": 0.08270042194092828
+    },
+    "en-dictation-noise/openai-live-transcribe-minimal": {
+      "headline": {
+        "value": 0.05566037735849057,
+        "lo": 0.04144620811287478,
+        "hi": 0.07194244604316546,
+        "speakers": 17
+      },
+      "formatted": 0.09282700421940929
+    },
+    "en-dictation-whisper/openai-live-transcribe-low": {
+      "headline": {
+        "value": 0.08759689922480621,
+        "lo": 0.07233704292527822,
+        "hi": 0.10820895522388059,
+        "speakers": 16
+      },
+      "formatted": 0.14661134163208853
+    },
+    "en-dictation-whisper/openai-live-transcribe-minimal": {
+      "headline": {
+        "value": 0.13643410852713178,
+        "lo": 0.10526315789473684,
+        "hi": 0.1647887323943662,
+        "speakers": 16
+      },
+      "formatted": 0.1991701244813278
+    },
+    "ar-eg/openai-live-transcribe-low": {
+      "headline": {
+        "value": 0.07142857142857142,
+        "lo": 0.03015075376884422,
+        "hi": 0.11917098445595854,
+        "speakers": 20
+      },
+      "formatted": 0.16170212765957448
+    },
+    "ar-eg/openai-live-transcribe-minimal": {
+      "headline": {
+        "value": 0.08163265306122448,
+        "lo": 0.0425531914893617,
+        "hi": 0.125,
+        "speakers": 20
+      },
+      "formatted": 0.1829787234042553
+    },
+    "ar-sa/openai-live-transcribe-low": {
+      "headline": {
+        "value": 0.2734375,
+        "lo": 0.1638655462184874,
+        "hi": 0.3969465648854962,
+        "speakers": 20
+      },
+      "formatted": 0.39855072463768115
+    },
+    "ar-sa/openai-live-transcribe-minimal": {
+      "headline": {
+        "value": 0.328125,
+        "lo": 0.22265625,
+        "hi": 0.43911439114391143,
+        "speakers": 20
+      },
+      "formatted": 0.43478260869565216
+    },
+    "ar-ae/openai-live-transcribe-low": {
+      "headline": {
+        "value": 0.5352941176470588,
+        "lo": 0.4382716049382716,
+        "hi": 0.625,
+        "speakers": 20
+      },
+      "formatted": 0.6276595744680851
+    },
+    "ar-ae/openai-live-transcribe-minimal": {
+      "headline": {
+        "value": 0.5705882352941176,
+        "lo": 0.45806451612903226,
+        "hi": 0.6706586826347305,
+        "speakers": 20
+      },
+      "formatted": 0.6170212765957447
+    },
+    "de-de/openai-live-transcribe-low": {
+      "headline": {
+        "value": 0.06451612903225806,
+        "lo": 0.020161290322580645,
+        "hi": 0.11904761904761904,
+        "speakers": 20
+      },
+      "formatted": 0.10309278350515463
+    },
+    "de-de/openai-live-transcribe-minimal": {
+      "headline": {
+        "value": 0.07661290322580645,
+        "lo": 0.03619909502262444,
+        "hi": 0.11742424242424243,
+        "speakers": 20
+      },
+      "formatted": 0.10652920962199312
+    },
+    "es-419/openai-live-transcribe-low": {
+      "headline": {
+        "value": 0.06521739130434782,
+        "lo": 0.03305785123966942,
+        "hi": 0.10714285714285714,
+        "speakers": 20
+      },
+      "formatted": 0.15272727272727274
+    },
+    "es-419/openai-live-transcribe-minimal": {
+      "headline": {
+        "value": 0.08695652173913043,
+        "lo": 0.04417670682730924,
+        "hi": 0.14220183486238533,
+        "speakers": 20
+      },
+      "formatted": 0.1709090909090909
+    },
+    "es-es/openai-live-transcribe-low": {
+      "headline": {
+        "value": 0.08421052631578947,
+        "lo": 0.010471204188481676,
+        "hi": 0.20634920634920634,
+        "speakers": 20
+      },
+      "formatted": 0.12962962962962962
+    },
+    "es-es/openai-live-transcribe-minimal": {
+      "headline": {
+        "value": 0.12105263157894737,
+        "lo": 0.03626943005181347,
+        "hi": 0.24736842105263157,
+        "speakers": 20
+      },
+      "formatted": 0.1712962962962963
+    },
+    "es-pr/openai-live-transcribe-low": {
+      "headline": {
+        "value": 0.031413612565445025,
+        "lo": 0.005405405405405406,
+        "hi": 0.06220095693779904,
+        "speakers": 20
+      },
+      "formatted": 0.18274111675126903
+    },
+    "es-pr/openai-live-transcribe-minimal": {
+      "headline": {
+        "value": 0.06806282722513089,
+        "lo": 0.0196078431372549,
+        "hi": 0.13297872340425532,
+        "speakers": 20
+      },
+      "formatted": 0.2131979695431472
+    },
+    "fr-fr/openai-live-transcribe-low": {
+      "headline": {
+        "value": 0.09420289855072464,
+        "lo": 0.05166051660516605,
+        "hi": 0.14522821576763487,
+        "speakers": 20
+      },
+      "formatted": 0.12861736334405144
+    },
+    "fr-fr/openai-live-transcribe-minimal": {
+      "headline": {
+        "value": 0.14492753623188406,
+        "lo": 0.10108303249097472,
+        "hi": 0.1903114186851211,
+        "speakers": 20
+      },
+      "formatted": 0.1864951768488746
+    },
+    "hi-in/openai-live-transcribe-low": {
+      "headline": {
+        "value": 0.14035087719298245,
+        "lo": 0.056768558951965066,
+        "hi": 0.25327510917030566,
+        "speakers": 20
+      },
+      "formatted": 0.15296803652968036
+    },
+    "hi-in/openai-live-transcribe-minimal": {
+      "headline": {
+        "value": 0.20614035087719298,
+        "lo": 0.10869565217391304,
+        "hi": 0.3209302325581395,
+        "speakers": 20
+      },
+      "formatted": 0.20319634703196346
+    },
+    "ur-pk/openai-live-transcribe-low": {
+      "headline": {
+        "value": 0.2147887323943662,
+        "lo": 0.12686567164179105,
+        "hi": 0.326007326007326,
+        "speakers": 20
+      },
+      "formatted": 0.2532467532467532
+    },
+    "ur-pk/openai-live-transcribe-minimal": {
+      "headline": {
+        "value": 0.19718309859154928,
+        "lo": 0.14184397163120568,
+        "hi": 0.2608695652173913,
+        "speakers": 20
+      },
+      "formatted": 0.19155844155844157
+    },
+    "zh-cn/openai-live-transcribe-low": {
+      "headline": {
+        "value": 0.07629427792915532,
+        "lo": 0.04336043360433604,
+        "hi": 0.11666666666666667,
+        "speakers": 20
+      },
+      "formatted": 0.095
+    },
+    "zh-cn/openai-live-transcribe-minimal": {
+      "headline": {
+        "value": 0.07084468664850137,
+        "lo": 0.0440771349862259,
+        "hi": 0.09866666666666667,
+        "speakers": 20
+      },
+      "formatted": 0.0925
+    },
+    "nonspeech/openai-live-transcribe-low": {
+      "nonSpeechOutputRate": 0
+    },
+    "nonspeech/openai-live-transcribe-minimal": {
+      "nonSpeechOutputRate": 0
+    },
+    "latency/openai-live-transcribe-low": {
+      "waitP50": 744,
+      "waitP90": 899,
+      "connectP50": 1200,
+      "connectP90": 1369,
+      "n": 336
+    },
+    "latency/openai-live-transcribe-minimal": {
+      "waitP50": 752,
+      "waitP90": 882,
+      "connectP50": 1207,
+      "connectP90": 1325,
+      "n": 336
+    },
+    "failures/openai-live-transcribe-low": {
+      "clips": 336,
+      "dropped": 0,
+      "failed": 0,
+      "droppedSets": []
+    },
+    "failures/openai-live-transcribe-minimal": {
+      "clips": 336,
+      "dropped": 0,
+      "failed": 0,
+      "droppedSets": []
+    }
+  }
+}

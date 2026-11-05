@@ -1,0 +1,256 @@
+{
+  "date": "2026-10-20",
+  "runDates": [
+    "2026-10-20"
+  ],
+  "label": "whisper-self-hosted",
+  "options": {
+    "language": "clip",
+    "speed": 1,
+    "gate": true,
+    "runs": 1,
+    "clientProfile": "published"
+  },
+  "sets": [
+    {
+      "id": "en-dictation",
+      "language": "en",
+      "condition": "clean",
+      "source": "Team recordings of app-style dictation scripts"
+    },
+    {
+      "id": "en-dictation-noise",
+      "language": "en",
+      "condition": "noise",
+      "source": "Same scripts, background fan noise"
+    },
+    {
+      "id": "en-dictation-whisper",
+      "language": "en",
+      "condition": "whisper",
+      "source": "Same scripts, whispered"
+    },
+    {
+      "id": "nonspeech",
+      "language": "en",
+      "condition": "nonspeech",
+      "source": "Generated silence and noise (scripts/make-nonspeech.ts)"
+    },
+    {
+      "id": "ar-eg",
+      "language": "ar",
+      "condition": "clean",
+      "source": "FLEURS ar_eg"
+    },
+    {
+      "id": "ar-sa",
+      "language": "ar",
+      "condition": "clean",
+      "source": "SADA22 (Najdi)"
+    },
+    {
+      "id": "ar-ae",
+      "language": "ar",
+      "condition": "clean",
+      "source": "Casablanca (Emirati)"
+    },
+    {
+      "id": "de-de",
+      "language": "de",
+      "condition": "clean",
+      "source": "FLEURS de_de"
+    },
+    {
+      "id": "es-419",
+      "language": "es",
+      "condition": "clean",
+      "source": "FLEURS es_419"
+    },
+    {
+      "id": "es-es",
+      "language": "es",
+      "condition": "clean",
+      "source": "VoxPopuli"
+    },
+    {
+      "id": "es-pr",
+      "language": "es",
+      "condition": "clean",
+      "source": "OpenSLR SLR74"
+    },
+    {
+      "id": "fr-fr",
+      "language": "fr",
+      "condition": "clean",
+      "source": "FLEURS fr_fr"
+    },
+    {
+      "id": "hi-in",
+      "language": "hi",
+      "condition": "clean",
+      "source": "FLEURS hi_in"
+    },
+    {
+      "id": "ur-pk",
+      "language": "ur",
+      "condition": "clean",
+      "source": "FLEURS ur_pk"
+    },
+    {
+      "id": "zh-cn",
+      "language": "zh",
+      "condition": "clean",
+      "source": "FLEURS cmn_hans_cn"
+    }
+  ],
+  "models": {
+    "whisper-self-hosted": "self-hosted (Baseten)"
+  },
+  "labels": {
+    "whisper-self-hosted": "Whisper Self-Hosted"
+  },
+  "aggregates": {
+    "en-dictation/whisper-self-hosted": {
+      "headline": {
+        "value": 0.08307619273676715,
+        "lo": 0.0684312459651388,
+        "hi": 0.09813135176483444,
+        "speakers": 73
+      },
+      "formatted": 0.1599871753767233
+    },
+    "en-dictation-noise/whisper-self-hosted": {
+      "headline": {
+        "value": 0.06509433962264151,
+        "lo": 0.0412573673870334,
+        "hi": 0.09962756052141528,
+        "speakers": 17
+      },
+      "formatted": 0.14261603375527426
+    },
+    "en-dictation-whisper/whisper-self-hosted": {
+      "headline": {
+        "value": 0.10077519379844961,
+        "lo": 0.07100591715976332,
+        "hi": 0.1303680981595092,
+        "speakers": 16
+      },
+      "formatted": 0.20816044260027664
+    },
+    "ar-eg/whisper-self-hosted": {
+      "headline": {
+        "value": 0.09183673469387756,
+        "lo": 0.054455445544554455,
+        "hi": 0.13705583756345177,
+        "speakers": 20
+      },
+      "formatted": 0.2765957446808511
+    },
+    "ar-sa/whisper-self-hosted": {
+      "headline": {
+        "value": 0.37109375,
+        "lo": 0.2446351931330472,
+        "hi": 0.5179856115107914,
+        "speakers": 20
+      },
+      "formatted": 0.4492753623188406
+    },
+    "ar-ae/whisper-self-hosted": {
+      "headline": {
+        "value": 0.6,
+        "lo": 0.49740932642487046,
+        "hi": 0.7114093959731543,
+        "speakers": 20
+      },
+      "formatted": 0.6595744680851063
+    },
+    "de-de/whisper-self-hosted": {
+      "headline": {
+        "value": 0.06854838709677419,
+        "lo": 0.03225806451612903,
+        "hi": 0.1076923076923077,
+        "speakers": 20
+      },
+      "formatted": 0.09965635738831616
+    },
+    "es-419/whisper-self-hosted": {
+      "headline": {
+        "value": 0.05652173913043478,
+        "lo": 0.02834008097165992,
+        "hi": 0.09053497942386832,
+        "speakers": 20
+      },
+      "formatted": 0.15272727272727274
+    },
+    "es-es/whisper-self-hosted": {
+      "headline": {
+        "value": 0.19473684210526315,
+        "lo": 0.035897435897435895,
+        "hi": 0.36923076923076925,
+        "speakers": 20
+      },
+      "formatted": 0.3194444444444444
+    },
+    "es-pr/whisper-self-hosted": {
+      "headline": {
+        "value": 0.05759162303664921,
+        "lo": 0.01694915254237288,
+        "hi": 0.11224489795918367,
+        "speakers": 20
+      },
+      "formatted": 0.20812182741116753
+    },
+    "fr-fr/whisper-self-hosted": {
+      "headline": {
+        "value": 0.06521739130434782,
+        "lo": 0.027586206896551724,
+        "hi": 0.11153846153846154,
+        "speakers": 20
+      },
+      "formatted": 0.09967845659163987
+    },
+    "hi-in/whisper-self-hosted": {
+      "headline": {
+        "value": 0.2982456140350877,
+        "lo": 0.2127659574468085,
+        "hi": 0.391705069124424,
+        "speakers": 20
+      },
+      "formatted": 0.2534246575342466
+    },
+    "ur-pk/whisper-self-hosted": {
+      "headline": {
+        "value": 0.19718309859154928,
+        "lo": 0.13355048859934854,
+        "hi": 0.26071428571428573,
+        "speakers": 20
+      },
+      "formatted": 0.2597402597402597
+    },
+    "zh-cn/whisper-self-hosted": {
+      "headline": {
+        "value": 0.04087193460490463,
+        "lo": 0.021739130434782608,
+        "hi": 0.06017191977077364,
+        "speakers": 20
+      },
+      "formatted": 0.12
+    },
+    "nonspeech/whisper-self-hosted": {
+      "nonSpeechOutputRate": 0.6
+    },
+    "latency/whisper-self-hosted": {
+      "waitP50": 361,
+      "waitP90": 498,
+      "connectP50": 837,
+      "connectP90": 940,
+      "n": 336
+    },
+    "failures/whisper-self-hosted": {
+      "clips": 336,
+      "dropped": 0,
+      "failed": 0,
+      "droppedSets": []
+    }
+  }
+}

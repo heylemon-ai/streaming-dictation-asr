@@ -1,0 +1,21 @@
+\begin{tikzpicture}
+\begin{axis}[at={(0cm,0)}, width=5.4cm, height=4.6cm, title={Whispered WER (\%)}, title style={font=\footnotesize, align=center},
+  xtick={0.2,0.3,0.4,0.5}, xlabel={Threshold}, xlabel style={font=\footnotesize}, ticklabel style={font=\scriptsize}, ymin=0, ymax=60,
+  axis x line*=bottom, axis y line*=left, ymajorgrids, major grid style={black!12}, legend style={draw=none, fill=none, font=\scriptsize, at={(0.97,0.52)}, anchor=east}]
+\addplot[figblue, line width=1.4pt, mark=*, mark size=1.8pt] coordinates {(0.2,41.1) (0.3,44.7) (0.4,46.3) (0.5,51.4)};
+\addplot[figorange, line width=1.4pt, mark=square*, mark size=1.8pt] coordinates {(0.2,10.0) (0.3,10.2) (0.4,10.5) (0.5,10.7)};
+\legend{Silero, TEN}
+\end{axis}
+\begin{axis}[at={(5.3cm,0)}, width=5.4cm, height=4.6cm, title={Whispered audio\\called speech (\%)}, title style={font=\footnotesize, align=center},
+  xtick={0.2,0.3,0.4,0.5}, xlabel={Threshold}, xlabel style={font=\footnotesize}, ticklabel style={font=\scriptsize}, ymin=0, ymax=100,
+  axis x line*=bottom, axis y line*=left, ymajorgrids, major grid style={black!12}]
+\addplot[figblue, line width=1.4pt, mark=*, mark size=1.8pt] coordinates {(0.2,51.7) (0.3,46.5) (0.4,41.8) (0.5,37.3)};
+\addplot[figorange, line width=1.4pt, mark=square*, mark size=1.8pt] coordinates {(0.2,99.8) (0.3,97) (0.4,88.6) (0.5,79)};
+\end{axis}
+\begin{axis}[at={(10.6cm,0)}, width=5.4cm, height=4.6cm, title={No-speech clips\\with text (of 10)}, title style={font=\footnotesize, align=center},
+  xtick={0.2,0.3,0.4,0.5}, xlabel={Threshold}, xlabel style={font=\footnotesize}, ticklabel style={font=\scriptsize}, ymin=0, ymax=10,
+  axis x line*=bottom, axis y line*=left, ymajorgrids, major grid style={black!12}]
+\addplot[figblue, line width=1.4pt, mark=*, mark size=1.8pt] coordinates {(0.2,0) (0.3,0) (0.4,0) (0.5,0)};
+\addplot[figorange, line width=1.4pt, mark=square*, mark size=1.8pt] coordinates {(0.2,2) (0.3,2) (0.4,2) (0.5,2)};
+\end{axis}
+\end{tikzpicture}

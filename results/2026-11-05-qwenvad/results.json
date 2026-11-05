@@ -1,0 +1,76 @@
+{
+  "date": "2026-11-05",
+  "runDates": [
+    "2026-11-05"
+  ],
+  "label": "qwenvad",
+  "options": {
+    "language": "clip",
+    "speed": 1,
+    "gate": true,
+    "runs": 1,
+    "clientProfile": "published"
+  },
+  "sets": [
+    {
+      "id": "en-dictation-whisper",
+      "language": "en",
+      "condition": "whisper",
+      "source": "Same scripts, whispered"
+    }
+  ],
+  "models": {
+    "qwen": "self-hosted (Baseten)",
+    "qwen-lowvad": "self-hosted (Baseten)"
+  },
+  "labels": {
+    "qwen": "Qwen3-ASR",
+    "qwen-lowvad": "Qwen3-ASR (relaxed server VAD)"
+  },
+  "aggregates": {
+    "en-dictation-whisper/qwen": {
+      "headline": {
+        "value": 0.4666666666666667,
+        "lo": 0.3293768545994065,
+        "hi": 0.6754237288135593,
+        "speakers": 16
+      },
+      "formatted": 0.5629322268326418
+    },
+    "en-dictation-whisper/qwen-lowvad": {
+      "headline": {
+        "value": 0.1635658914728682,
+        "lo": 0.10970081595648232,
+        "hi": 0.2676470588235294,
+        "speakers": 16
+      },
+      "formatted": 0.25103734439834025
+    },
+    "latency/qwen": {
+      "waitP50": 275,
+      "waitP90": 373,
+      "connectP50": 938,
+      "connectP90": 1173,
+      "n": 16
+    },
+    "latency/qwen-lowvad": {
+      "waitP50": 393,
+      "waitP90": 716,
+      "connectP50": 1064,
+      "connectP90": 2305,
+      "n": 16
+    },
+    "failures/qwen": {
+      "clips": 16,
+      "dropped": 0,
+      "failed": 0,
+      "droppedSets": []
+    },
+    "failures/qwen-lowvad": {
+      "clips": 16,
+      "dropped": 0,
+      "failed": 0,
+      "droppedSets": []
+    }
+  }
+}
