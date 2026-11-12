@@ -1,0 +1,52 @@
+{
+  "date": "2026-11-05",
+  "runDates": [
+    "2026-11-05"
+  ],
+  "label": "regional-zoom",
+  "options": {
+    "language": "regional",
+    "speed": 1,
+    "gate": true,
+    "runs": 1,
+    "clientProfile": "published"
+  },
+  "sets": [
+    {
+      "id": "ar-ae",
+      "language": "ar",
+      "condition": "clean",
+      "source": "Casablanca (Emirati)"
+    }
+  ],
+  "models": {
+    "zoom-scribe": "zoom-scribe"
+  },
+  "labels": {
+    "zoom-scribe": "Zoom Scribe"
+  },
+  "aggregates": {
+    "ar-ae/zoom-scribe": {
+      "headline": {
+        "value": 0.5176470588235295,
+        "lo": 0.4146341463414634,
+        "hi": 0.625,
+        "speakers": 20
+      },
+      "formatted": 0.6702127659574468
+    },
+    "latency/zoom-scribe": {
+      "waitP50": 366,
+      "waitP90": 387,
+      "connectP50": 1257,
+      "connectP90": 5284,
+      "n": 20
+    },
+    "failures/zoom-scribe": {
+      "clips": 20,
+      "dropped": 0,
+      "failed": 0,
+      "droppedSets": []
+    }
+  }
+}

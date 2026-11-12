@@ -1,0 +1,76 @@
+{
+  "date": "2026-11-05",
+  "runDates": [
+    "2026-11-05"
+  ],
+  "label": "aaiflush-smoke",
+  "options": {
+    "language": "clip",
+    "speed": 1,
+    "gate": true,
+    "runs": 1,
+    "clientProfile": "published"
+  },
+  "sets": [
+    {
+      "id": "en-dictation-whisper",
+      "language": "en",
+      "condition": "whisper",
+      "source": "Same scripts, whispered"
+    }
+  ],
+  "models": {
+    "assemblyai-3-5-pro-flush": "universal-3-5-pro",
+    "assemblyai-3-6-pro-flush": "universal-3-6-pro"
+  },
+  "labels": {
+    "assemblyai-3-5-pro-flush": "AssemblyAI Universal-3.5 Pro (flush at end)",
+    "assemblyai-3-6-pro-flush": "AssemblyAI Universal-3.6 Pro (flush at end)"
+  },
+  "aggregates": {
+    "en-dictation-whisper/assemblyai-3-5-pro-flush": {
+      "headline": {
+        "value": 0.3116279069767442,
+        "lo": 0.15512048192771086,
+        "hi": 0.5598621877691645,
+        "speakers": 16
+      },
+      "formatted": 0.359612724757953
+    },
+    "en-dictation-whisper/assemblyai-3-6-pro-flush": {
+      "headline": {
+        "value": 0.30310077519379847,
+        "lo": 0.143646408839779,
+        "hi": 0.5578790141896938,
+        "speakers": 16
+      },
+      "formatted": 0.34854771784232363
+    },
+    "latency/assemblyai-3-5-pro-flush": {
+      "waitP50": 609,
+      "waitP90": 1201,
+      "connectP50": 1202,
+      "connectP90": 1616,
+      "n": 16
+    },
+    "latency/assemblyai-3-6-pro-flush": {
+      "waitP50": 606,
+      "waitP90": 1244,
+      "connectP50": 1216,
+      "connectP90": 1263,
+      "n": 16
+    },
+    "failures/assemblyai-3-5-pro-flush": {
+      "clips": 16,
+      "dropped": 0,
+      "failed": 0,
+      "droppedSets": []
+    },
+    "failures/assemblyai-3-6-pro-flush": {
+      "clips": 16,
+      "dropped": 0,
+      "failed": 0,
+      "droppedSets": []
+    }
+  }
+}

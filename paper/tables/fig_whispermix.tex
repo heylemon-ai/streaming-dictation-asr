@@ -1,0 +1,25 @@
+\begin{tikzpicture}
+\begin{axis}[xbar stacked, width=0.92\textwidth, height=7cm, bar width=8pt, xmin=0, xmax=52,
+  symbolic y coords={Gemini Smart,Gemini,ElevenLabs NV,GPT-Live,RT Whisper,ElevenLabs,Whisper SH,Meta,Deepgram,AAI 3.6,AAI 3.5,Zoom,Qwen}, ytick=data, y dir=reverse, yticklabel style={font=\footnotesize},
+  xlabel={Share of words (\%), whispered English}, xlabel style={font=\footnotesize}, xticklabel style={font=\footnotesize},
+  axis y line*=left, axis x line*=bottom, xmajorgrids, major grid style={black!12},
+  legend style={draw=none, font=\footnotesize, legend columns=3, at={(0.98,0.98)}, anchor=north east}, legend cell align=left]
+\addplot[fill=figblue, draw=white] coordinates {(1.6,{Gemini Smart}) (2.9,{Gemini}) (4.0,{ElevenLabs NV}) (6.0,{GPT-Live}) (5.7,{RT Whisper}) (4.5,{ElevenLabs}) (6.0,{Whisper SH}) (7.1,{Meta}) (11.8,{Deepgram}) (3.0,{AAI 3.6}) (3.1,{AAI 3.5}) (5.1,{Zoom}) (11.2,{Qwen})};
+\addplot[fill=figorange, draw=white] coordinates {(1.9,{Gemini Smart}) (1.0,{Gemini}) (1.7,{ElevenLabs NV}) (1.2,{GPT-Live}) (1.9,{RT Whisper}) (0.8,{ElevenLabs}) (1.8,{Whisper SH}) (1.1,{Meta}) (2.7,{Deepgram}) (25.7,{AAI 3.6}) (25.7,{AAI 3.5}) (27.6,{Zoom}) (32.2,{Qwen})};
+\addplot[fill=figaqua, draw=white] coordinates {(0.7,{Gemini Smart}) (1.1,{Gemini}) (1.4,{ElevenLabs NV}) (1.7,{GPT-Live}) (1.3,{RT Whisper}) (3.8,{ElevenLabs}) (2.3,{Whisper SH}) (3.1,{Meta}) (5.3,{Deepgram}) (1.8,{AAI 3.6}) (2.2,{AAI 3.5}) (1.9,{Zoom}) (3.3,{Qwen})};
+\legend{Wrong, Missing, Extra}
+\node[anchor=west, font=\scriptsize, text=black!65] at (axis cs:4.2,{Gemini Smart}) {4.2};
+\node[anchor=west, font=\scriptsize, text=black!65] at (axis cs:5.0,{Gemini}) {5.0};
+\node[anchor=west, font=\scriptsize, text=black!65] at (axis cs:7.1,{ElevenLabs NV}) {7.1};
+\node[anchor=west, font=\scriptsize, text=black!65] at (axis cs:8.9,{GPT-Live}) {8.8};
+\node[anchor=west, font=\scriptsize, text=black!65] at (axis cs:8.9,{RT Whisper}) {8.9};
+\node[anchor=west, font=\scriptsize, text=black!65] at (axis cs:9.1,{ElevenLabs}) {9.1};
+\node[anchor=west, font=\scriptsize, text=black!65] at (axis cs:10.1,{Whisper SH}) {10.1};
+\node[anchor=west, font=\scriptsize, text=black!65] at (axis cs:11.299999999999999,{Meta}) {11.3};
+\node[anchor=west, font=\scriptsize, text=black!65] at (axis cs:19.8,{Deepgram}) {19.8};
+\node[anchor=west, font=\scriptsize, text=black!65] at (axis cs:30.5,{AAI 3.6}) {30.5};
+\node[anchor=west, font=\scriptsize, text=black!65] at (axis cs:31.0,{AAI 3.5}) {30.9};
+\node[anchor=west, font=\scriptsize, text=black!65] at (axis cs:34.6,{Zoom}) {34.7};
+\node[anchor=west, font=\scriptsize, text=black!65] at (axis cs:46.7,{Qwen}) {46.6};
+\end{axis}
+\end{tikzpicture}

@@ -1,0 +1,359 @@
+{
+  "date": "2026-10-21",
+  "engines": [
+    {
+      "id": "whisper",
+      "label": "Whisper Large V3"
+    },
+    {
+      "id": "openai-whisper-1-split",
+      "label": "OpenAI Whisper-1 (split at pauses)"
+    },
+    {
+      "id": "whisper-self-hosted",
+      "label": "Whisper Self-Hosted"
+    },
+    {
+      "id": "whisper-self-hosted-vad",
+      "label": "Whisper Self-Hosted (VAD drops audio)"
+    },
+    {
+      "id": "whisper-self-hosted-ten",
+      "label": "Whisper Self-Hosted (TEN VAD)"
+    },
+    {
+      "id": "whisper-self-hosted-ten-vad",
+      "label": "Whisper Self-Hosted (TEN VAD drops audio)"
+    },
+    {
+      "id": "openai-realtime-whisper",
+      "label": "OpenAI GPT-Realtime-Whisper"
+    },
+    {
+      "id": "openai-whisper-1",
+      "label": "OpenAI Whisper-1"
+    }
+  ],
+  "aggregates": {
+    "english/both/whisper": {
+      "fair": 85,
+      "languageLost": 26,
+      "englishLost": 14,
+      "otherLost": 12,
+      "firstLost": 16,
+      "secondLost": 10
+    },
+    "english/both/openai-whisper-1-split": {
+      "fair": 85,
+      "languageLost": 54,
+      "englishLost": 35,
+      "otherLost": 22,
+      "firstLost": 16,
+      "secondLost": 41
+    },
+    "english/both/whisper-self-hosted": {
+      "fair": 85,
+      "languageLost": 33,
+      "englishLost": 12,
+      "otherLost": 21,
+      "firstLost": 21,
+      "secondLost": 12
+    },
+    "english/both/whisper-self-hosted-vad": {
+      "fair": 85,
+      "languageLost": 39,
+      "englishLost": 20,
+      "otherLost": 19,
+      "firstLost": 26,
+      "secondLost": 13
+    },
+    "english/both/whisper-self-hosted-ten": {
+      "fair": 85,
+      "languageLost": 27,
+      "englishLost": 8,
+      "otherLost": 19,
+      "firstLost": 17,
+      "secondLost": 10
+    },
+    "english/both/whisper-self-hosted-ten-vad": {
+      "fair": 85,
+      "languageLost": 39,
+      "englishLost": 16,
+      "otherLost": 23,
+      "firstLost": 26,
+      "secondLost": 13
+    },
+    "english/both/openai-realtime-whisper": {
+      "fair": 85,
+      "languageLost": 4,
+      "englishLost": 1,
+      "otherLost": 3,
+      "firstLost": 1,
+      "secondLost": 3
+    },
+    "english/both/openai-whisper-1": {
+      "fair": 85,
+      "languageLost": 75,
+      "englishLost": 68,
+      "otherLost": 17,
+      "firstLost": 33,
+      "secondLost": 52
+    },
+    "english/en/whisper": {
+      "fair": 85,
+      "languageLost": 67,
+      "englishLost": 2,
+      "otherLost": 66,
+      "firstLost": 38,
+      "secondLost": 30
+    },
+    "english/en/openai-whisper-1-split": {
+      "fair": 85,
+      "languageLost": 70,
+      "englishLost": 4,
+      "otherLost": 70,
+      "firstLost": 35,
+      "secondLost": 39
+    },
+    "english/en/whisper-self-hosted": {
+      "fair": 85,
+      "languageLost": 72,
+      "englishLost": 1,
+      "otherLost": 71,
+      "firstLost": 39,
+      "secondLost": 33
+    },
+    "english/en/whisper-self-hosted-vad": {
+      "fair": 85,
+      "languageLost": 72,
+      "englishLost": 6,
+      "otherLost": 71,
+      "firstLost": 40,
+      "secondLost": 37
+    },
+    "english/en/whisper-self-hosted-ten": {
+      "fair": 85,
+      "languageLost": 70,
+      "englishLost": 1,
+      "otherLost": 69,
+      "firstLost": 38,
+      "secondLost": 32
+    },
+    "english/en/whisper-self-hosted-ten-vad": {
+      "fair": 85,
+      "languageLost": 70,
+      "englishLost": 6,
+      "otherLost": 69,
+      "firstLost": 43,
+      "secondLost": 32
+    },
+    "english/en/openai-realtime-whisper": {
+      "fair": 85,
+      "languageLost": 4,
+      "englishLost": 0,
+      "otherLost": 4,
+      "firstLost": 1,
+      "secondLost": 3
+    },
+    "english/en/openai-whisper-1": {
+      "fair": 85,
+      "languageLost": 64,
+      "englishLost": 24,
+      "otherLost": 64,
+      "firstLost": 34,
+      "secondLost": 54
+    },
+    "english/auto/whisper": {
+      "fair": 85,
+      "languageLost": 28,
+      "englishLost": 14,
+      "otherLost": 14,
+      "firstLost": 18,
+      "secondLost": 10
+    },
+    "english/auto/openai-whisper-1-split": {
+      "fair": 85,
+      "languageLost": 51,
+      "englishLost": 32,
+      "otherLost": 22,
+      "firstLost": 16,
+      "secondLost": 38
+    },
+    "english/auto/whisper-self-hosted": {
+      "fair": 85,
+      "languageLost": 36,
+      "englishLost": 12,
+      "otherLost": 24,
+      "firstLost": 23,
+      "secondLost": 13
+    },
+    "english/auto/whisper-self-hosted-vad": {
+      "fair": 85,
+      "languageLost": 40,
+      "englishLost": 20,
+      "otherLost": 21,
+      "firstLost": 27,
+      "secondLost": 14
+    },
+    "english/auto/whisper-self-hosted-ten": {
+      "fair": 85,
+      "languageLost": 28,
+      "englishLost": 8,
+      "otherLost": 20,
+      "firstLost": 17,
+      "secondLost": 11
+    },
+    "english/auto/whisper-self-hosted-ten-vad": {
+      "fair": 85,
+      "languageLost": 40,
+      "englishLost": 16,
+      "otherLost": 25,
+      "firstLost": 28,
+      "secondLost": 13
+    },
+    "english/auto/openai-realtime-whisper": {
+      "fair": 85,
+      "languageLost": 3,
+      "englishLost": 0,
+      "otherLost": 3,
+      "firstLost": 1,
+      "secondLost": 2
+    },
+    "english/auto/openai-whisper-1": {
+      "fair": 85,
+      "languageLost": 75,
+      "englishLost": 68,
+      "otherLost": 17,
+      "firstLost": 33,
+      "secondLost": 52
+    },
+    "pair/both/whisper": {
+      "fair": 232,
+      "languageLost": 127,
+      "englishLost": 0,
+      "otherLost": 127,
+      "firstLost": 64,
+      "secondLost": 63
+    },
+    "pair/both/openai-whisper-1-split": {
+      "fair": 232,
+      "languageLost": 204,
+      "englishLost": 0,
+      "otherLost": 204,
+      "firstLost": 87,
+      "secondLost": 142
+    },
+    "pair/both/whisper-self-hosted": {
+      "fair": 232,
+      "languageLost": 201,
+      "englishLost": 0,
+      "otherLost": 201,
+      "firstLost": 110,
+      "secondLost": 91
+    },
+    "pair/both/whisper-self-hosted-vad": {
+      "fair": 232,
+      "languageLost": 225,
+      "englishLost": 0,
+      "otherLost": 225,
+      "firstLost": 120,
+      "secondLost": 110
+    },
+    "pair/both/whisper-self-hosted-ten": {
+      "fair": 232,
+      "languageLost": 218,
+      "englishLost": 0,
+      "otherLost": 218,
+      "firstLost": 115,
+      "secondLost": 103
+    },
+    "pair/both/whisper-self-hosted-ten-vad": {
+      "fair": 232,
+      "languageLost": 225,
+      "englishLost": 0,
+      "otherLost": 225,
+      "firstLost": 118,
+      "secondLost": 107
+    },
+    "pair/both/openai-realtime-whisper": {
+      "fair": 232,
+      "languageLost": 10,
+      "englishLost": 0,
+      "otherLost": 10,
+      "firstLost": 4,
+      "secondLost": 6
+    },
+    "pair/both/openai-whisper-1": {
+      "fair": 232,
+      "languageLost": 215,
+      "englishLost": 0,
+      "otherLost": 215,
+      "firstLost": 97,
+      "secondLost": 144
+    },
+    "pair/auto/whisper": {
+      "fair": 232,
+      "languageLost": 132,
+      "englishLost": 0,
+      "otherLost": 132,
+      "firstLost": 70,
+      "secondLost": 67
+    },
+    "pair/auto/openai-whisper-1-split": {
+      "fair": 232,
+      "languageLost": 205,
+      "englishLost": 0,
+      "otherLost": 205,
+      "firstLost": 87,
+      "secondLost": 144
+    },
+    "pair/auto/whisper-self-hosted": {
+      "fair": 232,
+      "languageLost": 202,
+      "englishLost": 0,
+      "otherLost": 202,
+      "firstLost": 112,
+      "secondLost": 96
+    },
+    "pair/auto/whisper-self-hosted-vad": {
+      "fair": 232,
+      "languageLost": 227,
+      "englishLost": 0,
+      "otherLost": 227,
+      "firstLost": 122,
+      "secondLost": 116
+    },
+    "pair/auto/whisper-self-hosted-ten": {
+      "fair": 232,
+      "languageLost": 218,
+      "englishLost": 0,
+      "otherLost": 218,
+      "firstLost": 117,
+      "secondLost": 107
+    },
+    "pair/auto/whisper-self-hosted-ten-vad": {
+      "fair": 232,
+      "languageLost": 225,
+      "englishLost": 0,
+      "otherLost": 225,
+      "firstLost": 124,
+      "secondLost": 111
+    },
+    "pair/auto/openai-realtime-whisper": {
+      "fair": 232,
+      "languageLost": 12,
+      "englishLost": 0,
+      "otherLost": 12,
+      "firstLost": 4,
+      "secondLost": 8
+    },
+    "pair/auto/openai-whisper-1": {
+      "fair": 232,
+      "languageLost": 215,
+      "englishLost": 0,
+      "otherLost": 215,
+      "firstLost": 97,
+      "secondLost": 145
+    }
+  }
+}

@@ -1,0 +1,544 @@
+{
+  "date": "2026-10-20",
+  "runDates": [
+    "2026-10-20"
+  ],
+  "label": "openai-whisper",
+  "options": {
+    "language": "clip",
+    "speed": 1,
+    "gate": true,
+    "runs": 1,
+    "clientProfile": "published"
+  },
+  "sets": [
+    {
+      "id": "en-dictation",
+      "language": "en",
+      "condition": "clean",
+      "source": "Team recordings of app-style dictation scripts"
+    },
+    {
+      "id": "en-dictation-noise",
+      "language": "en",
+      "condition": "noise",
+      "source": "Same scripts, background fan noise"
+    },
+    {
+      "id": "en-dictation-whisper",
+      "language": "en",
+      "condition": "whisper",
+      "source": "Same scripts, whispered"
+    },
+    {
+      "id": "nonspeech",
+      "language": "en",
+      "condition": "nonspeech",
+      "source": "Generated silence and noise (scripts/make-nonspeech.ts)"
+    },
+    {
+      "id": "ar-eg",
+      "language": "ar",
+      "condition": "clean",
+      "source": "FLEURS ar_eg"
+    },
+    {
+      "id": "ar-sa",
+      "language": "ar",
+      "condition": "clean",
+      "source": "SADA22 (Najdi)"
+    },
+    {
+      "id": "ar-ae",
+      "language": "ar",
+      "condition": "clean",
+      "source": "Casablanca (Emirati)"
+    },
+    {
+      "id": "de-de",
+      "language": "de",
+      "condition": "clean",
+      "source": "FLEURS de_de"
+    },
+    {
+      "id": "es-419",
+      "language": "es",
+      "condition": "clean",
+      "source": "FLEURS es_419"
+    },
+    {
+      "id": "es-es",
+      "language": "es",
+      "condition": "clean",
+      "source": "VoxPopuli"
+    },
+    {
+      "id": "es-pr",
+      "language": "es",
+      "condition": "clean",
+      "source": "OpenSLR SLR74"
+    },
+    {
+      "id": "fr-fr",
+      "language": "fr",
+      "condition": "clean",
+      "source": "FLEURS fr_fr"
+    },
+    {
+      "id": "hi-in",
+      "language": "hi",
+      "condition": "clean",
+      "source": "FLEURS hi_in"
+    },
+    {
+      "id": "ur-pk",
+      "language": "ur",
+      "condition": "clean",
+      "source": "FLEURS ur_pk"
+    },
+    {
+      "id": "zh-cn",
+      "language": "zh",
+      "condition": "clean",
+      "source": "FLEURS cmn_hans_cn"
+    }
+  ],
+  "models": {
+    "openai-whisper-1-split": "whisper-1",
+    "openai-realtime-whisper": "gpt-realtime-whisper",
+    "openai-whisper-1": "whisper-1"
+  },
+  "labels": {
+    "openai-whisper-1-split": "OpenAI Whisper-1 (split at pauses)",
+    "openai-realtime-whisper": "OpenAI GPT-Realtime-Whisper",
+    "openai-whisper-1": "OpenAI Whisper-1"
+  },
+  "aggregates": {
+    "en-dictation/openai-whisper-1-split": {
+      "headline": {
+        "value": 0.06705435556610491,
+        "lo": 0.05754352030947776,
+        "hi": 0.077431906614786,
+        "speakers": 73
+      },
+      "formatted": 0.13562039115100993
+    },
+    "en-dictation/openai-realtime-whisper": {
+      "headline": {
+        "value": 0.08212675053406124,
+        "lo": 0.069520983467571,
+        "hi": 0.09463446617855972,
+        "speakers": 73
+      },
+      "formatted": 0.1192689964732286
+    },
+    "en-dictation/openai-whisper-1": {
+      "headline": {
+        "value": 0.05471160693092808,
+        "lo": 0.04584882280049566,
+        "hi": 0.06391860161753196,
+        "speakers": 73
+      },
+      "formatted": 0.1005664208613872
+    },
+    "en-dictation-noise/openai-whisper-1-split": {
+      "headline": {
+        "value": 0.06320754716981132,
+        "lo": 0.038560411311053984,
+        "hi": 0.0947265625,
+        "speakers": 17
+      },
+      "formatted": 0.14767932489451477
+    },
+    "en-dictation-noise/openai-realtime-whisper": {
+      "headline": {
+        "value": 0.04622641509433962,
+        "lo": 0.03165098374679213,
+        "hi": 0.06401551891367604,
+        "speakers": 17
+      },
+      "formatted": 0.0810126582278481
+    },
+    "en-dictation-noise/openai-whisper-1": {
+      "headline": {
+        "value": 0.052830188679245285,
+        "lo": 0.03550863723608445,
+        "hi": 0.07414634146341463,
+        "speakers": 17
+      },
+      "formatted": 0.0919831223628692
+    },
+    "en-dictation-whisper/openai-whisper-1-split": {
+      "headline": {
+        "value": 0.10232558139534884,
+        "lo": 0.07711651299245599,
+        "hi": 0.12550403225806453,
+        "speakers": 16
+      },
+      "formatted": 0.21715076071922546
+    },
+    "en-dictation-whisper/openai-realtime-whisper": {
+      "headline": {
+        "value": 0.08914728682170543,
+        "lo": 0.07181571815718157,
+        "hi": 0.1095890410958904,
+        "speakers": 16
+      },
+      "formatted": 0.13831258644536654
+    },
+    "en-dictation-whisper/openai-whisper-1": {
+      "headline": {
+        "value": 0.07674418604651163,
+        "lo": 0.056584362139917695,
+        "hi": 0.10433979686057249,
+        "speakers": 16
+      },
+      "formatted": 0.17704011065006917
+    },
+    "ar-eg/openai-whisper-1-split": {
+      "headline": {
+        "value": 0.12244897959183673,
+        "lo": 0.07920792079207921,
+        "hi": 0.171875,
+        "speakers": 20
+      },
+      "formatted": 0.26382978723404255
+    },
+    "ar-eg/openai-realtime-whisper": {
+      "headline": {
+        "value": 0.07142857142857142,
+        "lo": 0.03608247422680412,
+        "hi": 0.1116751269035533,
+        "speakers": 20
+      },
+      "formatted": 0.16170212765957448
+    },
+    "ar-eg/openai-whisper-1": {
+      "headline": {
+        "value": 0.12244897959183673,
+        "lo": 0.07920792079207921,
+        "hi": 0.171875,
+        "speakers": 20
+      },
+      "formatted": 0.26382978723404255
+    },
+    "ar-sa/openai-whisper-1-split": {
+      "headline": {
+        "value": 0.37890625,
+        "lo": 0.2748091603053435,
+        "hi": 0.49808429118773945,
+        "speakers": 20
+      },
+      "formatted": 0.45652173913043476
+    },
+    "ar-sa/openai-realtime-whisper": {
+      "headline": {
+        "value": 0.2890625,
+        "lo": 0.1685823754789272,
+        "hi": 0.42585551330798477,
+        "speakers": 20
+      },
+      "formatted": 0.40217391304347827
+    },
+    "ar-sa/openai-whisper-1": {
+      "headline": {
+        "value": 0.3828125,
+        "lo": 0.2783018867924528,
+        "hi": 0.5061728395061729,
+        "speakers": 20
+      },
+      "formatted": 0.45652173913043476
+    },
+    "ar-ae/openai-whisper-1-split": {
+      "headline": {
+        "value": 0.6058823529411764,
+        "lo": 0.5,
+        "hi": 0.7204968944099379,
+        "speakers": 20
+      },
+      "formatted": 0.6861702127659575
+    },
+    "ar-ae/openai-realtime-whisper": {
+      "headline": {
+        "value": 0.5588235294117647,
+        "lo": 0.43859649122807015,
+        "hi": 0.6708074534161491,
+        "speakers": 20
+      },
+      "formatted": 0.6276595744680851
+    },
+    "ar-ae/openai-whisper-1": {
+      "headline": {
+        "value": 0.6058823529411764,
+        "lo": 0.5,
+        "hi": 0.7204968944099379,
+        "speakers": 20
+      },
+      "formatted": 0.6861702127659575
+    },
+    "de-de/openai-whisper-1-split": {
+      "headline": {
+        "value": 0.08064516129032258,
+        "lo": 0.04149377593360996,
+        "hi": 0.12598425196850394,
+        "speakers": 20
+      },
+      "formatted": 0.11683848797250859
+    },
+    "de-de/openai-realtime-whisper": {
+      "headline": {
+        "value": 0.03225806451612903,
+        "lo": 0.008097165991902834,
+        "hi": 0.060240963855421686,
+        "speakers": 20
+      },
+      "formatted": 0.061855670103092786
+    },
+    "de-de/openai-whisper-1": {
+      "headline": {
+        "value": 0.06451612903225806,
+        "lo": 0.03088803088803089,
+        "hi": 0.100418410041841,
+        "speakers": 20
+      },
+      "formatted": 0.09965635738831616
+    },
+    "es-419/openai-whisper-1-split": {
+      "headline": {
+        "value": 0.24782608695652175,
+        "lo": 0.14042553191489363,
+        "hi": 0.3659574468085106,
+        "speakers": 20
+      },
+      "formatted": 0.29454545454545455
+    },
+    "es-419/openai-realtime-whisper": {
+      "headline": {
+        "value": 0.0391304347826087,
+        "lo": 0.013888888888888888,
+        "hi": 0.07048458149779736,
+        "speakers": 20
+      },
+      "formatted": 0.10909090909090909
+    },
+    "es-419/openai-whisper-1": {
+      "headline": {
+        "value": 0.06521739130434782,
+        "lo": 0.02857142857142857,
+        "hi": 0.11428571428571428,
+        "speakers": 20
+      },
+      "formatted": 0.14181818181818182
+    },
+    "es-es/openai-whisper-1-split": {
+      "headline": {
+        "value": 0.08421052631578947,
+        "lo": 0.00546448087431694,
+        "hi": 0.2087912087912088,
+        "speakers": 20
+      },
+      "formatted": 0.16203703703703703
+    },
+    "es-es/openai-realtime-whisper": {
+      "headline": {
+        "value": 0.07894736842105263,
+        "lo": 0.0053475935828877,
+        "hi": 0.20202020202020202,
+        "speakers": 20
+      },
+      "formatted": 0.125
+    },
+    "es-es/openai-whisper-1": {
+      "headline": {
+        "value": 0.08421052631578947,
+        "lo": 0.00546448087431694,
+        "hi": 0.2087912087912088,
+        "speakers": 20
+      },
+      "formatted": 0.16203703703703703
+    },
+    "es-pr/openai-whisper-1-split": {
+      "headline": {
+        "value": 0.1518324607329843,
+        "lo": 0.04395604395604396,
+        "hi": 0.25870646766169153,
+        "speakers": 20
+      },
+      "formatted": 0.30456852791878175
+    },
+    "es-pr/openai-realtime-whisper": {
+      "headline": {
+        "value": 0.07329842931937172,
+        "lo": 0.022988505747126436,
+        "hi": 0.13930348258706468,
+        "speakers": 20
+      },
+      "formatted": 0.233502538071066
+    },
+    "es-pr/openai-whisper-1": {
+      "headline": {
+        "value": 0.07853403141361257,
+        "lo": 0.01764705882352941,
+        "hi": 0.15577889447236182,
+        "speakers": 20
+      },
+      "formatted": 0.233502538071066
+    },
+    "fr-fr/openai-whisper-1-split": {
+      "headline": {
+        "value": 0.06884057971014493,
+        "lo": 0.027777777777777776,
+        "hi": 0.12411347517730496,
+        "speakers": 20
+      },
+      "formatted": 0.11254019292604502
+    },
+    "fr-fr/openai-realtime-whisper": {
+      "headline": {
+        "value": 0.07246376811594203,
+        "lo": 0.02768166089965398,
+        "hi": 0.13043478260869565,
+        "speakers": 20
+      },
+      "formatted": 0.1189710610932476
+    },
+    "fr-fr/openai-whisper-1": {
+      "headline": {
+        "value": 0.06521739130434782,
+        "lo": 0.023809523809523808,
+        "hi": 0.12096774193548387,
+        "speakers": 20
+      },
+      "formatted": 0.11254019292604502
+    },
+    "hi-in/openai-whisper-1-split": {
+      "headline": {
+        "value": 0.38596491228070173,
+        "lo": 0.27350427350427353,
+        "hi": 0.5067873303167421,
+        "speakers": 20
+      },
+      "formatted": 0.2990867579908676
+    },
+    "hi-in/openai-realtime-whisper": {
+      "headline": {
+        "value": 0.11842105263157894,
+        "lo": 0.04932735426008968,
+        "hi": 0.20353982300884957,
+        "speakers": 20
+      },
+      "formatted": 0.13470319634703196
+    },
+    "hi-in/openai-whisper-1": {
+      "headline": {
+        "value": 0.35964912280701755,
+        "lo": 0.26180257510729615,
+        "hi": 0.46543778801843316,
+        "speakers": 20
+      },
+      "formatted": 0.2785388127853881
+    },
+    "ur-pk/openai-whisper-1-split": {
+      "headline": {
+        "value": 0.2112676056338028,
+        "lo": 0.14930555555555555,
+        "hi": 0.26996197718631176,
+        "speakers": 20
+      },
+      "formatted": 0.2662337662337662
+    },
+    "ur-pk/openai-realtime-whisper": {
+      "headline": {
+        "value": 0.12323943661971831,
+        "lo": 0.08996539792387544,
+        "hi": 0.16151202749140894,
+        "speakers": 20
+      },
+      "formatted": 0.1331168831168831
+    },
+    "ur-pk/openai-whisper-1": {
+      "headline": {
+        "value": 0.2112676056338028,
+        "lo": 0.14930555555555555,
+        "hi": 0.26996197718631176,
+        "speakers": 20
+      },
+      "formatted": 0.2662337662337662
+    },
+    "zh-cn/openai-whisper-1-split": {
+      "headline": {
+        "value": 0.05449591280653951,
+        "lo": 0.029891304347826088,
+        "hi": 0.07631578947368421,
+        "speakers": 20
+      },
+      "formatted": 0.115
+    },
+    "zh-cn/openai-realtime-whisper": {
+      "headline": {
+        "value": 0.0681198910081744,
+        "lo": 0.04871060171919771,
+        "hi": 0.08571428571428572,
+        "speakers": 20
+      },
+      "formatted": 0.085
+    },
+    "zh-cn/openai-whisper-1": {
+      "headline": {
+        "value": 0.051771117166212535,
+        "lo": 0.02849740932642487,
+        "hi": 0.07242339832869081,
+        "speakers": 20
+      },
+      "formatted": 0.1125
+    },
+    "nonspeech/openai-whisper-1-split": {
+      "nonSpeechOutputRate": 1
+    },
+    "nonspeech/openai-realtime-whisper": {
+      "nonSpeechOutputRate": 0
+    },
+    "nonspeech/openai-whisper-1": {
+      "nonSpeechOutputRate": 1
+    },
+    "latency/openai-whisper-1-split": {
+      "waitP50": 1565,
+      "waitP90": 2622,
+      "connectP50": 0,
+      "connectP90": 0,
+      "n": 336
+    },
+    "latency/openai-realtime-whisper": {
+      "waitP50": 735,
+      "waitP90": 832,
+      "connectP50": 1185,
+      "connectP90": 1312,
+      "n": 336
+    },
+    "latency/openai-whisper-1": {
+      "waitP50": 1850,
+      "waitP90": 4105,
+      "connectP50": 0,
+      "connectP90": 0,
+      "n": 336
+    },
+    "failures/openai-whisper-1-split": {
+      "clips": 336,
+      "dropped": 0,
+      "failed": 0,
+      "droppedSets": []
+    },
+    "failures/openai-realtime-whisper": {
+      "clips": 336,
+      "dropped": 0,
+      "failed": 0,
+      "droppedSets": []
+    },
+    "failures/openai-whisper-1": {
+      "clips": 336,
+      "dropped": 0,
+      "failed": 0,
+      "droppedSets": []
+    }
+  }
+}

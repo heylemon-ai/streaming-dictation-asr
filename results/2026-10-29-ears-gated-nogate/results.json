@@ -1,0 +1,67 @@
+{
+  "date": "2026-10-29",
+  "runDates": [
+    "2026-10-29"
+  ],
+  "label": "ears-gated-nogate",
+  "options": {
+    "language": "clip",
+    "speed": 1,
+    "gate": false,
+    "runs": 1,
+    "clientProfile": "published"
+  },
+  "sets": [
+    {
+      "id": "ears-whisper",
+      "language": "en",
+      "condition": "whisper",
+      "source": "EARS (CC BY-NC 4.0): 20 speakers, Rainbow Passage parts 1-4, whispered"
+    },
+    {
+      "id": "ears-regular",
+      "language": "en",
+      "condition": "clean",
+      "source": "EARS (CC BY-NC 4.0): the same 20 speakers and passages, read normally"
+    }
+  ],
+  "models": {
+    "whisper": "self-hosted (Baseten)"
+  },
+  "labels": {
+    "whisper": "Whisper Large V3"
+  },
+  "aggregates": {
+    "ears-whisper/whisper": {
+      "headline": {
+        "value": 0.329485065054059,
+        "lo": 0.2636369189420316,
+        "hi": 0.3966159672591778,
+        "speakers": 107
+      },
+      "formatted": 0.3609675645959318
+    },
+    "ears-regular/whisper": {
+      "headline": {
+        "value": 0.012949728177875512,
+        "lo": 0.009590128886445544,
+        "hi": 0.016797996457149838,
+        "speakers": 107
+      },
+      "formatted": 0.05079714128642111
+    },
+    "latency/whisper": {
+      "waitP50": 416,
+      "waitP90": 748,
+      "connectP50": 908,
+      "connectP90": 1665,
+      "n": 856
+    },
+    "failures/whisper": {
+      "clips": 856,
+      "dropped": 0,
+      "failed": 0,
+      "droppedSets": []
+    }
+  }
+}

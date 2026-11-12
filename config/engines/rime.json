@@ -1,0 +1,63 @@
+{
+  "$comment": "Rime speech-to-text over its streaming WebSocket (docs.rime.ai, checked 2026-10-21). Default settings: written mode, revised-hypotheses contract (the whole transcript so far in each hypothesis; done.text is the final). 16 kHz PCM16 sent as base64 JSON audio messages, then {end:{}}. English and Spanish only, and the language must be set (no detection). Rime ends any session 120 s after connecting, so recordings longer than about 115 s fail.",
+  "id": "rime",
+  "label": "Rime STT",
+  "kind": "websocket",
+  "model": "rime-stt",
+  "modelEnv": "RIME_STT_MODEL",
+  "env": [
+    "RIME_API_KEY"
+  ],
+  "sampleRate": 16000,
+  "languages": {
+    "en": "en",
+    "es": "es"
+  },
+  "url": "wss://stt.api.rime.ai/ws",
+  "protocols": [
+    "rime.v1.json"
+  ],
+  "headers": {
+    "Authorization": "Bearer ${env:RIME_API_KEY}"
+  },
+  "setup": {
+    "start": {
+      "outputContract": "STREAMING_OUTPUT_CONTRACT_REVISED_HYPOTHESES",
+      "language": "${language}"
+    }
+  },
+  "readyOn": {
+    "started.accepted.outputContract": "STREAMING_OUTPUT_CONTRACT_REVISED_HYPOTHESES"
+  },
+  "audio": {
+    "audio": "${audio_base64}"
+  },
+  "end": {
+    "end": {}
+  },
+  "final": {
+    "match": {
+      "done.language.source": "LANGUAGE_SOURCE_SELECTED"
+    },
+    "textPath": "done.text"
+  },
+  "done": {
+    "match": {
+      "done.language.source": "LANGUAGE_SOURCE_SELECTED"
+    },
+    "onClose": true
+  },
+  "error": {
+    "match": {
+      "error.kind": [
+        "invalid_input",
+        "resource_exhausted",
+        "timeout",
+        "unavailable",
+        "cancelled",
+        "internal"
+      ]
+    },
+    "messagePath": "error.message"
+  }
+}

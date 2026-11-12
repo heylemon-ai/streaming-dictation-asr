@@ -1,0 +1,82 @@
+{
+  "date": "2026-10-29",
+  "runDates": [
+    "2026-10-29"
+  ],
+  "label": "ttft-qwen",
+  "options": {
+    "language": "clip",
+    "speed": 1,
+    "gate": true,
+    "runs": 1,
+    "clientProfile": "published"
+  },
+  "sets": [
+    {
+      "id": "en-dictation",
+      "language": "en",
+      "condition": "clean",
+      "source": "Team recordings of app-style dictation scripts"
+    },
+    {
+      "id": "en-dictation-noise",
+      "language": "en",
+      "condition": "noise",
+      "source": "Same scripts, background fan noise"
+    },
+    {
+      "id": "en-dictation-whisper",
+      "language": "en",
+      "condition": "whisper",
+      "source": "Same scripts, whispered"
+    }
+  ],
+  "models": {
+    "qwen": "self-hosted (Baseten)"
+  },
+  "labels": {
+    "qwen": "Qwen3-ASR"
+  },
+  "aggregates": {
+    "en-dictation/qwen": {
+      "headline": {
+        "value": 0.13600759553762165,
+        "lo": 0.10868625756266205,
+        "hi": 0.1697668942783141,
+        "speakers": 73
+      },
+      "formatted": 0.21545367104841295
+    },
+    "en-dictation-noise/qwen": {
+      "headline": {
+        "value": 0.06981132075471698,
+        "lo": 0.05273833671399594,
+        "hi": 0.09099804305283757,
+        "speakers": 17
+      },
+      "formatted": 0.15527426160337554
+    },
+    "en-dictation-whisper/qwen": {
+      "headline": {
+        "value": 0.4666666666666667,
+        "lo": 0.3293768545994065,
+        "hi": 0.6754237288135593,
+        "speakers": 16
+      },
+      "formatted": 0.5663900414937759
+    },
+    "latency/qwen": {
+      "waitP50": 359,
+      "waitP90": 611,
+      "connectP50": 1058,
+      "connectP90": 1618,
+      "n": 106
+    },
+    "failures/qwen": {
+      "clips": 106,
+      "dropped": 0,
+      "failed": 0,
+      "droppedSets": []
+    }
+  }
+}

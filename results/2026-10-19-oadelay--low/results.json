@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-19",
+  "runDates": [
+    "2026-10-19"
+  ],
+  "label": "oadelay--low",
+  "options": {
+    "language": "clip",
+    "speed": 1,
+    "gate": true,
+    "runs": 1,
+    "clientProfile": "published"
+  },
+  "sets": [
+    {
+      "id": "en-dictation",
+      "language": "en",
+      "condition": "clean",
+      "source": "Team recordings of app-style dictation scripts"
+    }
+  ],
+  "models": {
+    "openai-live-transcribe-low": "gpt-live-transcribe"
+  },
+  "labels": {
+    "openai-live-transcribe-low": "OpenAI GPT-Live-Transcribe (Low delay)"
+  },
+  "aggregates": {
+    "en-dictation/openai-live-transcribe-low": {
+      "headline": {
+        "value": 0.0767683021204148,
+        "lo": 0.06495016611295681,
+        "hi": 0.08890589135424637,
+        "speakers": 50
+      },
+      "formatted": 0.1188118811881188
+    },
+    "latency/openai-live-transcribe-low": {
+      "waitP50": 751,
+      "waitP90": 895,
+      "connectP50": 1307,
+      "connectP90": 1416,
+      "n": 50
+    },
+    "failures/openai-live-transcribe-low": {
+      "clips": 50,
+      "dropped": 0,
+      "failed": 0,
+      "droppedSets": []
+    }
+  }
+}

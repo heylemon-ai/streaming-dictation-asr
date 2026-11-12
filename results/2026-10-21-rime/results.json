@@ -1,0 +1,136 @@
+{
+  "date": "2026-10-21",
+  "runDates": [
+    "2026-10-21"
+  ],
+  "label": "rime",
+  "options": {
+    "language": "clip",
+    "speed": 1,
+    "gate": true,
+    "runs": 1,
+    "clientProfile": "published"
+  },
+  "sets": [
+    {
+      "id": "en-dictation",
+      "language": "en",
+      "condition": "clean",
+      "source": "Team recordings of app-style dictation scripts"
+    },
+    {
+      "id": "en-dictation-noise",
+      "language": "en",
+      "condition": "noise",
+      "source": "Same scripts, background fan noise"
+    },
+    {
+      "id": "en-dictation-whisper",
+      "language": "en",
+      "condition": "whisper",
+      "source": "Same scripts, whispered"
+    },
+    {
+      "id": "nonspeech",
+      "language": "en",
+      "condition": "nonspeech",
+      "source": "Generated silence and noise (scripts/make-nonspeech.ts)"
+    },
+    {
+      "id": "es-419",
+      "language": "es",
+      "condition": "clean",
+      "source": "FLEURS es_419"
+    },
+    {
+      "id": "es-es",
+      "language": "es",
+      "condition": "clean",
+      "source": "VoxPopuli"
+    },
+    {
+      "id": "es-pr",
+      "language": "es",
+      "condition": "clean",
+      "source": "OpenSLR SLR74"
+    }
+  ],
+  "models": {
+    "rime": "rime-stt"
+  },
+  "labels": {
+    "rime": "Rime STT"
+  },
+  "aggregates": {
+    "en-dictation/rime": {
+      "headline": {
+        "value": 0.11903213217119812,
+        "lo": 0.10136286201022146,
+        "hi": 0.13729643850125778,
+        "speakers": 70
+      },
+      "formatted": 0.1868402533427164
+    },
+    "en-dictation-noise/rime": {
+      "headline": {
+        "value": 0.1169811320754717,
+        "lo": 0.0896551724137931,
+        "hi": 0.14788004136504654,
+        "speakers": 17
+      },
+      "formatted": 0.1881856540084388
+    },
+    "en-dictation-whisper/rime": {
+      "headline": {
+        "value": 0.191044776119403,
+        "lo": 0.1385390428211587,
+        "hi": 0.23922231614539308,
+        "speakers": 15
+      },
+      "formatted": 0.2652877697841727
+    },
+    "es-419/rime": {
+      "headline": {
+        "value": 0.07391304347826087,
+        "lo": 0.04035874439461883,
+        "hi": 0.11737089201877934,
+        "speakers": 20
+      },
+      "formatted": 0.14909090909090908
+    },
+    "es-es/rime": {
+      "headline": {
+        "value": 0.08947368421052632,
+        "lo": 0.010752688172043012,
+        "hi": 0.21428571428571427,
+        "speakers": 20
+      },
+      "formatted": 0.1388888888888889
+    },
+    "es-pr/rime": {
+      "headline": {
+        "value": 0.05235602094240838,
+        "lo": 0.02072538860103627,
+        "hi": 0.08823529411764706,
+        "speakers": 20
+      },
+      "formatted": 0.19289340101522842
+    },
+    "nonspeech/rime": {
+      "nonSpeechOutputRate": 0.5
+    },
+    "latency/rime": {
+      "waitP50": 473,
+      "waitP90": 644,
+      "connectP50": 1037,
+      "connectP90": 1185,
+      "n": 172
+    },
+    "failures/rime": {
+      "clips": 176,
+      "dropped": 0,
+      "failed": 4,
+      "droppedSets": []
+    }
+  }
+}

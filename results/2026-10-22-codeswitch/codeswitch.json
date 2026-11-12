@@ -1,0 +1,623 @@
+{
+  "date": "2026-10-22",
+  "engines": [
+    {
+      "id": "meta",
+      "label": "Meta Muse"
+    },
+    {
+      "id": "gemini",
+      "label": "Gemini 3.5 Transcribe"
+    },
+    {
+      "id": "gemini-smart",
+      "label": "Gemini 3.5 Transcribe (Smart)"
+    },
+    {
+      "id": "whisper-self-hosted",
+      "label": "Whisper Self-Hosted"
+    },
+    {
+      "id": "whisper-self-hosted-ten",
+      "label": "Whisper Self-Hosted (TEN VAD)"
+    },
+    {
+      "id": "whisper-self-hosted-ten-vad",
+      "label": "Whisper Self-Hosted (TEN VAD drops audio)"
+    },
+    {
+      "id": "assemblyai-3-5-pro",
+      "label": "AssemblyAI Universal-3.5 Pro"
+    },
+    {
+      "id": "assemblyai-3-6-pro",
+      "label": "AssemblyAI Universal-3.6 Pro"
+    },
+    {
+      "id": "deepgram",
+      "label": "Deepgram Nova-3"
+    },
+    {
+      "id": "elevenlabs-scribe-clean",
+      "label": "ElevenLabs Scribe v2 Realtime (no verbatim)"
+    },
+    {
+      "id": "elevenlabs-scribe",
+      "label": "ElevenLabs Scribe v2 Realtime"
+    },
+    {
+      "id": "openai-live-transcribe-low",
+      "label": "OpenAI GPT-Live-Transcribe (Low delay)"
+    },
+    {
+      "id": "openai-realtime-whisper",
+      "label": "OpenAI GPT-Realtime-Whisper"
+    },
+    {
+      "id": "zoom-scribe",
+      "label": "Zoom Scribe"
+    }
+  ],
+  "aggregates": {
+    "english/both/meta": {
+      "fair": 85,
+      "languageLost": 11,
+      "englishLost": 4,
+      "otherLost": 7,
+      "firstLost": 0,
+      "secondLost": 11
+    },
+    "english/both/gemini": {
+      "fair": 85,
+      "languageLost": 36,
+      "englishLost": 8,
+      "otherLost": 29,
+      "firstLost": 27,
+      "secondLost": 10
+    },
+    "english/both/gemini-smart": {
+      "fair": 85,
+      "languageLost": 39,
+      "englishLost": 5,
+      "otherLost": 34,
+      "firstLost": 18,
+      "secondLost": 21
+    },
+    "english/both/whisper-self-hosted": {
+      "fair": 85,
+      "languageLost": 33,
+      "englishLost": 12,
+      "otherLost": 21,
+      "firstLost": 21,
+      "secondLost": 12
+    },
+    "english/both/whisper-self-hosted-ten": {
+      "fair": 85,
+      "languageLost": 27,
+      "englishLost": 8,
+      "otherLost": 19,
+      "firstLost": 17,
+      "secondLost": 10
+    },
+    "english/both/whisper-self-hosted-ten-vad": {
+      "fair": 85,
+      "languageLost": 39,
+      "englishLost": 16,
+      "otherLost": 23,
+      "firstLost": 26,
+      "secondLost": 13
+    },
+    "english/both/assemblyai-3-5-pro": {
+      "fair": 85,
+      "languageLost": 5,
+      "englishLost": 1,
+      "otherLost": 4,
+      "firstLost": 2,
+      "secondLost": 3
+    },
+    "english/both/assemblyai-3-6-pro": {
+      "fair": 85,
+      "languageLost": 3,
+      "englishLost": 1,
+      "otherLost": 2,
+      "firstLost": 1,
+      "secondLost": 2
+    },
+    "english/both/deepgram": {
+      "fair": 85,
+      "languageLost": 27,
+      "englishLost": 0,
+      "otherLost": 27,
+      "firstLost": 13,
+      "secondLost": 14
+    },
+    "english/both/elevenlabs-scribe-clean": {
+      "fair": 85,
+      "languageLost": 68,
+      "englishLost": 3,
+      "otherLost": 65,
+      "firstLost": 31,
+      "secondLost": 37
+    },
+    "english/both/elevenlabs-scribe": {
+      "fair": 85,
+      "languageLost": 52,
+      "englishLost": 2,
+      "otherLost": 50,
+      "firstLost": 24,
+      "secondLost": 28
+    },
+    "english/both/openai-live-transcribe-low": {
+      "fair": 85,
+      "languageLost": 1,
+      "englishLost": 0,
+      "otherLost": 1,
+      "firstLost": 0,
+      "secondLost": 1
+    },
+    "english/both/openai-realtime-whisper": {
+      "fair": 85,
+      "languageLost": 4,
+      "englishLost": 1,
+      "otherLost": 3,
+      "firstLost": 1,
+      "secondLost": 3
+    },
+    "english/both/zoom-scribe": {
+      "fair": 85,
+      "languageLost": 48,
+      "englishLost": 0,
+      "otherLost": 48,
+      "firstLost": 25,
+      "secondLost": 23
+    },
+    "english/en/meta": {
+      "fair": 85,
+      "languageLost": 14,
+      "englishLost": 3,
+      "otherLost": 11,
+      "firstLost": 0,
+      "secondLost": 14
+    },
+    "english/en/gemini": {
+      "fair": 85,
+      "languageLost": 78,
+      "englishLost": 3,
+      "otherLost": 75,
+      "firstLost": 45,
+      "secondLost": 33
+    },
+    "english/en/gemini-smart": {
+      "fair": 85,
+      "languageLost": 72,
+      "englishLost": 1,
+      "otherLost": 71,
+      "firstLost": 31,
+      "secondLost": 41
+    },
+    "english/en/whisper-self-hosted": {
+      "fair": 85,
+      "languageLost": 72,
+      "englishLost": 1,
+      "otherLost": 71,
+      "firstLost": 39,
+      "secondLost": 33
+    },
+    "english/en/whisper-self-hosted-ten": {
+      "fair": 85,
+      "languageLost": 70,
+      "englishLost": 1,
+      "otherLost": 69,
+      "firstLost": 38,
+      "secondLost": 32
+    },
+    "english/en/whisper-self-hosted-ten-vad": {
+      "fair": 85,
+      "languageLost": 70,
+      "englishLost": 6,
+      "otherLost": 69,
+      "firstLost": 43,
+      "secondLost": 32
+    },
+    "english/en/assemblyai-3-5-pro": {
+      "fair": 85,
+      "languageLost": 25,
+      "englishLost": 0,
+      "otherLost": 25,
+      "firstLost": 9,
+      "secondLost": 16
+    },
+    "english/en/assemblyai-3-6-pro": {
+      "fair": 85,
+      "languageLost": 16,
+      "englishLost": 0,
+      "otherLost": 16,
+      "firstLost": 7,
+      "secondLost": 9
+    },
+    "english/en/deepgram": {
+      "fair": 85,
+      "languageLost": 84,
+      "englishLost": 0,
+      "otherLost": 84,
+      "firstLost": 45,
+      "secondLost": 39
+    },
+    "english/en/elevenlabs-scribe-clean": {
+      "fair": 85,
+      "languageLost": 79,
+      "englishLost": 0,
+      "otherLost": 79,
+      "firstLost": 45,
+      "secondLost": 34
+    },
+    "english/en/elevenlabs-scribe": {
+      "fair": 85,
+      "languageLost": 71,
+      "englishLost": 0,
+      "otherLost": 71,
+      "firstLost": 45,
+      "secondLost": 26
+    },
+    "english/en/openai-live-transcribe-low": {
+      "fair": 85,
+      "languageLost": 1,
+      "englishLost": 0,
+      "otherLost": 1,
+      "firstLost": 0,
+      "secondLost": 1
+    },
+    "english/en/openai-realtime-whisper": {
+      "fair": 85,
+      "languageLost": 4,
+      "englishLost": 0,
+      "otherLost": 4,
+      "firstLost": 1,
+      "secondLost": 3
+    },
+    "english/en/zoom-scribe": {
+      "fair": 85,
+      "languageLost": 48,
+      "englishLost": 0,
+      "otherLost": 48,
+      "firstLost": 25,
+      "secondLost": 23
+    },
+    "english/auto/meta": {
+      "fair": 85,
+      "languageLost": 13,
+      "englishLost": 4,
+      "otherLost": 9,
+      "firstLost": 0,
+      "secondLost": 13
+    },
+    "english/auto/gemini": {
+      "fair": 85,
+      "languageLost": 56,
+      "englishLost": 33,
+      "otherLost": 25,
+      "firstLost": 47,
+      "secondLost": 11
+    },
+    "english/auto/gemini-smart": {
+      "fair": 85,
+      "languageLost": 58,
+      "englishLost": 12,
+      "otherLost": 46,
+      "firstLost": 23,
+      "secondLost": 35
+    },
+    "english/auto/whisper-self-hosted": {
+      "fair": 85,
+      "languageLost": 36,
+      "englishLost": 12,
+      "otherLost": 24,
+      "firstLost": 23,
+      "secondLost": 13
+    },
+    "english/auto/whisper-self-hosted-ten": {
+      "fair": 85,
+      "languageLost": 28,
+      "englishLost": 8,
+      "otherLost": 20,
+      "firstLost": 17,
+      "secondLost": 11
+    },
+    "english/auto/whisper-self-hosted-ten-vad": {
+      "fair": 85,
+      "languageLost": 40,
+      "englishLost": 16,
+      "otherLost": 25,
+      "firstLost": 28,
+      "secondLost": 13
+    },
+    "english/auto/assemblyai-3-5-pro": {
+      "fair": 85,
+      "languageLost": 9,
+      "englishLost": 2,
+      "otherLost": 7,
+      "firstLost": 4,
+      "secondLost": 5
+    },
+    "english/auto/assemblyai-3-6-pro": {
+      "fair": 85,
+      "languageLost": 7,
+      "englishLost": 1,
+      "otherLost": 6,
+      "firstLost": 2,
+      "secondLost": 5
+    },
+    "english/auto/deepgram": {
+      "fair": 85,
+      "languageLost": 27,
+      "englishLost": 0,
+      "otherLost": 27,
+      "firstLost": 13,
+      "secondLost": 14
+    },
+    "english/auto/elevenlabs-scribe-clean": {
+      "fair": 85,
+      "languageLost": 68,
+      "englishLost": 3,
+      "otherLost": 65,
+      "firstLost": 31,
+      "secondLost": 37
+    },
+    "english/auto/elevenlabs-scribe": {
+      "fair": 85,
+      "languageLost": 52,
+      "englishLost": 2,
+      "otherLost": 50,
+      "firstLost": 24,
+      "secondLost": 28
+    },
+    "english/auto/openai-live-transcribe-low": {
+      "fair": 85,
+      "languageLost": 1,
+      "englishLost": 0,
+      "otherLost": 1,
+      "firstLost": 0,
+      "secondLost": 1
+    },
+    "english/auto/openai-realtime-whisper": {
+      "fair": 85,
+      "languageLost": 3,
+      "englishLost": 0,
+      "otherLost": 3,
+      "firstLost": 1,
+      "secondLost": 2
+    },
+    "english/auto/zoom-scribe": {
+      "fair": 85,
+      "languageLost": 48,
+      "englishLost": 0,
+      "otherLost": 48,
+      "firstLost": 25,
+      "secondLost": 23
+    },
+    "pair/both/meta": {
+      "fair": 232,
+      "languageLost": 51,
+      "englishLost": 0,
+      "otherLost": 51,
+      "firstLost": 0,
+      "secondLost": 51
+    },
+    "pair/both/gemini": {
+      "fair": 232,
+      "languageLost": 62,
+      "englishLost": 0,
+      "otherLost": 62,
+      "firstLost": 42,
+      "secondLost": 26
+    },
+    "pair/both/gemini-smart": {
+      "fair": 232,
+      "languageLost": 127,
+      "englishLost": 0,
+      "otherLost": 127,
+      "firstLost": 66,
+      "secondLost": 65
+    },
+    "pair/both/whisper-self-hosted": {
+      "fair": 232,
+      "languageLost": 201,
+      "englishLost": 0,
+      "otherLost": 201,
+      "firstLost": 110,
+      "secondLost": 91
+    },
+    "pair/both/whisper-self-hosted-ten": {
+      "fair": 232,
+      "languageLost": 218,
+      "englishLost": 0,
+      "otherLost": 218,
+      "firstLost": 115,
+      "secondLost": 103
+    },
+    "pair/both/whisper-self-hosted-ten-vad": {
+      "fair": 232,
+      "languageLost": 225,
+      "englishLost": 0,
+      "otherLost": 225,
+      "firstLost": 118,
+      "secondLost": 107
+    },
+    "pair/both/assemblyai-3-5-pro": {
+      "fair": 232,
+      "languageLost": 44,
+      "englishLost": 0,
+      "otherLost": 44,
+      "firstLost": 24,
+      "secondLost": 21
+    },
+    "pair/both/assemblyai-3-6-pro": {
+      "fair": 232,
+      "languageLost": 56,
+      "englishLost": 0,
+      "otherLost": 56,
+      "firstLost": 33,
+      "secondLost": 24
+    },
+    "pair/both/deepgram": {
+      "fair": 232,
+      "languageLost": 124,
+      "englishLost": 0,
+      "otherLost": 124,
+      "firstLost": 52,
+      "secondLost": 88
+    },
+    "pair/both/elevenlabs-scribe-clean": {
+      "fair": 232,
+      "languageLost": 223,
+      "englishLost": 0,
+      "otherLost": 223,
+      "firstLost": 163,
+      "secondLost": 140
+    },
+    "pair/both/elevenlabs-scribe": {
+      "fair": 232,
+      "languageLost": 213,
+      "englishLost": 0,
+      "otherLost": 213,
+      "firstLost": 146,
+      "secondLost": 122
+    },
+    "pair/both/openai-live-transcribe-low": {
+      "fair": 232,
+      "languageLost": 1,
+      "englishLost": 0,
+      "otherLost": 1,
+      "firstLost": 0,
+      "secondLost": 1
+    },
+    "pair/both/openai-realtime-whisper": {
+      "fair": 232,
+      "languageLost": 10,
+      "englishLost": 0,
+      "otherLost": 10,
+      "firstLost": 4,
+      "secondLost": 6
+    },
+    "pair/both/zoom-scribe": {
+      "fair": 232,
+      "languageLost": 187,
+      "englishLost": 0,
+      "otherLost": 187,
+      "firstLost": 122,
+      "secondLost": 135
+    },
+    "pair/auto/meta": {
+      "fair": 232,
+      "languageLost": 59,
+      "englishLost": 0,
+      "otherLost": 59,
+      "firstLost": 0,
+      "secondLost": 59
+    },
+    "pair/auto/gemini": {
+      "fair": 232,
+      "languageLost": 161,
+      "englishLost": 0,
+      "otherLost": 161,
+      "firstLost": 123,
+      "secondLost": 47
+    },
+    "pair/auto/gemini-smart": {
+      "fair": 232,
+      "languageLost": 186,
+      "englishLost": 0,
+      "otherLost": 186,
+      "firstLost": 111,
+      "secondLost": 92
+    },
+    "pair/auto/whisper-self-hosted": {
+      "fair": 232,
+      "languageLost": 202,
+      "englishLost": 0,
+      "otherLost": 202,
+      "firstLost": 112,
+      "secondLost": 96
+    },
+    "pair/auto/whisper-self-hosted-ten": {
+      "fair": 232,
+      "languageLost": 218,
+      "englishLost": 0,
+      "otherLost": 218,
+      "firstLost": 117,
+      "secondLost": 107
+    },
+    "pair/auto/whisper-self-hosted-ten-vad": {
+      "fair": 232,
+      "languageLost": 225,
+      "englishLost": 0,
+      "otherLost": 225,
+      "firstLost": 124,
+      "secondLost": 111
+    },
+    "pair/auto/assemblyai-3-5-pro": {
+      "fair": 232,
+      "languageLost": 58,
+      "englishLost": 0,
+      "otherLost": 58,
+      "firstLost": 23,
+      "secondLost": 38
+    },
+    "pair/auto/assemblyai-3-6-pro": {
+      "fair": 232,
+      "languageLost": 48,
+      "englishLost": 0,
+      "otherLost": 48,
+      "firstLost": 23,
+      "secondLost": 27
+    },
+    "pair/auto/deepgram": {
+      "fair": 232,
+      "languageLost": 124,
+      "englishLost": 0,
+      "otherLost": 124,
+      "firstLost": 52,
+      "secondLost": 88
+    },
+    "pair/auto/elevenlabs-scribe-clean": {
+      "fair": 232,
+      "languageLost": 223,
+      "englishLost": 0,
+      "otherLost": 223,
+      "firstLost": 162,
+      "secondLost": 140
+    },
+    "pair/auto/elevenlabs-scribe": {
+      "fair": 232,
+      "languageLost": 212,
+      "englishLost": 0,
+      "otherLost": 212,
+      "firstLost": 144,
+      "secondLost": 117
+    },
+    "pair/auto/openai-live-transcribe-low": {
+      "fair": 232,
+      "languageLost": 1,
+      "englishLost": 0,
+      "otherLost": 1,
+      "firstLost": 0,
+      "secondLost": 1
+    },
+    "pair/auto/openai-realtime-whisper": {
+      "fair": 232,
+      "languageLost": 12,
+      "englishLost": 0,
+      "otherLost": 12,
+      "firstLost": 4,
+      "secondLost": 8
+    },
+    "pair/auto/zoom-scribe": {
+      "fair": 232,
+      "languageLost": 187,
+      "englishLost": 0,
+      "otherLost": 187,
+      "firstLost": 122,
+      "secondLost": 135
+    }
+  }
+}

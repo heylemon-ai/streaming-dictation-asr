@@ -1,0 +1,257 @@
+{
+  "date": "2026-10-15",
+  "runDates": [
+    "2026-10-15"
+  ],
+  "label": "gemini-smart",
+  "options": {
+    "language": "clip",
+    "speed": 1,
+    "gate": true,
+    "runs": 1,
+    "clientProfile": "published"
+  },
+  "sets": [
+    {
+      "id": "en-dictation",
+      "language": "en",
+      "condition": "clean",
+      "source": "Team recordings of app-style dictation scripts"
+    },
+    {
+      "id": "en-dictation-noise",
+      "language": "en",
+      "condition": "noise",
+      "source": "Same scripts, background fan noise"
+    },
+    {
+      "id": "en-dictation-whisper",
+      "language": "en",
+      "condition": "whisper",
+      "source": "Same scripts, whispered"
+    },
+    {
+      "id": "nonspeech",
+      "language": "en",
+      "condition": "nonspeech",
+      "source": "Generated silence and noise (scripts/make-nonspeech.ts)"
+    },
+    {
+      "id": "ar-eg",
+      "language": "ar",
+      "condition": "clean",
+      "source": "FLEURS ar_eg"
+    },
+    {
+      "id": "ar-sa",
+      "language": "ar",
+      "condition": "clean",
+      "source": "SADA22 (Najdi)"
+    },
+    {
+      "id": "ar-ae",
+      "language": "ar",
+      "condition": "clean",
+      "source": "Casablanca (Emirati)"
+    },
+    {
+      "id": "de-de",
+      "language": "de",
+      "condition": "clean",
+      "source": "FLEURS de_de"
+    },
+    {
+      "id": "es-419",
+      "language": "es",
+      "condition": "clean",
+      "source": "FLEURS es_419"
+    },
+    {
+      "id": "es-es",
+      "language": "es",
+      "condition": "clean",
+      "source": "VoxPopuli"
+    },
+    {
+      "id": "es-pr",
+      "language": "es",
+      "condition": "clean",
+      "source": "OpenSLR SLR74"
+    },
+    {
+      "id": "fr-fr",
+      "language": "fr",
+      "condition": "clean",
+      "source": "FLEURS fr_fr"
+    },
+    {
+      "id": "hi-in",
+      "language": "hi",
+      "condition": "clean",
+      "source": "FLEURS hi_in"
+    },
+    {
+      "id": "ur-pk",
+      "language": "ur",
+      "condition": "clean",
+      "source": "FLEURS ur_pk"
+    },
+    {
+      "id": "zh-cn",
+      "language": "zh",
+      "condition": "clean",
+      "source": "FLEURS cmn_hans_cn"
+    }
+  ],
+  "models": {
+    "gemini-smart": "gemini-3.5-transcribe-live"
+  },
+  "labels": {
+    "gemini-smart": "Gemini 3.5 Transcribe (smart)"
+  },
+  "aggregates": {
+    "en-dictation/gemini-smart": {
+      "headline": {
+        "value": 0.03868976976026584,
+        "lo": 0.03179590297850949,
+        "hi": 0.04668810289389067,
+        "speakers": 73
+      },
+      "formatted": 0.08774179758469595
+    },
+    "en-dictation-noise/gemini-smart": {
+      "headline": {
+        "value": 0.03207547169811321,
+        "lo": 0.02092050209205021,
+        "hi": 0.04554455445544554,
+        "speakers": 17
+      },
+      "formatted": 0.09957805907172995
+    },
+    "en-dictation-whisper/gemini-smart": {
+      "headline": {
+        "value": 0.04186046511627907,
+        "lo": 0.0290736984448952,
+        "hi": 0.057208237986270026,
+        "speakers": 16
+      },
+      "formatted": 0.10857538035961273
+    },
+    "ar-eg/gemini-smart": {
+      "headline": {
+        "value": 0.03571428571428571,
+        "lo": 0.010256410256410256,
+        "hi": 0.06806282722513089,
+        "speakers": 20
+      },
+      "formatted": 0.13191489361702127
+    },
+    "ar-sa/gemini-smart": {
+      "headline": {
+        "value": 0.3515625,
+        "lo": 0.23426573426573427,
+        "hi": 0.48464163822525597,
+        "speakers": 20
+      },
+      "formatted": 0.4673913043478261
+    },
+    "ar-ae/gemini-smart": {
+      "headline": {
+        "value": 0.49411764705882355,
+        "lo": 0.39644970414201186,
+        "hi": 0.5862068965517241,
+        "speakers": 20
+      },
+      "formatted": 0.6223404255319149
+    },
+    "de-de/gemini-smart": {
+      "headline": {
+        "value": 0.04838709677419355,
+        "lo": 0.021645021645021644,
+        "hi": 0.07421875,
+        "speakers": 20
+      },
+      "formatted": 0.07560137457044673
+    },
+    "es-419/gemini-smart": {
+      "headline": {
+        "value": 0.05652173913043478,
+        "lo": 0.02459016393442623,
+        "hi": 0.09852216748768473,
+        "speakers": 20
+      },
+      "formatted": 0.12
+    },
+    "es-es/gemini-smart": {
+      "headline": {
+        "value": 0.07368421052631578,
+        "lo": 0,
+        "hi": 0.19289340101522842,
+        "speakers": 20
+      },
+      "formatted": 0.125
+    },
+    "es-pr/gemini-smart": {
+      "headline": {
+        "value": 0.04712041884816754,
+        "lo": 0.010638297872340425,
+        "hi": 0.0979381443298969,
+        "speakers": 20
+      },
+      "formatted": 0.20812182741116753
+    },
+    "fr-fr/gemini-smart": {
+      "headline": {
+        "value": 0.06884057971014493,
+        "lo": 0.020477815699658702,
+        "hi": 0.13703703703703704,
+        "speakers": 20
+      },
+      "formatted": 0.10610932475884244
+    },
+    "hi-in/gemini-smart": {
+      "headline": {
+        "value": 0.02631578947368421,
+        "lo": 0.008583690987124463,
+        "hi": 0.048672566371681415,
+        "speakers": 20
+      },
+      "formatted": 0.04794520547945205
+    },
+    "ur-pk/gemini-smart": {
+      "headline": {
+        "value": 0.323943661971831,
+        "lo": 0.18085106382978725,
+        "hi": 0.49818181818181817,
+        "speakers": 20
+      },
+      "languageNotSupported": true,
+      "formatted": 0.44805194805194803
+    },
+    "zh-cn/gemini-smart": {
+      "headline": {
+        "value": 0.03814713896457766,
+        "lo": 0.01643835616438356,
+        "hi": 0.0625,
+        "speakers": 20
+      },
+      "formatted": 0.0575
+    },
+    "nonspeech/gemini-smart": {
+      "nonSpeechOutputRate": 0
+    },
+    "latency/gemini-smart": {
+      "waitP50": 434,
+      "waitP90": 703,
+      "connectP50": 718,
+      "connectP90": 1201,
+      "n": 326
+    },
+    "failures/gemini-smart": {
+      "clips": 336,
+      "dropped": 0,
+      "failed": 0,
+      "droppedSets": []
+    }
+  }
+}

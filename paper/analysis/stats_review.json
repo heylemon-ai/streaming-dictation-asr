@@ -1,0 +1,4693 @@
+{
+ "resamples": 4000,
+ "holm": {
+  "bestVsNext": {
+   "tests": 3,
+   "nominal": 1,
+   "holm": 1
+  },
+  "whisperMissingVs3": {
+   "tests": 4,
+   "nominal": 4,
+   "holm": 4
+  },
+  "nameGaps": {
+   "tests": 13,
+   "nominal": 6,
+   "holm": 1
+  },
+  "deepgramNameGapMinusOthers": {
+   "tests": 12,
+   "nominal": 7,
+   "holm": 2
+  },
+  "saidVsScript": {
+   "tests": 13,
+   "nominal": 11,
+   "holm": 11
+  },
+  "saidPairs": {
+   "tests": 1,
+   "nominal": 0,
+   "holm": 0
+  },
+  "mixPairs": {
+   "tests": 2,
+   "nominal": 2,
+   "holm": 2
+  },
+  "nvArabic": {
+   "tests": 2,
+   "nominal": 2,
+   "holm": 2
+  },
+  "gatedVad": {
+   "tests": 4,
+   "nominal": 3,
+   "holm": 1
+  },
+  "whisperSetupsInHouse": {
+   "tests": 3,
+   "nominal": 2,
+   "holm": 2
+  },
+  "csEnglishOnly": {
+   "tests": 13,
+   "nominal": 9,
+   "holm": 9
+  },
+  "elevenLabsPause": {
+   "tests": 4,
+   "nominal": 4,
+   "holm": 4
+  },
+  "earsWhisperedMinusNormal": {
+   "tests": 14,
+   "nominal": 10,
+   "holm": 9
+  },
+  "earsWhisperSetups": {
+   "tests": 7,
+   "nominal": 6,
+   "holm": 6
+  },
+  "voicesBabbleMinusFar": {
+   "tests": 14,
+   "nominal": 14,
+   "holm": 14
+  },
+  "voicesTvMinusFar": {
+   "tests": 14,
+   "nominal": 13,
+   "holm": 13
+  }
+ },
+ "families": {
+  "bestVsNext": {
+   "en-dictation: gemini-smart - elevenlabs-scribe-clean": {
+    "claim": "clear (bold in Table overall)",
+    "diff": -1.2,
+    "ci": [
+     -1.9,
+     -0.6
+    ],
+    "bca": [
+     -1.9,
+     -0.6
+    ],
+    "p": 0.0002,
+    "units": 73,
+    "pHolm": 0.0006,
+    "survives": true,
+    "bcaExcludesZero": true
+   },
+   "en-dictation-noise: gemini - gemini-smart": {
+    "claim": "not clear",
+    "diff": -0.7,
+    "ci": [
+     -2.1,
+     0.4
+    ],
+    "bca": [
+     -2.6,
+     0.2
+    ],
+    "p": 0.3175,
+    "units": 17,
+    "pHolm": 0.635,
+    "survives": false,
+    "bcaExcludesZero": false
+   },
+   "en-dictation-whisper: gemini-smart - gemini": {
+    "claim": "not clear",
+    "diff": -0.8,
+    "ci": [
+     -3.1,
+     2
+    ],
+    "bca": [
+     -3.7,
+     1.5
+    ],
+    "p": 0.681,
+    "units": 16,
+    "pHolm": 0.681,
+    "survives": false,
+    "bcaExcludesZero": false
+   }
+  },
+  "whisperMissingVs3": {
+   "qwen": {
+    "claim": "interval lies above 3%",
+    "diff": 29.2,
+    "ci": [
+     12.3,
+     53.9
+    ],
+    "bca": [
+     12.7,
+     55.5
+    ],
+    "p": 0.0002,
+    "units": 16,
+    "pHolm": 0.0008,
+    "survives": true,
+    "bcaExcludesZero": true
+   },
+   "zoom-scribe": {
+    "claim": "interval lies above 3%",
+    "diff": 24.6,
+    "ci": [
+     8.2,
+     51
+    ],
+    "bca": [
+     8.3,
+     51.8
+    ],
+    "p": 0.0002,
+    "units": 16,
+    "pHolm": 0.0008,
+    "survives": true,
+    "bcaExcludesZero": true
+   },
+   "assemblyai-3-6-pro": {
+    "claim": "interval lies above 3%",
+    "diff": 22.7,
+    "ci": [
+     5.3,
+     49.8
+    ],
+    "bca": [
+     6.2,
+     51.7
+    ],
+    "p": 0.0002,
+    "units": 16,
+    "pHolm": 0.0008,
+    "survives": true,
+    "bcaExcludesZero": true
+   },
+   "assemblyai-3-5-pro": {
+    "claim": "interval lies above 3%",
+    "diff": 22.7,
+    "ci": [
+     5.3,
+     50.1
+    ],
+    "bca": [
+     5.6,
+     51.1
+    ],
+    "p": 0.003,
+    "units": 16,
+    "pHolm": 0.003,
+    "survives": true,
+    "bcaExcludesZero": true
+   }
+  },
+  "nameGaps": {
+   "whisper-self-hosted": {
+    "claim": "gap interval excludes zero (Table f_names)",
+    "names": 183,
+    "diff": 6.5,
+    "ci": [
+     1.1,
+     13
+    ],
+    "bca": [
+     1.8,
+     14.2
+    ],
+    "p": 0.0125,
+    "units": 106,
+    "pHolm": 0.1375,
+    "survives": false,
+    "bcaExcludesZero": true
+   },
+   "qwen": {
+    "claim": "gap interval excludes zero (Table f_names)",
+    "names": 183,
+    "diff": 6.5,
+    "ci": [
+     0,
+     13.7
+    ],
+    "bca": [
+     0.4,
+     14.2
+    ],
+    "p": 0.0475,
+    "units": 106,
+    "pHolm": 0.38,
+    "survives": false,
+    "bcaExcludesZero": true
+   },
+   "meta": {
+    "claim": "gap interval excludes zero (Table f_names)",
+    "names": 183,
+    "diff": 4.8,
+    "ci": [
+     0.3,
+     10.4
+    ],
+    "bca": [
+     0.7,
+     11.2
+    ],
+    "p": 0.037,
+    "units": 106,
+    "pHolm": 0.333,
+    "survives": false,
+    "bcaExcludesZero": true
+   },
+   "gemini": {
+    "claim": "gap interval excludes zero (Table f_names)",
+    "names": 183,
+    "diff": 3.5,
+    "ci": [
+     -0.3,
+     7.9
+    ],
+    "bca": [
+     -0.1,
+     8.4
+    ],
+    "p": 0.0735,
+    "units": 106,
+    "pHolm": 0.5005,
+    "survives": false,
+    "bcaExcludesZero": false
+   },
+   "gemini-smart": {
+    "claim": "gap interval excludes zero (Table f_names)",
+    "names": 183,
+    "diff": 1.7,
+    "ci": [
+     -1.3,
+     5.6
+    ],
+    "bca": [
+     -1.1,
+     6.2
+    ],
+    "p": 0.3175,
+    "units": 106,
+    "pHolm": 1,
+    "survives": false,
+    "bcaExcludesZero": false
+   },
+   "deepgram": {
+    "claim": "gap interval excludes zero (Table f_names)",
+    "names": 183,
+    "diff": 9.7,
+    "ci": [
+     3.3,
+     17
+    ],
+    "bca": [
+     3.6,
+     17.4
+    ],
+    "p": 0.0015,
+    "units": 106,
+    "pHolm": 0.0195,
+    "survives": true,
+    "bcaExcludesZero": true
+   },
+   "assemblyai-3-6-pro": {
+    "claim": "gap interval excludes zero (Table f_names)",
+    "names": 183,
+    "diff": 0.7,
+    "ci": [
+     -4,
+     6.3
+    ],
+    "bca": [
+     -3.9,
+     6.5
+    ],
+    "p": 0.804,
+    "units": 106,
+    "pHolm": 1,
+    "survives": false,
+    "bcaExcludesZero": false
+   },
+   "assemblyai-3-5-pro": {
+    "claim": "gap interval excludes zero (Table f_names)",
+    "names": 183,
+    "diff": 0.6,
+    "ci": [
+     -4.3,
+     6.3
+    ],
+    "bca": [
+     -3.9,
+     6.8
+    ],
+    "p": 0.8505,
+    "units": 106,
+    "pHolm": 1,
+    "survives": false,
+    "bcaExcludesZero": false
+   },
+   "zoom-scribe": {
+    "claim": "gap interval excludes zero (Table f_names)",
+    "names": 183,
+    "diff": 2,
+    "ci": [
+     -2.9,
+     7.9
+    ],
+    "bca": [
+     -2.8,
+     8.2
+    ],
+    "p": 0.4445,
+    "units": 106,
+    "pHolm": 1,
+    "survives": false,
+    "bcaExcludesZero": false
+   },
+   "elevenlabs-scribe": {
+    "claim": "gap interval excludes zero (Table f_names)",
+    "names": 183,
+    "diff": 3.6,
+    "ci": [
+     -0.3,
+     8.4
+    ],
+    "bca": [
+     -0.1,
+     8.7
+    ],
+    "p": 0.0715,
+    "units": 106,
+    "pHolm": 0.5005,
+    "survives": false,
+    "bcaExcludesZero": false
+   },
+   "elevenlabs-scribe-clean": {
+    "claim": "gap interval excludes zero (Table f_names)",
+    "names": 183,
+    "diff": 1.6,
+    "ci": [
+     -1.8,
+     5.7
+    ],
+    "bca": [
+     -1.6,
+     6.4
+    ],
+    "p": 0.4105,
+    "units": 106,
+    "pHolm": 1,
+    "survives": false,
+    "bcaExcludesZero": false
+   },
+   "openai-live-transcribe-low": {
+    "claim": "gap interval excludes zero (Table f_names)",
+    "names": 183,
+    "diff": 5.6,
+    "ci": [
+     1.3,
+     10.8
+    ],
+    "bca": [
+     1.4,
+     10.9
+    ],
+    "p": 0.0085,
+    "units": 106,
+    "pHolm": 0.102,
+    "survives": false,
+    "bcaExcludesZero": true
+   },
+   "openai-realtime-whisper": {
+    "claim": "gap interval excludes zero (Table f_names)",
+    "names": 183,
+    "diff": 4.9,
+    "ci": [
+     0.7,
+     9.9
+    ],
+    "bca": [
+     0.7,
+     10
+    ],
+    "p": 0.0185,
+    "units": 106,
+    "pHolm": 0.185,
+    "survives": false,
+    "bcaExcludesZero": true
+   }
+  },
+  "deepgramNameGapMinusOthers": {
+   "whisper-self-hosted": {
+    "claim": "Deepgram's gap clearly larger for 6 systems",
+    "diff": 3.2,
+    "ci": [
+     -1.4,
+     8.3
+    ],
+    "bca": [
+     -1.5,
+     8.2
+    ],
+    "p": 0.177,
+    "units": 106,
+    "pHolm": 0.56,
+    "survives": false,
+    "bcaExcludesZero": false
+   },
+   "qwen": {
+    "claim": "Deepgram's gap clearly larger for 6 systems",
+    "diff": 3.2,
+    "ci": [
+     -5.2,
+     11.1
+    ],
+    "bca": [
+     -6.2,
+     10.3
+    ],
+    "p": 0.4315,
+    "units": 106,
+    "pHolm": 0.56,
+    "survives": false,
+    "bcaExcludesZero": false
+   },
+   "meta": {
+    "claim": "Deepgram's gap clearly larger for 6 systems",
+    "diff": 4.8,
+    "ci": [
+     -1.2,
+     11.4
+    ],
+    "bca": [
+     -0.5,
+     12.3
+    ],
+    "p": 0.1115,
+    "units": 106,
+    "pHolm": 0.5575,
+    "survives": false,
+    "bcaExcludesZero": false
+   },
+   "gemini": {
+    "claim": "Deepgram's gap clearly larger for 6 systems",
+    "diff": 6.2,
+    "ci": [
+     0.1,
+     13.1
+    ],
+    "bca": [
+     0.1,
+     13.2
+    ],
+    "p": 0.047,
+    "units": 106,
+    "pHolm": 0.282,
+    "survives": false,
+    "bcaExcludesZero": true
+   },
+   "gemini-smart": {
+    "claim": "Deepgram's gap clearly larger for 6 systems",
+    "diff": 7.9,
+    "ci": [
+     2.1,
+     14.7
+    ],
+    "bca": [
+     2.4,
+     15.2
+    ],
+    "p": 0.008,
+    "units": 106,
+    "pHolm": 0.08,
+    "survives": false,
+    "bcaExcludesZero": true
+   },
+   "assemblyai-3-6-pro": {
+    "claim": "Deepgram's gap clearly larger for 6 systems",
+    "diff": 9,
+    "ci": [
+     2.1,
+     16.6
+    ],
+    "bca": [
+     2.2,
+     16.9
+    ],
+    "p": 0.0095,
+    "units": 106,
+    "pHolm": 0.0855,
+    "survives": false,
+    "bcaExcludesZero": true
+   },
+   "assemblyai-3-5-pro": {
+    "claim": "Deepgram's gap clearly larger for 6 systems",
+    "diff": 9.1,
+    "ci": [
+     3.1,
+     15.8
+    ],
+    "bca": [
+     3.3,
+     16.4
+    ],
+    "p": 0.002,
+    "units": 106,
+    "pHolm": 0.022,
+    "survives": true,
+    "bcaExcludesZero": true
+   },
+   "zoom-scribe": {
+    "claim": "Deepgram's gap clearly larger for 6 systems",
+    "diff": 7.6,
+    "ci": [
+     1.6,
+     14.4
+    ],
+    "bca": [
+     1.9,
+     14.6
+    ],
+    "p": 0.011,
+    "units": 106,
+    "pHolm": 0.088,
+    "survives": false,
+    "bcaExcludesZero": true
+   },
+   "elevenlabs-scribe": {
+    "claim": "Deepgram's gap clearly larger for 6 systems",
+    "diff": 6.1,
+    "ci": [
+     0.6,
+     11.9
+    ],
+    "bca": [
+     0.9,
+     12.3
+    ],
+    "p": 0.0325,
+    "units": 106,
+    "pHolm": 0.2275,
+    "survives": false,
+    "bcaExcludesZero": true
+   },
+   "elevenlabs-scribe-clean": {
+    "claim": "Deepgram's gap clearly larger for 6 systems",
+    "diff": 8.1,
+    "ci": [
+     3.2,
+     13.9
+    ],
+    "bca": [
+     3.3,
+     14.1
+    ],
+    "p": 0.0005,
+    "units": 106,
+    "pHolm": 0.006,
+    "survives": true,
+    "bcaExcludesZero": true
+   },
+   "openai-live-transcribe-low": {
+    "claim": "Deepgram's gap clearly larger for 6 systems",
+    "diff": 4.1,
+    "ci": [
+     -2.3,
+     11.2
+    ],
+    "bca": [
+     -2,
+     11.6
+    ],
+    "p": 0.2245,
+    "units": 106,
+    "pHolm": 0.56,
+    "survives": false,
+    "bcaExcludesZero": false
+   },
+   "openai-realtime-whisper": {
+    "claim": "Deepgram's gap clearly larger for 6 systems",
+    "diff": 4.8,
+    "ci": [
+     -1.8,
+     11.6
+    ],
+    "bca": [
+     -1.5,
+     12.2
+    ],
+    "p": 0.14,
+    "units": 106,
+    "pHolm": 0.56,
+    "survives": false,
+    "bcaExcludesZero": false
+   }
+  },
+  "saidVsScript": {
+   "gemini-smart quiet": {
+    "claim": "the only system that does not improve (+0.8, CI includes zero)",
+    "diff": 0.8,
+    "ci": [
+     0,
+     1.6
+    ],
+    "bca": [
+     0.1,
+     1.7
+    ],
+    "p": 0.0575,
+    "units": 73,
+    "pHolm": 0.115,
+    "survives": false,
+    "bcaExcludesZero": true
+   },
+   "elevenlabs-scribe-clean quiet": {
+    "claim": "improvement within chance",
+    "diff": -0.5,
+    "ci": [
+     -1.3,
+     0.3
+    ],
+    "bca": [
+     -1.3,
+     0.4
+    ],
+    "p": 0.194,
+    "units": 73,
+    "pHolm": 0.194,
+    "survives": false,
+    "bcaExcludesZero": false
+   },
+   "whisper-self-hosted quiet": {
+    "claim": "every verbatim system does better on quiet English by 2.2-4.0",
+    "diff": -2.2,
+    "ci": [
+     -3,
+     -1.4
+    ],
+    "bca": [
+     -3.1,
+     -1.5
+    ],
+    "p": 0.0002,
+    "units": 73,
+    "pHolm": 0.0026,
+    "survives": true,
+    "bcaExcludesZero": true
+   },
+   "qwen quiet": {
+    "claim": "every verbatim system does better on quiet English by 2.2-4.0",
+    "diff": -3.9,
+    "ci": [
+     -4.7,
+     -3.1
+    ],
+    "bca": [
+     -4.7,
+     -3.2
+    ],
+    "p": 0.0002,
+    "units": 73,
+    "pHolm": 0.0026,
+    "survives": true,
+    "bcaExcludesZero": true
+   },
+   "meta quiet": {
+    "claim": "every verbatim system does better on quiet English by 2.2-4.0",
+    "diff": -3.9,
+    "ci": [
+     -4.7,
+     -3.2
+    ],
+    "bca": [
+     -4.8,
+     -3.2
+    ],
+    "p": 0.0002,
+    "units": 73,
+    "pHolm": 0.0026,
+    "survives": true,
+    "bcaExcludesZero": true
+   },
+   "gemini quiet": {
+    "claim": "every verbatim system does better on quiet English by 2.2-4.0",
+    "diff": -3.1,
+    "ci": [
+     -4,
+     -2.4
+    ],
+    "bca": [
+     -4.1,
+     -2.5
+    ],
+    "p": 0.0002,
+    "units": 73,
+    "pHolm": 0.0026,
+    "survives": true,
+    "bcaExcludesZero": true
+   },
+   "deepgram quiet": {
+    "claim": "every verbatim system does better on quiet English by 2.2-4.0",
+    "diff": -4,
+    "ci": [
+     -4.7,
+     -3.3
+    ],
+    "bca": [
+     -4.9,
+     -3.4
+    ],
+    "p": 0.0002,
+    "units": 73,
+    "pHolm": 0.0026,
+    "survives": true,
+    "bcaExcludesZero": true
+   },
+   "assemblyai-3-6-pro quiet": {
+    "claim": "every verbatim system does better on quiet English by 2.2-4.0",
+    "diff": -3.4,
+    "ci": [
+     -4.2,
+     -2.7
+    ],
+    "bca": [
+     -4.2,
+     -2.7
+    ],
+    "p": 0.0002,
+    "units": 73,
+    "pHolm": 0.0026,
+    "survives": true,
+    "bcaExcludesZero": true
+   },
+   "assemblyai-3-5-pro quiet": {
+    "claim": "every verbatim system does better on quiet English by 2.2-4.0",
+    "diff": -3.4,
+    "ci": [
+     -4.1,
+     -2.6
+    ],
+    "bca": [
+     -4.2,
+     -2.7
+    ],
+    "p": 0.0002,
+    "units": 73,
+    "pHolm": 0.0026,
+    "survives": true,
+    "bcaExcludesZero": true
+   },
+   "zoom-scribe quiet": {
+    "claim": "every verbatim system does better on quiet English by 2.2-4.0",
+    "diff": -2.6,
+    "ci": [
+     -3.2,
+     -2
+    ],
+    "bca": [
+     -3.2,
+     -2
+    ],
+    "p": 0.0002,
+    "units": 73,
+    "pHolm": 0.0026,
+    "survives": true,
+    "bcaExcludesZero": true
+   },
+   "elevenlabs-scribe quiet": {
+    "claim": "every verbatim system does better on quiet English by 2.2-4.0",
+    "diff": -4,
+    "ci": [
+     -4.8,
+     -3.3
+    ],
+    "bca": [
+     -4.9,
+     -3.3
+    ],
+    "p": 0.0002,
+    "units": 73,
+    "pHolm": 0.0026,
+    "survives": true,
+    "bcaExcludesZero": true
+   },
+   "openai-live-transcribe-low quiet": {
+    "claim": "every verbatim system does better on quiet English by 2.2-4.0",
+    "diff": -2.3,
+    "ci": [
+     -2.9,
+     -1.7
+    ],
+    "bca": [
+     -3.1,
+     -1.7
+    ],
+    "p": 0.0002,
+    "units": 73,
+    "pHolm": 0.0026,
+    "survives": true,
+    "bcaExcludesZero": true
+   },
+   "openai-realtime-whisper quiet": {
+    "claim": "every verbatim system does better on quiet English by 2.2-4.0",
+    "diff": -3.2,
+    "ci": [
+     -4,
+     -2.4
+    ],
+    "bca": [
+     -4.2,
+     -2.5
+    ],
+    "p": 0.0002,
+    "units": 73,
+    "pHolm": 0.0026,
+    "survives": true,
+    "bcaExcludesZero": true
+   }
+  },
+  "saidPairs": {
+   "gemini - gemini-smart (said)": {
+    "claim": "Gemini below Gemini Smart against what was said",
+    "diff": -0.9,
+    "ci": [
+     -1.8,
+     0
+    ],
+    "bca": [
+     -1.9,
+     0
+    ],
+    "p": 0.053,
+    "units": 73,
+    "pHolm": 0.053,
+    "survives": false,
+    "bcaExcludesZero": false
+   }
+  },
+  "mixPairs": {
+   "whisper-self-hosted - aai-3.6 missing (quiet)": {
+    "claim": "Whisper SH misses more words (2.2 vs 1.3)",
+    "diff": 0.9,
+    "ci": [
+     0.1,
+     2.4
+    ],
+    "bca": [
+     0.2,
+     3.6
+    ],
+    "p": 0.0185,
+    "units": 73,
+    "pHolm": 0.0185,
+    "survives": true,
+    "bcaExcludesZero": true
+   },
+   "whisper-self-hosted - aai-3.6 extra (quiet)": {
+    "claim": "Whisper SH adds fewer words (2.9 vs 4.0)",
+    "diff": -1.1,
+    "ci": [
+     -1.8,
+     -0.5
+    ],
+    "bca": [
+     -1.9,
+     -0.5
+    ],
+    "p": 0.0005,
+    "units": 73,
+    "pHolm": 0.001,
+    "survives": true,
+    "bcaExcludesZero": true
+   }
+  },
+  "nvArabic": {
+   "ar-sa": {
+    "claim": "ElevenLabs NV much worse on the Arabic dialects",
+    "diff": 31.3,
+    "ci": [
+     21.5,
+     40.2
+    ],
+    "bca": [
+     20.5,
+     39.4
+    ],
+    "p": 0.0002,
+    "units": 20,
+    "pHolm": 0.0004,
+    "survives": true,
+    "bcaExcludesZero": true
+   },
+   "ar-ae": {
+    "claim": "ElevenLabs NV much worse on the Arabic dialects",
+    "diff": 17.6,
+    "ci": [
+     9.1,
+     25.9
+    ],
+    "bca": [
+     9.3,
+     26.3
+    ],
+    "p": 0.0002,
+    "units": 20,
+    "pHolm": 0.0004,
+    "survives": true,
+    "bcaExcludesZero": true
+   }
+  },
+  "gatedVad": {
+   "off - on en-dictation": {
+    "claim": "under a point",
+    "diff": 0.9,
+    "ci": [
+     0,
+     1.6
+    ],
+    "bca": [
+     0,
+     1.6
+    ],
+    "p": 0.0405,
+    "units": 73,
+    "pHolm": 0.081,
+    "survives": false,
+    "bcaExcludesZero": false
+   },
+   "off - on en-dictation-noise": {
+    "claim": "under a point",
+    "diff": 0.6,
+    "ci": [
+     -1.3,
+     2.5
+    ],
+    "bca": [
+     -1.1,
+     2.8
+    ],
+    "p": 0.6415,
+    "units": 17,
+    "pHolm": 0.6415,
+    "survives": false,
+    "bcaExcludesZero": false
+   },
+   "off - on en-dictation-whisper": {
+    "claim": "clear (Table vad)",
+    "diff": -19.6,
+    "ci": [
+     -35.7,
+     -7.1
+    ],
+    "bca": [
+     -34.2,
+     -5.6
+    ],
+    "p": 0.0025,
+    "units": 16,
+    "pHolm": 0.01,
+    "survives": true,
+    "bcaExcludesZero": true
+   },
+   "off - on ar-ae": {
+    "claim": "clear (Table vad)",
+    "diff": -4.7,
+    "ci": [
+     -10.4,
+     -0.6
+    ],
+    "bca": [
+     -12.6,
+     -1.2
+    ],
+    "p": 0.0255,
+    "units": 20,
+    "pHolm": 0.0765,
+    "survives": false,
+    "bcaExcludesZero": true
+   }
+  },
+  "whisperSetupsInHouse": {
+   "silero drops - sends all (whispered)": {
+    "claim": "10.1 -> 51.4",
+    "diff": 41.3,
+    "ci": [
+     24.2,
+     65.9
+    ],
+    "bca": [
+     23.6,
+     65.1
+    ],
+    "p": 0.0002,
+    "units": 16,
+    "pHolm": 0.0006,
+    "survives": true,
+    "bcaExcludesZero": true
+   },
+   "ten drops - sends all (whispered)": {
+    "claim": "TEN stays at 10.7",
+    "diff": 0.6,
+    "ci": [
+     -1.8,
+     2.8
+    ],
+    "bca": [
+     -1.8,
+     2.9
+    ],
+    "p": 0.6385,
+    "units": 16,
+    "pHolm": 0.6385,
+    "survives": false,
+    "bcaExcludesZero": false
+   },
+   "gated off - SH (whispered missing)": {
+    "claim": "Finding 2: 50% vs 1.8% missing",
+    "diff": 48.2,
+    "ci": [
+     23.6,
+     68
+    ],
+    "bca": [
+     26,
+     70.3
+    ],
+    "p": 0.0002,
+    "units": 16,
+    "pHolm": 0.0006,
+    "survives": true,
+    "bcaExcludesZero": true
+   }
+  },
+  "csEnglishOnly": {
+   "qwen": {
+    "claim": "English-only: preference",
+    "diff": 18,
+    "ci": [
+     5.6,
+     32.9
+    ],
+    "bca": [
+     5.6,
+     32.9
+    ],
+    "p": 0.006,
+    "units": 100,
+    "pHolm": 0.03,
+    "survives": true,
+    "bcaExcludesZero": true
+   },
+   "meta": {
+    "claim": "English-only: preference",
+    "diff": 5,
+    "ci": [
+     0,
+     14.2
+    ],
+    "bca": [
+     0,
+     14.2
+    ],
+    "p": 0.2071,
+    "units": 100,
+    "pHolm": 0.8284,
+    "survives": false,
+    "bcaExcludesZero": false
+   },
+   "gemini": {
+    "claim": "English-only: filter",
+    "diff": 52,
+    "ci": [
+     37,
+     66.7
+    ],
+    "bca": [
+     37,
+     66.7
+    ],
+    "p": 0.0003,
+    "units": 100,
+    "pHolm": 0.0036,
+    "survives": true,
+    "bcaExcludesZero": true
+   },
+   "gemini-smart": {
+    "claim": "English-only: filter",
+    "diff": 40,
+    "ci": [
+     24.6,
+     55.8
+    ],
+    "bca": [
+     24.6,
+     55.8
+    ],
+    "p": 0.0003,
+    "units": 100,
+    "pHolm": 0.0036,
+    "survives": true,
+    "bcaExcludesZero": true
+   },
+   "whisper-self-hosted": {
+    "claim": "English-only: filter",
+    "diff": 53,
+    "ci": [
+     35.6,
+     70.2
+    ],
+    "bca": [
+     35.6,
+     70.2
+    ],
+    "p": 0.0003,
+    "units": 100,
+    "pHolm": 0.0036,
+    "survives": true,
+    "bcaExcludesZero": true
+   },
+   "assemblyai-3-5-pro": {
+    "claim": "English-only: preference",
+    "diff": 23,
+    "ci": [
+     8.8,
+     40.3
+    ],
+    "bca": [
+     8.8,
+     40.3
+    ],
+    "p": 0.0005,
+    "units": 100,
+    "pHolm": 0.0045,
+    "survives": true,
+    "bcaExcludesZero": true
+   },
+   "assemblyai-3-6-pro": {
+    "claim": "English-only: preference",
+    "diff": 16,
+    "ci": [
+     5.6,
+     27.8
+    ],
+    "bca": [
+     5.6,
+     27.8
+    ],
+    "p": 0.003,
+    "units": 100,
+    "pHolm": 0.021,
+    "survives": true,
+    "bcaExcludesZero": true
+   },
+   "deepgram": {
+    "claim": "English-only: filter",
+    "diff": 59,
+    "ci": [
+     43.4,
+     73.7
+    ],
+    "bca": [
+     43.4,
+     73.7
+    ],
+    "p": 0.0002,
+    "units": 100,
+    "pHolm": 0.0026,
+    "survives": true,
+    "bcaExcludesZero": true
+   },
+   "elevenlabs-scribe-clean": {
+    "claim": "English-only: neither (lost in most recordings either way)",
+    "diff": 16,
+    "ci": [
+     5,
+     30
+    ],
+    "bca": [
+     5,
+     30
+    ],
+    "p": 0.0035,
+    "units": 100,
+    "pHolm": 0.021,
+    "survives": true,
+    "bcaExcludesZero": true
+   },
+   "elevenlabs-scribe": {
+    "claim": "English-only: neither (lost in most recordings either way)",
+    "diff": 25,
+    "ci": [
+     11.6,
+     40.4
+    ],
+    "bca": [
+     11.6,
+     40.4
+    ],
+    "p": 0.0005,
+    "units": 100,
+    "pHolm": 0.0045,
+    "survives": true,
+    "bcaExcludesZero": true
+   },
+   "openai-live-transcribe-low": {
+    "claim": "English-only: preference",
+    "diff": 1,
+    "ci": [
+     0,
+     5.9
+    ],
+    "bca": [
+     0,
+     5.9
+    ],
+    "p": 1,
+    "units": 100,
+    "pHolm": 1,
+    "survives": false,
+    "bcaExcludesZero": false
+   },
+   "openai-realtime-whisper": {
+    "claim": "English-only: preference",
+    "diff": 2,
+    "ci": [
+     0,
+     8.2
+    ],
+    "bca": [
+     0,
+     8.2
+    ],
+    "p": 0.716,
+    "units": 100,
+    "pHolm": 1,
+    "survives": false,
+    "bcaExcludesZero": false
+   },
+   "zoom-scribe": {
+    "claim": "English-only: neither (lost in most recordings either way)",
+    "diff": 0,
+    "ci": [
+     0,
+     0
+    ],
+    "bca": [
+     0,
+     0
+    ],
+    "p": 1,
+    "units": 100,
+    "pHolm": 1,
+    "survives": false,
+    "bcaExcludesZero": false
+   }
+  },
+  "elevenLabsPause": {
+   "elevenlabs-scribe EN+X": {
+    "claim": "finalising at each pause loses far fewer languages",
+    "diff": -60,
+    "ci": [
+     -77.8,
+     -42.7
+    ],
+    "bca": [
+     -77.8,
+     -42.7
+    ],
+    "p": 0.0002,
+    "units": 85,
+    "pHolm": 0.0008,
+    "survives": true,
+    "bcaExcludesZero": true
+   },
+   "elevenlabs-scribe-clean EN+X": {
+    "claim": "finalising at each pause loses far fewer languages",
+    "diff": -77.6,
+    "ci": [
+     -91.3,
+     -61.7
+    ],
+    "bca": [
+     -91.3,
+     -61.7
+    ],
+    "p": 0.0002,
+    "units": 85,
+    "pHolm": 0.0008,
+    "survives": true,
+    "bcaExcludesZero": true
+   },
+   "elevenlabs-scribe X+Y": {
+    "claim": "finalising at each pause loses far fewer languages",
+    "diff": -56,
+    "ci": [
+     -67.4,
+     -44.1
+    ],
+    "bca": [
+     -67.4,
+     -44.1
+    ],
+    "p": 0.0002,
+    "units": 232,
+    "pHolm": 0.0008,
+    "survives": true,
+    "bcaExcludesZero": true
+   },
+   "elevenlabs-scribe-clean X+Y": {
+    "claim": "finalising at each pause loses far fewer languages",
+    "diff": -34.1,
+    "ci": [
+     -45.7,
+     -23.2
+    ],
+    "bca": [
+     -45.7,
+     -23.2
+    ],
+    "p": 0.0002,
+    "units": 232,
+    "pHolm": 0.0008,
+    "survives": true,
+    "bcaExcludesZero": true
+   }
+  },
+  "earsWhisperedMinusNormal": {
+   "whisper-self-hosted": {
+    "claim": "Table ears change",
+    "diff": 10,
+    "ci": [
+     6.5,
+     14
+    ],
+    "bca": [
+     6.8,
+     14.4
+    ],
+    "p": 0.0002,
+    "units": 107,
+    "pHolm": 0.0028,
+    "survives": true,
+    "bcaExcludesZero": true
+   },
+   "whisper": {
+    "claim": "Table ears change",
+    "diff": 41.9,
+    "ci": [
+     35.3,
+     48.9
+    ],
+    "bca": [
+     35.6,
+     49.3
+    ],
+    "p": 0.0002,
+    "units": 107,
+    "pHolm": 0.0028,
+    "survives": true,
+    "bcaExcludesZero": true
+   },
+   "qwen": {
+    "claim": "Table ears change",
+    "diff": 30.9,
+    "ci": [
+     25.3,
+     36.9
+    ],
+    "bca": [
+     25.4,
+     37
+    ],
+    "p": 0.0002,
+    "units": 107,
+    "pHolm": 0.0028,
+    "survives": true,
+    "bcaExcludesZero": true
+   },
+   "meta": {
+    "claim": "Table ears change",
+    "diff": 0.3,
+    "ci": [
+     0,
+     0.6
+    ],
+    "bca": [
+     0,
+     0.6
+    ],
+    "p": 0.092,
+    "units": 107,
+    "pHolm": 0.276,
+    "survives": false,
+    "bcaExcludesZero": false
+   },
+   "gemini": {
+    "claim": "Table ears change",
+    "diff": 0.2,
+    "ci": [
+     0,
+     0.5
+    ],
+    "bca": [
+     0,
+     0.5
+    ],
+    "p": 0.037,
+    "units": 107,
+    "pHolm": 0.185,
+    "survives": false,
+    "bcaExcludesZero": false
+   },
+   "gemini-smart": {
+    "claim": "Table ears change",
+    "diff": 0.2,
+    "ci": [
+     0,
+     0.5
+    ],
+    "bca": [
+     0,
+     0.5
+    ],
+    "p": 0.0675,
+    "units": 107,
+    "pHolm": 0.27,
+    "survives": false,
+    "bcaExcludesZero": false
+   },
+   "deepgram": {
+    "claim": "Table ears change",
+    "diff": 1.5,
+    "ci": [
+     0.7,
+     2.3
+    ],
+    "bca": [
+     0.8,
+     2.5
+    ],
+    "p": 0.0002,
+    "units": 107,
+    "pHolm": 0.0028,
+    "survives": true,
+    "bcaExcludesZero": true
+   },
+   "assemblyai-3-6-pro": {
+    "claim": "Table ears change",
+    "diff": 6.9,
+    "ci": [
+     4.2,
+     10.2
+    ],
+    "bca": [
+     4.5,
+     11
+    ],
+    "p": 0.0002,
+    "units": 107,
+    "pHolm": 0.0028,
+    "survives": true,
+    "bcaExcludesZero": true
+   },
+   "assemblyai-3-5-pro": {
+    "claim": "Table ears change",
+    "diff": 7.1,
+    "ci": [
+     4.4,
+     10.5
+    ],
+    "bca": [
+     4.7,
+     11.1
+    ],
+    "p": 0.0002,
+    "units": 107,
+    "pHolm": 0.0028,
+    "survives": true,
+    "bcaExcludesZero": true
+   },
+   "zoom-scribe": {
+    "claim": "Table ears change",
+    "diff": 24.1,
+    "ci": [
+     18.7,
+     29.9
+    ],
+    "bca": [
+     19.1,
+     30.5
+    ],
+    "p": 0.0002,
+    "units": 107,
+    "pHolm": 0.0028,
+    "survives": true,
+    "bcaExcludesZero": true
+   },
+   "elevenlabs-scribe": {
+    "claim": "Table ears change",
+    "diff": 0.1,
+    "ci": [
+     -0.2,
+     0.5
+    ],
+    "bca": [
+     -0.2,
+     0.6
+    ],
+    "p": 0.504,
+    "units": 107,
+    "pHolm": 0.729,
+    "survives": false,
+    "bcaExcludesZero": false
+   },
+   "elevenlabs-scribe-clean": {
+    "claim": "Table ears change",
+    "diff": 0.2,
+    "ci": [
+     -0.2,
+     0.5
+    ],
+    "bca": [
+     -0.1,
+     0.6
+    ],
+    "p": 0.3645,
+    "units": 107,
+    "pHolm": 0.729,
+    "survives": false,
+    "bcaExcludesZero": false
+   },
+   "openai-live-transcribe-low": {
+    "claim": "Table ears change",
+    "diff": 0.8,
+    "ci": [
+     0.3,
+     1.2
+    ],
+    "bca": [
+     0.3,
+     1.2
+    ],
+    "p": 0.001,
+    "units": 107,
+    "pHolm": 0.006,
+    "survives": true,
+    "bcaExcludesZero": true
+   },
+   "openai-realtime-whisper": {
+    "claim": "Table ears change",
+    "diff": 0.9,
+    "ci": [
+     0.5,
+     1.3
+    ],
+    "bca": [
+     0.5,
+     1.3
+    ],
+    "p": 0.0002,
+    "units": 107,
+    "pHolm": 0.0028,
+    "survives": true,
+    "bcaExcludesZero": true
+   }
+  },
+  "earsWhisperSetups": {
+   "Gated, VAD on - Silero cuts": {
+    "claim": "Table ears_vad change",
+    "diff": 31.4,
+    "ci": [
+     25.3,
+     37.8
+    ],
+    "bca": [
+     25.1,
+     37.6
+    ],
+    "p": 0.0002,
+    "units": 107,
+    "pHolm": 0.0014,
+    "survives": true,
+    "bcaExcludesZero": true
+   },
+   "Gated, VAD off - Silero cuts": {
+    "claim": "Table ears_vad change",
+    "diff": 21.3,
+    "ci": [
+     15.7,
+     27.3
+    ],
+    "bca": [
+     15.8,
+     27.5
+    ],
+    "p": 0.0002,
+    "units": 107,
+    "pHolm": 0.0014,
+    "survives": true,
+    "bcaExcludesZero": true
+   },
+   "Self-hosted, Silero drops - Silero cuts": {
+    "claim": "Table ears_vad change",
+    "diff": 26.8,
+    "ci": [
+     21.6,
+     32.4
+    ],
+    "bca": [
+     21.8,
+     32.7
+    ],
+    "p": 0.0002,
+    "units": 107,
+    "pHolm": 0.0014,
+    "survives": true,
+    "bcaExcludesZero": true
+   },
+   "Self-hosted, TEN cuts - Silero cuts": {
+    "claim": "Table ears_vad change",
+    "diff": -2,
+    "ci": [
+     -3.7,
+     -0.3
+    ],
+    "bca": [
+     -3.7,
+     -0.4
+    ],
+    "p": 0.0185,
+    "units": 107,
+    "pHolm": 0.037,
+    "survives": true,
+    "bcaExcludesZero": true
+   },
+   "Self-hosted, TEN drops - Silero cuts": {
+    "claim": "TEN +2.9, CI includes zero",
+    "diff": 2.9,
+    "ci": [
+     -0.4,
+     6.6
+    ],
+    "bca": [
+     0,
+     7.3
+    ],
+    "p": 0.0935,
+    "units": 107,
+    "pHolm": 0.0935,
+    "survives": false,
+    "bcaExcludesZero": false
+   },
+   "gated off - on (whispered)": {
+    "claim": "-10.1",
+    "diff": -10.1,
+    "ci": [
+     -12.2,
+     -8.1
+    ],
+    "bca": [
+     -12.3,
+     -8.1
+    ],
+    "p": 0.0002,
+    "units": 107,
+    "pHolm": 0.0014,
+    "survives": true,
+    "bcaExcludesZero": true
+   },
+   "TEN drops - TEN cuts (whispered)": {
+    "claim": "not in paper",
+    "diff": 4.9,
+    "ci": [
+     2.4,
+     7.8
+    ],
+    "bca": [
+     2.7,
+     8.4
+    ],
+    "p": 0.0002,
+    "units": 107,
+    "pHolm": 0.0014,
+    "survives": true,
+    "bcaExcludesZero": true
+   }
+  },
+  "voicesBabbleMinusFar": {
+   "whisper-self-hosted": {
+    "claim": "babble raises every system",
+    "diff": 58.4,
+    "ci": [
+     51.8,
+     65
+    ],
+    "bca": [
+     51.7,
+     64.9
+    ],
+    "p": 0.0002,
+    "units": 100,
+    "pHolm": 0.0028,
+    "survives": true,
+    "bcaExcludesZero": true
+   },
+   "whisper": {
+    "claim": "babble raises every system",
+    "diff": 51.5,
+    "ci": [
+     44.4,
+     58.5
+    ],
+    "bca": [
+     44,
+     58.2
+    ],
+    "p": 0.0002,
+    "units": 100,
+    "pHolm": 0.0028,
+    "survives": true,
+    "bcaExcludesZero": true
+   },
+   "qwen": {
+    "claim": "babble raises every system",
+    "diff": 40.4,
+    "ci": [
+     33.3,
+     47.3
+    ],
+    "bca": [
+     33,
+     47.1
+    ],
+    "p": 0.0002,
+    "units": 100,
+    "pHolm": 0.0028,
+    "survives": true,
+    "bcaExcludesZero": true
+   },
+   "meta": {
+    "claim": "babble raises every system",
+    "diff": 71,
+    "ci": [
+     65.8,
+     76.3
+    ],
+    "bca": [
+     65.4,
+     76
+    ],
+    "p": 0.0002,
+    "units": 100,
+    "pHolm": 0.0028,
+    "survives": true,
+    "bcaExcludesZero": true
+   },
+   "gemini": {
+    "claim": "babble raises every system",
+    "diff": 76.6,
+    "ci": [
+     70.4,
+     82.2
+    ],
+    "bca": [
+     69.9,
+     81.9
+    ],
+    "p": 0.0002,
+    "units": 100,
+    "pHolm": 0.0028,
+    "survives": true,
+    "bcaExcludesZero": true
+   },
+   "gemini-smart": {
+    "claim": "babble raises every system",
+    "diff": 65.8,
+    "ci": [
+     60,
+     71.5
+    ],
+    "bca": [
+     59.9,
+     71.4
+    ],
+    "p": 0.0002,
+    "units": 100,
+    "pHolm": 0.0028,
+    "survives": true,
+    "bcaExcludesZero": true
+   },
+   "deepgram": {
+    "claim": "babble raises every system",
+    "diff": 84.8,
+    "ci": [
+     81.8,
+     87.4
+    ],
+    "bca": [
+     81.4,
+     87.2
+    ],
+    "p": 0.0002,
+    "units": 100,
+    "pHolm": 0.0028,
+    "survives": true,
+    "bcaExcludesZero": true
+   },
+   "assemblyai-3-6-pro": {
+    "claim": "babble raises every system",
+    "diff": 54.7,
+    "ci": [
+     47.7,
+     62
+    ],
+    "bca": [
+     47.4,
+     61.8
+    ],
+    "p": 0.0002,
+    "units": 100,
+    "pHolm": 0.0028,
+    "survives": true,
+    "bcaExcludesZero": true
+   },
+   "assemblyai-3-5-pro": {
+    "claim": "babble raises every system",
+    "diff": 47.5,
+    "ci": [
+     40.3,
+     54.7
+    ],
+    "bca": [
+     40.4,
+     54.7
+    ],
+    "p": 0.0002,
+    "units": 100,
+    "pHolm": 0.0028,
+    "survives": true,
+    "bcaExcludesZero": true
+   },
+   "zoom-scribe": {
+    "claim": "babble raises every system",
+    "diff": 31,
+    "ci": [
+     23.3,
+     38.6
+    ],
+    "bca": [
+     23.5,
+     38.6
+    ],
+    "p": 0.0002,
+    "units": 100,
+    "pHolm": 0.0028,
+    "survives": true,
+    "bcaExcludesZero": true
+   },
+   "elevenlabs-scribe": {
+    "claim": "babble raises every system",
+    "diff": 62,
+    "ci": [
+     56,
+     67.5
+    ],
+    "bca": [
+     56,
+     67.5
+    ],
+    "p": 0.0002,
+    "units": 100,
+    "pHolm": 0.0028,
+    "survives": true,
+    "bcaExcludesZero": true
+   },
+   "elevenlabs-scribe-clean": {
+    "claim": "babble raises every system",
+    "diff": 62.3,
+    "ci": [
+     56,
+     68.5
+    ],
+    "bca": [
+     56.1,
+     68.5
+    ],
+    "p": 0.0002,
+    "units": 100,
+    "pHolm": 0.0028,
+    "survives": true,
+    "bcaExcludesZero": true
+   },
+   "openai-live-transcribe-low": {
+    "claim": "babble raises every system",
+    "diff": 77.1,
+    "ci": [
+     72.6,
+     81.5
+    ],
+    "bca": [
+     72,
+     81.2
+    ],
+    "p": 0.0002,
+    "units": 100,
+    "pHolm": 0.0028,
+    "survives": true,
+    "bcaExcludesZero": true
+   },
+   "openai-realtime-whisper": {
+    "claim": "babble raises every system",
+    "diff": 84.8,
+    "ci": [
+     80.6,
+     88.7
+    ],
+    "bca": [
+     79.9,
+     88.2
+    ],
+    "p": 0.0002,
+    "units": 100,
+    "pHolm": 0.0028,
+    "survives": true,
+    "bcaExcludesZero": true
+   }
+  },
+  "voicesTvMinusFar": {
+   "whisper-self-hosted": {
+    "claim": "TV raises WER",
+    "diff": 13.5,
+    "ci": [
+     9.7,
+     17.7
+    ],
+    "bca": [
+     9.9,
+     18
+    ],
+    "p": 0.0002,
+    "units": 100,
+    "pHolm": 0.0028,
+    "survives": true,
+    "bcaExcludesZero": true
+   },
+   "whisper": {
+    "claim": "TV raises WER",
+    "diff": 11.5,
+    "ci": [
+     6.7,
+     16.3
+    ],
+    "bca": [
+     6.7,
+     16.2
+    ],
+    "p": 0.0002,
+    "units": 100,
+    "pHolm": 0.0028,
+    "survives": true,
+    "bcaExcludesZero": true
+   },
+   "qwen": {
+    "claim": "TV raises WER",
+    "diff": 5.8,
+    "ci": [
+     1.3,
+     10.2
+    ],
+    "bca": [
+     1.1,
+     10
+    ],
+    "p": 0.01,
+    "units": 100,
+    "pHolm": 0.02,
+    "survives": true,
+    "bcaExcludesZero": true
+   },
+   "meta": {
+    "claim": "TV raises WER",
+    "diff": 19.1,
+    "ci": [
+     14.9,
+     23.8
+    ],
+    "bca": [
+     15.3,
+     24.3
+    ],
+    "p": 0.0002,
+    "units": 100,
+    "pHolm": 0.0028,
+    "survives": true,
+    "bcaExcludesZero": true
+   },
+   "gemini": {
+    "claim": "TV raises WER",
+    "diff": 19.7,
+    "ci": [
+     14.2,
+     25.6
+    ],
+    "bca": [
+     14.6,
+     26
+    ],
+    "p": 0.0002,
+    "units": 100,
+    "pHolm": 0.0028,
+    "survives": true,
+    "bcaExcludesZero": true
+   },
+   "gemini-smart": {
+    "claim": "TV raises WER",
+    "diff": 17.7,
+    "ci": [
+     13,
+     22.8
+    ],
+    "bca": [
+     13.4,
+     23.3
+    ],
+    "p": 0.0002,
+    "units": 100,
+    "pHolm": 0.0028,
+    "survives": true,
+    "bcaExcludesZero": true
+   },
+   "deepgram": {
+    "claim": "TV raises WER",
+    "diff": 40.3,
+    "ci": [
+     33.8,
+     46.9
+    ],
+    "bca": [
+     34.2,
+     47.3
+    ],
+    "p": 0.0002,
+    "units": 100,
+    "pHolm": 0.0028,
+    "survives": true,
+    "bcaExcludesZero": true
+   },
+   "assemblyai-3-6-pro": {
+    "claim": "TV raises WER",
+    "diff": 8.3,
+    "ci": [
+     5,
+     11.9
+    ],
+    "bca": [
+     5.1,
+     12.2
+    ],
+    "p": 0.0002,
+    "units": 100,
+    "pHolm": 0.0028,
+    "survives": true,
+    "bcaExcludesZero": true
+   },
+   "assemblyai-3-5-pro": {
+    "claim": "TV raises WER",
+    "diff": 7.4,
+    "ci": [
+     4.2,
+     10.9
+    ],
+    "bca": [
+     4.6,
+     11.3
+    ],
+    "p": 0.0002,
+    "units": 100,
+    "pHolm": 0.0028,
+    "survives": true,
+    "bcaExcludesZero": true
+   },
+   "zoom-scribe": {
+    "claim": "Zoom +2.6, CI includes zero",
+    "diff": 2.6,
+    "ci": [
+     -0.5,
+     5.9
+    ],
+    "bca": [
+     -0.3,
+     6.1
+    ],
+    "p": 0.1005,
+    "units": 100,
+    "pHolm": 0.1005,
+    "survives": false,
+    "bcaExcludesZero": false
+   },
+   "elevenlabs-scribe": {
+    "claim": "TV raises WER",
+    "diff": 14.8,
+    "ci": [
+     11.4,
+     18.7
+    ],
+    "bca": [
+     11.5,
+     18.9
+    ],
+    "p": 0.0002,
+    "units": 100,
+    "pHolm": 0.0028,
+    "survives": true,
+    "bcaExcludesZero": true
+   },
+   "elevenlabs-scribe-clean": {
+    "claim": "TV raises WER",
+    "diff": 14.2,
+    "ci": [
+     10.7,
+     18.1
+    ],
+    "bca": [
+     10.9,
+     18.6
+    ],
+    "p": 0.0002,
+    "units": 100,
+    "pHolm": 0.0028,
+    "survives": true,
+    "bcaExcludesZero": true
+   },
+   "openai-live-transcribe-low": {
+    "claim": "TV raises WER",
+    "diff": 21,
+    "ci": [
+     16.5,
+     26.1
+    ],
+    "bca": [
+     16.8,
+     26.5
+    ],
+    "p": 0.0002,
+    "units": 100,
+    "pHolm": 0.0028,
+    "survives": true,
+    "bcaExcludesZero": true
+   },
+   "openai-realtime-whisper": {
+    "claim": "TV raises WER",
+    "diff": 32.4,
+    "ci": [
+     25.6,
+     39.4
+    ],
+    "bca": [
+     25.9,
+     39.7
+    ],
+    "p": 0.0002,
+    "units": 100,
+    "pHolm": 0.0028,
+    "survives": true,
+    "bcaExcludesZero": true
+   }
+  }
+ },
+ "namesBySubset": {
+  "all": {
+   "whisper-self-hosted": {
+    "names": 183,
+    "diff": 6.5,
+    "ci": [
+     1.1,
+     13
+    ],
+    "bca": [
+     1.8,
+     14.2
+    ],
+    "p": 0.0125,
+    "units": 106
+   },
+   "qwen": {
+    "names": 183,
+    "diff": 6.5,
+    "ci": [
+     0,
+     13.7
+    ],
+    "bca": [
+     0.4,
+     14.2
+    ],
+    "p": 0.0475,
+    "units": 106
+   },
+   "meta": {
+    "names": 183,
+    "diff": 4.8,
+    "ci": [
+     0.3,
+     10.4
+    ],
+    "bca": [
+     0.7,
+     11.2
+    ],
+    "p": 0.037,
+    "units": 106
+   },
+   "gemini": {
+    "names": 183,
+    "diff": 3.5,
+    "ci": [
+     -0.3,
+     7.9
+    ],
+    "bca": [
+     -0.1,
+     8.4
+    ],
+    "p": 0.0735,
+    "units": 106
+   },
+   "gemini-smart": {
+    "names": 183,
+    "diff": 1.7,
+    "ci": [
+     -1.3,
+     5.6
+    ],
+    "bca": [
+     -1.1,
+     6.2
+    ],
+    "p": 0.3175,
+    "units": 106
+   },
+   "deepgram": {
+    "names": 183,
+    "diff": 9.7,
+    "ci": [
+     3.3,
+     17
+    ],
+    "bca": [
+     3.6,
+     17.4
+    ],
+    "p": 0.0015,
+    "units": 106
+   },
+   "assemblyai-3-6-pro": {
+    "names": 183,
+    "diff": 0.7,
+    "ci": [
+     -4,
+     6.3
+    ],
+    "bca": [
+     -3.9,
+     6.5
+    ],
+    "p": 0.804,
+    "units": 106
+   },
+   "assemblyai-3-5-pro": {
+    "names": 183,
+    "diff": 0.6,
+    "ci": [
+     -4.3,
+     6.3
+    ],
+    "bca": [
+     -3.9,
+     6.8
+    ],
+    "p": 0.8505,
+    "units": 106
+   },
+   "zoom-scribe": {
+    "names": 183,
+    "diff": 2,
+    "ci": [
+     -2.9,
+     7.9
+    ],
+    "bca": [
+     -2.8,
+     8.2
+    ],
+    "p": 0.4445,
+    "units": 106
+   },
+   "elevenlabs-scribe": {
+    "names": 183,
+    "diff": 3.6,
+    "ci": [
+     -0.3,
+     8.4
+    ],
+    "bca": [
+     -0.1,
+     8.7
+    ],
+    "p": 0.0715,
+    "units": 106
+   },
+   "elevenlabs-scribe-clean": {
+    "names": 183,
+    "diff": 1.6,
+    "ci": [
+     -1.8,
+     5.7
+    ],
+    "bca": [
+     -1.6,
+     6.4
+    ],
+    "p": 0.4105,
+    "units": 106
+   },
+   "openai-live-transcribe-low": {
+    "names": 183,
+    "diff": 5.6,
+    "ci": [
+     1.3,
+     10.8
+    ],
+    "bca": [
+     1.4,
+     10.9
+    ],
+    "p": 0.0085,
+    "units": 106
+   },
+   "openai-realtime-whisper": {
+    "names": 183,
+    "diff": 4.9,
+    "ci": [
+     0.7,
+     9.9
+    ],
+    "bca": [
+     0.7,
+     10
+    ],
+    "p": 0.0185,
+    "units": 106
+   }
+  },
+  "quiet": {
+   "whisper-self-hosted": {
+    "names": 123,
+    "diff": 1.9,
+    "ci": [
+     -2.4,
+     6.6
+    ],
+    "bca": [
+     -2.1,
+     7
+    ],
+    "p": 0.397,
+    "units": 73
+   },
+   "qwen": {
+    "names": 123,
+    "diff": 1.3,
+    "ci": [
+     -3.1,
+     6.5
+    ],
+    "bca": [
+     -3.2,
+     6.4
+    ],
+    "p": 0.568,
+    "units": 73
+   },
+   "meta": {
+    "names": 123,
+    "diff": 2.8,
+    "ci": [
+     -1.7,
+     9.1
+    ],
+    "bca": [
+     -1.5,
+     9.5
+    ],
+    "p": 0.266,
+    "units": 73
+   },
+   "gemini": {
+    "names": 123,
+    "diff": 4.2,
+    "ci": [
+     -0.3,
+     10.8
+    ],
+    "bca": [
+     -0.2,
+     11.3
+    ],
+    "p": 0.076,
+    "units": 73
+   },
+   "gemini-smart": {
+    "names": 123,
+    "diff": 0.9,
+    "ci": [
+     -2.2,
+     5.2
+    ],
+    "bca": [
+     -2,
+     5.8
+    ],
+    "p": 0.63,
+    "units": 73
+   },
+   "deepgram": {
+    "names": 123,
+    "diff": 6.4,
+    "ci": [
+     -0.4,
+     14.7
+    ],
+    "bca": [
+     -0.2,
+     15.2
+    ],
+    "p": 0.0695,
+    "units": 73
+   },
+   "assemblyai-3-6-pro": {
+    "names": 123,
+    "diff": 2.4,
+    "ci": [
+     -1.8,
+     8.2
+    ],
+    "bca": [
+     -1.6,
+     8.7
+    ],
+    "p": 0.309,
+    "units": 73
+   },
+   "assemblyai-3-5-pro": {
+    "names": 123,
+    "diff": 2.3,
+    "ci": [
+     -2.1,
+     8.6
+    ],
+    "bca": [
+     -1.9,
+     9.4
+    ],
+    "p": 0.3575,
+    "units": 73
+   },
+   "zoom-scribe": {
+    "names": 123,
+    "diff": 0.9,
+    "ci": [
+     -3,
+     6.8
+    ],
+    "bca": [
+     -2.6,
+     7.8
+    ],
+    "p": 0.717,
+    "units": 73
+   },
+   "elevenlabs-scribe": {
+    "names": 123,
+    "diff": 2.6,
+    "ci": [
+     -1.6,
+     9.2
+    ],
+    "bca": [
+     -1.3,
+     10.2
+    ],
+    "p": 0.2795,
+    "units": 73
+   },
+   "elevenlabs-scribe-clean": {
+    "names": 123,
+    "diff": 0.4,
+    "ci": [
+     -2.8,
+     5.2
+    ],
+    "bca": [
+     -2.5,
+     5.8
+    ],
+    "p": 0.8625,
+    "units": 73
+   },
+   "openai-live-transcribe-low": {
+    "names": 123,
+    "diff": 4.1,
+    "ci": [
+     -0.3,
+     9.9
+    ],
+    "bca": [
+     -0.2,
+     10.1
+    ],
+    "p": 0.072,
+    "units": 73
+   },
+   "openai-realtime-whisper": {
+    "names": 123,
+    "diff": 3.2,
+    "ci": [
+     -1.1,
+     8.9
+    ],
+    "bca": [
+     -0.8,
+     9.2
+    ],
+    "p": 0.1545,
+    "units": 73
+   }
+  },
+  "quietAndFan": {
+   "whisper-self-hosted": {
+    "names": 158,
+    "diff": 6.8,
+    "ci": [
+     0.8,
+     13.9
+    ],
+    "bca": [
+     1.5,
+     15.2
+    ],
+    "p": 0.0245,
+    "units": 90
+   },
+   "qwen": {
+    "names": 158,
+    "diff": 3.5,
+    "ci": [
+     -1.3,
+     9.1
+    ],
+    "bca": [
+     -1.2,
+     9.1
+    ],
+    "p": 0.147,
+    "units": 90
+   },
+   "meta": {
+    "names": 158,
+    "diff": 4.9,
+    "ci": [
+     -0.1,
+     11.1
+    ],
+    "bca": [
+     0.3,
+     11.6
+    ],
+    "p": 0.0555,
+    "units": 90
+   },
+   "gemini": {
+    "names": 158,
+    "diff": 4,
+    "ci": [
+     0,
+     9.2
+    ],
+    "bca": [
+     0.2,
+     10
+    ],
+    "p": 0.055,
+    "units": 90
+   },
+   "gemini-smart": {
+    "names": 158,
+    "diff": 1.9,
+    "ci": [
+     -1.5,
+     6.4
+    ],
+    "bca": [
+     -1.2,
+     6.9
+    ],
+    "p": 0.3125,
+    "units": 90
+   },
+   "deepgram": {
+    "names": 158,
+    "diff": 10.2,
+    "ci": [
+     3.4,
+     18.8
+    ],
+    "bca": [
+     3.5,
+     18.9
+    ],
+    "p": 0.005,
+    "units": 90
+   },
+   "assemblyai-3-6-pro": {
+    "names": 158,
+    "diff": 3,
+    "ci": [
+     -1,
+     7.9
+    ],
+    "bca": [
+     -0.7,
+     8.4
+    ],
+    "p": 0.162,
+    "units": 90
+   },
+   "assemblyai-3-5-pro": {
+    "names": 158,
+    "diff": 2.9,
+    "ci": [
+     -1.3,
+     8.3
+    ],
+    "bca": [
+     -1,
+     8.9
+    ],
+    "p": 0.2105,
+    "units": 90
+   },
+   "zoom-scribe": {
+    "names": 158,
+    "diff": 1.9,
+    "ci": [
+     -2,
+     6.9
+    ],
+    "bca": [
+     -1.6,
+     8
+    ],
+    "p": 0.3925,
+    "units": 90
+   },
+   "elevenlabs-scribe": {
+    "names": 158,
+    "diff": 4.3,
+    "ci": [
+     0,
+     10.1
+    ],
+    "bca": [
+     0.2,
+     10.5
+    ],
+    "p": 0.052,
+    "units": 90
+   },
+   "elevenlabs-scribe-clean": {
+    "names": 158,
+    "diff": 2.1,
+    "ci": [
+     -1.6,
+     6.8
+    ],
+    "bca": [
+     -1.4,
+     7.1
+    ],
+    "p": 0.3335,
+    "units": 90
+   },
+   "openai-live-transcribe-low": {
+    "names": 158,
+    "diff": 4.9,
+    "ci": [
+     0.7,
+     10.1
+    ],
+    "bca": [
+     0.7,
+     10.1
+    ],
+    "p": 0.017,
+    "units": 90
+   },
+   "openai-realtime-whisper": {
+    "names": 158,
+    "diff": 4.9,
+    "ci": [
+     0.5,
+     10.4
+    ],
+    "bca": [
+     0.5,
+     10.6
+    ],
+    "p": 0.0295,
+    "units": 90
+   }
+  }
+ },
+ "saidPairs": {
+  "gemini - gemini-smart": {
+   "diff": -0.9,
+   "ci": [
+    -1.8,
+    0
+   ],
+   "bca": [
+    -1.9,
+    0
+   ],
+   "p": 0.053,
+   "units": 73
+  },
+  "elevenlabs-scribe-clean - gemini": {
+   "diff": 0.8,
+   "ci": [
+    0,
+    1.6
+   ],
+   "bca": [
+    0,
+    1.6
+   ],
+   "p": 0.041,
+   "units": 73
+  },
+  "gemini-smart - elevenlabs-scribe-clean": {
+   "diff": 0.1,
+   "ci": [
+    -0.6,
+    0.7
+   ],
+   "bca": [
+    -0.6,
+    0.8
+   ],
+   "p": 0.8355,
+   "units": 73
+  },
+  "script: gemini-smart - elevenlabs-scribe-clean": {
+   "diff": -1.2,
+   "ci": [
+    -1.9,
+    -0.6
+   ],
+   "bca": [
+    -1.9,
+    -0.6
+   ],
+   "p": 0.0002,
+   "units": 73
+  }
+ },
+ "saidMinusScript": {
+  "en-dictation": {
+   "whisper-self-hosted": {
+    "diff": -2.2,
+    "ci": [
+     -3,
+     -1.4
+    ],
+    "bca": [
+     -3.1,
+     -1.5
+    ],
+    "p": 0.0002,
+    "units": 73
+   },
+   "qwen": {
+    "diff": -3.9,
+    "ci": [
+     -4.7,
+     -3.1
+    ],
+    "bca": [
+     -4.7,
+     -3.2
+    ],
+    "p": 0.0002,
+    "units": 73
+   },
+   "meta": {
+    "diff": -3.9,
+    "ci": [
+     -4.7,
+     -3.2
+    ],
+    "bca": [
+     -4.8,
+     -3.2
+    ],
+    "p": 0.0002,
+    "units": 73
+   },
+   "gemini": {
+    "diff": -3.1,
+    "ci": [
+     -4,
+     -2.4
+    ],
+    "bca": [
+     -4.1,
+     -2.5
+    ],
+    "p": 0.0002,
+    "units": 73
+   },
+   "gemini-smart": {
+    "diff": 0.8,
+    "ci": [
+     0,
+     1.6
+    ],
+    "bca": [
+     0.1,
+     1.7
+    ],
+    "p": 0.0575,
+    "units": 73
+   },
+   "deepgram": {
+    "diff": -4,
+    "ci": [
+     -4.7,
+     -3.3
+    ],
+    "bca": [
+     -4.9,
+     -3.4
+    ],
+    "p": 0.0002,
+    "units": 73
+   },
+   "assemblyai-3-6-pro": {
+    "diff": -3.4,
+    "ci": [
+     -4.2,
+     -2.7
+    ],
+    "bca": [
+     -4.2,
+     -2.7
+    ],
+    "p": 0.0002,
+    "units": 73
+   },
+   "assemblyai-3-5-pro": {
+    "diff": -3.4,
+    "ci": [
+     -4.1,
+     -2.6
+    ],
+    "bca": [
+     -4.2,
+     -2.7
+    ],
+    "p": 0.0002,
+    "units": 73
+   },
+   "zoom-scribe": {
+    "diff": -2.6,
+    "ci": [
+     -3.2,
+     -2
+    ],
+    "bca": [
+     -3.2,
+     -2
+    ],
+    "p": 0.0002,
+    "units": 73
+   },
+   "elevenlabs-scribe": {
+    "diff": -4,
+    "ci": [
+     -4.8,
+     -3.3
+    ],
+    "bca": [
+     -4.9,
+     -3.3
+    ],
+    "p": 0.0002,
+    "units": 73
+   },
+   "elevenlabs-scribe-clean": {
+    "diff": -0.5,
+    "ci": [
+     -1.3,
+     0.3
+    ],
+    "bca": [
+     -1.3,
+     0.4
+    ],
+    "p": 0.194,
+    "units": 73
+   },
+   "openai-live-transcribe-low": {
+    "diff": -2.3,
+    "ci": [
+     -2.9,
+     -1.7
+    ],
+    "bca": [
+     -3.1,
+     -1.7
+    ],
+    "p": 0.0002,
+    "units": 73
+   },
+   "openai-realtime-whisper": {
+    "diff": -3.2,
+    "ci": [
+     -4,
+     -2.4
+    ],
+    "bca": [
+     -4.2,
+     -2.5
+    ],
+    "p": 0.0002,
+    "units": 73
+   }
+  },
+  "en-dictation-noise": {
+   "whisper-self-hosted": {
+    "diff": -1.9,
+    "ci": [
+     -3.5,
+     -0.6
+    ],
+    "bca": [
+     -4.1,
+     -0.8
+    ],
+    "p": 0.003,
+    "units": 17
+   },
+   "qwen": {
+    "diff": -1.9,
+    "ci": [
+     -3.2,
+     -0.8
+    ],
+    "bca": [
+     -3.8,
+     -1
+    ],
+    "p": 0.0002,
+    "units": 17
+   },
+   "meta": {
+    "diff": -2.6,
+    "ci": [
+     -4.2,
+     -1.4
+    ],
+    "bca": [
+     -5.1,
+     -1.6
+    ],
+    "p": 0.0002,
+    "units": 17
+   },
+   "gemini": {
+    "diff": -0.7,
+    "ci": [
+     -1.7,
+     0.5
+    ],
+    "bca": [
+     -1.6,
+     0.6
+    ],
+    "p": 0.241,
+    "units": 17
+   },
+   "gemini-smart": {
+    "diff": 0.1,
+    "ci": [
+     -1.2,
+     1.4
+    ],
+    "bca": [
+     -1.1,
+     1.5
+    ],
+    "p": 0.9635,
+    "units": 17
+   },
+   "deepgram": {
+    "diff": -2.1,
+    "ci": [
+     -3.5,
+     -1.1
+    ],
+    "bca": [
+     -4.2,
+     -1.3
+    ],
+    "p": 0.0002,
+    "units": 17
+   },
+   "assemblyai-3-6-pro": {
+    "diff": -2.4,
+    "ci": [
+     -4.1,
+     -1
+    ],
+    "bca": [
+     -4.8,
+     -1.3
+    ],
+    "p": 0.0002,
+    "units": 17
+   },
+   "assemblyai-3-5-pro": {
+    "diff": -2.4,
+    "ci": [
+     -4.1,
+     -1
+    ],
+    "bca": [
+     -4.8,
+     -1.3
+    ],
+    "p": 0.0002,
+    "units": 17
+   },
+   "zoom-scribe": {
+    "diff": -1.2,
+    "ci": [
+     -3.3,
+     0.8
+    ],
+    "bca": [
+     -3.7,
+     0.5
+    ],
+    "p": 0.2315,
+    "units": 17
+   },
+   "elevenlabs-scribe": {
+    "diff": -2.6,
+    "ci": [
+     -4.2,
+     -1.4
+    ],
+    "bca": [
+     -5.1,
+     -1.6
+    ],
+    "p": 0.0002,
+    "units": 17
+   },
+   "elevenlabs-scribe-clean": {
+    "diff": -2,
+    "ci": [
+     -3.7,
+     -0.5
+    ],
+    "bca": [
+     -4.5,
+     -0.8
+    ],
+    "p": 0.0035,
+    "units": 17
+   },
+   "openai-live-transcribe-low": {
+    "diff": 0,
+    "ci": [
+     -1.3,
+     1.3
+    ],
+    "bca": [
+     -1.2,
+     1.5
+    ],
+    "p": 0.929,
+    "units": 17
+   },
+   "openai-realtime-whisper": {
+    "diff": -0.9,
+    "ci": [
+     -1.9,
+     0.2
+    ],
+    "bca": [
+     -1.7,
+     0.5
+    ],
+    "p": 0.115,
+    "units": 17
+   }
+  },
+  "en-dictation-whisper": {
+   "whisper-self-hosted": {
+    "diff": -0.8,
+    "ci": [
+     -1.3,
+     -0.3
+    ],
+    "bca": [
+     -1.4,
+     -0.4
+    ],
+    "p": 0.003,
+    "units": 16
+   },
+   "qwen": {
+    "diff": -1,
+    "ci": [
+     -1.6,
+     -0.5
+    ],
+    "bca": [
+     -1.9,
+     -0.6
+    ],
+    "p": 0.0002,
+    "units": 16
+   },
+   "meta": {
+    "diff": -1.4,
+    "ci": [
+     -2.2,
+     -0.8
+    ],
+    "bca": [
+     -2.2,
+     -0.8
+    ],
+    "p": 0.0002,
+    "units": 16
+   },
+   "gemini": {
+    "diff": -0.4,
+    "ci": [
+     -1.1,
+     0.3
+    ],
+    "bca": [
+     -1,
+     0.3
+    ],
+    "p": 0.2385,
+    "units": 16
+   },
+   "gemini-smart": {
+    "diff": 0.2,
+    "ci": [
+     -0.4,
+     1.1
+    ],
+    "bca": [
+     -0.3,
+     1.2
+    ],
+    "p": 0.49,
+    "units": 16
+   },
+   "deepgram": {
+    "diff": -1.5,
+    "ci": [
+     -2.2,
+     -0.9
+    ],
+    "bca": [
+     -2.2,
+     -0.9
+    ],
+    "p": 0.0002,
+    "units": 16
+   },
+   "assemblyai-3-6-pro": {
+    "diff": -1,
+    "ci": [
+     -1.7,
+     -0.5
+    ],
+    "bca": [
+     -1.9,
+     -0.6
+    ],
+    "p": 0.0005,
+    "units": 16
+   },
+   "assemblyai-3-5-pro": {
+    "diff": -1,
+    "ci": [
+     -1.7,
+     -0.5
+    ],
+    "bca": [
+     -1.8,
+     -0.6
+    ],
+    "p": 0.001,
+    "units": 16
+   },
+   "zoom-scribe": {
+    "diff": -1.1,
+    "ci": [
+     -1.9,
+     -0.4
+    ],
+    "bca": [
+     -2,
+     -0.5
+    ],
+    "p": 0.0015,
+    "units": 16
+   },
+   "elevenlabs-scribe": {
+    "diff": -1.5,
+    "ci": [
+     -2.3,
+     -0.8
+    ],
+    "bca": [
+     -2.4,
+     -0.9
+    ],
+    "p": 0.0002,
+    "units": 16
+   },
+   "elevenlabs-scribe-clean": {
+    "diff": -0.5,
+    "ci": [
+     -1.3,
+     0
+    ],
+    "bca": [
+     -1.3,
+     0
+    ],
+    "p": 0.0435,
+    "units": 16
+   },
+   "openai-live-transcribe-low": {
+    "diff": -0.8,
+    "ci": [
+     -1.4,
+     -0.3
+    ],
+    "bca": [
+     -1.4,
+     -0.3
+    ],
+    "p": 0.003,
+    "units": 16
+   },
+   "openai-realtime-whisper": {
+    "diff": -0.5,
+    "ci": [
+     -1.3,
+     0.2
+    ],
+    "bca": [
+     -1.2,
+     0.2
+    ],
+    "p": 0.133,
+    "units": 16
+   }
+  }
+ },
+ "mixSaid": {
+  "en-dictation": {
+   "whisper-self-hosted": {
+    "wer": 6.1,
+    "sub": 2.1,
+    "del": 2.5,
+    "ins": 1.5,
+    "scriptSub": 3.2,
+    "scriptDel": 2.2,
+    "scriptIns": 2.9
+   },
+   "qwen": {
+    "wer": 9.8,
+    "sub": 4,
+    "del": 2.1,
+    "ins": 3.7,
+    "scriptSub": 5,
+    "scriptDel": 2.7,
+    "scriptIns": 6
+   },
+   "meta": {
+    "wer": 5.5,
+    "sub": 2.5,
+    "del": 0.5,
+    "ins": 2.5,
+    "scriptSub": 3.5,
+    "scriptDel": 1.1,
+    "scriptIns": 4.9
+   },
+   "gemini": {
+    "wer": 3.7,
+    "sub": 1.3,
+    "del": 0.8,
+    "ins": 1.6,
+    "scriptSub": 2.1,
+    "scriptDel": 1.1,
+    "scriptIns": 3.7
+   },
+   "gemini-smart": {
+    "wer": 4.6,
+    "sub": 1.5,
+    "del": 2.8,
+    "ins": 0.4,
+    "scriptSub": 1.9,
+    "scriptDel": 1.3,
+    "scriptIns": 0.7
+   },
+   "deepgram": {
+    "wer": 9.6,
+    "sub": 4.7,
+    "del": 1.9,
+    "ins": 3,
+    "scriptSub": 5.8,
+    "scriptDel": 2.5,
+    "scriptIns": 5.3
+   },
+   "assemblyai-3-6-pro": {
+    "wer": 4.8,
+    "sub": 1.9,
+    "del": 0.9,
+    "ins": 1.9,
+    "scriptSub": 2.8,
+    "scriptDel": 1.3,
+    "scriptIns": 4
+   },
+   "assemblyai-3-5-pro": {
+    "wer": 5.6,
+    "sub": 2.2,
+    "del": 0.9,
+    "ins": 2.5,
+    "scriptSub": 2.9,
+    "scriptDel": 1.4,
+    "scriptIns": 4.7
+   },
+   "zoom-scribe": {
+    "wer": 4.8,
+    "sub": 1.6,
+    "del": 1.5,
+    "ins": 1.8,
+    "scriptSub": 2.6,
+    "scriptDel": 1.4,
+    "scriptIns": 3.4
+   },
+   "elevenlabs-scribe": {
+    "wer": 8.8,
+    "sub": 1.8,
+    "del": 1.3,
+    "ins": 5.7,
+    "scriptSub": 2.8,
+    "scriptDel": 1.9,
+    "scriptIns": 8.1
+   },
+   "elevenlabs-scribe-clean": {
+    "wer": 4.5,
+    "sub": 1.6,
+    "del": 2.2,
+    "ins": 0.7,
+    "scriptSub": 2.5,
+    "scriptDel": 1.2,
+    "scriptIns": 1.4
+   },
+   "openai-live-transcribe-low": {
+    "wer": 5,
+    "sub": 2.4,
+    "del": 1.2,
+    "ins": 1.4,
+    "scriptSub": 2.9,
+    "scriptDel": 1.2,
+    "scriptIns": 3.2
+   },
+   "openai-realtime-whisper": {
+    "wer": 5,
+    "sub": 2.3,
+    "del": 0.8,
+    "ins": 1.9,
+    "scriptSub": 2.9,
+    "scriptDel": 1.2,
+    "scriptIns": 4.1
+   }
+  },
+  "en-dictation-noise": {
+   "whisper-self-hosted": {
+    "wer": 4.6,
+    "sub": 2.5,
+    "del": 1,
+    "ins": 1,
+    "scriptSub": 4.2,
+    "scriptDel": 0.8,
+    "scriptIns": 1.5
+   },
+   "qwen": {
+    "wer": 5.1,
+    "sub": 3,
+    "del": 0.6,
+    "ins": 1.5,
+    "scriptSub": 4.6,
+    "scriptDel": 0.4,
+    "scriptIns": 2
+   },
+   "meta": {
+    "wer": 4.8,
+    "sub": 2.9,
+    "del": 0.5,
+    "ins": 1.4,
+    "scriptSub": 4.6,
+    "scriptDel": 0.6,
+    "scriptIns": 2.2
+   },
+   "gemini": {
+    "wer": 1.9,
+    "sub": 1.2,
+    "del": 0.7,
+    "ins": 0,
+    "scriptSub": 1.6,
+    "scriptDel": 0.5,
+    "scriptIns": 0.5
+   },
+   "gemini-smart": {
+    "wer": 3.3,
+    "sub": 1.8,
+    "del": 1.5,
+    "ins": 0,
+    "scriptSub": 1.8,
+    "scriptDel": 1.1,
+    "scriptIns": 0.3
+   },
+   "deepgram": {
+    "wer": 9.3,
+    "sub": 5.2,
+    "del": 2,
+    "ins": 2.2,
+    "scriptSub": 7,
+    "scriptDel": 1.8,
+    "scriptIns": 2.6
+   },
+   "assemblyai-3-6-pro": {
+    "wer": 1.7,
+    "sub": 0.7,
+    "del": 0.6,
+    "ins": 0.4,
+    "scriptSub": 2.5,
+    "scriptDel": 0.6,
+    "scriptIns": 1
+   },
+   "assemblyai-3-5-pro": {
+    "wer": 2,
+    "sub": 0.7,
+    "del": 0.7,
+    "ins": 0.5,
+    "scriptSub": 2.5,
+    "scriptDel": 0.8,
+    "scriptIns": 1.1
+   },
+   "zoom-scribe": {
+    "wer": 2.3,
+    "sub": 1.1,
+    "del": 0.8,
+    "ins": 0.4,
+    "scriptSub": 2.5,
+    "scriptDel": 0.5,
+    "scriptIns": 0.7
+   },
+   "elevenlabs-scribe": {
+    "wer": 3.3,
+    "sub": 1.8,
+    "del": 0.4,
+    "ins": 1.1,
+    "scriptSub": 3.5,
+    "scriptDel": 0.5,
+    "scriptIns": 1.9
+   },
+   "elevenlabs-scribe-clean": {
+    "wer": 2.5,
+    "sub": 1.3,
+    "del": 0.7,
+    "ins": 0.6,
+    "scriptSub": 3,
+    "scriptDel": 0.5,
+    "scriptIns": 1
+   },
+   "openai-live-transcribe-low": {
+    "wer": 3.6,
+    "sub": 2.6,
+    "del": 0.7,
+    "ins": 0.2,
+    "scriptSub": 2.5,
+    "scriptDel": 0.5,
+    "scriptIns": 0.6
+   },
+   "openai-realtime-whisper": {
+    "wer": 3.7,
+    "sub": 2.4,
+    "del": 0.9,
+    "ins": 0.4,
+    "scriptSub": 3,
+    "scriptDel": 0.8,
+    "scriptIns": 0.8
+   }
+  },
+  "en-dictation-whisper": {
+   "whisper-self-hosted": {
+    "wer": 9.3,
+    "sub": 5.3,
+    "del": 1.8,
+    "ins": 2.2,
+    "scriptSub": 6,
+    "scriptDel": 1.8,
+    "scriptIns": 2.3
+   },
+   "qwen": {
+    "wer": 45.5,
+    "sub": 10.7,
+    "del": 31.9,
+    "ins": 2.9,
+    "scriptSub": 11.2,
+    "scriptDel": 32.2,
+    "scriptIns": 3.3
+   },
+   "meta": {
+    "wer": 9.9,
+    "sub": 6.4,
+    "del": 0.8,
+    "ins": 2.7,
+    "scriptSub": 7.1,
+    "scriptDel": 1.1,
+    "scriptIns": 3.1
+   },
+   "gemini": {
+    "wer": 4.6,
+    "sub": 2.6,
+    "del": 1,
+    "ins": 1,
+    "scriptSub": 2.9,
+    "scriptDel": 1,
+    "scriptIns": 1.1
+   },
+   "gemini-smart": {
+    "wer": 4.4,
+    "sub": 1.5,
+    "del": 2.1,
+    "ins": 0.8,
+    "scriptSub": 1.6,
+    "scriptDel": 1.9,
+    "scriptIns": 0.7
+   },
+   "deepgram": {
+    "wer": 18.3,
+    "sub": 11,
+    "del": 2.4,
+    "ins": 4.9,
+    "scriptSub": 11.8,
+    "scriptDel": 2.7,
+    "scriptIns": 5.3
+   },
+   "assemblyai-3-6-pro": {
+    "wer": 29.5,
+    "sub": 2.6,
+    "del": 25.5,
+    "ins": 1.5,
+    "scriptSub": 3,
+    "scriptDel": 25.7,
+    "scriptIns": 1.8
+   },
+   "assemblyai-3-5-pro": {
+    "wer": 29.9,
+    "sub": 2.6,
+    "del": 25.4,
+    "ins": 1.9,
+    "scriptSub": 3.1,
+    "scriptDel": 25.7,
+    "scriptIns": 2.2
+   },
+   "zoom-scribe": {
+    "wer": 33.5,
+    "sub": 4.7,
+    "del": 27.3,
+    "ins": 1.5,
+    "scriptSub": 5.1,
+    "scriptDel": 27.6,
+    "scriptIns": 1.9
+   },
+   "elevenlabs-scribe": {
+    "wer": 7.6,
+    "sub": 3.7,
+    "del": 0.5,
+    "ins": 3.4,
+    "scriptSub": 4.5,
+    "scriptDel": 0.8,
+    "scriptIns": 3.8
+   },
+   "elevenlabs-scribe-clean": {
+    "wer": 6.6,
+    "sub": 3.3,
+    "del": 1.9,
+    "ins": 1.5,
+    "scriptSub": 4,
+    "scriptDel": 1.7,
+    "scriptIns": 1.4
+   },
+   "openai-live-transcribe-low": {
+    "wer": 8.1,
+    "sub": 5.3,
+    "del": 1.2,
+    "ins": 1.6,
+    "scriptSub": 6,
+    "scriptDel": 1.2,
+    "scriptIns": 1.7
+   },
+   "openai-realtime-whisper": {
+    "wer": 8.4,
+    "sub": 5.1,
+    "del": 1.9,
+    "ins": 1.3,
+    "scriptSub": 5.7,
+    "scriptDel": 1.9,
+    "scriptIns": 1.3
+   }
+  }
+ },
+ "mixDiff": {
+  "whisper-self-hosted - assemblyai-3-6-pro quiet WER": {
+   "diff": 0.1,
+   "ci": [
+    -1.1,
+    1.6
+   ],
+   "bca": [
+    -1,
+    1.9
+   ],
+   "p": 0.878,
+   "units": 73
+  },
+  "whisper-self-hosted - assemblyai-3-6-pro quiet missing": {
+   "diff": 0.9,
+   "ci": [
+    0.1,
+    2.4
+   ],
+   "bca": [
+    0.2,
+    3.6
+   ],
+   "p": 0.0185,
+   "units": 73
+  },
+  "whisper-self-hosted - assemblyai-3-6-pro quiet extra": {
+   "diff": -1.1,
+   "ci": [
+    -1.8,
+    -0.5
+   ],
+   "bca": [
+    -1.9,
+    -0.5
+   ],
+   "p": 0.0005,
+   "units": 73
+  },
+  "zoom-scribe - openai-live-transcribe-low quiet WER": {
+   "diff": 0.1,
+   "ci": [
+    -0.9,
+    1
+   ],
+   "bca": [
+    -0.8,
+    1
+   ],
+   "p": 0.885,
+   "units": 73
+  },
+  "zoom-scribe - openai-live-transcribe-low whispered WER": {
+   "diff": 25.8,
+   "ci": [
+    10.3,
+    51.7
+   ],
+   "bca": [
+    10.3,
+    51.4
+   ],
+   "p": 0.0002,
+   "units": 16
+  },
+  "zoom-scribe - openai-live-transcribe-low whispered missing": {
+   "diff": 26.4,
+   "ci": [
+    10.4,
+    52.7
+   ],
+   "bca": [
+    10.6,
+    53.2
+   ],
+   "p": 0.0002,
+   "units": 16
+  }
+ },
+ "nvArabic": {
+  "ar-sa": {
+   "diff": 31.3,
+   "ci": [
+    21.5,
+    40.2
+   ],
+   "bca": [
+    20.5,
+    39.4
+   ],
+   "p": 0.0002,
+   "units": 20
+  },
+  "ar-ae": {
+   "diff": 17.6,
+   "ci": [
+    9.1,
+    25.9
+   ],
+   "bca": [
+    9.3,
+    26.3
+   ],
+   "p": 0.0002,
+   "units": 20
+  }
+ },
+ "whisperIn": {
+  "silero drops - sends all (whispered)": {
+   "diff": 41.3,
+   "ci": [
+    24.2,
+    65.9
+   ],
+   "bca": [
+    23.6,
+    65.1
+   ],
+   "p": 0.0002,
+   "units": 16
+  },
+  "ten drops - sends all (whispered)": {
+   "diff": 0.6,
+   "ci": [
+    -1.8,
+    2.8
+   ],
+   "bca": [
+    -1.8,
+    2.9
+   ],
+   "p": 0.6385,
+   "units": 16
+  },
+  "ten drops - ten cuts (whispered)": {
+   "diff": 0.5,
+   "ci": [
+    -0.6,
+    1.7
+   ],
+   "bca": [
+    -0.5,
+    1.8
+   ],
+   "p": 0.4125,
+   "units": 16
+  },
+  "ten cuts - silero cuts (whispered)": {
+   "diff": 0.1,
+   "ci": [
+    -3.3,
+    3
+   ],
+   "bca": [
+    -3.4,
+    2.9
+   ],
+   "p": 0.9455,
+   "units": 16
+  },
+  "gated off - SH (whispered missing)": {
+   "diff": 48.2,
+   "ci": [
+    23.6,
+    68
+   ],
+   "bca": [
+    26,
+    70.3
+   ],
+   "p": 0.0002,
+   "units": 16
+  }
+ },
+ "csFilter": {
+  "qwen": {
+   "filtered": {
+    "n": 85,
+    "englishOnlyLostOther": 32.9,
+    "bothLostOther": 14.1,
+    "englishOnlyLostAny": 32.9,
+    "bothLostAny": 14.1,
+    "englishOnlyMinusBoth": {
+     "diff": 18.8,
+     "ci": [
+      5.4,
+      36.8
+     ],
+     "bca": [
+      5.4,
+      36.8
+     ],
+     "p": 0.006,
+     "units": 85
+    }
+   },
+   "unfiltered": {
+    "n": 100,
+    "englishOnlyLostOther": 38,
+    "bothLostOther": 20,
+    "englishOnlyLostAny": 38,
+    "bothLostAny": 20,
+    "englishOnlyMinusBoth": {
+     "diff": 18,
+     "ci": [
+      5.6,
+      32.9
+     ],
+     "bca": [
+      5.6,
+      32.9
+     ],
+     "p": 0.006,
+     "units": 100
+    }
+   },
+   "class": "preference"
+  },
+  "meta": {
+   "filtered": {
+    "n": 85,
+    "englishOnlyLostOther": 12.9,
+    "bothLostOther": 8.2,
+    "englishOnlyLostAny": 16.5,
+    "bothLostAny": 12.9,
+    "englishOnlyMinusBoth": {
+     "diff": 4.7,
+     "ci": [
+      0,
+      15.3
+     ],
+     "bca": [
+      0,
+      15.3
+     ],
+     "p": 0.327,
+     "units": 85
+    }
+   },
+   "unfiltered": {
+    "n": 100,
+    "englishOnlyLostOther": 20,
+    "bothLostOther": 15,
+    "englishOnlyLostAny": 23,
+    "bothLostAny": 19,
+    "englishOnlyMinusBoth": {
+     "diff": 5,
+     "ci": [
+      0,
+      14.2
+     ],
+     "bca": [
+      0,
+      14.2
+     ],
+     "p": 0.2071,
+     "units": 100
+    }
+   },
+   "class": "preference"
+  },
+  "gemini": {
+   "filtered": {
+    "n": 85,
+    "englishOnlyLostOther": 88.2,
+    "bothLostOther": 34.1,
+    "englishOnlyLostAny": 91.8,
+    "bothLostAny": 42.4,
+    "englishOnlyMinusBoth": {
+     "diff": 54.1,
+     "ci": [
+      37.5,
+      69.8
+     ],
+     "bca": [
+      37.5,
+      69.8
+     ],
+     "p": 0.0002,
+     "units": 85
+    }
+   },
+   "unfiltered": {
+    "n": 100,
+    "englishOnlyLostOther": 90,
+    "bothLostOther": 38,
+    "englishOnlyLostAny": 93,
+    "bothLostAny": 50,
+    "englishOnlyMinusBoth": {
+     "diff": 52,
+     "ci": [
+      37,
+      66.7
+     ],
+     "bca": [
+      37,
+      66.7
+     ],
+     "p": 0.0003,
+     "units": 100
+    }
+   },
+   "class": "filter"
+  },
+  "gemini-smart": {
+   "filtered": {
+    "n": 85,
+    "englishOnlyLostOther": 83.5,
+    "bothLostOther": 40,
+    "englishOnlyLostAny": 84.7,
+    "bothLostAny": 45.9,
+    "englishOnlyMinusBoth": {
+     "diff": 43.5,
+     "ci": [
+      26.7,
+      61
+     ],
+     "bca": [
+      26.7,
+      61
+     ],
+     "p": 0.0002,
+     "units": 85
+    }
+   },
+   "unfiltered": {
+    "n": 100,
+    "englishOnlyLostOther": 86,
+    "bothLostOther": 46,
+    "englishOnlyLostAny": 87,
+    "bothLostAny": 52,
+    "englishOnlyMinusBoth": {
+     "diff": 40,
+     "ci": [
+      24.6,
+      55.8
+     ],
+     "bca": [
+      24.6,
+      55.8
+     ],
+     "p": 0.0003,
+     "units": 100
+    }
+   },
+   "class": "filter"
+  },
+  "whisper-self-hosted": {
+   "filtered": {
+    "n": 85,
+    "englishOnlyLostOther": 83.5,
+    "bothLostOther": 24.7,
+    "englishOnlyLostAny": 84.7,
+    "bothLostAny": 38.8,
+    "englishOnlyMinusBoth": {
+     "diff": 58.8,
+     "ci": [
+      41.1,
+      76.1
+     ],
+     "bca": [
+      41.1,
+      76.1
+     ],
+     "p": 0.0002,
+     "units": 85
+    }
+   },
+   "unfiltered": {
+    "n": 100,
+    "englishOnlyLostOther": 86,
+    "bothLostOther": 33,
+    "englishOnlyLostAny": 87,
+    "bothLostAny": 45,
+    "englishOnlyMinusBoth": {
+     "diff": 53,
+     "ci": [
+      35.6,
+      70.2
+     ],
+     "bca": [
+      35.6,
+      70.2
+     ],
+     "p": 0.0003,
+     "units": 100
+    }
+   },
+   "class": "filter"
+  },
+  "assemblyai-3-5-pro": {
+   "filtered": {
+    "n": 85,
+    "englishOnlyLostOther": 29.4,
+    "bothLostOther": 4.7,
+    "englishOnlyLostAny": 29.4,
+    "bothLostAny": 5.9,
+    "englishOnlyMinusBoth": {
+     "diff": 24.7,
+     "ci": [
+      9.4,
+      43
+     ],
+     "bca": [
+      9.4,
+      43
+     ],
+     "p": 0.0015,
+     "units": 85
+    }
+   },
+   "unfiltered": {
+    "n": 100,
+    "englishOnlyLostOther": 35,
+    "bothLostOther": 12,
+    "englishOnlyLostAny": 35,
+    "bothLostAny": 13,
+    "englishOnlyMinusBoth": {
+     "diff": 23,
+     "ci": [
+      8.8,
+      40.3
+     ],
+     "bca": [
+      8.8,
+      40.3
+     ],
+     "p": 0.0005,
+     "units": 100
+    }
+   },
+   "class": "preference"
+  },
+  "assemblyai-3-6-pro": {
+   "filtered": {
+    "n": 85,
+    "englishOnlyLostOther": 18.8,
+    "bothLostOther": 2.4,
+    "englishOnlyLostAny": 18.8,
+    "bothLostAny": 3.5,
+    "englishOnlyMinusBoth": {
+     "diff": 16.5,
+     "ci": [
+      4.8,
+      29.5
+     ],
+     "bca": [
+      4.8,
+      29.5
+     ],
+     "p": 0.0075,
+     "units": 85
+    }
+   },
+   "unfiltered": {
+    "n": 100,
+    "englishOnlyLostOther": 25,
+    "bothLostOther": 9,
+    "englishOnlyLostAny": 25,
+    "bothLostAny": 10,
+    "englishOnlyMinusBoth": {
+     "diff": 16,
+     "ci": [
+      5.6,
+      27.8
+     ],
+     "bca": [
+      5.6,
+      27.8
+     ],
+     "p": 0.003,
+     "units": 100
+    }
+   },
+   "class": "preference"
+  },
+  "deepgram": {
+   "filtered": {
+    "n": 85,
+    "englishOnlyLostOther": 98.8,
+    "bothLostOther": 31.8,
+    "englishOnlyLostAny": 98.8,
+    "bothLostAny": 31.8,
+    "englishOnlyMinusBoth": {
+     "diff": 67.1,
+     "ci": [
+      52,
+      82.2
+     ],
+     "bca": [
+      52,
+      82.2
+     ],
+     "p": 0.0003,
+     "units": 85
+    }
+   },
+   "unfiltered": {
+    "n": 100,
+    "englishOnlyLostOther": 99,
+    "bothLostOther": 40,
+    "englishOnlyLostAny": 99,
+    "bothLostAny": 40,
+    "englishOnlyMinusBoth": {
+     "diff": 59,
+     "ci": [
+      43.4,
+      73.7
+     ],
+     "bca": [
+      43.4,
+      73.7
+     ],
+     "p": 0.0002,
+     "units": 100
+    }
+   },
+   "class": "filter"
+  },
+  "elevenlabs-scribe-clean": {
+   "filtered": {
+    "n": 85,
+    "englishOnlyLostOther": 92.9,
+    "bothLostOther": 76.5,
+    "englishOnlyLostAny": 92.9,
+    "bothLostAny": 80,
+    "englishOnlyMinusBoth": {
+     "diff": 16.5,
+     "ci": [
+      4.8,
+      30.9
+     ],
+     "bca": [
+      4.8,
+      30.9
+     ],
+     "p": 0.005,
+     "units": 85
+    }
+   },
+   "unfiltered": {
+    "n": 100,
+    "englishOnlyLostOther": 93,
+    "bothLostOther": 77,
+    "englishOnlyLostAny": 93,
+    "bothLostAny": 80,
+    "englishOnlyMinusBoth": {
+     "diff": 16,
+     "ci": [
+      5,
+      30
+     ],
+     "bca": [
+      5,
+      30
+     ],
+     "p": 0.0035,
+     "units": 100
+    }
+   },
+   "class": "neither (lost in most recordings either way)"
+  },
+  "elevenlabs-scribe": {
+   "filtered": {
+    "n": 85,
+    "englishOnlyLostOther": 83.5,
+    "bothLostOther": 58.8,
+    "englishOnlyLostAny": 83.5,
+    "bothLostAny": 61.2,
+    "englishOnlyMinusBoth": {
+     "diff": 24.7,
+     "ci": [
+      10.9,
+      41.8
+     ],
+     "bca": [
+      10.9,
+      41.8
+     ],
+     "p": 0.0005,
+     "units": 85
+    }
+   },
+   "unfiltered": {
+    "n": 100,
+    "englishOnlyLostOther": 85,
+    "bothLostOther": 60,
+    "englishOnlyLostAny": 85,
+    "bothLostAny": 62,
+    "englishOnlyMinusBoth": {
+     "diff": 25,
+     "ci": [
+      11.6,
+      40.4
+     ],
+     "bca": [
+      11.6,
+      40.4
+     ],
+     "p": 0.0005,
+     "units": 100
+    }
+   },
+   "class": "neither (lost in most recordings either way)"
+  },
+  "openai-live-transcribe-low": {
+   "filtered": {
+    "n": 85,
+    "englishOnlyLostOther": 1.2,
+    "bothLostOther": 1.2,
+    "englishOnlyLostAny": 1.2,
+    "bothLostAny": 1.2,
+    "englishOnlyMinusBoth": {
+     "diff": 0,
+     "ci": [
+      0,
+      0
+     ],
+     "bca": [
+      0,
+      0
+     ],
+     "p": 1,
+     "units": 85
+    }
+   },
+   "unfiltered": {
+    "n": 100,
+    "englishOnlyLostOther": 7,
+    "bothLostOther": 6,
+    "englishOnlyLostAny": 7,
+    "bothLostAny": 6,
+    "englishOnlyMinusBoth": {
+     "diff": 1,
+     "ci": [
+      0,
+      5.9
+     ],
+     "bca": [
+      0,
+      5.9
+     ],
+     "p": 1,
+     "units": 100
+    }
+   },
+   "class": "preference"
+  },
+  "openai-realtime-whisper": {
+   "filtered": {
+    "n": 85,
+    "englishOnlyLostOther": 4.7,
+    "bothLostOther": 3.5,
+    "englishOnlyLostAny": 4.7,
+    "bothLostAny": 4.7,
+    "englishOnlyMinusBoth": {
+     "diff": 1.2,
+     "ci": [
+      0,
+      6.7
+     ],
+     "bca": [
+      0,
+      6.7
+     ],
+     "p": 1,
+     "units": 85
+    }
+   },
+   "unfiltered": {
+    "n": 100,
+    "englishOnlyLostOther": 12,
+    "bothLostOther": 10,
+    "englishOnlyLostAny": 12,
+    "bothLostAny": 11,
+    "englishOnlyMinusBoth": {
+     "diff": 2,
+     "ci": [
+      0,
+      8.2
+     ],
+     "bca": [
+      0,
+      8.2
+     ],
+     "p": 0.716,
+     "units": 100
+    }
+   },
+   "class": "preference"
+  },
+  "zoom-scribe": {
+   "filtered": {
+    "n": 85,
+    "englishOnlyLostOther": 56.5,
+    "bothLostOther": 56.5,
+    "englishOnlyLostAny": 56.5,
+    "bothLostAny": 56.5,
+    "englishOnlyMinusBoth": {
+     "diff": 0,
+     "ci": [
+      0,
+      0
+     ],
+     "bca": [
+      0,
+      0
+     ],
+     "p": 1,
+     "units": 85
+    }
+   },
+   "unfiltered": {
+    "n": 100,
+    "englishOnlyLostOther": 62,
+    "bothLostOther": 62,
+    "englishOnlyLostAny": 62,
+    "bothLostAny": 62,
+    "englishOnlyMinusBoth": {
+     "diff": 0,
+     "ci": [
+      0,
+      0
+     ],
+     "bca": [
+      0,
+      0
+     ],
+     "p": 1,
+     "units": 100
+    }
+   },
+   "class": "neither (lost in most recordings either way)"
+  }
+ },
+ "pause": {
+  "elevenlabs-scribe EN+X": {
+   "diff": -60,
+   "ci": [
+    -77.8,
+    -42.7
+   ],
+   "bca": [
+    -77.8,
+    -42.7
+   ],
+   "p": 0.0002,
+   "units": 85
+  },
+  "elevenlabs-scribe-clean EN+X": {
+   "diff": -77.6,
+   "ci": [
+    -91.3,
+    -61.7
+   ],
+   "bca": [
+    -91.3,
+    -61.7
+   ],
+   "p": 0.0002,
+   "units": 85
+  },
+  "elevenlabs-scribe X+Y": {
+   "diff": -56,
+   "ci": [
+    -67.4,
+    -44.1
+   ],
+   "bca": [
+    -67.4,
+    -44.1
+   ],
+   "p": 0.0002,
+   "units": 232
+  },
+  "elevenlabs-scribe-clean X+Y": {
+   "diff": -34.1,
+   "ci": [
+    -45.7,
+    -23.2
+   ],
+   "bca": [
+    -45.7,
+    -23.2
+   ],
+   "p": 0.0002,
+   "units": 232
+  }
+ },
+ "voicesWithoutNoText": {
+  "whisper-self-hosted": {
+   "babble": {
+    "all": 62.5,
+    "withoutNoText": 62.5,
+    "noText": 0,
+    "delWithoutNoText": 41.6
+   },
+   "tv": {
+    "all": 17.7,
+    "withoutNoText": 17.7,
+    "noText": 0,
+    "delWithoutNoText": 6.5
+   }
+  },
+  "whisper": {
+   "babble": {
+    "all": 63.4,
+    "withoutNoText": 63.4,
+    "noText": 0,
+    "delWithoutNoText": 34.2
+   },
+   "tv": {
+    "all": 23.4,
+    "withoutNoText": 23.4,
+    "noText": 0,
+    "delWithoutNoText": 10.2
+   }
+  },
+  "qwen": {
+   "babble": {
+    "all": 50.9,
+    "withoutNoText": 50.9,
+    "noText": 0,
+    "delWithoutNoText": 21.9
+   },
+   "tv": {
+    "all": 16.3,
+    "withoutNoText": 16.3,
+    "noText": 0,
+    "delWithoutNoText": 7
+   }
+  },
+  "meta": {
+   "babble": {
+    "all": 77.5,
+    "withoutNoText": 77.5,
+    "noText": 0,
+    "delWithoutNoText": 70.4
+   },
+   "tv": {
+    "all": 25.6,
+    "withoutNoText": 25.6,
+    "noText": 0,
+    "delWithoutNoText": 13.1
+   }
+  },
+  "gemini": {
+   "babble": {
+    "all": 81.7,
+    "withoutNoText": 40.3,
+    "noText": 67,
+    "delWithoutNoText": 22.8
+   },
+   "tv": {
+    "all": 24.8,
+    "withoutNoText": 18.9,
+    "noText": 7,
+    "delWithoutNoText": 8.5
+   }
+  },
+  "gemini-smart": {
+   "babble": {
+    "all": 71.2,
+    "withoutNoText": 67.1,
+    "noText": 12,
+    "delWithoutNoText": 37.6
+   },
+   "tv": {
+    "all": 23,
+    "withoutNoText": 23,
+    "noText": 0,
+    "delWithoutNoText": 9.9
+   }
+  },
+  "deepgram": {
+   "babble": {
+    "all": 94.9,
+    "withoutNoText": 94.9,
+    "noText": 0,
+    "delWithoutNoText": 93.5
+   },
+   "tv": {
+    "all": 50.4,
+    "withoutNoText": 50.4,
+    "noText": 0,
+    "delWithoutNoText": 39.9
+   }
+  },
+  "assemblyai-3-6-pro": {
+   "babble": {
+    "all": 59.6,
+    "withoutNoText": 59.6,
+    "noText": 0,
+    "delWithoutNoText": 45.5
+   },
+   "tv": {
+    "all": 13.2,
+    "withoutNoText": 13.2,
+    "noText": 0,
+    "delWithoutNoText": 3.4
+   }
+  },
+  "assemblyai-3-5-pro": {
+   "babble": {
+    "all": 52.5,
+    "withoutNoText": 52.5,
+    "noText": 0,
+    "delWithoutNoText": 27.2
+   },
+   "tv": {
+    "all": 12.4,
+    "withoutNoText": 12.4,
+    "noText": 0,
+    "delWithoutNoText": 2.5
+   }
+  },
+  "zoom-scribe": {
+   "babble": {
+    "all": 38.7,
+    "withoutNoText": 38.7,
+    "noText": 0,
+    "delWithoutNoText": 24.3
+   },
+   "tv": {
+    "all": 10.3,
+    "withoutNoText": 10.3,
+    "noText": 0,
+    "delWithoutNoText": 5.4
+   }
+  },
+  "elevenlabs-scribe": {
+   "babble": {
+    "all": 66.6,
+    "withoutNoText": 66.6,
+    "noText": 0,
+    "delWithoutNoText": 25.7
+   },
+   "tv": {
+    "all": 19.4,
+    "withoutNoText": 19.4,
+    "noText": 0,
+    "delWithoutNoText": 2.2
+   }
+  },
+  "elevenlabs-scribe-clean": {
+   "babble": {
+    "all": 66.9,
+    "withoutNoText": 66.9,
+    "noText": 0,
+    "delWithoutNoText": 27.2
+   },
+   "tv": {
+    "all": 18.8,
+    "withoutNoText": 18.8,
+    "noText": 0,
+    "delWithoutNoText": 2.2
+   }
+  },
+  "openai-live-transcribe-low": {
+   "babble": {
+    "all": 85.1,
+    "withoutNoText": 85.1,
+    "noText": 0,
+    "delWithoutNoText": 78
+   },
+   "tv": {
+    "all": 29,
+    "withoutNoText": 29,
+    "noText": 0,
+    "delWithoutNoText": 16.5
+   }
+  },
+  "openai-realtime-whisper": {
+   "babble": {
+    "all": 93.6,
+    "withoutNoText": 93.6,
+    "noText": 0,
+    "delWithoutNoText": 91.6
+   },
+   "tv": {
+    "all": 41.2,
+    "withoutNoText": 41.2,
+    "noText": 0,
+    "delWithoutNoText": 32.8
+   }
+  }
+ }
+}

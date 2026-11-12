@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-20",
+  "runDates": [
+    "2026-10-20"
+  ],
+  "label": "oaw-openai-whisper-1",
+  "options": {
+    "language": "clip",
+    "speed": 1,
+    "gate": true,
+    "runs": 1,
+    "clientProfile": "published"
+  },
+  "sets": [
+    {
+      "id": "en-dictation",
+      "language": "en",
+      "condition": "clean",
+      "source": "Team recordings of app-style dictation scripts"
+    }
+  ],
+  "models": {
+    "openai-whisper-1": "whisper-1"
+  },
+  "labels": {
+    "openai-whisper-1": "OpenAI Whisper-1"
+  },
+  "aggregates": {
+    "en-dictation/openai-whisper-1": {
+      "headline": {
+        "value": 0.06160037145952639,
+        "lo": 0.051248357424441525,
+        "hi": 0.07251237821434275,
+        "speakers": 50
+      },
+      "formatted": 0.11295495746757775
+    },
+    "latency/openai-whisper-1": {
+      "waitP50": 3797,
+      "waitP90": 6393,
+      "connectP50": 0,
+      "connectP90": 0,
+      "n": 50
+    },
+    "failures/openai-whisper-1": {
+      "clips": 50,
+      "dropped": 0,
+      "failed": 0,
+      "droppedSets": []
+    }
+  }
+}

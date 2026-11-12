@@ -1,0 +1,52 @@
+{
+  "date": "2026-11-05",
+  "runDates": [
+    "2026-11-05"
+  ],
+  "label": "zoomturn",
+  "options": {
+    "language": "clip",
+    "speed": 1,
+    "gate": true,
+    "runs": 1,
+    "clientProfile": "published"
+  },
+  "sets": [
+    {
+      "id": "en-dictation-whisper",
+      "language": "en",
+      "condition": "whisper",
+      "source": "Same scripts, whispered"
+    }
+  ],
+  "models": {
+    "zoom-scribe-longturn": "zoom-scribe"
+  },
+  "labels": {
+    "zoom-scribe-longturn": "Zoom Scribe (long turns)"
+  },
+  "aggregates": {
+    "en-dictation-whisper/zoom-scribe-longturn": {
+      "headline": {
+        "value": 0.26666666666666666,
+        "lo": 0.12976539589442815,
+        "hi": 0.5003194888178913,
+        "speakers": 16
+      },
+      "formatted": 0.3188105117565698
+    },
+    "latency/zoom-scribe-longturn": {
+      "waitP50": 463,
+      "waitP90": 532,
+      "connectP50": 1533,
+      "connectP90": 1778,
+      "n": 16
+    },
+    "failures/zoom-scribe-longturn": {
+      "clips": 16,
+      "dropped": 0,
+      "failed": 0,
+      "droppedSets": []
+    }
+  }
+}

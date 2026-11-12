@@ -1,0 +1,73 @@
+{
+  "$comment": "ElevenLabs Scribe v2 Realtime with no_verbatim=true (fillers, repeats and false starts removed), otherwise identical to elevenlabs-scribe: a single manual commit when the audio ends, so the end of clip is timed the same way. Reported as a setting of ElevenLabs, alongside the default. Replaces the archived VAD-commit attempt, whose latency (~15 s) came from waiting for an empty commit after the audio ended.",
+  "id": "elevenlabs-scribe-clean",
+  "label": "ElevenLabs Scribe v2 Realtime (no verbatim)",
+  "kind": "websocket",
+  "model": "scribe_v2_realtime",
+  "env": [
+    "ELEVENLABS_API_KEY"
+  ],
+  "sampleRate": 16000,
+  "languages": {
+    "en": "en",
+    "ar": "ar",
+    "de": "de",
+    "es": "es",
+    "fr": "fr",
+    "hi": "hi",
+    "ur": "ur",
+    "zh": "zh"
+  },
+  "url": "wss://api.elevenlabs.io/v1/speech-to-text/realtime?model_id=${model}&audio_format=pcm_16000&commit_strategy=manual&no_verbatim=true&language_code=${primary_language}&secondary_languages=${secondary_language}",
+  "headers": {
+    "xi-api-key": "${env:ELEVENLABS_API_KEY}"
+  },
+  "readyOn": {
+    "message_type": "session_started"
+  },
+  "audio": {
+    "message_type": "input_audio_chunk",
+    "audio_base_64": "${audio_base64}",
+    "commit": false,
+    "sample_rate": 16000
+  },
+  "end": {
+    "message_type": "input_audio_chunk",
+    "audio_base_64": "",
+    "commit": true,
+    "sample_rate": 16000
+  },
+  "final": {
+    "match": {
+      "message_type": "committed_transcript"
+    },
+    "textPath": "text"
+  },
+  "done": {
+    "match": {
+      "message_type": "committed_transcript"
+    },
+    "onClose": true
+  },
+  "error": {
+    "match": {
+      "message_type": [
+        "error",
+        "auth_error",
+        "quota_exceeded",
+        "commit_throttled",
+        "unaccepted_terms",
+        "rate_limited",
+        "queue_overflow",
+        "resource_exhausted",
+        "session_time_limit_exceeded",
+        "input_error",
+        "invalid_request",
+        "chunk_size_exceeded",
+        "insufficient_audio_activity",
+        "transcriber_error"
+      ]
+    },
+    "messagePath": "error"
+  }
+}

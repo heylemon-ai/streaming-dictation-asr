@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Word-for-word references</title>
+<style>
+:root{--bg:#fbfaf7;--panel:#fff;--ink:#1d1c1a;--ink2:#5d5b55;--muted:#8d8a82;--line:#e6e3dc;--accent:#2a78d6;
+  --add:#1a8a5c;--add-bg:#e3f4ec;--del:#c2413b;--del-bg:#fbe7e5;--chg:#9a6200;--chg-bg:#fbf0d9;--off:#f1efea}
+@media (prefers-color-scheme:dark){:root{--bg:#161614;--panel:#1f1f1c;--ink:#efede7;--ink2:#bdbab1;--muted:#8a877f;--line:#34332f;
+  --accent:#5a9be8;--add:#5cc596;--add-bg:#173226;--del:#ec7a74;--del-bg:#3a1d1b;--chg:#e3b257;--chg-bg:#352a14;--off:#2a2926}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+header{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line);padding:12px 20px;display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+h1{font-size:16px;margin:0;font-weight:650}
+.prog{color:var(--ink2);font-size:13px}
+.bar{flex:1;min-width:120px;height:6px;background:var(--off);border-radius:3px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--add);width:0}
+select,button{font:inherit;font-size:13px;border:1px solid var(--line);background:var(--panel);color:var(--ink);border-radius:6px;padding:5px 10px;cursor:pointer}
+button.primary{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:600}
+main{display:grid;grid-template-columns:240px 1fr;min-height:calc(100vh - 56px)}
+nav{border-right:1px solid var(--line);overflow:auto;max-height:calc(100vh - 56px);position:sticky;top:56px}
+nav a{display:flex;gap:8px;align-items:center;padding:6px 14px;color:var(--ink2);text-decoration:none;font-size:13px;border-left:3px solid transparent}
+nav a.cur{background:var(--panel);color:var(--ink);border-left-color:var(--accent)}
+nav a .dot{width:8px;height:8px;border-radius:50%;background:var(--line);flex:none}
+nav a.done .dot{background:var(--add)}
+nav a .n{margin-left:auto;font-size:11px;color:var(--muted)}
+section{padding:22px 28px;max-width:900px}
+.meta{color:var(--muted);font-size:13px;margin-bottom:10px}
+.player{display:flex;gap:10px;align-items:center;margin:8px 0 18px}
+audio{width:100%;max-width:560px}
+.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:12px;color:var(--ink2);margin-bottom:12px}
+.legend b{font-weight:600}
+.text{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px 20px;font-size:17px;line-height:2.1}
+.w{cursor:pointer;border-radius:3px;padding:1px 1px}
+.w:hover{background:var(--off)}
+.chip{display:inline-flex;align-items:center;gap:4px;border-radius:5px;padding:0 6px;margin:0 2px;font-size:15px;cursor:pointer;border:1.5px solid;white-space:nowrap;line-height:1.6}
+.chip .pl{font-size:10px;opacity:.75;padding:0 2px}
+.chip .pl:hover{opacity:1}
+.chip .cnt{font-size:10px;opacity:.7}
+.ins{border-color:var(--add);color:var(--add)} .ins.on{background:var(--add-bg)}
+.del{border-color:var(--del);color:var(--del)} .del.on{background:var(--del-bg);text-decoration:line-through}
+.sub{border-color:var(--chg);color:var(--chg)} .sub.on{background:var(--chg-bg)}
+.chip:not(.on){opacity:.55;border-style:dashed}
+h2{font-size:13px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);margin:22px 0 8px;font-weight:600}
+textarea{width:100%;min-height:120px;font:15px/1.55 inherit;font-family:inherit;color:var(--ink);background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+.row{display:flex;gap:10px;align-items:center;margin-top:14px;flex-wrap:wrap}
+.hint{color:var(--muted);font-size:12px}
+.saved{color:var(--add);font-size:12px;min-width:60px}
+@media (max-width:760px){main{grid-template-columns:1fr} nav{display:none} section{padding:16px}}
+</style>
+</head>
+<body>
+<header>
+  <h1>Word-for-word references</h1>
+  <span class="prog" id="prog"></span><div class="bar"><i id="barfill"></i></div>
+  <select id="filter"><option value="">All recordings</option><option value="todo">Not reviewed yet</option>
+    <option value="en-dictation">Quiet</option><option value="en-dictation-noise">Fan noise</option><option value="en-dictation-whisper">Whispered</option></select>
+  <button id="prev">← Prev</button><button id="next">Next →</button>
+</header>
+<main>
+  <nav id="list"></nav>
+  <section>
+    <div class="meta" id="meta"></div>
+    <div class="player"><audio id="audio" controls preload="auto"></audio>
+      <select id="rate"><option value="0.75">0.75×</option><option value="1" selected>1×</option><option value="1.25">1.25×</option></select></div>
+    <div class="legend">
+      <span><b style="color:var(--add)">+ green</b> the speaker added words</span>
+      <span><b style="color:var(--del)">red</b> the speaker skipped a word</span>
+      <span><b style="color:var(--chg)">amber</b> the speaker said a different word</span>
+      <span>Solid = suggested (most systems heard it). Dashed = possible. Click a box to switch it; ▶ plays that spot; click any word to jump there.</span>
+    </div>
+    <div class="text" id="text"></div>
+    <h2>What was said (this becomes the reference)</h2>
+    <textarea id="final" spellcheck="false"></textarea>
+    <div class="hint">Edit freely if something is still wrong. Your text is kept as typed; switching boxes after editing replaces it.</div>
+    <div class="row">
+      <button class="primary" id="done">Correct — next recording ⏎</button>
+      <button id="reset">Reset this recording</button>
+      <span class="saved" id="saved"></span>
+      <span class="hint">Space play/pause · ← → recordings · Enter mark correct</span>
+    </div>
+  </section>
+</main>
+<script>
+let D, dec = {}, idx = 0, view = [];
+const $ = (id) => document.getElementById(id);
+const audio = $('audio');
+let stopAt = null;
+
+async function load() {
+  D = await (await fetch('/draft')).json();
+  dec = await (await fetch('/decisions')).json();
+  const first = D.clips.findIndex((c) => !(dec[c.id] || {}).reviewed);
+  buildView(); go(Math.max(0, view.indexOf(first)));
+}
+function state(c) {
+  return dec[c.id] ??= { accepted: Object.fromEntries(c.proposals.map((p, i) => [i, p.proposed])), override: null, reviewed: false };
+}
+function compose(c) {
+  const s = state(c), out = [], ins = {}, at = {};
+  c.proposals.forEach((p, i) => { if (!s.accepted[i]) return; if (p.type === 'ins') (ins[p.at] ??= []).push(p.words); else at[p.at] = p; });
+  for (let k = 0; k <= c.script.length; k++) {
+    (ins[k] || []).forEach((w) => out.push(w));
+    if (k === c.script.length) break;
+    const p = at[k];
+    if (p && p.type === 'del') continue;
+    out.push(p && p.type === 'sub' ? p.words : c.script[k]);
+  }
+  return out.join(' ');
+}
+let saveTimer;
+function save() {
+  clearTimeout(saveTimer); $('saved').textContent = 'saving…';
+  saveTimer = setTimeout(async () => {
+    await fetch('/decisions', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(dec) });
+    $('saved').textContent = 'saved'; progress(); list();
+  }, 300);
+}
+const tAt = (c, k) => Math.max(0, (k / Math.max(1, c.script.length)) * c.duration);
+function play(c, k) { audio.currentTime = Math.max(0, tAt(c, k) - 1.5); stopAt = tAt(c, k) + 3.5; audio.play(); }
+audio.addEventListener('timeupdate', () => { if (stopAt && audio.currentTime >= stopAt) { audio.pause(); stopAt = null; } });
+
+function render() {
+  const c = D.clips[view[idx]], s = state(c);
+  $('meta').textContent = `${c.id} · ${({ 'en-dictation': 'quiet room', 'en-dictation-noise': 'fan noise', 'en-dictation-whisper': 'whispered' })[c.set]} · ${c.duration.toFixed(0)} s · ${c.proposals.length} spot${c.proposals.length === 1 ? '' : 's'} to check`;
+  if (audio.dataset.file !== c.file) { audio.src = `/audio/${c.file}`; audio.dataset.file = c.file; }  // re-render keeps the position
+  audio.playbackRate = +$('rate').value;
+  const box = $('text'); box.replaceChildren();
+  const ins = {}, at = {};
+  c.proposals.forEach((p, i) => (p.type === 'ins' ? (ins[p.at] ??= []).push(i) : (at[p.at] = i)));
+  const chip = (i) => {
+    const p = c.proposals[i], el = document.createElement('span');
+    el.className = `chip ${p.type}${s.accepted[i] ? ' on' : ''}`;
+    el.title = `${p.systems} of ${p.of} systems heard this`;
+    const label = p.type === 'ins' ? `+ ${p.words}` : p.type === 'del' ? p.old : `${p.old} → ${p.words}`;
+    el.append(label);
+    const cnt = document.createElement('span'); cnt.className = 'cnt'; cnt.textContent = `${p.systems}/${p.of}`; el.append(cnt);
+    const pl = document.createElement('span'); pl.className = 'pl'; pl.textContent = '▶';
+    pl.onclick = (e) => { e.stopPropagation(); play(c, p.at); };
+    el.append(pl);
+    el.onclick = () => { s.accepted[i] = !s.accepted[i]; s.override = null; render(); save(); };
+    return el;
+  };
+  for (let k = 0; k <= c.script.length; k++) {
+    (ins[k] || []).forEach((i) => box.append(chip(i), ' '));
+    if (k === c.script.length) break;
+    if (at[k] !== undefined) { box.append(chip(at[k]), ' '); continue; }
+    const w = document.createElement('span'); w.className = 'w'; w.textContent = c.script[k];
+    w.onclick = () => play(c, k); box.append(w, ' ');
+  }
+  $('final').value = s.override ?? compose(c);
+  progress(); list();
+}
+function progress() {
+  const n = D.clips.filter((c) => (dec[c.id] || {}).reviewed).length;
+  $('prog').textContent = `${n} of ${D.clips.length} reviewed`;
+  $('barfill').style.width = `${(100 * n) / D.clips.length}%`;
+}
+function buildView() {
+  const f = $('filter').value;
+  view = D.clips.map((c, i) => i).filter((i) => !f || (f === 'todo' ? !(dec[D.clips[i].id] || {}).reviewed : D.clips[i].set === f));
+}
+function list() {
+  const nav = $('list'); nav.replaceChildren();
+  view.forEach((ci, k) => {
+    const c = D.clips[ci], a = document.createElement('a');
+    a.href = '#'; a.className = `${k === idx ? 'cur' : ''} ${(dec[c.id] || {}).reviewed ? 'done' : ''}`;
+    a.innerHTML = '<span class="dot"></span>';
+    a.append(c.id.split('/')[1]);
+    const n = document.createElement('span'); n.className = 'n'; n.textContent = c.proposals.length; a.append(n);
+    a.onclick = (e) => { e.preventDefault(); go(k); };
+    nav.append(a);
+  });
+  nav.querySelector('.cur')?.scrollIntoView({ block: 'nearest' });
+}
+function go(k) { if (!view.length) return; idx = Math.min(view.length - 1, Math.max(0, k)); audio.pause(); render(); }
+$('final').addEventListener('input', () => { state(D.clips[view[idx]]).override = $('final').value; save(); });
+$('done').onclick = () => { state(D.clips[view[idx]]).reviewed = true; save(); go(idx + 1); };
+$('reset').onclick = () => { delete dec[D.clips[view[idx]].id]; render(); save(); };
+$('prev').onclick = () => go(idx - 1);
+$('next').onclick = () => go(idx + 1);
+$('rate').onchange = () => (audio.playbackRate = +$('rate').value);
+$('filter').onchange = () => { buildView(); go(0); };
+document.addEventListener('keydown', (e) => {
+  if (e.target.tagName === 'TEXTAREA' || e.target.tagName === 'SELECT') return;
+  if (e.key === ' ') { e.preventDefault(); audio.paused ? audio.play() : audio.pause(); }
+  if (e.key === 'ArrowRight') go(idx + 1);
+  if (e.key === 'ArrowLeft') go(idx - 1);
+  if (e.key === 'Enter') $('done').click();
+});
+load();
+</script>
+</body>
+</html>

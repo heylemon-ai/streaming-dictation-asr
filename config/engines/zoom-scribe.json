@@ -1,0 +1,75 @@
+{
+  "$comment": "Zoom Scribe Live (WebSocket, subprotocol live-asr). Settings follow Zoom's example client: 100 ms PCM16 frames at 16 kHz, server turn detection (600 ms silence), text polishing off. Each finished segment arrives as transcription.completed; session.close ends the session. Supported locales checked against the API's own error message on 2026-10-14; Egyptian Arabic, Latin American Spanish and Urdu have no locale. ar-AE (Emirati Arabic) accepted by the API on 2026-11-05; used only with --language regional.",
+  "id": "zoom-scribe",
+  "label": "Zoom Scribe",
+  "kind": "websocket",
+  "model": "zoom-scribe",
+  "env": [
+    "ZOOM_SCRIBE_STT_MODEL_KEY"
+  ],
+  "sampleRate": 16000,
+  "languages": {
+    "en": "en-US",
+    "ar": "ar-SA",
+    "de": "de-DE",
+    "es": "es-ES",
+    "fr": "fr-FR",
+    "hi": "hi-IN",
+    "zh": "zh-CN",
+    "ar-AE": "ar-AE"
+  },
+  "url": "wss://api.zoom.us/v2/aiservices/scribe/live",
+  "protocols": [
+    "live-asr"
+  ],
+  "headers": {
+    "x-api-key": "${env:ZOOM_SCRIBE_STT_MODEL_KEY}"
+  },
+  "setup": {
+    "type": "session.update",
+    "language": "${language}",
+    "audio": {
+      "format": "pcm16"
+    },
+    "config": {
+      "language": "${language}",
+      "diarization": false,
+      "partial_results": false
+    },
+    "outputs": {
+      "text_polishing": {
+        "enabled": false
+      }
+    },
+    "turn_detection": {
+      "silence_duration_ms": 600,
+      "max_segment_duration_ms": 30000,
+      "force_partial_interval_ms": 1000
+    }
+  },
+  "readyOn": {
+    "type": "session.updated"
+  },
+  "audio": "binary",
+  "end": {
+    "type": "session.close"
+  },
+  "final": {
+    "match": {
+      "type": "transcription.completed"
+    },
+    "textPath": "transcript"
+  },
+  "done": {
+    "match": {
+      "type": "session.closed"
+    },
+    "onClose": true
+  },
+  "error": {
+    "match": {
+      "type": "error"
+    },
+    "messagePath": "error.message"
+  }
+}

@@ -1,0 +1,1202 @@
+[
+ {
+  "engine": "gemini",
+  "clip": "en-dictation/048-google-docs",
+  "startedAt": "2026-10-22T12:54:59.286Z",
+  "connectMs": 1553,
+  "latencyMs": 724,
+  "wer": 4.2,
+  "textHash": "4169aa65",
+  "round": 0
+ },
+ {
+  "engine": "gemini-smart",
+  "clip": "en-dictation/048-google-docs",
+  "startedAt": "2026-10-22T12:54:59.295Z",
+  "connectMs": 1545,
+  "latencyMs": 600,
+  "wer": 4.2,
+  "textHash": "4169aa65",
+  "round": 0
+ },
+ {
+  "engine": "gemini",
+  "clip": "en-dictation/080-whatsapp",
+  "startedAt": "2026-10-22T12:55:12.493Z",
+  "connectMs": 920,
+  "latencyMs": 915,
+  "wer": 15.7,
+  "textHash": "81c5f4a5",
+  "round": 0
+ },
+ {
+  "engine": "gemini-smart",
+  "clip": "en-dictation/080-whatsapp",
+  "startedAt": "2026-10-22T12:55:12.504Z",
+  "connectMs": 928,
+  "latencyMs": 1073,
+  "wer": 0,
+  "textHash": "db98eced",
+  "round": 0
+ },
+ {
+  "engine": "gemini",
+  "clip": "en-dictation/035-slack",
+  "startedAt": "2026-10-22T12:56:00.924Z",
+  "connectMs": 1193,
+  "latencyMs": 1106,
+  "wer": 4.1,
+  "textHash": "ab236882",
+  "round": 0
+ },
+ {
+  "engine": "gemini-smart",
+  "clip": "en-dictation/035-slack",
+  "startedAt": "2026-10-22T12:56:00.935Z",
+  "connectMs": 1186,
+  "latencyMs": 1067,
+  "wer": 3.2,
+  "textHash": "6af238b4",
+  "round": 0
+ },
+ {
+  "engine": "gemini",
+  "clip": "en-dictation/048-google-docs",
+  "startedAt": "2026-10-22T12:57:35.648Z",
+  "connectMs": 700,
+  "latencyMs": 416,
+  "wer": 4.2,
+  "textHash": "4169aa65",
+  "round": 1
+ },
+ {
+  "engine": "gemini-smart",
+  "clip": "en-dictation/048-google-docs",
+  "startedAt": "2026-10-22T12:57:35.654Z",
+  "connectMs": 707,
+  "latencyMs": 524,
+  "wer": 4.2,
+  "textHash": "4169aa65",
+  "round": 1
+ },
+ {
+  "engine": "gemini",
+  "clip": "en-dictation/080-whatsapp",
+  "startedAt": "2026-10-22T12:57:47.811Z",
+  "connectMs": 798,
+  "latencyMs": 769,
+  "wer": 15.7,
+  "textHash": "81c5f4a5",
+  "round": 1
+ },
+ {
+  "engine": "gemini-smart",
+  "clip": "en-dictation/080-whatsapp",
+  "startedAt": "2026-10-22T12:57:47.820Z",
+  "connectMs": 641,
+  "latencyMs": 669,
+  "wer": 2.6,
+  "textHash": "7f5b3844",
+  "round": 1
+ },
+ {
+  "engine": "gemini",
+  "clip": "en-dictation/035-slack",
+  "startedAt": "2026-10-22T12:58:35.804Z",
+  "connectMs": 754,
+  "latencyMs": 1021,
+  "wer": 4.1,
+  "textHash": "ab236882",
+  "round": 1
+ },
+ {
+  "engine": "gemini-smart",
+  "clip": "en-dictation/035-slack",
+  "startedAt": "2026-10-22T12:58:35.812Z",
+  "connectMs": 746,
+  "latencyMs": 1040,
+  "wer": 3.2,
+  "textHash": "6af238b4",
+  "round": 1
+ },
+ {
+  "engine": "gemini",
+  "clip": "en-dictation/048-google-docs",
+  "startedAt": "2026-10-22T13:00:10.015Z",
+  "connectMs": 759,
+  "latencyMs": 438,
+  "wer": 4.2,
+  "textHash": "4169aa65",
+  "round": 2
+ },
+ {
+  "engine": "gemini-smart",
+  "clip": "en-dictation/048-google-docs",
+  "startedAt": "2026-10-22T13:00:10.018Z",
+  "connectMs": 709,
+  "latencyMs": 539,
+  "wer": 4.2,
+  "textHash": "4169aa65",
+  "round": 2
+ },
+ {
+  "engine": "gemini",
+  "clip": "en-dictation/080-whatsapp",
+  "startedAt": "2026-10-22T13:00:22.190Z",
+  "connectMs": 734,
+  "latencyMs": 776,
+  "wer": 15.7,
+  "textHash": "81c5f4a5",
+  "round": 2
+ },
+ {
+  "engine": "gemini-smart",
+  "clip": "en-dictation/080-whatsapp",
+  "startedAt": "2026-10-22T13:00:22.192Z",
+  "connectMs": 732,
+  "latencyMs": 744,
+  "wer": 0,
+  "textHash": "db98eced",
+  "round": 2
+ },
+ {
+  "engine": "gemini",
+  "clip": "en-dictation/035-slack",
+  "startedAt": "2026-10-22T13:01:10.125Z",
+  "connectMs": 707,
+  "latencyMs": 1049,
+  "wer": 5.5,
+  "textHash": "e6d99db",
+  "round": 2
+ },
+ {
+  "engine": "gemini-smart",
+  "clip": "en-dictation/035-slack",
+  "startedAt": "2026-10-22T13:01:10.137Z",
+  "connectMs": 700,
+  "latencyMs": 1100,
+  "wer": 3.2,
+  "textHash": "6af238b4",
+  "round": 2
+ },
+ {
+  "engine": "gemini",
+  "clip": "en-dictation/048-google-docs",
+  "startedAt": "2026-10-22T13:02:44.359Z",
+  "connectMs": 734,
+  "latencyMs": 865,
+  "wer": 4.2,
+  "textHash": "4169aa65",
+  "round": 3
+ },
+ {
+  "engine": "gemini-smart",
+  "clip": "en-dictation/048-google-docs",
+  "startedAt": "2026-10-22T13:02:44.364Z",
+  "connectMs": 814,
+  "latencyMs": 443,
+  "wer": 4.2,
+  "textHash": "4169aa65",
+  "round": 3
+ },
+ {
+  "engine": "gemini",
+  "clip": "en-dictation/080-whatsapp",
+  "startedAt": "2026-10-22T13:02:56.885Z",
+  "connectMs": 731,
+  "latencyMs": 826,
+  "wer": 15.7,
+  "textHash": "81c5f4a5",
+  "round": 3
+ },
+ {
+  "engine": "gemini-smart",
+  "clip": "en-dictation/080-whatsapp",
+  "startedAt": "2026-10-22T13:02:56.892Z",
+  "connectMs": 803,
+  "latencyMs": 738,
+  "wer": 2.6,
+  "textHash": "7f5b3844",
+  "round": 3
+ },
+ {
+  "engine": "gemini",
+  "clip": "en-dictation/035-slack",
+  "startedAt": "2026-10-22T13:03:44.865Z",
+  "connectMs": 803,
+  "latencyMs": 1294,
+  "wer": 4.1,
+  "textHash": "ab236882",
+  "round": 3
+ },
+ {
+  "engine": "gemini-smart",
+  "clip": "en-dictation/035-slack",
+  "startedAt": "2026-10-22T13:03:44.870Z",
+  "connectMs": 687,
+  "latencyMs": 1030,
+  "wer": 3.2,
+  "textHash": "6af238b4",
+  "round": 3
+ },
+ {
+  "engine": "gemini",
+  "clip": "en-dictation/048-google-docs",
+  "startedAt": "2026-10-22T13:05:19.394Z",
+  "connectMs": 801,
+  "latencyMs": 473,
+  "wer": 4.2,
+  "textHash": "4169aa65",
+  "round": 4
+ },
+ {
+  "engine": "gemini-smart",
+  "clip": "en-dictation/048-google-docs",
+  "startedAt": "2026-10-22T13:05:19.395Z",
+  "connectMs": 801,
+  "latencyMs": 923,
+  "wer": 4.2,
+  "textHash": "4169aa65",
+  "round": 4
+ },
+ {
+  "engine": "gemini",
+  "clip": "en-dictation/080-whatsapp",
+  "startedAt": "2026-10-22T13:05:32.045Z",
+  "connectMs": 856,
+  "latencyMs": 736,
+  "wer": 15.7,
+  "textHash": "81c5f4a5",
+  "round": 4
+ },
+ {
+  "engine": "gemini-smart",
+  "clip": "en-dictation/080-whatsapp",
+  "startedAt": "2026-10-22T13:05:32.052Z",
+  "connectMs": 840,
+  "latencyMs": 822,
+  "wer": 0,
+  "textHash": "db98eced",
+  "round": 4
+ },
+ {
+  "engine": "gemini",
+  "clip": "en-dictation/035-slack",
+  "startedAt": "2026-10-22T13:06:20.140Z",
+  "connectMs": 883,
+  "latencyMs": 1064,
+  "wer": 4.1,
+  "textHash": "ab236882",
+  "round": 4
+ },
+ {
+  "engine": "gemini-smart",
+  "clip": "en-dictation/035-slack",
+  "startedAt": "2026-10-22T13:06:20.152Z",
+  "connectMs": 712,
+  "latencyMs": 1155,
+  "wer": 3.2,
+  "textHash": "6af238b4",
+  "round": 4
+ },
+ {
+  "engine": "gemini",
+  "clip": "en-dictation/048-google-docs",
+  "startedAt": "2026-10-22T13:07:54.519Z",
+  "connectMs": 849,
+  "latencyMs": 421,
+  "wer": 4.2,
+  "textHash": "4169aa65",
+  "round": 5
+ },
+ {
+  "engine": "gemini-smart",
+  "clip": "en-dictation/048-google-docs",
+  "startedAt": "2026-10-22T13:07:54.525Z",
+  "connectMs": 909,
+  "latencyMs": 544,
+  "wer": 4.2,
+  "textHash": "4169aa65",
+  "round": 5
+ },
+ {
+  "engine": "gemini",
+  "clip": "en-dictation/080-whatsapp",
+  "startedAt": "2026-10-22T13:08:06.901Z",
+  "connectMs": 724,
+  "latencyMs": 710,
+  "wer": 15.7,
+  "textHash": "81c5f4a5",
+  "round": 5
+ },
+ {
+  "engine": "gemini-smart",
+  "clip": "en-dictation/080-whatsapp",
+  "startedAt": "2026-10-22T13:08:06.906Z",
+  "connectMs": 717,
+  "latencyMs": 823,
+  "wer": 0,
+  "textHash": "db98eced",
+  "round": 5
+ },
+ {
+  "engine": "gemini",
+  "clip": "en-dictation/035-slack",
+  "startedAt": "2026-10-22T13:08:54.868Z",
+  "connectMs": 690,
+  "latencyMs": 1119,
+  "wer": 4.1,
+  "textHash": "ab236882",
+  "round": 5
+ },
+ {
+  "engine": "gemini-smart",
+  "clip": "en-dictation/035-slack",
+  "startedAt": "2026-10-22T13:08:54.875Z",
+  "connectMs": 678,
+  "latencyMs": 1003,
+  "wer": 3.2,
+  "textHash": "6af238b4",
+  "round": 5
+ },
+ {
+  "engine": "gemini",
+  "clip": "en-dictation/048-google-docs",
+  "startedAt": "2026-10-22T13:10:29.106Z",
+  "connectMs": 807,
+  "latencyMs": 656,
+  "wer": 4.2,
+  "textHash": "4169aa65",
+  "round": 6
+ },
+ {
+  "engine": "gemini-smart",
+  "clip": "en-dictation/048-google-docs",
+  "startedAt": "2026-10-22T13:10:29.109Z",
+  "connectMs": 805,
+  "latencyMs": 407,
+  "wer": 4.2,
+  "textHash": "4169aa65",
+  "round": 6
+ },
+ {
+  "engine": "gemini",
+  "clip": "en-dictation/080-whatsapp",
+  "startedAt": "2026-10-22T13:10:41.497Z",
+  "connectMs": 804,
+  "latencyMs": 725,
+  "wer": 15.7,
+  "textHash": "81c5f4a5",
+  "round": 6
+ },
+ {
+  "engine": "gemini-smart",
+  "clip": "en-dictation/080-whatsapp",
+  "startedAt": "2026-10-22T13:10:41.505Z",
+  "connectMs": 762,
+  "latencyMs": 692,
+  "wer": 0,
+  "textHash": "db98eced",
+  "round": 6
+ },
+ {
+  "engine": "gemini",
+  "clip": "en-dictation/035-slack",
+  "startedAt": "2026-10-22T13:11:29.458Z",
+  "connectMs": 720,
+  "latencyMs": 1042,
+  "wer": 4.1,
+  "textHash": "ab236882",
+  "round": 6
+ },
+ {
+  "engine": "gemini-smart",
+  "clip": "en-dictation/035-slack",
+  "startedAt": "2026-10-22T13:11:29.466Z",
+  "connectMs": 717,
+  "latencyMs": 1018,
+  "wer": 3.2,
+  "textHash": "6af238b4",
+  "round": 6
+ },
+ {
+  "engine": "gemini",
+  "clip": "en-dictation/048-google-docs",
+  "startedAt": "2026-10-22T13:13:03.641Z",
+  "connectMs": 773,
+  "latencyMs": 473,
+  "wer": 4.2,
+  "textHash": "4169aa65",
+  "round": 7
+ },
+ {
+  "engine": "gemini-smart",
+  "clip": "en-dictation/048-google-docs",
+  "startedAt": "2026-10-22T13:13:03.644Z",
+  "connectMs": 741,
+  "latencyMs": 400,
+  "wer": 4.2,
+  "textHash": "4169aa65",
+  "round": 7
+ },
+ {
+  "engine": "gemini",
+  "clip": "en-dictation/080-whatsapp",
+  "startedAt": "2026-10-22T13:13:15.814Z",
+  "connectMs": 701,
+  "latencyMs": 819,
+  "wer": 15.7,
+  "textHash": "81c5f4a5",
+  "round": 7
+ },
+ {
+  "engine": "gemini-smart",
+  "clip": "en-dictation/080-whatsapp",
+  "startedAt": "2026-10-22T13:13:15.819Z",
+  "connectMs": 677,
+  "latencyMs": 657,
+  "wer": 0,
+  "textHash": "db98eced",
+  "round": 7
+ },
+ {
+  "engine": "gemini",
+  "clip": "en-dictation/035-slack",
+  "startedAt": "2026-10-22T13:14:03.763Z",
+  "connectMs": 718,
+  "latencyMs": 1237,
+  "wer": 4.1,
+  "textHash": "ab236882",
+  "round": 7
+ },
+ {
+  "engine": "gemini-smart",
+  "clip": "en-dictation/035-slack",
+  "startedAt": "2026-10-22T13:14:03.772Z",
+  "connectMs": 713,
+  "latencyMs": 1079,
+  "wer": 3.2,
+  "textHash": "6af238b4",
+  "round": 7
+ },
+ {
+  "engine": "gemini",
+  "clip": "en-dictation/048-google-docs",
+  "startedAt": "2026-10-22T13:15:38.145Z",
+  "connectMs": 723,
+  "latencyMs": 451,
+  "wer": 4.2,
+  "textHash": "4169aa65",
+  "round": 8
+ },
+ {
+  "engine": "gemini-smart",
+  "clip": "en-dictation/048-google-docs",
+  "startedAt": "2026-10-22T13:15:38.149Z",
+  "connectMs": 720,
+  "latencyMs": 454,
+  "wer": 4.2,
+  "textHash": "4169aa65",
+  "round": 8
+ },
+ {
+  "engine": "gemini",
+  "clip": "en-dictation/080-whatsapp",
+  "startedAt": "2026-10-22T13:15:50.248Z",
+  "connectMs": 704,
+  "latencyMs": 703,
+  "wer": 15.7,
+  "textHash": "81c5f4a5",
+  "round": 8
+ },
+ {
+  "engine": "gemini-smart",
+  "clip": "en-dictation/080-whatsapp",
+  "startedAt": "2026-10-22T13:15:50.253Z",
+  "connectMs": 730,
+  "latencyMs": 912,
+  "wer": 0,
+  "textHash": "db98eced",
+  "round": 8
+ },
+ {
+  "engine": "gemini",
+  "clip": "en-dictation/035-slack",
+  "startedAt": "2026-10-22T13:16:38.320Z",
+  "connectMs": 710,
+  "latencyMs": 1135,
+  "wer": 4.1,
+  "textHash": "ab236882",
+  "round": 8
+ },
+ {
+  "engine": "gemini-smart",
+  "clip": "en-dictation/035-slack",
+  "startedAt": "2026-10-22T13:16:38.330Z",
+  "connectMs": 697,
+  "latencyMs": 1065,
+  "wer": 3.2,
+  "textHash": "6af238b4",
+  "round": 8
+ },
+ {
+  "engine": "gemini",
+  "clip": "en-dictation/048-google-docs",
+  "startedAt": "2026-10-22T13:18:12.592Z",
+  "connectMs": 764,
+  "latencyMs": 449,
+  "wer": 4.2,
+  "textHash": "4169aa65",
+  "round": 9
+ },
+ {
+  "engine": "gemini-smart",
+  "clip": "en-dictation/048-google-docs",
+  "startedAt": "2026-10-22T13:18:12.594Z",
+  "connectMs": 768,
+  "latencyMs": 578,
+  "wer": 4.2,
+  "textHash": "4169aa65",
+  "round": 9
+ },
+ {
+  "engine": "gemini",
+  "clip": "en-dictation/080-whatsapp",
+  "startedAt": "2026-10-22T13:18:24.865Z",
+  "connectMs": 700,
+  "latencyMs": 804,
+  "wer": 15.7,
+  "textHash": "81c5f4a5",
+  "round": 9
+ },
+ {
+  "engine": "gemini-smart",
+  "clip": "en-dictation/080-whatsapp",
+  "startedAt": "2026-10-22T13:18:24.872Z",
+  "connectMs": 689,
+  "latencyMs": 753,
+  "wer": 0,
+  "textHash": "db98eced",
+  "round": 9
+ },
+ {
+  "engine": "gemini",
+  "clip": "en-dictation/035-slack",
+  "startedAt": "2026-10-22T13:19:12.801Z",
+  "connectMs": 698,
+  "latencyMs": 1554,
+  "wer": 4.1,
+  "textHash": "ab236882",
+  "round": 9
+ },
+ {
+  "engine": "gemini-smart",
+  "clip": "en-dictation/035-slack",
+  "startedAt": "2026-10-22T13:19:12.812Z",
+  "connectMs": 691,
+  "latencyMs": 1590,
+  "wer": 3.2,
+  "textHash": "6af238b4",
+  "round": 9
+ },
+ {
+  "engine": "gemini",
+  "clip": "en-dictation/048-google-docs",
+  "startedAt": "2026-10-22T13:20:47.513Z",
+  "connectMs": 681,
+  "latencyMs": 460,
+  "wer": 4.2,
+  "textHash": "4169aa65",
+  "round": 10
+ },
+ {
+  "engine": "gemini-smart",
+  "clip": "en-dictation/048-google-docs",
+  "startedAt": "2026-10-22T13:20:47.518Z",
+  "connectMs": 682,
+  "latencyMs": 421,
+  "wer": 4.2,
+  "textHash": "4169aa65",
+  "round": 10
+ },
+ {
+  "engine": "gemini",
+  "clip": "en-dictation/080-whatsapp",
+  "startedAt": "2026-10-22T13:20:59.589Z",
+  "connectMs": 872,
+  "latencyMs": 737,
+  "wer": 15.7,
+  "textHash": "81c5f4a5",
+  "round": 10
+ },
+ {
+  "engine": "gemini-smart",
+  "clip": "en-dictation/080-whatsapp",
+  "startedAt": "2026-10-22T13:20:59.595Z",
+  "connectMs": 831,
+  "latencyMs": 663,
+  "wer": 0,
+  "textHash": "db98eced",
+  "round": 10
+ },
+ {
+  "engine": "gemini",
+  "clip": "en-dictation/035-slack",
+  "startedAt": "2026-10-22T13:21:47.630Z",
+  "connectMs": 761,
+  "latencyMs": 1291,
+  "wer": 4.1,
+  "textHash": "ab236882",
+  "round": 10
+ },
+ {
+  "engine": "gemini-smart",
+  "clip": "en-dictation/035-slack",
+  "startedAt": "2026-10-22T13:21:47.640Z",
+  "connectMs": 688,
+  "latencyMs": 1120,
+  "wer": 3.2,
+  "textHash": "6af238b4",
+  "round": 10
+ },
+ {
+  "engine": "gemini",
+  "clip": "en-dictation/048-google-docs",
+  "startedAt": "2026-10-22T13:23:22.123Z",
+  "connectMs": 719,
+  "latencyMs": 430,
+  "wer": 4.2,
+  "textHash": "4169aa65",
+  "round": 11
+ },
+ {
+  "engine": "gemini-smart",
+  "clip": "en-dictation/048-google-docs",
+  "startedAt": "2026-10-22T13:23:22.128Z",
+  "connectMs": 712,
+  "latencyMs": 415,
+  "wer": 4.2,
+  "textHash": "4169aa65",
+  "round": 11
+ },
+ {
+  "engine": "gemini",
+  "clip": "en-dictation/080-whatsapp",
+  "startedAt": "2026-10-22T13:23:34.199Z",
+  "connectMs": 725,
+  "latencyMs": 745,
+  "wer": 15.7,
+  "textHash": "81c5f4a5",
+  "round": 11
+ },
+ {
+  "engine": "gemini-smart",
+  "clip": "en-dictation/080-whatsapp",
+  "startedAt": "2026-10-22T13:23:34.205Z",
+  "connectMs": 721,
+  "latencyMs": 845,
+  "wer": 0,
+  "textHash": "db98eced",
+  "round": 11
+ },
+ {
+  "engine": "gemini",
+  "clip": "en-dictation/035-slack",
+  "startedAt": "2026-10-22T13:24:22.202Z",
+  "connectMs": 795,
+  "latencyMs": 1153,
+  "wer": 4.1,
+  "textHash": "ab236882",
+  "round": 11
+ },
+ {
+  "engine": "gemini-smart",
+  "clip": "en-dictation/035-slack",
+  "startedAt": "2026-10-22T13:24:22.227Z",
+  "connectMs": 708,
+  "latencyMs": 1302,
+  "wer": 3.2,
+  "textHash": "6af238b4",
+  "round": 11
+ },
+ {
+  "engine": "gemini",
+  "clip": "en-dictation/048-google-docs",
+  "startedAt": "2026-10-22T13:25:56.661Z",
+  "connectMs": 731,
+  "latencyMs": 494,
+  "wer": 4.2,
+  "textHash": "4169aa65",
+  "round": 12
+ },
+ {
+  "engine": "gemini-smart",
+  "clip": "en-dictation/048-google-docs",
+  "startedAt": "2026-10-22T13:25:56.665Z",
+  "connectMs": 717,
+  "latencyMs": 466,
+  "wer": 4.2,
+  "textHash": "4169aa65",
+  "round": 12
+ },
+ {
+  "engine": "gemini",
+  "clip": "en-dictation/080-whatsapp",
+  "startedAt": "2026-10-22T13:26:08.811Z",
+  "connectMs": 703,
+  "latencyMs": 752,
+  "wer": 15.7,
+  "textHash": "81c5f4a5",
+  "round": 12
+ },
+ {
+  "engine": "gemini-smart",
+  "clip": "en-dictation/080-whatsapp",
+  "startedAt": "2026-10-22T13:26:08.816Z",
+  "connectMs": 693,
+  "latencyMs": 688,
+  "wer": 0,
+  "textHash": "db98eced",
+  "round": 12
+ },
+ {
+  "engine": "gemini",
+  "clip": "en-dictation/035-slack",
+  "startedAt": "2026-10-22T13:26:56.687Z",
+  "connectMs": 725,
+  "latencyMs": 1117,
+  "wer": 4.1,
+  "textHash": "ab236882",
+  "round": 12
+ },
+ {
+  "engine": "gemini-smart",
+  "clip": "en-dictation/035-slack",
+  "startedAt": "2026-10-22T13:26:56.697Z",
+  "connectMs": 717,
+  "latencyMs": 1153,
+  "wer": 3.2,
+  "textHash": "6af238b4",
+  "round": 12
+ },
+ {
+  "engine": "gemini",
+  "clip": "en-dictation/048-google-docs",
+  "startedAt": "2026-10-22T13:28:30.989Z",
+  "connectMs": 781,
+  "latencyMs": 814,
+  "wer": 4.2,
+  "textHash": "4169aa65",
+  "round": 13
+ },
+ {
+  "engine": "gemini-smart",
+  "clip": "en-dictation/048-google-docs",
+  "startedAt": "2026-10-22T13:28:30.993Z",
+  "connectMs": 764,
+  "latencyMs": 438,
+  "wer": 4.2,
+  "textHash": "4169aa65",
+  "round": 13
+ },
+ {
+  "engine": "gemini",
+  "clip": "en-dictation/080-whatsapp",
+  "startedAt": "2026-10-22T13:28:43.511Z",
+  "connectMs": 817,
+  "latencyMs": 762,
+  "wer": 15.7,
+  "textHash": "81c5f4a5",
+  "round": 13
+ },
+ {
+  "engine": "gemini-smart",
+  "clip": "en-dictation/080-whatsapp",
+  "startedAt": "2026-10-22T13:28:43.513Z",
+  "connectMs": 708,
+  "latencyMs": 775,
+  "wer": 0,
+  "textHash": "db98eced",
+  "round": 13
+ },
+ {
+  "engine": "gemini",
+  "clip": "en-dictation/035-slack",
+  "startedAt": "2026-10-22T13:29:31.516Z",
+  "connectMs": 745,
+  "latencyMs": 1040,
+  "wer": 4.1,
+  "textHash": "ab236882",
+  "round": 13
+ },
+ {
+  "engine": "gemini-smart",
+  "clip": "en-dictation/035-slack",
+  "startedAt": "2026-10-22T13:29:31.527Z",
+  "connectMs": 789,
+  "latencyMs": 1128,
+  "wer": 3.2,
+  "textHash": "6af238b4",
+  "round": 13
+ },
+ {
+  "engine": "gemini",
+  "clip": "en-dictation/048-google-docs",
+  "startedAt": "2026-10-22T13:31:05.877Z",
+  "connectMs": 779,
+  "latencyMs": 631,
+  "wer": 4.2,
+  "textHash": "4169aa65",
+  "round": 14
+ },
+ {
+  "engine": "gemini-smart",
+  "clip": "en-dictation/048-google-docs",
+  "startedAt": "2026-10-22T13:31:05.882Z",
+  "connectMs": 776,
+  "latencyMs": 633,
+  "wer": 4.2,
+  "textHash": "4169aa65",
+  "round": 14
+ },
+ {
+  "engine": "gemini",
+  "clip": "en-dictation/080-whatsapp",
+  "startedAt": "2026-10-22T13:31:18.216Z",
+  "connectMs": 757,
+  "latencyMs": 772,
+  "wer": 15.7,
+  "textHash": "81c5f4a5",
+  "round": 14
+ },
+ {
+  "engine": "gemini-smart",
+  "clip": "en-dictation/080-whatsapp",
+  "startedAt": "2026-10-22T13:31:18.221Z",
+  "connectMs": 754,
+  "latencyMs": 698,
+  "wer": 0,
+  "textHash": "db98eced",
+  "round": 14
+ },
+ {
+  "engine": "gemini",
+  "clip": "en-dictation/035-slack",
+  "startedAt": "2026-10-22T13:32:06.172Z",
+  "connectMs": 809,
+  "latencyMs": 1138,
+  "wer": 4.1,
+  "textHash": "ab236882",
+  "round": 14
+ },
+ {
+  "engine": "gemini-smart",
+  "clip": "en-dictation/035-slack",
+  "startedAt": "2026-10-22T13:32:06.192Z",
+  "connectMs": 791,
+  "latencyMs": 1099,
+  "wer": 3.2,
+  "textHash": "6af238b4",
+  "round": 14
+ },
+ {
+  "engine": "gemini",
+  "clip": "en-dictation/048-google-docs",
+  "startedAt": "2026-10-22T13:33:40.631Z",
+  "connectMs": 741,
+  "latencyMs": 558,
+  "wer": 4.2,
+  "textHash": "4169aa65",
+  "round": 15
+ },
+ {
+  "engine": "gemini-smart",
+  "clip": "en-dictation/048-google-docs",
+  "startedAt": "2026-10-22T13:33:40.634Z",
+  "connectMs": 739,
+  "latencyMs": 453,
+  "wer": 4.2,
+  "textHash": "4169aa65",
+  "round": 15
+ },
+ {
+  "engine": "gemini",
+  "clip": "en-dictation/080-whatsapp",
+  "startedAt": "2026-10-22T13:33:52.857Z",
+  "connectMs": 724,
+  "latencyMs": 820,
+  "wer": 15.7,
+  "textHash": "81c5f4a5",
+  "round": 15
+ },
+ {
+  "engine": "gemini-smart",
+  "clip": "en-dictation/080-whatsapp",
+  "startedAt": "2026-10-22T13:33:52.862Z",
+  "connectMs": 717,
+  "latencyMs": 808,
+  "wer": 0,
+  "textHash": "db98eced",
+  "round": 15
+ },
+ {
+  "engine": "gemini",
+  "clip": "en-dictation/035-slack",
+  "startedAt": "2026-10-22T13:34:40.827Z",
+  "connectMs": 790,
+  "latencyMs": 1135,
+  "wer": 4.1,
+  "textHash": "ab236882",
+  "round": 15
+ },
+ {
+  "engine": "gemini-smart",
+  "clip": "en-dictation/035-slack",
+  "startedAt": "2026-10-22T13:34:40.838Z",
+  "connectMs": 783,
+  "latencyMs": 1098,
+  "wer": 3.2,
+  "textHash": "6af238b4",
+  "round": 15
+ },
+ {
+  "engine": "gemini",
+  "clip": "en-dictation/048-google-docs",
+  "startedAt": "2026-10-22T13:36:15.180Z",
+  "connectMs": 666,
+  "latencyMs": 448,
+  "wer": 4.2,
+  "textHash": "4169aa65",
+  "round": 16
+ },
+ {
+  "engine": "gemini-smart",
+  "clip": "en-dictation/048-google-docs",
+  "startedAt": "2026-10-22T13:36:15.187Z",
+  "connectMs": 653,
+  "latencyMs": 469,
+  "wer": 4.2,
+  "textHash": "4169aa65",
+  "round": 16
+ },
+ {
+  "engine": "gemini",
+  "clip": "en-dictation/080-whatsapp",
+  "startedAt": "2026-10-22T13:36:27.236Z",
+  "connectMs": 731,
+  "latencyMs": 697,
+  "wer": 15.7,
+  "textHash": "81c5f4a5",
+  "round": 16
+ },
+ {
+  "engine": "gemini-smart",
+  "clip": "en-dictation/080-whatsapp",
+  "startedAt": "2026-10-22T13:36:27.243Z",
+  "connectMs": 688,
+  "latencyMs": 762,
+  "wer": 0,
+  "textHash": "db98eced",
+  "round": 16
+ },
+ {
+  "engine": "gemini",
+  "clip": "en-dictation/035-slack",
+  "startedAt": "2026-10-22T13:37:15.115Z",
+  "connectMs": 849,
+  "latencyMs": 1182,
+  "wer": 4.1,
+  "textHash": "ab236882",
+  "round": 16
+ },
+ {
+  "engine": "gemini-smart",
+  "clip": "en-dictation/035-slack",
+  "startedAt": "2026-10-22T13:37:15.126Z",
+  "connectMs": 848,
+  "latencyMs": 1138,
+  "wer": 3.2,
+  "textHash": "6af238b4",
+  "round": 16
+ },
+ {
+  "engine": "gemini",
+  "clip": "en-dictation/048-google-docs",
+  "startedAt": "2026-10-22T13:38:49.571Z",
+  "connectMs": 749,
+  "latencyMs": 479,
+  "wer": 4.2,
+  "textHash": "4169aa65",
+  "round": 17
+ },
+ {
+  "engine": "gemini-smart",
+  "clip": "en-dictation/048-google-docs",
+  "startedAt": "2026-10-22T13:38:49.578Z",
+  "connectMs": 760,
+  "latencyMs": 449,
+  "wer": 4.2,
+  "textHash": "4169aa65",
+  "round": 17
+ },
+ {
+  "engine": "gemini",
+  "clip": "en-dictation/080-whatsapp",
+  "startedAt": "2026-10-22T13:39:01.729Z",
+  "connectMs": 827,
+  "latencyMs": 743,
+  "wer": 15.7,
+  "textHash": "81c5f4a5",
+  "round": 17
+ },
+ {
+  "engine": "gemini-smart",
+  "clip": "en-dictation/080-whatsapp",
+  "startedAt": "2026-10-22T13:39:01.735Z",
+  "connectMs": 825,
+  "latencyMs": 771,
+  "wer": 0,
+  "textHash": "db98eced",
+  "round": 17
+ },
+ {
+  "engine": "gemini",
+  "clip": "en-dictation/035-slack",
+  "startedAt": "2026-10-22T13:39:49.756Z",
+  "connectMs": 723,
+  "latencyMs": 1171,
+  "wer": 4.1,
+  "textHash": "ab236882",
+  "round": 17
+ },
+ {
+  "engine": "gemini-smart",
+  "clip": "en-dictation/035-slack",
+  "startedAt": "2026-10-22T13:39:49.766Z",
+  "connectMs": 726,
+  "latencyMs": 1127,
+  "wer": 3.2,
+  "textHash": "6af238b4",
+  "round": 17
+ },
+ {
+  "engine": "gemini",
+  "clip": "en-dictation/048-google-docs",
+  "startedAt": "2026-10-22T13:41:24.078Z",
+  "connectMs": 1557,
+  "latencyMs": 472,
+  "wer": 4.2,
+  "textHash": "4169aa65",
+  "round": 18
+ },
+ {
+  "engine": "gemini-smart",
+  "clip": "en-dictation/048-google-docs",
+  "startedAt": "2026-10-22T13:41:24.086Z",
+  "connectMs": 1258,
+  "latencyMs": 511,
+  "wer": 4.2,
+  "textHash": "4169aa65",
+  "round": 18
+ },
+ {
+  "engine": "gemini",
+  "clip": "en-dictation/080-whatsapp",
+  "startedAt": "2026-10-22T13:41:37.036Z",
+  "connectMs": 731,
+  "latencyMs": 729,
+  "wer": 15.7,
+  "textHash": "81c5f4a5",
+  "round": 18
+ },
+ {
+  "engine": "gemini-smart",
+  "clip": "en-dictation/080-whatsapp",
+  "startedAt": "2026-10-22T13:41:37.041Z",
+  "connectMs": 726,
+  "latencyMs": 740,
+  "wer": 0,
+  "textHash": "db98eced",
+  "round": 18
+ },
+ {
+  "engine": "gemini",
+  "clip": "en-dictation/035-slack",
+  "startedAt": "2026-10-22T13:42:24.930Z",
+  "connectMs": 817,
+  "latencyMs": 1065,
+  "wer": 4.1,
+  "textHash": "ab236882",
+  "round": 18
+ },
+ {
+  "engine": "gemini-smart",
+  "clip": "en-dictation/035-slack",
+  "startedAt": "2026-10-22T13:42:24.935Z",
+  "connectMs": 814,
+  "latencyMs": 1169,
+  "wer": 3.2,
+  "textHash": "6af238b4",
+  "round": 18
+ },
+ {
+  "engine": "gemini",
+  "clip": "en-dictation/048-google-docs",
+  "startedAt": "2026-10-22T13:43:59.343Z",
+  "connectMs": 879,
+  "latencyMs": 478,
+  "wer": 4.2,
+  "textHash": "4169aa65",
+  "round": 19
+ },
+ {
+  "engine": "gemini-smart",
+  "clip": "en-dictation/048-google-docs",
+  "startedAt": "2026-10-22T13:43:59.348Z",
+  "connectMs": 906,
+  "latencyMs": 495,
+  "wer": 4.2,
+  "textHash": "4169aa65",
+  "round": 19
+ },
+ {
+  "engine": "gemini",
+  "clip": "en-dictation/080-whatsapp",
+  "startedAt": "2026-10-22T13:44:11.676Z",
+  "connectMs": 751,
+  "latencyMs": 723,
+  "wer": 15.7,
+  "textHash": "81c5f4a5",
+  "round": 19
+ },
+ {
+  "engine": "gemini-smart",
+  "clip": "en-dictation/080-whatsapp",
+  "startedAt": "2026-10-22T13:44:11.681Z",
+  "connectMs": 684,
+  "latencyMs": 699,
+  "wer": 0,
+  "textHash": "db98eced",
+  "round": 19
+ },
+ {
+  "engine": "gemini",
+  "clip": "en-dictation/035-slack",
+  "startedAt": "2026-10-22T13:44:59.579Z",
+  "connectMs": 744,
+  "latencyMs": 1300,
+  "wer": 4.1,
+  "textHash": "ab236882",
+  "round": 19
+ },
+ {
+  "engine": "gemini-smart",
+  "clip": "en-dictation/035-slack",
+  "startedAt": "2026-10-22T13:44:59.590Z",
+  "connectMs": 737,
+  "latencyMs": 1262,
+  "wer": 3.2,
+  "textHash": "6af238b4",
+  "round": 19
+ }
+]

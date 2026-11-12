@@ -1,0 +1,229 @@
+{
+ "confidence": 0.7,
+ "window": 4.0,
+ "hop": 2.0,
+ "inhouse": {
+  "en-dictation": {
+   "clips": 73,
+   "switchPerPair": 0.274,
+   "clipsWithSwitch": 60,
+   "southAsianWindowShare": 0.173
+  },
+  "en-dictation-noise": {
+   "clips": 17,
+   "switchPerPair": 0.293,
+   "clipsWithSwitch": 16,
+   "southAsianWindowShare": 0.739
+  },
+  "en-dictation-whisper": {
+   "clips": 16,
+   "switchPerPair": 0.042,
+   "clipsWithSwitch": 3,
+   "southAsianWindowShare": 0.005
+  }
+ },
+ "earsRegular": {
+  "clips": 428,
+  "switchPerPair": 0.041,
+  "clipsWithSwitch": 46,
+  "southAsianWindowShare": 0.0
+ },
+ "split": {
+  "high": 25,
+  "low": 65,
+  "highNoise": 16,
+  "lowNoise": 1
+ },
+ "wer": {
+  "qwen": {
+   "high": 6.9,
+   "low": 10.0,
+   "diff": -3.1,
+   "diffCI": [
+    -7.7,
+    0.6
+   ],
+   "spearman": -0.14
+  },
+  "meta": {
+   "high": 5.9,
+   "low": 5.3,
+   "diff": 0.6,
+   "diffCI": [
+    -1.2,
+    2.3
+   ],
+   "spearman": -0.02
+  },
+  "gemini": {
+   "high": 3.5,
+   "low": 3.5,
+   "diff": -0.0,
+   "diffCI": [
+    -1.5,
+    1.2
+   ],
+   "spearman": 0.08
+  },
+  "gemini-smart": {
+   "high": 5.5,
+   "low": 4.1,
+   "diff": 1.4,
+   "diffCI": [
+    -0.8,
+    3.5
+   ],
+   "spearman": -0.01
+  },
+  "whisper-self-hosted": {
+   "high": 4.7,
+   "low": 6.4,
+   "diff": -1.7,
+   "diffCI": [
+    -3.7,
+    0.1
+   ],
+   "spearman": -0.04
+  },
+  "assemblyai-3-5-pro": {
+   "high": 5.1,
+   "low": 5.2,
+   "diff": -0.1,
+   "diffCI": [
+    -2.2,
+    1.6
+   ],
+   "spearman": -0.07
+  },
+  "assemblyai-3-6-pro": {
+   "high": 3.9,
+   "low": 4.6,
+   "diff": -0.6,
+   "diffCI": [
+    -2.4,
+    1.1
+   ],
+   "spearman": 0.0
+  },
+  "deepgram": {
+   "high": 10.8,
+   "low": 9.1,
+   "diff": 1.7,
+   "diffCI": [
+    -0.9,
+    4.1
+   ],
+   "spearman": 0.04
+  },
+  "elevenlabs-scribe-clean": {
+   "high": 4.1,
+   "low": 4.4,
+   "diff": -0.3,
+   "diffCI": [
+    -2.1,
+    1.4
+   ],
+   "spearman": -0.21
+  },
+  "elevenlabs-scribe": {
+   "high": 7.6,
+   "low": 8.4,
+   "diff": -0.7,
+   "diffCI": [
+    -4.5,
+    2.2
+   ],
+   "spearman": -0.1
+  },
+  "openai-live-transcribe-low": {
+   "high": 4.4,
+   "low": 5.0,
+   "diff": -0.6,
+   "diffCI": [
+    -2.2,
+    0.9
+   ],
+   "spearman": -0.17
+  },
+  "openai-realtime-whisper": {
+   "high": 4.8,
+   "low": 4.9,
+   "diff": -0.1,
+   "diffCI": [
+    -2.1,
+    1.9
+   ],
+   "spearman": -0.12
+  },
+  "zoom-scribe": {
+   "high": 4.1,
+   "low": 4.7,
+   "diff": -0.6,
+   "diffCI": [
+    -2.4,
+    0.8
+   ],
+   "spearman": -0.1
+  },
+  "whisper": {
+   "high": 5.3,
+   "low": 7.1,
+   "diff": -1.9,
+   "diffCI": [
+    -4.0,
+    0.0
+   ],
+   "spearman": -0.11
+  },
+  "openai-whisper-1-split": {
+   "high": 5.9,
+   "low": 5.1,
+   "diff": 0.8,
+   "diffCI": [
+    -0.9,
+    2.2
+   ],
+   "spearman": -0.03
+  },
+  "whisper-self-hosted-vad": {
+   "high": 4.5,
+   "low": 6.2,
+   "diff": -1.7,
+   "diffCI": [
+    -3.5,
+    -0.2
+   ],
+   "spearman": -0.27
+  },
+  "whisper-self-hosted-ten": {
+   "high": 4.8,
+   "low": 6.0,
+   "diff": -1.1,
+   "diffCI": [
+    -3.2,
+    0.7
+   ],
+   "spearman": -0.05
+  },
+  "whisper-self-hosted-ten-vad": {
+   "high": 5.5,
+   "low": 5.4,
+   "diff": 0.1,
+   "diffCI": [
+    -1.7,
+    1.6
+   ],
+   "spearman": -0.07
+  },
+  "openai-whisper-1": {
+   "high": 5.8,
+   "low": 4.8,
+   "diff": 0.9,
+   "diffCI": [
+    -1.3,
+    3.1
+   ],
+   "spearman": 0.03
+  }
+ }
+}

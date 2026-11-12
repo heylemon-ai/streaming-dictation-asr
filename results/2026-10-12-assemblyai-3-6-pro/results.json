@@ -1,0 +1,256 @@
+{
+  "date": "2026-10-12",
+  "runDates": [
+    "2026-10-12"
+  ],
+  "label": "assemblyai-3-6-pro",
+  "options": {
+    "language": "clip",
+    "speed": 1,
+    "gate": true,
+    "runs": 1,
+    "clientProfile": "published"
+  },
+  "sets": [
+    {
+      "id": "en-dictation",
+      "language": "en",
+      "condition": "clean",
+      "source": "Team recordings of app-style dictation scripts"
+    },
+    {
+      "id": "en-dictation-noise",
+      "language": "en",
+      "condition": "noise",
+      "source": "Same scripts, background fan noise"
+    },
+    {
+      "id": "en-dictation-whisper",
+      "language": "en",
+      "condition": "whisper",
+      "source": "Same scripts, whispered"
+    },
+    {
+      "id": "nonspeech",
+      "language": "en",
+      "condition": "nonspeech",
+      "source": "Generated silence and noise (scripts/make-nonspeech.ts)"
+    },
+    {
+      "id": "ar-eg",
+      "language": "ar",
+      "condition": "clean",
+      "source": "FLEURS ar_eg"
+    },
+    {
+      "id": "ar-sa",
+      "language": "ar",
+      "condition": "clean",
+      "source": "SADA22 (Najdi)"
+    },
+    {
+      "id": "ar-ae",
+      "language": "ar",
+      "condition": "clean",
+      "source": "Casablanca (Emirati)"
+    },
+    {
+      "id": "de-de",
+      "language": "de",
+      "condition": "clean",
+      "source": "FLEURS de_de"
+    },
+    {
+      "id": "es-419",
+      "language": "es",
+      "condition": "clean",
+      "source": "FLEURS es_419"
+    },
+    {
+      "id": "es-es",
+      "language": "es",
+      "condition": "clean",
+      "source": "VoxPopuli"
+    },
+    {
+      "id": "es-pr",
+      "language": "es",
+      "condition": "clean",
+      "source": "OpenSLR SLR74"
+    },
+    {
+      "id": "fr-fr",
+      "language": "fr",
+      "condition": "clean",
+      "source": "FLEURS fr_fr"
+    },
+    {
+      "id": "hi-in",
+      "language": "hi",
+      "condition": "clean",
+      "source": "FLEURS hi_in"
+    },
+    {
+      "id": "ur-pk",
+      "language": "ur",
+      "condition": "clean",
+      "source": "FLEURS ur_pk"
+    },
+    {
+      "id": "zh-cn",
+      "language": "zh",
+      "condition": "clean",
+      "source": "FLEURS cmn_hans_cn"
+    }
+  ],
+  "models": {
+    "assemblyai-3-6-pro": "universal-3-6-pro"
+  },
+  "labels": {
+    "assemblyai-3-6-pro": "AssemblyAI Universal-3.6 Pro"
+  },
+  "aggregates": {
+    "en-dictation/assemblyai-3-6-pro": {
+      "headline": {
+        "value": 0.08165202943270829,
+        "lo": 0.07151547924834392,
+        "hi": 0.09131450414100659,
+        "speakers": 73
+      },
+      "formatted": 0.1313455167254462
+    },
+    "en-dictation-noise/assemblyai-3-6-pro": {
+      "headline": {
+        "value": 0.040566037735849055,
+        "lo": 0.026600985221674877,
+        "hi": 0.057460611677479144,
+        "speakers": 17
+      },
+      "formatted": 0.08776371308016878
+    },
+    "en-dictation-whisper/assemblyai-3-6-pro": {
+      "headline": {
+        "value": 0.3054263565891473,
+        "lo": 0.14591920857378401,
+        "hi": 0.5581395348837209,
+        "speakers": 16
+      },
+      "formatted": 0.35131396957123096
+    },
+    "ar-eg/assemblyai-3-6-pro": {
+      "headline": {
+        "value": 0.09693877551020408,
+        "lo": 0.04433497536945813,
+        "hi": 0.16,
+        "speakers": 20
+      },
+      "formatted": 0.19574468085106383
+    },
+    "ar-sa/assemblyai-3-6-pro": {
+      "headline": {
+        "value": 0.3359375,
+        "lo": 0.24242424242424243,
+        "hi": 0.43727598566308246,
+        "speakers": 20
+      },
+      "formatted": 0.427536231884058
+    },
+    "ar-ae/assemblyai-3-6-pro": {
+      "headline": {
+        "value": 0.5352941176470588,
+        "lo": 0.43478260869565216,
+        "hi": 0.6387096774193548,
+        "speakers": 20
+      },
+      "formatted": 0.601063829787234
+    },
+    "de-de/assemblyai-3-6-pro": {
+      "headline": {
+        "value": 0.04838709677419355,
+        "lo": 0.02092050209205021,
+        "hi": 0.07569721115537849,
+        "speakers": 20
+      },
+      "formatted": 0.07560137457044673
+    },
+    "es-419/assemblyai-3-6-pro": {
+      "headline": {
+        "value": 0.021739130434782608,
+        "lo": 0.004166666666666667,
+        "hi": 0.046296296296296294,
+        "speakers": 20
+      },
+      "formatted": 0.10909090909090909
+    },
+    "es-es/assemblyai-3-6-pro": {
+      "headline": {
+        "value": 0.09473684210526316,
+        "lo": 0.016129032258064516,
+        "hi": 0.21875,
+        "speakers": 20
+      },
+      "formatted": 0.12962962962962962
+    },
+    "es-pr/assemblyai-3-6-pro": {
+      "headline": {
+        "value": 0.05235602094240838,
+        "lo": 0.02040816326530612,
+        "hi": 0.08994708994708994,
+        "speakers": 20
+      },
+      "formatted": 0.20304568527918782
+    },
+    "fr-fr/assemblyai-3-6-pro": {
+      "headline": {
+        "value": 0.028985507246376812,
+        "lo": 0.006557377049180328,
+        "hi": 0.05813953488372093,
+        "speakers": 20
+      },
+      "formatted": 0.06109324758842444
+    },
+    "hi-in/assemblyai-3-6-pro": {
+      "headline": {
+        "value": 0.09210526315789473,
+        "lo": 0.02727272727272727,
+        "hi": 0.19004524886877827,
+        "speakers": 20
+      },
+      "formatted": 0.10730593607305935
+    },
+    "ur-pk/assemblyai-3-6-pro": {
+      "headline": {
+        "value": 0.15140845070422534,
+        "lo": 0.0924092409240924,
+        "hi": 0.20819112627986347,
+        "speakers": 20
+      },
+      "formatted": 0.19155844155844157
+    },
+    "zh-cn/assemblyai-3-6-pro": {
+      "headline": {
+        "value": 0.027247956403269755,
+        "lo": 0.00847457627118644,
+        "hi": 0.046875,
+        "speakers": 20
+      },
+      "formatted": 0.0475
+    },
+    "nonspeech/assemblyai-3-6-pro": {
+      "nonSpeechOutputRate": 0
+    },
+    "latency/assemblyai-3-6-pro": {
+      "waitP50": 722,
+      "waitP90": 1210,
+      "connectP50": 1227,
+      "connectP90": 1399,
+      "n": 336
+    },
+    "failures/assemblyai-3-6-pro": {
+      "clips": 336,
+      "dropped": 0,
+      "failed": 0,
+      "droppedSets": []
+    }
+  }
+}

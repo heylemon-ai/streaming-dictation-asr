@@ -1,0 +1,73 @@
+{
+  "$comment": "ElevenLabs Scribe v2 Realtime via the generic WebSocket adapter (API reference checked 2026-10-14), default settings: verbatim output (fillers and false starts are transcribed) and a single manual commit when the audio ends, as in push-to-talk dictation; one committed_transcript then ends the clip. With two languages selected, the first is language_code and the second secondary_languages; with none, it auto-detects. A dictation-settings attempt is archived in config/engines-archive/ with the reasons it is not reported.",
+  "id": "elevenlabs-scribe",
+  "label": "ElevenLabs Scribe v2 Realtime",
+  "kind": "websocket",
+  "model": "scribe_v2_realtime",
+  "env": [
+    "ELEVENLABS_API_KEY"
+  ],
+  "sampleRate": 16000,
+  "languages": {
+    "en": "en",
+    "ar": "ar",
+    "de": "de",
+    "es": "es",
+    "fr": "fr",
+    "hi": "hi",
+    "ur": "ur",
+    "zh": "zh"
+  },
+  "url": "wss://api.elevenlabs.io/v1/speech-to-text/realtime?model_id=${model}&audio_format=pcm_16000&commit_strategy=manual&language_code=${primary_language}&secondary_languages=${secondary_language}",
+  "headers": {
+    "xi-api-key": "${env:ELEVENLABS_API_KEY}"
+  },
+  "readyOn": {
+    "message_type": "session_started"
+  },
+  "audio": {
+    "message_type": "input_audio_chunk",
+    "audio_base_64": "${audio_base64}",
+    "commit": false,
+    "sample_rate": 16000
+  },
+  "end": {
+    "message_type": "input_audio_chunk",
+    "audio_base_64": "",
+    "commit": true,
+    "sample_rate": 16000
+  },
+  "final": {
+    "match": {
+      "message_type": "committed_transcript"
+    },
+    "textPath": "text"
+  },
+  "done": {
+    "match": {
+      "message_type": "committed_transcript"
+    },
+    "onClose": true
+  },
+  "error": {
+    "match": {
+      "message_type": [
+        "error",
+        "auth_error",
+        "quota_exceeded",
+        "commit_throttled",
+        "unaccepted_terms",
+        "rate_limited",
+        "queue_overflow",
+        "resource_exhausted",
+        "session_time_limit_exceeded",
+        "input_error",
+        "invalid_request",
+        "chunk_size_exceeded",
+        "insufficient_audio_activity",
+        "transcriber_error"
+      ]
+    },
+    "messagePath": "error"
+  }
+}

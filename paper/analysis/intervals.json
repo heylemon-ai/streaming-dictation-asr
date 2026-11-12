@@ -1,0 +1,3246 @@
+{
+ "names": {
+  "whisper-self-hosted": {
+   "clips": 106,
+   "names": 359,
+   "gap": {
+    "value": 6.3,
+    "ci": [
+     1.6,
+     11.4
+    ]
+   },
+   "deepgramMinus": {
+    "value": 5.1,
+    "ci": [
+     1.3,
+     9.4
+    ]
+   }
+  },
+  "qwen": {
+   "clips": 106,
+   "names": 359,
+   "gap": {
+    "value": 7,
+    "ci": [
+     1.9,
+     12.3
+    ]
+   },
+   "deepgramMinus": {
+    "value": 4.4,
+    "ci": [
+     -1.9,
+     11
+    ]
+   }
+  },
+  "meta": {
+   "clips": 106,
+   "names": 359,
+   "gap": {
+    "value": 3.7,
+    "ci": [
+     -0.6,
+     8.6
+    ]
+   },
+   "deepgramMinus": {
+    "value": 7.7,
+    "ci": [
+     2.9,
+     12.9
+    ]
+   }
+  },
+  "gemini": {
+   "clips": 106,
+   "names": 359,
+   "gap": {
+    "value": 2.2,
+    "ci": [
+     -0.6,
+     5.5
+    ]
+   },
+   "deepgramMinus": {
+    "value": 9.1,
+    "ci": [
+     4,
+     14.7
+    ]
+   }
+  },
+  "gemini-smart": {
+   "clips": 106,
+   "names": 359,
+   "gap": {
+    "value": 1.3,
+    "ci": [
+     -1.5,
+     4.2
+    ]
+   },
+   "deepgramMinus": {
+    "value": 10.1,
+    "ci": [
+     4.3,
+     16.7
+    ]
+   }
+  },
+  "deepgram": {
+   "clips": 106,
+   "names": 359,
+   "gap": {
+    "value": 11.4,
+    "ci": [
+     5.8,
+     17.5
+    ]
+   },
+   "deepgramMinus": null
+  },
+  "assemblyai-3-6-pro": {
+   "clips": 106,
+   "names": 359,
+   "gap": {
+    "value": 1.7,
+    "ci": [
+     -2.2,
+     6.5
+    ]
+   },
+   "deepgramMinus": {
+    "value": 9.6,
+    "ci": [
+     4.4,
+     15.6
+    ]
+   }
+  },
+  "assemblyai-3-5-pro": {
+   "clips": 106,
+   "names": 359,
+   "gap": {
+    "value": 1.6,
+    "ci": [
+     -2.3,
+     6.3
+    ]
+   },
+   "deepgramMinus": {
+    "value": 9.8,
+    "ci": [
+     4.8,
+     15.4
+    ]
+   }
+  },
+  "zoom-scribe": {
+   "clips": 106,
+   "names": 359,
+   "gap": {
+    "value": 3.7,
+    "ci": [
+     -0.6,
+     8.7
+    ]
+   },
+   "deepgramMinus": {
+    "value": 7.7,
+    "ci": [
+     2.9,
+     13.1
+    ]
+   }
+  },
+  "elevenlabs-scribe": {
+   "clips": 106,
+   "names": 359,
+   "gap": {
+    "value": 1.8,
+    "ci": [
+     -2,
+     6.3
+    ]
+   },
+   "deepgramMinus": {
+    "value": 9.6,
+    "ci": [
+     5.1,
+     14.5
+    ]
+   }
+  },
+  "elevenlabs-scribe-clean": {
+   "clips": 106,
+   "names": 359,
+   "gap": {
+    "value": 1.4,
+    "ci": [
+     -2,
+     5.5
+    ]
+   },
+   "deepgramMinus": {
+    "value": 9.9,
+    "ci": [
+     5.6,
+     14.7
+    ]
+   }
+  },
+  "openai-live-transcribe-low": {
+   "clips": 106,
+   "names": 359,
+   "gap": {
+    "value": 2.1,
+    "ci": [
+     -0.7,
+     5.5
+    ]
+   },
+   "deepgramMinus": {
+    "value": 9.3,
+    "ci": [
+     4.4,
+     14.6
+    ]
+   }
+  },
+  "openai-realtime-whisper": {
+   "clips": 106,
+   "names": 359,
+   "gap": {
+    "value": 3.4,
+    "ci": [
+     0.3,
+     6.8
+    ]
+   },
+   "deepgramMinus": {
+    "value": 7.9,
+    "ci": [
+     3.1,
+     13.5
+    ]
+   }
+  }
+ },
+ "namesChecked": {
+  "whisper-self-hosted": {
+   "names": 183,
+   "namesRight": 88,
+   "otherRight": 94.5,
+   "gap": {
+    "value": 6.5,
+    "ci": [
+     1.1,
+     12.9
+    ]
+   },
+   "deepgramMinus": {
+    "value": 3.2,
+    "ci": [
+     -1.4,
+     8.1
+    ]
+   }
+  },
+  "qwen": {
+   "names": 183,
+   "namesRight": 82,
+   "otherRight": 88.4,
+   "gap": {
+    "value": 6.5,
+    "ci": [
+     0.1,
+     14.1
+    ]
+   },
+   "deepgramMinus": {
+    "value": 3.2,
+    "ci": [
+     -4.7,
+     11.1
+    ]
+   }
+  },
+  "meta": {
+   "names": 183,
+   "namesRight": 90.2,
+   "otherRight": 95,
+   "gap": {
+    "value": 4.8,
+    "ci": [
+     0.3,
+     10.2
+    ]
+   },
+   "deepgramMinus": {
+    "value": 4.8,
+    "ci": [
+     -0.8,
+     11.5
+    ]
+   }
+  },
+  "gemini": {
+   "names": 183,
+   "namesRight": 93.4,
+   "otherRight": 96.9,
+   "gap": {
+    "value": 3.5,
+    "ci": [
+     -0.3,
+     8.2
+    ]
+   },
+   "deepgramMinus": {
+    "value": 6.2,
+    "ci": [
+     0.2,
+     12.8
+    ]
+   }
+  },
+  "gemini-smart": {
+   "names": 183,
+   "namesRight": 95.1,
+   "otherRight": 96.8,
+   "gap": {
+    "value": 1.7,
+    "ci": [
+     -1.4,
+     5.6
+    ]
+   },
+   "deepgramMinus": {
+    "value": 7.9,
+    "ci": [
+     2.1,
+     14.8
+    ]
+   }
+  },
+  "deepgram": {
+   "names": 183,
+   "namesRight": 81.4,
+   "otherRight": 91.1,
+   "gap": {
+    "value": 9.7,
+    "ci": [
+     3.3,
+     16.7
+    ]
+   },
+   "deepgramMinus": null
+  },
+  "assemblyai-3-6-pro": {
+   "names": 183,
+   "namesRight": 92.3,
+   "otherRight": 93,
+   "gap": {
+    "value": 0.7,
+    "ci": [
+     -4.2,
+     6
+    ]
+   },
+   "deepgramMinus": {
+    "value": 9,
+    "ci": [
+     2.1,
+     16.5
+    ]
+   }
+  },
+  "assemblyai-3-5-pro": {
+   "names": 183,
+   "namesRight": 92.3,
+   "otherRight": 92.9,
+   "gap": {
+    "value": 0.6,
+    "ci": [
+     -4.2,
+     6.2
+    ]
+   },
+   "deepgramMinus": {
+    "value": 9.1,
+    "ci": [
+     2.9,
+     16.2
+    ]
+   }
+  },
+  "zoom-scribe": {
+   "names": 183,
+   "namesRight": 90.7,
+   "otherRight": 92.7,
+   "gap": {
+    "value": 2,
+    "ci": [
+     -3.3,
+     8
+    ]
+   },
+   "deepgramMinus": {
+    "value": 7.6,
+    "ci": [
+     1.8,
+     14.6
+    ]
+   }
+  },
+  "elevenlabs-scribe": {
+   "names": 183,
+   "namesRight": 91.8,
+   "otherRight": 95.4,
+   "gap": {
+    "value": 3.6,
+    "ci": [
+     -0.4,
+     8.5
+    ]
+   },
+   "deepgramMinus": {
+    "value": 6.1,
+    "ci": [
+     0.6,
+     12.1
+    ]
+   }
+  },
+  "elevenlabs-scribe-clean": {
+   "names": 183,
+   "namesRight": 94.5,
+   "otherRight": 96.1,
+   "gap": {
+    "value": 1.6,
+    "ci": [
+     -1.8,
+     5.6
+    ]
+   },
+   "deepgramMinus": {
+    "value": 8.1,
+    "ci": [
+     3,
+     13.4
+    ]
+   }
+  },
+  "openai-live-transcribe-low": {
+   "names": 183,
+   "namesRight": 90.2,
+   "otherRight": 95.7,
+   "gap": {
+    "value": 5.6,
+    "ci": [
+     1.5,
+     10.8
+    ]
+   },
+   "deepgramMinus": {
+    "value": 4.1,
+    "ci": [
+     -2.2,
+     11.1
+    ]
+   }
+  },
+  "openai-realtime-whisper": {
+   "names": 183,
+   "namesRight": 90.7,
+   "otherRight": 95.6,
+   "gap": {
+    "value": 4.9,
+    "ci": [
+     0.6,
+     10.3
+    ]
+   },
+   "deepgramMinus": {
+    "value": 4.8,
+    "ci": [
+     -2.1,
+     12
+    ]
+   }
+  }
+ },
+ "mix": {
+  "whisper-self-hosted": {
+   "en-dictation": {
+    "sub": {
+     "value": 3.2,
+     "ci": [
+      2.6,
+      3.8
+     ]
+    },
+    "del": {
+     "value": 2.2,
+     "ci": [
+      1.2,
+      3.7
+     ]
+    },
+    "ins": {
+     "value": 2.9,
+     "ci": [
+      2.1,
+      3.7
+     ]
+    }
+   },
+   "en-dictation-noise": {
+    "sub": {
+     "value": 4.2,
+     "ci": [
+      2.5,
+      6.1
+     ]
+    },
+    "del": {
+     "value": 0.8,
+     "ci": [
+      0.4,
+      1.4
+     ]
+    },
+    "ins": {
+     "value": 1.5,
+     "ci": [
+      0.6,
+      2.7
+     ]
+    }
+   },
+   "en-dictation-whisper": {
+    "sub": {
+     "value": 6,
+     "ci": [
+      4.1,
+      7.6
+     ]
+    },
+    "del": {
+     "value": 1.8,
+     "ci": [
+      1.1,
+      2.8
+     ]
+    },
+    "ins": {
+     "value": 2.3,
+     "ci": [
+      1,
+      3.7
+     ]
+    }
+   }
+  },
+  "qwen": {
+   "en-dictation": {
+    "sub": {
+     "value": 5,
+     "ci": [
+      4.2,
+      5.8
+     ]
+    },
+    "del": {
+     "value": 2.7,
+     "ci": [
+      0.9,
+      5.9
+     ]
+    },
+    "ins": {
+     "value": 6,
+     "ci": [
+      4.9,
+      7.1
+     ]
+    }
+   },
+   "en-dictation-noise": {
+    "sub": {
+     "value": 4.6,
+     "ci": [
+      3.1,
+      6.5
+     ]
+    },
+    "del": {
+     "value": 0.4,
+     "ci": [
+      0.1,
+      0.7
+     ]
+    },
+    "ins": {
+     "value": 2,
+     "ci": [
+      1.3,
+      2.9
+     ]
+    }
+   },
+   "en-dictation-whisper": {
+    "sub": {
+     "value": 11.2,
+     "ci": [
+      6.8,
+      14.1
+     ]
+    },
+    "del": {
+     "value": 32.2,
+     "ci": [
+      15.3,
+      57.3
+     ]
+    },
+    "ins": {
+     "value": 3.3,
+     "ci": [
+      1.2,
+      5.5
+     ]
+    }
+   }
+  },
+  "meta": {
+   "en-dictation": {
+    "sub": {
+     "value": 3.5,
+     "ci": [
+      3,
+      4
+     ]
+    },
+    "del": {
+     "value": 1.1,
+     "ci": [
+      0.8,
+      1.5
+     ]
+    },
+    "ins": {
+     "value": 4.9,
+     "ci": [
+      4,
+      5.8
+     ]
+    }
+   },
+   "en-dictation-noise": {
+    "sub": {
+     "value": 4.6,
+     "ci": [
+      3.1,
+      6.4
+     ]
+    },
+    "del": {
+     "value": 0.6,
+     "ci": [
+      0.2,
+      1.1
+     ]
+    },
+    "ins": {
+     "value": 2.2,
+     "ci": [
+      1.3,
+      3.1
+     ]
+    }
+   },
+   "en-dictation-whisper": {
+    "sub": {
+     "value": 7.1,
+     "ci": [
+      5.6,
+      8.4
+     ]
+    },
+    "del": {
+     "value": 1.1,
+     "ci": [
+      0.5,
+      1.9
+     ]
+    },
+    "ins": {
+     "value": 3.1,
+     "ci": [
+      1.7,
+      4.7
+     ]
+    }
+   }
+  },
+  "gemini": {
+   "en-dictation": {
+    "sub": {
+     "value": 2.1,
+     "ci": [
+      1.7,
+      2.5
+     ]
+    },
+    "del": {
+     "value": 1.1,
+     "ci": [
+      0.8,
+      1.5
+     ]
+    },
+    "ins": {
+     "value": 3.7,
+     "ci": [
+      2.9,
+      4.6
+     ]
+    }
+   },
+   "en-dictation-noise": {
+    "sub": {
+     "value": 1.6,
+     "ci": [
+      1.1,
+      2.2
+     ]
+    },
+    "del": {
+     "value": 0.5,
+     "ci": [
+      0.2,
+      0.9
+     ]
+    },
+    "ins": {
+     "value": 0.5,
+     "ci": [
+      0.1,
+      0.9
+     ]
+    }
+   },
+   "en-dictation-whisper": {
+    "sub": {
+     "value": 2.9,
+     "ci": [
+      1.6,
+      4.1
+     ]
+    },
+    "del": {
+     "value": 1,
+     "ci": [
+      0.4,
+      1.6
+     ]
+    },
+    "ins": {
+     "value": 1.1,
+     "ci": [
+      0.3,
+      1.8
+     ]
+    }
+   }
+  },
+  "gemini-smart": {
+   "en-dictation": {
+    "sub": {
+     "value": 1.9,
+     "ci": [
+      1.5,
+      2.3
+     ]
+    },
+    "del": {
+     "value": 1.3,
+     "ci": [
+      0.9,
+      1.9
+     ]
+    },
+    "ins": {
+     "value": 0.7,
+     "ci": [
+      0.5,
+      0.9
+     ]
+    }
+   },
+   "en-dictation-noise": {
+    "sub": {
+     "value": 1.8,
+     "ci": [
+      1.1,
+      2.6
+     ]
+    },
+    "del": {
+     "value": 1.1,
+     "ci": [
+      0.6,
+      1.8
+     ]
+    },
+    "ins": {
+     "value": 0.3,
+     "ci": [
+      0,
+      0.7
+     ]
+    }
+   },
+   "en-dictation-whisper": {
+    "sub": {
+     "value": 1.6,
+     "ci": [
+      0.7,
+      2.7
+     ]
+    },
+    "del": {
+     "value": 1.9,
+     "ci": [
+      1.1,
+      2.5
+     ]
+    },
+    "ins": {
+     "value": 0.7,
+     "ci": [
+      0.3,
+      1.2
+     ]
+    }
+   }
+  },
+  "deepgram": {
+   "en-dictation": {
+    "sub": {
+     "value": 5.8,
+     "ci": [
+      5,
+      6.6
+     ]
+    },
+    "del": {
+     "value": 2.5,
+     "ci": [
+      2,
+      3
+     ]
+    },
+    "ins": {
+     "value": 5.3,
+     "ci": [
+      4.5,
+      6.2
+     ]
+    }
+   },
+   "en-dictation-noise": {
+    "sub": {
+     "value": 7,
+     "ci": [
+      5.1,
+      8.8
+     ]
+    },
+    "del": {
+     "value": 1.8,
+     "ci": [
+      1.2,
+      2.5
+     ]
+    },
+    "ins": {
+     "value": 2.6,
+     "ci": [
+      1.6,
+      3.7
+     ]
+    }
+   },
+   "en-dictation-whisper": {
+    "sub": {
+     "value": 11.8,
+     "ci": [
+      9.6,
+      13.6
+     ]
+    },
+    "del": {
+     "value": 2.7,
+     "ci": [
+      1.7,
+      4.4
+     ]
+    },
+    "ins": {
+     "value": 5.3,
+     "ci": [
+      3.1,
+      7.7
+     ]
+    }
+   }
+  },
+  "assemblyai-3-6-pro": {
+   "en-dictation": {
+    "sub": {
+     "value": 2.8,
+     "ci": [
+      2.4,
+      3.3
+     ]
+    },
+    "del": {
+     "value": 1.3,
+     "ci": [
+      0.9,
+      1.7
+     ]
+    },
+    "ins": {
+     "value": 4,
+     "ci": [
+      3.3,
+      4.8
+     ]
+    }
+   },
+   "en-dictation-noise": {
+    "sub": {
+     "value": 2.5,
+     "ci": [
+      1.3,
+      3.8
+     ]
+    },
+    "del": {
+     "value": 0.6,
+     "ci": [
+      0.2,
+      0.9
+     ]
+    },
+    "ins": {
+     "value": 1,
+     "ci": [
+      0.5,
+      1.6
+     ]
+    }
+   },
+   "en-dictation-whisper": {
+    "sub": {
+     "value": 3,
+     "ci": [
+      1.7,
+      4.4
+     ]
+    },
+    "del": {
+     "value": 25.7,
+     "ci": [
+      8.4,
+      55
+     ]
+    },
+    "ins": {
+     "value": 1.8,
+     "ci": [
+      0.1,
+      3.1
+     ]
+    }
+   }
+  },
+  "assemblyai-3-5-pro": {
+   "en-dictation": {
+    "sub": {
+     "value": 2.9,
+     "ci": [
+      2.5,
+      3.3
+     ]
+    },
+    "del": {
+     "value": 1.4,
+     "ci": [
+      1,
+      1.7
+     ]
+    },
+    "ins": {
+     "value": 4.7,
+     "ci": [
+      3.9,
+      5.6
+     ]
+    }
+   },
+   "en-dictation-noise": {
+    "sub": {
+     "value": 2.5,
+     "ci": [
+      1.4,
+      3.8
+     ]
+    },
+    "del": {
+     "value": 0.8,
+     "ci": [
+      0.3,
+      1.3
+     ]
+    },
+    "ins": {
+     "value": 1.1,
+     "ci": [
+      0.6,
+      1.8
+     ]
+    }
+   },
+   "en-dictation-whisper": {
+    "sub": {
+     "value": 3.1,
+     "ci": [
+      1.7,
+      4.6
+     ]
+    },
+    "del": {
+     "value": 25.7,
+     "ci": [
+      8.6,
+      52
+     ]
+    },
+    "ins": {
+     "value": 2.2,
+     "ci": [
+      0.8,
+      3.3
+     ]
+    }
+   }
+  },
+  "zoom-scribe": {
+   "en-dictation": {
+    "sub": {
+     "value": 2.6,
+     "ci": [
+      2.1,
+      3
+     ]
+    },
+    "del": {
+     "value": 1.4,
+     "ci": [
+      1.1,
+      1.8
+     ]
+    },
+    "ins": {
+     "value": 3.4,
+     "ci": [
+      2.7,
+      4.2
+     ]
+    }
+   },
+   "en-dictation-noise": {
+    "sub": {
+     "value": 2.5,
+     "ci": [
+      1.3,
+      3.8
+     ]
+    },
+    "del": {
+     "value": 0.5,
+     "ci": [
+      0.1,
+      1
+     ]
+    },
+    "ins": {
+     "value": 0.7,
+     "ci": [
+      0.2,
+      1.1
+     ]
+    }
+   },
+   "en-dictation-whisper": {
+    "sub": {
+     "value": 5.1,
+     "ci": [
+      3.2,
+      7.8
+     ]
+    },
+    "del": {
+     "value": 27.6,
+     "ci": [
+      11.3,
+      53
+     ]
+    },
+    "ins": {
+     "value": 1.9,
+     "ci": [
+      0.3,
+      3.5
+     ]
+    }
+   }
+  },
+  "elevenlabs-scribe": {
+   "en-dictation": {
+    "sub": {
+     "value": 2.8,
+     "ci": [
+      2.3,
+      3.2
+     ]
+    },
+    "del": {
+     "value": 1.9,
+     "ci": [
+      0.8,
+      4.1
+     ]
+    },
+    "ins": {
+     "value": 8.1,
+     "ci": [
+      6.8,
+      9.4
+     ]
+    }
+   },
+   "en-dictation-noise": {
+    "sub": {
+     "value": 3.5,
+     "ci": [
+      2.1,
+      5.1
+     ]
+    },
+    "del": {
+     "value": 0.5,
+     "ci": [
+      0.2,
+      0.8
+     ]
+    },
+    "ins": {
+     "value": 1.9,
+     "ci": [
+      0.9,
+      3.1
+     ]
+    }
+   },
+   "en-dictation-whisper": {
+    "sub": {
+     "value": 4.5,
+     "ci": [
+      2.8,
+      5.9
+     ]
+    },
+    "del": {
+     "value": 0.8,
+     "ci": [
+      0.4,
+      1.2
+     ]
+    },
+    "ins": {
+     "value": 3.8,
+     "ci": [
+      1.4,
+      6.2
+     ]
+    }
+   }
+  },
+  "elevenlabs-scribe-clean": {
+   "en-dictation": {
+    "sub": {
+     "value": 2.5,
+     "ci": [
+      2.1,
+      2.9
+     ]
+    },
+    "del": {
+     "value": 1.2,
+     "ci": [
+      0.9,
+      1.6
+     ]
+    },
+    "ins": {
+     "value": 1.4,
+     "ci": [
+      1.1,
+      1.9
+     ]
+    }
+   },
+   "en-dictation-noise": {
+    "sub": {
+     "value": 3,
+     "ci": [
+      1.8,
+      4.3
+     ]
+    },
+    "del": {
+     "value": 0.5,
+     "ci": [
+      0.2,
+      0.8
+     ]
+    },
+    "ins": {
+     "value": 1,
+     "ci": [
+      0.6,
+      1.5
+     ]
+    }
+   },
+   "en-dictation-whisper": {
+    "sub": {
+     "value": 4,
+     "ci": [
+      2.3,
+      5.4
+     ]
+    },
+    "del": {
+     "value": 1.7,
+     "ci": [
+      0.3,
+      3.8
+     ]
+    },
+    "ins": {
+     "value": 1.4,
+     "ci": [
+      0.5,
+      2.4
+     ]
+    }
+   }
+  },
+  "openai-live-transcribe-low": {
+   "en-dictation": {
+    "sub": {
+     "value": 2.9,
+     "ci": [
+      2.4,
+      3.5
+     ]
+    },
+    "del": {
+     "value": 1.2,
+     "ci": [
+      0.9,
+      1.6
+     ]
+    },
+    "ins": {
+     "value": 3.2,
+     "ci": [
+      2.5,
+      3.9
+     ]
+    }
+   },
+   "en-dictation-noise": {
+    "sub": {
+     "value": 2.5,
+     "ci": [
+      1.6,
+      3.7
+     ]
+    },
+    "del": {
+     "value": 0.5,
+     "ci": [
+      0.2,
+      0.9
+     ]
+    },
+    "ins": {
+     "value": 0.6,
+     "ci": [
+      0.1,
+      1.1
+     ]
+    }
+   },
+   "en-dictation-whisper": {
+    "sub": {
+     "value": 6,
+     "ci": [
+      4.7,
+      7.2
+     ]
+    },
+    "del": {
+     "value": 1.2,
+     "ci": [
+      0.5,
+      2.1
+     ]
+    },
+    "ins": {
+     "value": 1.7,
+     "ci": [
+      0.9,
+      2.8
+     ]
+    }
+   }
+  },
+  "openai-realtime-whisper": {
+   "en-dictation": {
+    "sub": {
+     "value": 2.9,
+     "ci": [
+      2.4,
+      3.4
+     ]
+    },
+    "del": {
+     "value": 1.2,
+     "ci": [
+      0.9,
+      1.6
+     ]
+    },
+    "ins": {
+     "value": 4.1,
+     "ci": [
+      3.3,
+      4.9
+     ]
+    }
+   },
+   "en-dictation-noise": {
+    "sub": {
+     "value": 3,
+     "ci": [
+      1.9,
+      4.6
+     ]
+    },
+    "del": {
+     "value": 0.8,
+     "ci": [
+      0.3,
+      1.3
+     ]
+    },
+    "ins": {
+     "value": 0.8,
+     "ci": [
+      0.4,
+      1.5
+     ]
+    }
+   },
+   "en-dictation-whisper": {
+    "sub": {
+     "value": 5.7,
+     "ci": [
+      4.2,
+      7.3
+     ]
+    },
+    "del": {
+     "value": 1.9,
+     "ci": [
+      0.9,
+      3.1
+     ]
+    },
+    "ins": {
+     "value": 1.3,
+     "ci": [
+      0.6,
+      2.2
+     ]
+    }
+   }
+  }
+ },
+ "subkind": {
+  "whisper-self-hosted": {
+   "number": {
+    "value": 14.1,
+    "ci": [
+     8.7,
+     19.9
+    ]
+   },
+   "name": {
+    "value": 9.2,
+    "ci": [
+     5.2,
+     14
+    ]
+   },
+   "close": {
+    "value": 21.3,
+    "ci": [
+     16.7,
+     26.6
+    ]
+   },
+   "other": {
+    "value": 55.4,
+    "ci": [
+     49.1,
+     61.8
+    ]
+   }
+  },
+  "qwen": {
+   "number": {
+    "value": 30.8,
+    "ci": [
+     24.3,
+     38
+    ]
+   },
+   "name": {
+    "value": 6.4,
+    "ci": [
+     3.7,
+     9.4
+    ]
+   },
+   "close": {
+    "value": 12.9,
+    "ci": [
+     9.6,
+     16.7
+    ]
+   },
+   "other": {
+    "value": 50,
+    "ci": [
+     44.1,
+     55.7
+    ]
+   }
+  },
+  "meta": {
+   "number": {
+    "value": 30.5,
+    "ci": [
+     23.4,
+     38.1
+    ]
+   },
+   "name": {
+    "value": 6.5,
+    "ci": [
+     3.2,
+     10.6
+    ]
+   },
+   "close": {
+    "value": 18.2,
+    "ci": [
+     13.2,
+     24
+    ]
+   },
+   "other": {
+    "value": 44.8,
+    "ci": [
+     38.5,
+     51.2
+    ]
+   }
+  },
+  "gemini": {
+   "number": {
+    "value": 24.5,
+    "ci": [
+     13.8,
+     35
+    ]
+   },
+   "name": {
+    "value": 6.6,
+    "ci": [
+     3.2,
+     10.4
+    ]
+   },
+   "close": {
+    "value": 21,
+    "ci": [
+     14.3,
+     28.2
+    ]
+   },
+   "other": {
+    "value": 48,
+    "ci": [
+     39,
+     57.6
+    ]
+   }
+  },
+  "gemini-smart": {
+   "number": {
+    "value": 29.6,
+    "ci": [
+     17.7,
+     41.1
+    ]
+   },
+   "name": {
+    "value": 3.6,
+    "ci": [
+     1,
+     7.2
+    ]
+   },
+   "close": {
+    "value": 18.9,
+    "ci": [
+     13.1,
+     25.9
+    ]
+   },
+   "other": {
+    "value": 48,
+    "ci": [
+     39,
+     58.1
+    ]
+   }
+  },
+  "deepgram": {
+   "number": {
+    "value": 15.3,
+    "ci": [
+     11.1,
+     19.9
+    ]
+   },
+   "name": {
+    "value": 9.1,
+    "ci": [
+     6.3,
+     12.2
+    ]
+   },
+   "close": {
+    "value": 16.7,
+    "ci": [
+     13.2,
+     20.4
+    ]
+   },
+   "other": {
+    "value": 59,
+    "ci": [
+     53.8,
+     63.3
+    ]
+   }
+  },
+  "assemblyai-3-6-pro": {
+   "number": {
+    "value": 26.6,
+    "ci": [
+     19.4,
+     33.3
+    ]
+   },
+   "name": {
+    "value": 4.6,
+    "ci": [
+     1.3,
+     9.5
+    ]
+   },
+   "close": {
+    "value": 21.4,
+    "ci": [
+     16.3,
+     26.7
+    ]
+   },
+   "other": {
+    "value": 47.4,
+    "ci": [
+     39.9,
+     55
+    ]
+   }
+  },
+  "assemblyai-3-5-pro": {
+   "number": {
+    "value": 25.8,
+    "ci": [
+     18.8,
+     32.9
+    ]
+   },
+   "name": {
+    "value": 4.8,
+    "ci": [
+     1.5,
+     9.7
+    ]
+   },
+   "close": {
+    "value": 17.1,
+    "ci": [
+     12.8,
+     21.5
+    ]
+   },
+   "other": {
+    "value": 52.3,
+    "ci": [
+     45.1,
+     59.7
+    ]
+   }
+  },
+  "zoom-scribe": {
+   "number": {
+    "value": 18.2,
+    "ci": [
+     11.6,
+     26.1
+    ]
+   },
+   "name": {
+    "value": 5.9,
+    "ci": [
+     2.2,
+     11
+    ]
+   },
+   "close": {
+    "value": 19.5,
+    "ci": [
+     14.3,
+     25.1
+    ]
+   },
+   "other": {
+    "value": 56.4,
+    "ci": [
+     49.4,
+     63.6
+    ]
+   }
+  },
+  "elevenlabs-scribe": {
+   "number": {
+    "value": 18.3,
+    "ci": [
+     10.3,
+     26.2
+    ]
+   },
+   "name": {
+    "value": 6.1,
+    "ci": [
+     2.7,
+     10.6
+    ]
+   },
+   "close": {
+    "value": 20.4,
+    "ci": [
+     15.1,
+     26.6
+    ]
+   },
+   "other": {
+    "value": 55.2,
+    "ci": [
+     48.1,
+     62.5
+    ]
+   }
+  },
+  "elevenlabs-scribe-clean": {
+   "number": {
+    "value": 22,
+    "ci": [
+     12.9,
+     31.9
+    ]
+   },
+   "name": {
+    "value": 5.2,
+    "ci": [
+     1.6,
+     10.2
+    ]
+   },
+   "close": {
+    "value": 21,
+    "ci": [
+     15.5,
+     27.3
+    ]
+   },
+   "other": {
+    "value": 51.9,
+    "ci": [
+     44.8,
+     59.4
+    ]
+   }
+  },
+  "openai-live-transcribe-low": {
+   "number": {
+    "value": 35.3,
+    "ci": [
+     27.1,
+     42.9
+    ]
+   },
+   "name": {
+    "value": 5.1,
+    "ci": [
+     2.9,
+     8
+    ]
+   },
+   "close": {
+    "value": 13.4,
+    "ci": [
+     9.2,
+     18.5
+    ]
+   },
+   "other": {
+    "value": 46.2,
+    "ci": [
+     40.3,
+     52.7
+    ]
+   }
+  },
+  "openai-realtime-whisper": {
+   "number": {
+    "value": 24.8,
+    "ci": [
+     15.6,
+     34.5
+    ]
+   },
+   "name": {
+    "value": 6.6,
+    "ci": [
+     4,
+     9.4
+    ]
+   },
+   "close": {
+    "value": 19.1,
+    "ci": [
+     13.8,
+     24.8
+    ]
+   },
+   "other": {
+    "value": 49.6,
+    "ci": [
+     41.8,
+     57.9
+    ]
+   }
+  }
+ },
+ "cs": {
+  "english/both/qwen": {
+   "n": 85,
+   "lost": {
+    "value": 14.1,
+    "ci": [
+     3,
+     28.2
+    ]
+   }
+  },
+  "english/both/meta": {
+   "n": 85,
+   "lost": {
+    "value": 12.9,
+    "ci": [
+     2.8,
+     27.7
+    ]
+   }
+  },
+  "english/both/gemini": {
+   "n": 85,
+   "lost": {
+    "value": 42.4,
+    "ci": [
+     26.5,
+     59.7
+    ]
+   }
+  },
+  "english/both/gemini-smart": {
+   "n": 85,
+   "lost": {
+    "value": 45.9,
+    "ci": [
+     27.8,
+     65.3
+    ]
+   }
+  },
+  "english/both/whisper-self-hosted": {
+   "n": 85,
+   "lost": {
+    "value": 38.8,
+    "ci": [
+     17.6,
+     63.5
+    ]
+   }
+  },
+  "english/both/assemblyai-3-5-pro": {
+   "n": 85,
+   "lost": {
+    "value": 5.9,
+    "ci": [
+     0,
+     15.6
+    ]
+   }
+  },
+  "english/both/assemblyai-3-6-pro": {
+   "n": 85,
+   "lost": {
+    "value": 3.5,
+    "ci": [
+     0,
+     11.1
+    ]
+   }
+  },
+  "english/both/deepgram": {
+   "n": 85,
+   "lost": {
+    "value": 31.8,
+    "ci": [
+     17.8,
+     47.3
+    ]
+   }
+  },
+  "english/both/elevenlabs-scribe-clean": {
+   "n": 85,
+   "lost": {
+    "value": 80,
+    "ci": [
+     65.8,
+     92.1
+    ]
+   }
+  },
+  "english/both/elevenlabs-scribe": {
+   "n": 85,
+   "lost": {
+    "value": 61.2,
+    "ci": [
+     41.9,
+     78.8
+    ]
+   }
+  },
+  "english/both/openai-live-transcribe-low": {
+   "n": 85,
+   "lost": {
+    "value": 1.2,
+    "ci": [
+     0,
+     6.2
+    ]
+   }
+  },
+  "english/both/openai-realtime-whisper": {
+   "n": 85,
+   "lost": {
+    "value": 4.7,
+    "ci": [
+     0,
+     13.3
+    ]
+   }
+  },
+  "english/both/zoom-scribe": {
+   "n": 85,
+   "lost": {
+    "value": 56.5,
+    "ci": [
+     38.2,
+     71.1
+    ]
+   }
+  },
+  "english/en/qwen": {
+   "n": 85,
+   "lost": {
+    "value": 32.9,
+    "ci": [
+     15.4,
+     52.2
+    ]
+   }
+  },
+  "english/en/meta": {
+   "n": 85,
+   "lost": {
+    "value": 16.5,
+    "ci": [
+     3.7,
+     31
+    ]
+   }
+  },
+  "english/en/gemini": {
+   "n": 85,
+   "lost": {
+    "value": 91.8,
+    "ci": [
+     78.8,
+     100
+    ]
+   }
+  },
+  "english/en/gemini-smart": {
+   "n": 85,
+   "lost": {
+    "value": 84.7,
+    "ci": [
+     72,
+     95.2
+    ]
+   }
+  },
+  "english/en/whisper-self-hosted": {
+   "n": 85,
+   "lost": {
+    "value": 84.7,
+    "ci": [
+     69.2,
+     96
+    ]
+   }
+  },
+  "english/en/assemblyai-3-5-pro": {
+   "n": 85,
+   "lost": {
+    "value": 29.4,
+    "ci": [
+     13.2,
+     47.1
+    ]
+   }
+  },
+  "english/en/assemblyai-3-6-pro": {
+   "n": 85,
+   "lost": {
+    "value": 18.8,
+    "ci": [
+     7.7,
+     31.7
+    ]
+   }
+  },
+  "english/en/deepgram": {
+   "n": 85,
+   "lost": {
+    "value": 98.8,
+    "ci": [
+     93.1,
+     100
+    ]
+   }
+  },
+  "english/en/elevenlabs-scribe-clean": {
+   "n": 85,
+   "lost": {
+    "value": 92.9,
+    "ci": [
+     82.6,
+     100
+    ]
+   }
+  },
+  "english/en/elevenlabs-scribe": {
+   "n": 85,
+   "lost": {
+    "value": 83.5,
+    "ci": [
+     70.6,
+     95.1
+    ]
+   }
+  },
+  "english/en/openai-live-transcribe-low": {
+   "n": 85,
+   "lost": {
+    "value": 1.2,
+    "ci": [
+     0,
+     6.6
+    ]
+   }
+  },
+  "english/en/openai-realtime-whisper": {
+   "n": 85,
+   "lost": {
+    "value": 4.7,
+    "ci": [
+     0,
+     14
+    ]
+   }
+  },
+  "english/en/zoom-scribe": {
+   "n": 85,
+   "lost": {
+    "value": 56.5,
+    "ci": [
+     39,
+     72.4
+    ]
+   }
+  },
+  "english/auto/qwen": {
+   "n": 85,
+   "lost": {
+    "value": 14.1,
+    "ci": [
+     3.3,
+     27.9
+    ]
+   }
+  },
+  "english/auto/meta": {
+   "n": 85,
+   "lost": {
+    "value": 15.3,
+    "ci": [
+     3,
+     31.5
+    ]
+   }
+  },
+  "english/auto/gemini": {
+   "n": 85,
+   "lost": {
+    "value": 65.9,
+    "ci": [
+     44.8,
+     85.7
+    ]
+   }
+  },
+  "english/auto/gemini-smart": {
+   "n": 85,
+   "lost": {
+    "value": 68.2,
+    "ci": [
+     49.3,
+     85.3
+    ]
+   }
+  },
+  "english/auto/whisper-self-hosted": {
+   "n": 85,
+   "lost": {
+    "value": 42.4,
+    "ci": [
+     23.4,
+     63.9
+    ]
+   }
+  },
+  "english/auto/assemblyai-3-5-pro": {
+   "n": 85,
+   "lost": {
+    "value": 10.6,
+    "ci": [
+     1.5,
+     23.6
+    ]
+   }
+  },
+  "english/auto/assemblyai-3-6-pro": {
+   "n": 85,
+   "lost": {
+    "value": 8.2,
+    "ci": [
+     0,
+     20.2
+    ]
+   }
+  },
+  "english/auto/deepgram": {
+   "n": 85,
+   "lost": {
+    "value": 31.8,
+    "ci": [
+     17.1,
+     47.9
+    ]
+   }
+  },
+  "english/auto/elevenlabs-scribe-clean": {
+   "n": 85,
+   "lost": {
+    "value": 80,
+    "ci": [
+     65.7,
+     91.8
+    ]
+   }
+  },
+  "english/auto/elevenlabs-scribe": {
+   "n": 85,
+   "lost": {
+    "value": 61.2,
+    "ci": [
+     42.4,
+     79.4
+    ]
+   }
+  },
+  "english/auto/openai-live-transcribe-low": {
+   "n": 85,
+   "lost": {
+    "value": 1.2,
+    "ci": [
+     0,
+     7.3
+    ]
+   }
+  },
+  "english/auto/openai-realtime-whisper": {
+   "n": 85,
+   "lost": {
+    "value": 3.5,
+    "ci": [
+     0,
+     11.4
+    ]
+   }
+  },
+  "english/auto/zoom-scribe": {
+   "n": 85,
+   "lost": {
+    "value": 56.5,
+    "ci": [
+     40.4,
+     72.8
+    ]
+   }
+  },
+  "pair/both/qwen": {
+   "n": 232,
+   "lost": {
+    "value": 42.7,
+    "ci": [
+     31.1,
+     55.3
+    ]
+   }
+  },
+  "pair/both/meta": {
+   "n": 232,
+   "lost": {
+    "value": 22,
+    "ci": [
+     12.9,
+     32.1
+    ]
+   }
+  },
+  "pair/both/gemini": {
+   "n": 232,
+   "lost": {
+    "value": 26.7,
+    "ci": [
+     17.4,
+     37.5
+    ]
+   }
+  },
+  "pair/both/gemini-smart": {
+   "n": 232,
+   "lost": {
+    "value": 54.7,
+    "ci": [
+     42.7,
+     65.6
+    ]
+   }
+  },
+  "pair/both/whisper-self-hosted": {
+   "n": 232,
+   "lost": {
+    "value": 86.6,
+    "ci": [
+     76.2,
+     94.5
+    ]
+   }
+  },
+  "pair/both/assemblyai-3-5-pro": {
+   "n": 232,
+   "lost": {
+    "value": 19,
+    "ci": [
+     10.7,
+     27.8
+    ]
+   }
+  },
+  "pair/both/assemblyai-3-6-pro": {
+   "n": 232,
+   "lost": {
+    "value": 24.1,
+    "ci": [
+     14.8,
+     34.6
+    ]
+   }
+  },
+  "pair/both/deepgram": {
+   "n": 232,
+   "lost": {
+    "value": 53.4,
+    "ci": [
+     41.8,
+     65.1
+    ]
+   }
+  },
+  "pair/both/elevenlabs-scribe-clean": {
+   "n": 232,
+   "lost": {
+    "value": 96.1,
+    "ci": [
+     91.2,
+     99.3
+    ]
+   }
+  },
+  "pair/both/elevenlabs-scribe": {
+   "n": 232,
+   "lost": {
+    "value": 91.8,
+    "ci": [
+     83.9,
+     97.2
+    ]
+   }
+  },
+  "pair/both/openai-live-transcribe-low": {
+   "n": 232,
+   "lost": {
+    "value": 0.4,
+    "ci": [
+     0,
+     2.6
+    ]
+   }
+  },
+  "pair/both/openai-realtime-whisper": {
+   "n": 232,
+   "lost": {
+    "value": 4.3,
+    "ci": [
+     0,
+     11.1
+    ]
+   }
+  },
+  "pair/both/zoom-scribe": {
+   "n": 232,
+   "lost": {
+    "value": 80.6,
+    "ci": [
+     70.2,
+     89
+    ]
+   }
+  },
+  "pair/auto/qwen": {
+   "n": 232,
+   "lost": {
+    "value": 42.7,
+    "ci": [
+     30.8,
+     54.6
+    ]
+   }
+  },
+  "pair/auto/meta": {
+   "n": 232,
+   "lost": {
+    "value": 25.4,
+    "ci": [
+     16.2,
+     35.9
+    ]
+   }
+  },
+  "pair/auto/gemini": {
+   "n": 232,
+   "lost": {
+    "value": 69.4,
+    "ci": [
+     59.5,
+     78.2
+    ]
+   }
+  },
+  "pair/auto/gemini-smart": {
+   "n": 232,
+   "lost": {
+    "value": 80.2,
+    "ci": [
+     70.1,
+     88.8
+    ]
+   }
+  },
+  "pair/auto/whisper-self-hosted": {
+   "n": 232,
+   "lost": {
+    "value": 87.1,
+    "ci": [
+     77.2,
+     94.7
+    ]
+   }
+  },
+  "pair/auto/assemblyai-3-5-pro": {
+   "n": 232,
+   "lost": {
+    "value": 25,
+    "ci": [
+     15.9,
+     35.8
+    ]
+   }
+  },
+  "pair/auto/assemblyai-3-6-pro": {
+   "n": 232,
+   "lost": {
+    "value": 20.7,
+    "ci": [
+     11.9,
+     30.5
+    ]
+   }
+  },
+  "pair/auto/deepgram": {
+   "n": 232,
+   "lost": {
+    "value": 53.4,
+    "ci": [
+     41.9,
+     64.6
+    ]
+   }
+  },
+  "pair/auto/elevenlabs-scribe-clean": {
+   "n": 232,
+   "lost": {
+    "value": 96.1,
+    "ci": [
+     91,
+     99.5
+    ]
+   }
+  },
+  "pair/auto/elevenlabs-scribe": {
+   "n": 232,
+   "lost": {
+    "value": 91.4,
+    "ci": [
+     83.9,
+     96.8
+    ]
+   }
+  },
+  "pair/auto/openai-live-transcribe-low": {
+   "n": 232,
+   "lost": {
+    "value": 0.4,
+    "ci": [
+     0,
+     2.5
+    ]
+   }
+  },
+  "pair/auto/openai-realtime-whisper": {
+   "n": 232,
+   "lost": {
+    "value": 5.2,
+    "ci": [
+     0.8,
+     11.6
+    ]
+   }
+  },
+  "pair/auto/zoom-scribe": {
+   "n": 232,
+   "lost": {
+    "value": 80.6,
+    "ci": [
+     70.2,
+     88.9
+    ]
+   }
+  },
+  "english/both/elevenlabs-scribe-clean-vad": {
+   "n": 85,
+   "lost": {
+    "value": 2.4,
+    "ci": [
+     0,
+     10.3
+    ]
+   }
+  },
+  "english/both/elevenlabs-scribe-vad": {
+   "n": 85,
+   "lost": {
+    "value": 1.2,
+    "ci": [
+     0,
+     7.1
+    ]
+   }
+  },
+  "english/en/elevenlabs-scribe-clean-vad": {
+   "n": 85,
+   "lost": {
+    "value": 45.9,
+    "ci": [
+     27.2,
+     64.7
+    ]
+   }
+  },
+  "english/en/elevenlabs-scribe-vad": {
+   "n": 85,
+   "lost": {
+    "value": 36.5,
+    "ci": [
+     19.3,
+     53.7
+    ]
+   }
+  },
+  "english/auto/elevenlabs-scribe-clean-vad": {
+   "n": 85,
+   "lost": {
+    "value": 2.4,
+    "ci": [
+     0,
+     9.7
+    ]
+   }
+  },
+  "english/auto/elevenlabs-scribe-vad": {
+   "n": 85,
+   "lost": {
+    "value": 1.2,
+    "ci": [
+     0,
+     6.7
+    ]
+   }
+  },
+  "pair/both/elevenlabs-scribe-clean-vad": {
+   "n": 232,
+   "lost": {
+    "value": 62.1,
+    "ci": [
+     51.5,
+     72.4
+    ]
+   }
+  },
+  "pair/both/elevenlabs-scribe-vad": {
+   "n": 232,
+   "lost": {
+    "value": 35.8,
+    "ci": [
+     25.5,
+     46.7
+    ]
+   }
+  },
+  "pair/auto/elevenlabs-scribe-clean-vad": {
+   "n": 232,
+   "lost": {
+    "value": 62.5,
+    "ci": [
+     51,
+     72.8
+    ]
+   }
+  },
+  "pair/auto/elevenlabs-scribe-vad": {
+   "n": 232,
+   "lost": {
+    "value": 36.2,
+    "ci": [
+     26,
+     47.1
+    ]
+   }
+  }
+ },
+ "csAll": {
+  "english/both/qwen": {
+   "n": 100,
+   "lost": {
+    "value": 20,
+    "ci": [
+     7.7,
+     34.9
+    ]
+   }
+  },
+  "english/both/meta": {
+   "n": 100,
+   "lost": {
+    "value": 19,
+    "ci": [
+     7.8,
+     32.6
+    ]
+   }
+  },
+  "english/both/gemini": {
+   "n": 100,
+   "lost": {
+    "value": 50,
+    "ci": [
+     33.9,
+     67
+    ]
+   }
+  },
+  "english/both/gemini-smart": {
+   "n": 100,
+   "lost": {
+    "value": 52,
+    "ci": [
+     32.9,
+     70.1
+    ]
+   }
+  },
+  "english/both/whisper-self-hosted": {
+   "n": 100,
+   "lost": {
+    "value": 45,
+    "ci": [
+     24.1,
+     67.3
+    ]
+   }
+  },
+  "english/both/assemblyai-3-5-pro": {
+   "n": 100,
+   "lost": {
+    "value": 13,
+    "ci": [
+     3.5,
+     25
+    ]
+   }
+  },
+  "english/both/assemblyai-3-6-pro": {
+   "n": 100,
+   "lost": {
+    "value": 10,
+    "ci": [
+     1.8,
+     20
+    ]
+   }
+  },
+  "english/both/deepgram": {
+   "n": 100,
+   "lost": {
+    "value": 40,
+    "ci": [
+     26.2,
+     55.2
+    ]
+   }
+  },
+  "english/both/elevenlabs-scribe-clean": {
+   "n": 100,
+   "lost": {
+    "value": 80,
+    "ci": [
+     65.7,
+     91.9
+    ]
+   }
+  },
+  "english/both/elevenlabs-scribe": {
+   "n": 100,
+   "lost": {
+    "value": 62,
+    "ci": [
+     45.3,
+     78.2
+    ]
+   }
+  },
+  "english/both/openai-live-transcribe-low": {
+   "n": 100,
+   "lost": {
+    "value": 6,
+    "ci": [
+     0,
+     14.9
+    ]
+   }
+  },
+  "english/both/openai-realtime-whisper": {
+   "n": 100,
+   "lost": {
+    "value": 11,
+    "ci": [
+     3.1,
+     21.1
+    ]
+   }
+  },
+  "english/both/zoom-scribe": {
+   "n": 100,
+   "lost": {
+    "value": 62,
+    "ci": [
+     47.8,
+     76.9
+    ]
+   }
+  },
+  "english/en/qwen": {
+   "n": 100,
+   "lost": {
+    "value": 38,
+    "ci": [
+     21.7,
+     56.2
+    ]
+   }
+  },
+  "english/en/meta": {
+   "n": 100,
+   "lost": {
+    "value": 23,
+    "ci": [
+     10.8,
+     37
+    ]
+   }
+  },
+  "english/en/gemini": {
+   "n": 100,
+   "lost": {
+    "value": 93,
+    "ci": [
+     81.3,
+     100
+    ]
+   }
+  },
+  "english/en/gemini-smart": {
+   "n": 100,
+   "lost": {
+    "value": 87,
+    "ci": [
+     76,
+     95.7
+    ]
+   }
+  },
+  "english/en/whisper-self-hosted": {
+   "n": 100,
+   "lost": {
+    "value": 87,
+    "ci": [
+     75,
+     96.3
+    ]
+   }
+  },
+  "english/en/assemblyai-3-5-pro": {
+   "n": 100,
+   "lost": {
+    "value": 35,
+    "ci": [
+     19.1,
+     52.4
+    ]
+   }
+  },
+  "english/en/assemblyai-3-6-pro": {
+   "n": 100,
+   "lost": {
+    "value": 25,
+    "ci": [
+     13.3,
+     37.5
+    ]
+   }
+  },
+  "english/en/deepgram": {
+   "n": 100,
+   "lost": {
+    "value": 99,
+    "ci": [
+     94.1,
+     100
+    ]
+   }
+  },
+  "english/en/elevenlabs-scribe-clean": {
+   "n": 100,
+   "lost": {
+    "value": 93,
+    "ci": [
+     83.7,
+     99.3
+    ]
+   }
+  },
+  "english/en/elevenlabs-scribe": {
+   "n": 100,
+   "lost": {
+    "value": 85,
+    "ci": [
+     72.7,
+     95.8
+    ]
+   }
+  },
+  "english/en/openai-live-transcribe-low": {
+   "n": 100,
+   "lost": {
+    "value": 7,
+    "ci": [
+     0,
+     15.7
+    ]
+   }
+  },
+  "english/en/openai-realtime-whisper": {
+   "n": 100,
+   "lost": {
+    "value": 12,
+    "ci": [
+     3.7,
+     23.9
+    ]
+   }
+  },
+  "english/en/zoom-scribe": {
+   "n": 100,
+   "lost": {
+    "value": 62,
+    "ci": [
+     47.1,
+     76.4
+    ]
+   }
+  },
+  "english/auto/qwen": {
+   "n": 100,
+   "lost": {
+    "value": 20,
+    "ci": [
+     8.1,
+     34.1
+    ]
+   }
+  },
+  "english/auto/meta": {
+   "n": 100,
+   "lost": {
+    "value": 21,
+    "ci": [
+     8.5,
+     34.9
+    ]
+   }
+  },
+  "english/auto/gemini": {
+   "n": 100,
+   "lost": {
+    "value": 71,
+    "ci": [
+     52.7,
+     88
+    ]
+   }
+  },
+  "english/auto/gemini-smart": {
+   "n": 100,
+   "lost": {
+    "value": 73,
+    "ci": [
+     56.5,
+     88.4
+    ]
+   }
+  },
+  "english/auto/whisper-self-hosted": {
+   "n": 100,
+   "lost": {
+    "value": 49,
+    "ci": [
+     29.9,
+     69.4
+    ]
+   }
+  },
+  "english/auto/assemblyai-3-5-pro": {
+   "n": 100,
+   "lost": {
+    "value": 16,
+    "ci": [
+     5,
+     29
+    ]
+   }
+  },
+  "english/auto/assemblyai-3-6-pro": {
+   "n": 100,
+   "lost": {
+    "value": 15,
+    "ci": [
+     4.9,
+     27.3
+    ]
+   }
+  },
+  "english/auto/deepgram": {
+   "n": 100,
+   "lost": {
+    "value": 40,
+    "ci": [
+     25.4,
+     55.3
+    ]
+   }
+  },
+  "english/auto/elevenlabs-scribe-clean": {
+   "n": 100,
+   "lost": {
+    "value": 79,
+    "ci": [
+     63.7,
+     91.5
+    ]
+   }
+  },
+  "english/auto/elevenlabs-scribe": {
+   "n": 100,
+   "lost": {
+    "value": 62,
+    "ci": [
+     45.5,
+     77.3
+    ]
+   }
+  },
+  "english/auto/openai-live-transcribe-low": {
+   "n": 100,
+   "lost": {
+    "value": 7,
+    "ci": [
+     0,
+     17.2
+    ]
+   }
+  },
+  "english/auto/openai-realtime-whisper": {
+   "n": 100,
+   "lost": {
+    "value": 10,
+    "ci": [
+     2.4,
+     19.8
+    ]
+   }
+  },
+  "english/auto/zoom-scribe": {
+   "n": 100,
+   "lost": {
+    "value": 62,
+    "ci": [
+     47.1,
+     75.8
+    ]
+   }
+  },
+  "pair/both/qwen": {
+   "n": 300,
+   "lost": {
+    "value": 45.7,
+    "ci": [
+     35.4,
+     55.9
+    ]
+   }
+  },
+  "pair/both/meta": {
+   "n": 300,
+   "lost": {
+    "value": 31.7,
+    "ci": [
+     21.9,
+     41.6
+    ]
+   }
+  },
+  "pair/both/gemini": {
+   "n": 300,
+   "lost": {
+    "value": 36,
+    "ci": [
+     25.9,
+     45.6
+    ]
+   }
+  },
+  "pair/both/gemini-smart": {
+   "n": 300,
+   "lost": {
+    "value": 62,
+    "ci": [
+     51.7,
+     71.8
+    ]
+   }
+  },
+  "pair/both/whisper-self-hosted": {
+   "n": 300,
+   "lost": {
+    "value": 87,
+    "ci": [
+     78.3,
+     94.1
+    ]
+   }
+  },
+  "pair/both/assemblyai-3-5-pro": {
+   "n": 300,
+   "lost": {
+    "value": 23,
+    "ci": [
+     14.9,
+     31.8
+    ]
+   }
+  },
+  "pair/both/assemblyai-3-6-pro": {
+   "n": 300,
+   "lost": {
+    "value": 28.3,
+    "ci": [
+     19,
+     38.7
+    ]
+   }
+  },
+  "pair/both/deepgram": {
+   "n": 300,
+   "lost": {
+    "value": 58.3,
+    "ci": [
+     47.2,
+     68.7
+    ]
+   }
+  },
+  "pair/both/elevenlabs-scribe-clean": {
+   "n": 300,
+   "lost": {
+    "value": 96.3,
+    "ci": [
+     92.2,
+     99.3
+    ]
+   }
+  },
+  "pair/both/elevenlabs-scribe": {
+   "n": 300,
+   "lost": {
+    "value": 93.3,
+    "ci": [
+     87.5,
+     97.8
+    ]
+   }
+  },
+  "pair/both/openai-live-transcribe-low": {
+   "n": 300,
+   "lost": {
+    "value": 4.3,
+    "ci": [
+     0.6,
+     10.3
+    ]
+   }
+  },
+  "pair/both/openai-realtime-whisper": {
+   "n": 300,
+   "lost": {
+    "value": 11,
+    "ci": [
+     4.5,
+     19.5
+    ]
+   }
+  },
+  "pair/both/zoom-scribe": {
+   "n": 300,
+   "lost": {
+    "value": 84.7,
+    "ci": [
+     76.3,
+     91.7
+    ]
+   }
+  },
+  "pair/auto/qwen": {
+   "n": 300,
+   "lost": {
+    "value": 45.7,
+    "ci": [
+     35.7,
+     56.7
+    ]
+   }
+  },
+  "pair/auto/meta": {
+   "n": 300,
+   "lost": {
+    "value": 35.3,
+    "ci": [
+     25.4,
+     46
+    ]
+   }
+  },
+  "pair/auto/gemini": {
+   "n": 300,
+   "lost": {
+    "value": 75,
+    "ci": [
+     66.6,
+     82.6
+    ]
+   }
+  },
+  "pair/auto/gemini-smart": {
+   "n": 300,
+   "lost": {
+    "value": 83,
+    "ci": [
+     75,
+     90.6
+    ]
+   }
+  },
+  "pair/auto/whisper-self-hosted": {
+   "n": 300,
+   "lost": {
+    "value": 87.7,
+    "ci": [
+     79.1,
+     94.4
+    ]
+   }
+  },
+  "pair/auto/assemblyai-3-5-pro": {
+   "n": 300,
+   "lost": {
+    "value": 32.7,
+    "ci": [
+     23.8,
+     43.2
+    ]
+   }
+  },
+  "pair/auto/assemblyai-3-6-pro": {
+   "n": 300,
+   "lost": {
+    "value": 28,
+    "ci": [
+     18.8,
+     37.9
+    ]
+   }
+  },
+  "pair/auto/deepgram": {
+   "n": 300,
+   "lost": {
+    "value": 58.3,
+    "ci": [
+     48.2,
+     69.1
+    ]
+   }
+  },
+  "pair/auto/elevenlabs-scribe-clean": {
+   "n": 300,
+   "lost": {
+    "value": 96.7,
+    "ci": [
+     92.6,
+     99.4
+    ]
+   }
+  },
+  "pair/auto/elevenlabs-scribe": {
+   "n": 300,
+   "lost": {
+    "value": 93,
+    "ci": [
+     87.6,
+     97.2
+    ]
+   }
+  },
+  "pair/auto/openai-live-transcribe-low": {
+   "n": 300,
+   "lost": {
+    "value": 5,
+    "ci": [
+     1,
+     11.5
+    ]
+   }
+  },
+  "pair/auto/openai-realtime-whisper": {
+   "n": 300,
+   "lost": {
+    "value": 11.3,
+    "ci": [
+     4.9,
+     20.1
+    ]
+   }
+  },
+  "pair/auto/zoom-scribe": {
+   "n": 300,
+   "lost": {
+    "value": 84.7,
+    "ci": [
+     76.5,
+     91.5
+    ]
+   }
+  }
+ },
+ "vad": {
+  "en-dictation": {
+   "clips": 73,
+   "on": 8.7,
+   "off": 9.5,
+   "diff": {
+    "value": 0.9,
+    "ci": [
+     0.1,
+     1.6
+    ]
+   }
+  },
+  "en-dictation-noise": {
+   "clips": 17,
+   "on": 7,
+   "off": 7.5,
+   "diff": {
+    "value": 0.6,
+    "ci": [
+     -1.3,
+     2.5
+    ]
+   }
+  },
+  "en-dictation-whisper": {
+   "clips": 16,
+   "on": 80.7,
+   "off": 61.1,
+   "diff": {
+    "value": -19.6,
+    "ci": [
+     -34.5,
+     -7.5
+    ]
+   }
+  },
+  "ar-ae": {
+   "clips": 20,
+   "on": 62.9,
+   "off": 58.2,
+   "diff": {
+    "value": -4.7,
+    "ci": [
+     -10.6,
+     -0.6
+    ]
+   }
+  }
+ }
+}

@@ -1,0 +1,82 @@
+{
+  "date": "2026-10-29",
+  "runDates": [
+    "2026-10-29"
+  ],
+  "label": "ttft-meta",
+  "options": {
+    "language": "clip",
+    "speed": 1,
+    "gate": true,
+    "runs": 1,
+    "clientProfile": "published"
+  },
+  "sets": [
+    {
+      "id": "en-dictation",
+      "language": "en",
+      "condition": "clean",
+      "source": "Team recordings of app-style dictation scripts"
+    },
+    {
+      "id": "en-dictation-noise",
+      "language": "en",
+      "condition": "noise",
+      "source": "Same scripts, background fan noise"
+    },
+    {
+      "id": "en-dictation-whisper",
+      "language": "en",
+      "condition": "whisper",
+      "source": "Same scripts, whispered"
+    }
+  ],
+  "models": {
+    "meta": "muse-voice-transcribe-1.0"
+  },
+  "labels": {
+    "meta": "Meta Muse"
+  },
+  "aggregates": {
+    "en-dictation/meta": {
+      "headline": {
+        "value": 0.10289579871825302,
+        "lo": 0.09023090586145649,
+        "hi": 0.11513306269733875,
+        "speakers": 73
+      },
+      "formatted": 0.1910868868226996
+    },
+    "en-dictation-noise/meta": {
+      "headline": {
+        "value": 0.07169811320754717,
+        "lo": 0.05204081632653061,
+        "hi": 0.09290187891440502,
+        "speakers": 17
+      },
+      "formatted": 0.15274261603375527
+    },
+    "en-dictation-whisper/meta": {
+      "headline": {
+        "value": 0.1124031007751938,
+        "lo": 0.08709422011084719,
+        "hi": 0.14351851851851852,
+        "speakers": 16
+      },
+      "formatted": 0.21715076071922546
+    },
+    "latency/meta": {
+      "waitP50": 430,
+      "waitP90": 694,
+      "connectP50": 2246,
+      "connectP90": 3087,
+      "n": 106
+    },
+    "failures/meta": {
+      "clips": 106,
+      "dropped": 0,
+      "failed": 0,
+      "droppedSets": []
+    }
+  }
+}

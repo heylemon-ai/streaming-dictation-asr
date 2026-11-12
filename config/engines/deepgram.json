@@ -1,0 +1,60 @@
+{
+  "$comment": "Streaming engine using the generic WebSocket adapter. Languages and the multilingual mode checked against Deepgram's Nova-3 language list (developers.deepgram.com/docs/models-languages-overview, 2026-10-12). Mixed-language and auto-detect requests use 'multi', which covers en, es, fr, de, hi, ru, pt, ja, it, nl. Regional Arabic (ar-EG, ar-SA, ar-AE) and es-419 from the Nova-3 Arabic release notes and models overview (checked 2026-11-05); used only with --language regional.",
+  "id": "deepgram",
+  "label": "Deepgram Nova-3",
+  "kind": "websocket",
+  "model": "nova-3",
+  "modelEnv": "DEEPGRAM_MODEL",
+  "env": [
+    "DEEPGRAM_API_KEY"
+  ],
+  "sampleRate": 16000,
+  "languages": {
+    "en": "en",
+    "de": "de",
+    "es": "es",
+    "fr": "fr",
+    "hi": "hi",
+    "ar": "ar",
+    "ur": "ur",
+    "zh": "zh",
+    "ar-EG": "ar-EG",
+    "ar-SA": "ar-SA",
+    "ar-AE": "ar-AE",
+    "es-419": "es-419"
+  },
+  "multiLanguage": {
+    "code": "multi",
+    "languages": [
+      "en",
+      "es",
+      "fr",
+      "de",
+      "hi",
+      "ru",
+      "pt",
+      "ja",
+      "it",
+      "nl"
+    ]
+  },
+  "autoLanguage": "multi",
+  "url": "wss://api.deepgram.com/v1/listen?model=${model}&encoding=linear16&sample_rate=${sample_rate}&channels=1&language=${language}&punctuate=true&smart_format=true",
+  "headers": {
+    "Authorization": "Token ${env:DEEPGRAM_API_KEY}"
+  },
+  "audio": "binary",
+  "end": {
+    "type": "CloseStream"
+  },
+  "final": {
+    "match": {
+      "type": "Results",
+      "is_final": true
+    },
+    "textPath": "channel.alternatives.0.transcript"
+  },
+  "done": {
+    "onClose": true
+  }
+}

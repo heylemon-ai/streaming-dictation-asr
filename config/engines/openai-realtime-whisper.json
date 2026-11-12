@@ -1,0 +1,62 @@
+{
+  "$comment": "OpenAI gpt-realtime-whisper over a Realtime transcription session, configured exactly like openai-live-transcribe (24 kHz PCM16, no server turn detection, one commit when the audio ends), without a delay setting. This model takes a single `language` (it rejects `languages`), so the clip's language is sent, or none when auto-detecting.",
+  "id": "openai-realtime-whisper",
+  "label": "OpenAI GPT-Realtime-Whisper",
+  "kind": "websocket",
+  "model": "gpt-realtime-whisper",
+  "modelEnv": "OPENAI_REALTIME_WHISPER_MODEL",
+  "env": [
+    "OPENAI_API_KEY"
+  ],
+  "sampleRate": 24000,
+  "url": "wss://api.openai.com/v1/realtime?intent=transcription",
+  "headers": {
+    "Authorization": "Bearer ${env:OPENAI_API_KEY}"
+  },
+  "setup": {
+    "type": "session.update",
+    "session": {
+      "type": "transcription",
+      "audio": {
+        "input": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "transcription": {
+            "model": "${model}",
+            "language": "${language}"
+          },
+          "turn_detection": null
+        }
+      }
+    }
+  },
+  "readyOn": {
+    "type": "session.updated"
+  },
+  "audio": {
+    "type": "input_audio_buffer.append",
+    "audio": "${audio_base64}"
+  },
+  "end": {
+    "type": "input_audio_buffer.commit"
+  },
+  "final": {
+    "match": {
+      "type": "conversation.item.input_audio_transcription.completed"
+    },
+    "textPath": "transcript"
+  },
+  "done": {
+    "match": {
+      "type": "conversation.item.input_audio_transcription.completed"
+    }
+  },
+  "error": {
+    "match": {
+      "type": "error"
+    },
+    "messagePath": "error.message"
+  }
+}

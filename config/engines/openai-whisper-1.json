@@ -1,0 +1,24 @@
+{
+  "$comment": "OpenAI whisper-1 (Whisper large-v2 per OpenAI's 2023 API launch) via the file transcription endpoint: audio is collected while it streams and uploaded as one 16 kHz WAV when the audio ends, so the wait includes the upload. Default settings: json response, the clip's language when one is selected.",
+  "id": "openai-whisper-1",
+  "label": "OpenAI Whisper-1",
+  "kind": "upload",
+  "model": "whisper-1",
+  "modelEnv": "OPENAI_WHISPER1_MODEL",
+  "env": [
+    "OPENAI_API_KEY"
+  ],
+  "sampleRate": 16000,
+  "url": "https://api.openai.com/v1/audio/transcriptions",
+  "headers": {
+    "Authorization": "Bearer ${env:OPENAI_API_KEY}"
+  },
+  "body": "multipart",
+  "fileField": "file",
+  "fields": {
+    "model": "${model}",
+    "language": "${language}",
+    "response_format": "json"
+  },
+  "textPath": "text"
+}

@@ -1,0 +1,67 @@
+{
+  "date": "2026-10-23",
+  "runDates": [
+    "2026-10-23"
+  ],
+  "label": "ears-qwen",
+  "options": {
+    "language": "clip",
+    "speed": 1,
+    "gate": true,
+    "runs": 1,
+    "clientProfile": "published"
+  },
+  "sets": [
+    {
+      "id": "ears-whisper",
+      "language": "en",
+      "condition": "whisper",
+      "source": "EARS (CC BY-NC 4.0): 20 speakers, Rainbow Passage parts 1-4, whispered"
+    },
+    {
+      "id": "ears-regular",
+      "language": "en",
+      "condition": "clean",
+      "source": "EARS (CC BY-NC 4.0): the same 20 speakers and passages, read normally"
+    }
+  ],
+  "models": {
+    "qwen": "self-hosted (Baseten)"
+  },
+  "labels": {
+    "qwen": "Qwen3-ASR"
+  },
+  "aggregates": {
+    "ears-whisper/qwen": {
+      "headline": {
+        "value": 0.32258261560075746,
+        "lo": 0.2639423370594344,
+        "hi": 0.3840327408221856,
+        "speakers": 107
+      },
+      "formatted": 0.3589334799340297
+    },
+    "ears-regular/qwen": {
+      "headline": {
+        "value": 0.012888644554394967,
+        "lo": 0.009895547003848268,
+        "hi": 0.016492578339747113,
+        "speakers": 107
+      },
+      "formatted": 0.04238592633315008
+    },
+    "latency/qwen": {
+      "waitP50": 344,
+      "waitP90": 463,
+      "connectP50": 865,
+      "connectP90": 1321,
+      "n": 856
+    },
+    "failures/qwen": {
+      "clips": 856,
+      "dropped": 0,
+      "failed": 0,
+      "droppedSets": []
+    }
+  }
+}

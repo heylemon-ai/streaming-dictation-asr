@@ -1,0 +1,36 @@
+# Dependencies and local state
+node_modules/
+cache/
+*.log
+.DS_Store
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Audio and datasets are never committed. data/README.md and data-external/README.md are the only tracked files.
+data/*
+!data/README.md
+*.wav
+*.flac
+*.mp3
+*.m4a
+*.zip
+
+# Local client profile for experiments (the published one is config/client-profile.json)
+config/client-profile.local.json
+
+# Downloaded model
+models/*.onnx
+site/
+
+# TEN VAD Python environment (scripts/setup-tenvad.sh)
+.venv-tenvad/
+
+# Third-party audio, kept apart from data/ (never committed)
+data-external/*
+!data-external/README.md
+
+# Python bytecode
+__pycache__/

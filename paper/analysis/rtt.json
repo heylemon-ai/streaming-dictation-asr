@@ -1,0 +1,42 @@
+{
+ "assemblyai": {
+  "samples": 297,
+  "median": 200,
+  "p90": 404
+ },
+ "baseten": {
+  "samples": 297,
+  "median": 276,
+  "p90": 487
+ },
+ "deepgram": {
+  "samples": 296,
+  "median": 309,
+  "p90": 540
+ },
+ "elevenlabs": {
+  "samples": 297,
+  "median": 145,
+  "p90": 362
+ },
+ "gemini": {
+  "samples": 297,
+  "median": 58,
+  "p90": 226
+ },
+ "meta": {
+  "samples": 297,
+  "median": 56,
+  "p90": 254
+ },
+ "openai": {
+  "samples": 297,
+  "median": 28,
+  "p90": 49
+ },
+ "zoom": {
+  "samples": 297,
+  "median": 28,
+  "p90": 63
+ }
+}

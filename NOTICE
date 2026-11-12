@@ -1,0 +1,19 @@
+Streaming Dictation ASR Benchmark
+Copyright 2026 Lemon (heylemon.ai)
+
+The source code in this repository is licensed under the Apache License,
+Version 2.0 (see LICENSE).
+
+Documentation, published results and the paper (METHODOLOGY.md, docs/,
+results/, paper/) are licensed under the Creative Commons Attribution 4.0
+International License (CC BY 4.0): https://creativecommons.org/licenses/by/4.0/
+
+The in-house English recordings, their references and the tested systems'
+transcripts are released separately under CC BY 4.0 at
+https://huggingface.co/datasets/hey-lemon/streaming-dictation-asr. The public
+language clips, EARS and VOiCES are not included; each is used under its own
+licence.
+
+This product uses the Silero VAD model (MIT License), downloaded separately by
+scripts/fetch-silero.sh, and optionally TEN VAD (Apache 2.0), installed
+separately by scripts/setup-tenvad.sh.

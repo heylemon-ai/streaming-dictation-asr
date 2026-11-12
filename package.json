@@ -1,0 +1,38 @@
+{
+  "name": "streaming-dictation-asr",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Speech recognition benchmark that streams audio in real time, the way a live dictation app does.",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "manifest": "tsx src/manifest.ts",
+    "run": "tsx src/run.ts",
+    "report": "tsx src/run.ts --report-only",
+    "nonspeech": "tsx scripts/make-nonspeech.ts",
+    "import": "tsx scripts/import-sets.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test test/*.test.ts",
+    "import-run": "tsx scripts/import-run.ts",
+    "compare-runs": "tsx scripts/compare-runs.ts",
+    "leaderboard": "tsx scripts/build-leaderboard.ts",
+    "make-codeswitch": "tsx scripts/make-codeswitch.ts",
+    "codeswitch": "tsx src/codeswitch.ts",
+    "import-codeswitch-run": "tsx scripts/import-codeswitch-run.ts"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "onnxruntime-node": "^1.30.0",
+    "opencc-js": "^1.4.2",
+    "ws": "^8.22.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "@types/ws": "^8.18.2",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  },
+  "license": "Apache-2.0"
+}

@@ -1,0 +1,16 @@
+{
+  "$comment": "Example batch engine using the generic upload adapter: audio is uploaded as one WAV file when the recording ends. Check the provider's current docs before publishing results.",
+  "id": "openai-transcribe",
+  "label": "OpenAI Transcribe",
+  "kind": "upload",
+  "model": "gpt-4o-transcribe",
+  "modelEnv": "OPENAI_TRANSCRIBE_MODEL",
+  "env": ["OPENAI_API_KEY"],
+  "sampleRate": 16000,
+  "url": "https://api.openai.com/v1/audio/transcriptions",
+  "headers": { "Authorization": "Bearer ${env:OPENAI_API_KEY}" },
+  "body": "multipart",
+  "fileField": "file",
+  "fields": { "model": "${model}", "language": "${language}", "response_format": "json" },
+  "textPath": "text"
+}

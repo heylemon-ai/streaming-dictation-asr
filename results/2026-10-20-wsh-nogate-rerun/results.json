@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-20",
+  "runDates": [
+    "2026-10-20"
+  ],
+  "label": "wsh-nogate-rerun",
+  "options": {
+    "language": "clip",
+    "speed": 1,
+    "gate": true,
+    "runs": 1,
+    "clientProfile": "published"
+  },
+  "sets": [
+    {
+      "id": "en-dictation-whisper",
+      "language": "en",
+      "condition": "whisper",
+      "source": "Same scripts, whispered"
+    }
+  ],
+  "models": {
+    "whisper-self-hosted": "self-hosted (Baseten)"
+  },
+  "labels": {
+    "whisper-self-hosted": "Whisper Self-Hosted"
+  },
+  "aggregates": {
+    "en-dictation-whisper/whisper-self-hosted": {
+      "headline": {
+        "value": 0.10077519379844961,
+        "lo": 0.07100591715976332,
+        "hi": 0.1303680981595092,
+        "speakers": 16
+      },
+      "formatted": 0.20816044260027664
+    },
+    "latency/whisper-self-hosted": {
+      "waitP50": 346,
+      "waitP90": 450,
+      "connectP50": 876,
+      "connectP90": 1046,
+      "n": 16
+    },
+    "failures/whisper-self-hosted": {
+      "clips": 16,
+      "dropped": 0,
+      "failed": 0,
+      "droppedSets": []
+    }
+  }
+}

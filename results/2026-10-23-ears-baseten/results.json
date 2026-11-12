@@ -1,0 +1,139 @@
+{
+  "date": "2026-10-23",
+  "runDates": [
+    "2026-10-23"
+  ],
+  "label": "ears-baseten",
+  "options": {
+    "language": "clip",
+    "speed": 1,
+    "gate": true,
+    "runs": 1,
+    "clientProfile": "published"
+  },
+  "sets": [
+    {
+      "id": "ears-whisper",
+      "language": "en",
+      "condition": "whisper",
+      "source": "EARS (CC BY-NC 4.0): 20 speakers, Rainbow Passage parts 1-4, whispered"
+    },
+    {
+      "id": "ears-regular",
+      "language": "en",
+      "condition": "clean",
+      "source": "EARS (CC BY-NC 4.0): the same 20 speakers and passages, read normally"
+    }
+  ],
+  "models": {
+    "whisper": "self-hosted (Baseten)",
+    "qwen": "self-hosted (Baseten)"
+  },
+  "labels": {
+    "whisper": "Whisper Large V3",
+    "qwen": "Qwen3-ASR"
+  },
+  "aggregates": {
+    "ears-whisper/whisper": {
+      "headline": {
+        "value": 0.4318612180074522,
+        "lo": 0.36326430883880034,
+        "hi": 0.5018630505161567,
+        "speakers": 107
+      },
+      "formatted": 0.4621220450797141
+    },
+    "ears-whisper/qwen": {
+      "headline": {
+        "value": 0.38520213577421814,
+        "lo": 0.2615505090054816,
+        "hi": 0.5204855842185129,
+        "speakers": 35
+      },
+      "formatted": 0.4261285909712722
+    },
+    "ears-regular/whisper": {
+      "headline": {
+        "value": 0.0113004703439008,
+        "lo": 0.008612790910756826,
+        "hi": 0.014537902388369679,
+        "speakers": 107
+      },
+      "formatted": 0.04068169323804288
+    },
+    "ears-regular/qwen": {
+      "headline": {
+        "value": 0.011325028312570781,
+        "lo": 0.0056947608200455585,
+        "hi": 0.01807909604519774,
+        "speakers": 47
+      },
+      "formatted": 0.04012188928390046
+    },
+    "latency/whisper": {
+      "waitP50": 408,
+      "waitP90": 571,
+      "connectP50": 774,
+      "connectP90": 897,
+      "n": 818
+    },
+    "latency/qwen": {
+      "waitP50": 350,
+      "waitP90": 472,
+      "connectP50": 3637,
+      "connectP90": 4792,
+      "n": 82
+    },
+    "failures/whisper": {
+      "clips": 856,
+      "dropped": 38,
+      "failed": 0,
+      "droppedSets": [
+        "ears-whisper",
+        "ears-whisper",
+        "ears-whisper",
+        "ears-whisper",
+        "ears-whisper",
+        "ears-whisper",
+        "ears-whisper",
+        "ears-whisper",
+        "ears-whisper",
+        "ears-whisper",
+        "ears-whisper",
+        "ears-whisper",
+        "ears-whisper",
+        "ears-whisper",
+        "ears-whisper",
+        "ears-whisper",
+        "ears-whisper",
+        "ears-whisper",
+        "ears-whisper",
+        "ears-whisper",
+        "ears-whisper",
+        "ears-whisper",
+        "ears-whisper",
+        "ears-whisper",
+        "ears-whisper",
+        "ears-whisper",
+        "ears-whisper",
+        "ears-whisper",
+        "ears-whisper",
+        "ears-whisper",
+        "ears-whisper",
+        "ears-whisper",
+        "ears-whisper",
+        "ears-whisper",
+        "ears-whisper",
+        "ears-whisper",
+        "ears-whisper",
+        "ears-whisper"
+      ]
+    },
+    "failures/qwen": {
+      "clips": 856,
+      "dropped": 0,
+      "failed": 774,
+      "droppedSets": []
+    }
+  }
+}

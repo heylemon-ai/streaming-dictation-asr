@@ -1,0 +1,76 @@
+{
+  "date": "2026-11-05",
+  "runDates": [
+    "2026-11-05"
+  ],
+  "label": "aainoturn",
+  "options": {
+    "language": "clip",
+    "speed": 1,
+    "gate": true,
+    "runs": 1,
+    "clientProfile": "published"
+  },
+  "sets": [
+    {
+      "id": "en-dictation-whisper",
+      "language": "en",
+      "condition": "whisper",
+      "source": "Same scripts, whispered"
+    }
+  ],
+  "models": {
+    "assemblyai-3-5-pro-noturn": "universal-3-5-pro",
+    "assemblyai-3-6-pro-noturn": "universal-3-6-pro"
+  },
+  "labels": {
+    "assemblyai-3-5-pro-noturn": "AssemblyAI Universal-3.5 Pro (turn detection off)",
+    "assemblyai-3-6-pro-noturn": "AssemblyAI Universal-3.6 Pro (turn detection off)"
+  },
+  "aggregates": {
+    "en-dictation-whisper/assemblyai-3-5-pro-noturn": {
+      "headline": {
+        "value": 0.2874203821656051,
+        "lo": 0.12836021505376344,
+        "hi": 0.5294535131298793,
+        "speakers": 15
+      },
+      "formatted": 0.3387668320340184
+    },
+    "en-dictation-whisper/assemblyai-3-6-pro-noturn": {
+      "headline": {
+        "value": 0.27209302325581397,
+        "lo": 0.12044471896232242,
+        "hi": 0.5182667799490229,
+        "speakers": 16
+      },
+      "formatted": 0.3201936376210235
+    },
+    "latency/assemblyai-3-5-pro-noturn": {
+      "waitP50": 926,
+      "waitP90": 1730,
+      "connectP50": 2398,
+      "connectP90": 3169,
+      "n": 15
+    },
+    "latency/assemblyai-3-6-pro-noturn": {
+      "waitP50": 674,
+      "waitP90": 1201,
+      "connectP50": 1330,
+      "connectP90": 2199,
+      "n": 16
+    },
+    "failures/assemblyai-3-5-pro-noturn": {
+      "clips": 16,
+      "dropped": 0,
+      "failed": 1,
+      "droppedSets": []
+    },
+    "failures/assemblyai-3-6-pro-noturn": {
+      "clips": 16,
+      "dropped": 0,
+      "failed": 0,
+      "droppedSets": []
+    }
+  }
+}
